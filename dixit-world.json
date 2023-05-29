@@ -1,0 +1,4385 @@
+{
+    "DataVersion": 0,
+    "Entities": [
+        {
+            "id": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}",
+            "type": "Zone",
+            "name": "Zone.Sky",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -0.2849998474121094,
+                "y": 3.5805088579654694,
+                "z": -0.47831249237060547
+            },
+            "dimensions": {
+                "x": 31.43000030517578,
+                "y": 17.56101769208908,
+                "z": 31.04337501525879
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -11.0,
+                "y": -7.134491294622421,
+                "z": -11.193312644958496,
+                "scale": 21.43000030517578
+            },
+            "shapeType": "box",
+            "skybox": {
+                "url": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/images/skybox.png"
+            },
+            "skyboxMode": "enabled",
+            "ambientLightMode": "enabled",
+            "ambientLight": {
+                "ambientIntensity": 0.5,
+                "ambientURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/images/skybox.png"
+            },
+            "keyLightMode": "enabled",
+            "keyLight": {
+                "direction": {
+                    "x": 0.0,
+                    "y": -0.7071067094802856,
+                    "z": 0.7071068286895752
+                }
+            },
+            "intensity": 1.0,
+            "castShadows": false,
+            "shadowBias": 0.5,
+            "shadowMaxDistance": 40.0
+        },
+        {
+            "id": "{61bc1e75-ead5-48ea-a910-122239f268e3}",
+            "type": "Text",
+            "name": "Text.Screen",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/source/dixit-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/source/dixit-server.js",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 2.0919010639190674,
+                "y": -0.39026036858558655,
+                "z": -9.471686363220215
+            },
+            "dimensions": {
+                "x": 10.0,
+                "y": 4.0,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -3.193098783493042,
+                "y": -1.8097513914108276,
+                "z": -14.94999873638153,
+                "scale": 9.999999761581421
+            },
+            "text": "Text",
+            "lineHeight": 0.30000001192092896,
+            "alignment": "center",
+            "topMargin": 0.20000000298023224,
+            "rightMargin": 0.20000000298023224,
+            "bottomMargin": 0.20000000298023224,
+            "leftMargin": 0.20000000298023224,
+            "unlit": true,
+            "backgroundColor": {
+                "red": 37,
+                "green": 37,
+                "blue": 37
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{121f544c-8762-4ee6-87b9-f2ec8eb8fb87}",
+            "type": "Text",
+            "name": "Text.ButtonAbortGame",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.500000238418579,
+                "y": -2.4000000953674316,
+                "z": -0.0
+            },
+            "dimensions": {
+                "x": 3.0,
+                "y": 0.6000002026557922,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 3.806901454925537,
+                "y": -0.7097515165805817,
+                "z": -11.44999885559082,
+                "scale": 3.0
+            },
+            "text": "Abort game",
+            "lineHeight": 0.30000001192092896,
+            "alignment": "center",
+            "topMargin": 0.15000000596046448,
+            "rightMargin": 0.15000000596046448,
+            "leftMargin": 0.15000000596046448,
+            "unlit": true,
+            "backgroundColor": {
+                "red": 49,
+                "green": 49,
+                "blue": 49
+            },
+            "parentID": "{61bc1e75-ead5-48ea-a910-122239f268e3}"
+        },
+        {
+            "id": "{90e97210-87d1-4b3c-9283-5d50146934e3}",
+            "type": "Text",
+            "name": "Text.ButtonOpenPanel",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -3.5,
+                "y": -2.4000000953674316,
+                "z": -2.86102294921875e-06
+            },
+            "dimensions": {
+                "x": 3.0,
+                "y": 0.6000001430511475,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -3.193098545074463,
+                "y": -0.7097514569759369,
+                "z": -11.450001657009125,
+                "scale": 2.9999998807907104
+            },
+            "text": "Open Panel",
+            "lineHeight": 0.30000001192092896,
+            "alignment": "center",
+            "topMargin": 0.15000000596046448,
+            "rightMargin": 0.15000000596046448,
+            "leftMargin": 0.15000000596046448,
+            "unlit": true,
+            "backgroundColor": {
+                "red": 49,
+                "green": 49,
+                "blue": 49
+            },
+            "parentID": "{61bc1e75-ead5-48ea-a910-122239f268e3}"
+        },
+        {
+            "id": "{d1a017c4-2778-4bcf-9888-6e6ac104dc96}",
+            "type": "Text",
+            "name": "Text.ButtonScreen",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0.0,
+                "y": -1.4500000476837158,
+                "z": 0.09999942779541016
+            },
+            "dimensions": {
+                "x": 3.200000047683716,
+                "y": 0.7000001668930054,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.2069011926651001,
+                "y": 0.1402483582496643,
+                "z": -11.449999511241913,
+                "scale": 3.2000001668930054
+            },
+            "text": "New game",
+            "lineHeight": 0.30000001192092896,
+            "alignment": "center",
+            "topMargin": 0.20000000298023224,
+            "rightMargin": 0.20000000298023224,
+            "leftMargin": 0.20000000298023224,
+            "unlit": true,
+            "backgroundColor": {
+                "red": 19,
+                "green": 118,
+                "blue": 3
+            },
+            "parentID": "{61bc1e75-ead5-48ea-a910-122239f268e3}"
+        },
+        {
+            "id": "{caf408df-0674-471f-b0d5-f7e37d7ea49f}",
+            "type": "Text",
+            "name": "Text.Players",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -7.5,
+                "y": 0.0,
+                "z": -2.86102294921875e-06
+            },
+            "dimensions": {
+                "x": 3.000000238418579,
+                "y": 4.0,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -7.693098545074463,
+                "y": 1.1902484893798828,
+                "z": -11.95000171661377,
+                "scale": 4.0
+            },
+            "text": "Text",
+            "lineHeight": 0.20000000298023224,
+            "topMargin": 0.10000000149011612,
+            "rightMargin": 0.10000000149011612,
+            "bottomMargin": 0.10000000149011612,
+            "leftMargin": 0.10000000149011612,
+            "unlit": true,
+            "backgroundColor": {
+                "red": 37,
+                "green": 37,
+                "blue": 37
+            },
+            "parentID": "{61bc1e75-ead5-48ea-a910-122239f268e3}"
+        },
+        {
+            "id": "{5b766dce-0b9a-46d5-b5c7-c3d66ce242c2}",
+            "type": "Text",
+            "name": "Text.PlayersTitle",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -7.5,
+                "y": 2.5,
+                "z": -2.86102294921875e-06
+            },
+            "dimensions": {
+                "x": 3.0,
+                "y": 1.000000238418579,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -7.193098545074463,
+                "y": 4.190248489379883,
+                "z": -11.45000171661377,
+                "scale": 3.0
+            },
+            "text": "Players",
+            "backgroundAlpha": 0.0,
+            "lineHeight": 0.4000000059604645,
+            "alignment": "center",
+            "topMargin": 0.30000001192092896,
+            "backgroundColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "parentID": "{61bc1e75-ead5-48ea-a910-122239f268e3}"
+        },
+        {
+            "id": "{67681ffd-b0c0-4ac5-8bcb-0ed2dc21a6eb}",
+            "type": "Text",
+            "name": "Text.ScreenTitle",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0.0,
+                "y": 2.5,
+                "z": -0.0
+            },
+            "dimensions": {
+                "x": 10.0,
+                "y": 1.0000039339065552,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -3.193098783493042,
+                "y": 0.6902486085891724,
+                "z": -14.94999873638153,
+                "scale": 9.999999761581421
+            },
+            "text": "Dixit",
+            "backgroundAlpha": 0.0,
+            "lineHeight": 0.6000000238418579,
+            "alignment": "center",
+            "topMargin": 0.20000000298023224,
+            "backgroundColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "parentID": "{61bc1e75-ead5-48ea-a910-122239f268e3}"
+        },
+        {
+            "id": "{69820f80-795d-4ce8-af49-fa8c3fc65857}",
+            "type": "Box",
+            "name": "Box.Pillar",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -6.000000476837158,
+                "y": -1.6968986093997955,
+                "z": 9.978312492370605
+            },
+            "dimensions": {
+                "x": 0.5699996948242188,
+                "y": 4.088324546813965,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -8.329162657260895,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 57,
+                "green": 25,
+                "blue": 16
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{db207e26-f9f6-419b-84e2-04a7fa24da0f}",
+            "type": "Material",
+            "name": "Box.Pillar.Material.Brick_06_3",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -8.329162657260895,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "parentID": "{69820f80-795d-4ce8-af49-fa8c3fc65857}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/brick_wall_06.2.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 0.4000000059604645,
+                "y": 2.0
+            }
+        },
+        {
+            "id": "{fa250e50-9062-43cf-a58a-1be5de9fde11}",
+            "type": "Model",
+            "name": "Model.Window.001",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -6.892499923706055,
+                "y": -2.0308094322681427,
+                "z": 9.981083869934082
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.7071067690849304,
+                "y": -6.181724643283815e-08,
+                "z": 6.18172535382655e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": -8.257856965065002,
+                "y": 0.4693422317504883,
+                "z": 8.422414660453796,
+                "scale": 2.1607143878936768
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{3104ee29-3ede-439c-ba82-b4fe23b5345e}",
+            "type": "Model",
+            "name": "Model.Window",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -8.107500076293945,
+                "y": -2.0308094322681427,
+                "z": 9.981084823608398
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.70710688829422,
+                "y": -1.0396406935342384e-07,
+                "z": 1.967041107775458e-08,
+                "w": 0.7071067094802856
+            },
+            "queryAACube": {
+                "x": -9.472857162356377,
+                "y": 0.4693421423435211,
+                "z": 8.422415092587471,
+                "scale": 2.160714477300644
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{81ae48fa-2af7-4006-834c-e76cda60b150}",
+            "type": "Box",
+            "name": "Box.Pillar.001",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -3.000000476837158,
+                "y": -1.6968986093997955,
+                "z": 9.978312492370605
+            },
+            "dimensions": {
+                "x": 0.5699996948242188,
+                "y": 4.088324546813965,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -5.329162657260895,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 57,
+                "green": 25,
+                "blue": 16
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{42fd20f6-0171-44f9-a450-f1c1b1e0fa03}",
+            "type": "Material",
+            "name": "Box.Pillar.001.Material.Brick_06_3",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -5.329162657260895,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "parentID": "{81ae48fa-2af7-4006-834c-e76cda60b150}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/brick_wall_06.2.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 0.4000000059604645,
+                "y": 2.0
+            }
+        },
+        {
+            "id": "{1f8a0d13-c967-474b-bfef-59322291ac1c}",
+            "type": "Model",
+            "name": "Model.Window.002",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -3.8924999237060547,
+                "y": -2.0308094322681427,
+                "z": 9.981083869934082
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.7071067690849304,
+                "y": -6.181724643283815e-08,
+                "z": 6.18172535382655e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": -5.257857084274292,
+                "y": 0.4693422317504883,
+                "z": 8.422414660453796,
+                "scale": 2.1607143878936768
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{61fd376c-2a66-4186-90f8-88c90adfd49e}",
+            "type": "Model",
+            "name": "Model.Window.003",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -5.107500076293945,
+                "y": -2.0308094322681427,
+                "z": 9.981084823608398
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.70710688829422,
+                "y": -1.0396406935342384e-07,
+                "z": 1.967041107775458e-08,
+                "w": 0.7071067094802856
+            },
+            "queryAACube": {
+                "x": -6.472857162356377,
+                "y": 0.4693421423435211,
+                "z": 8.422415092587471,
+                "scale": 2.160714477300644
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{555180a8-38e0-499d-8616-b8f68f5c51b8}",
+            "type": "Box",
+            "name": "Box.Pillar.002",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -4.76837158203125e-07,
+                "y": -1.6968986093997955,
+                "z": 9.978312492370605
+            },
+            "dimensions": {
+                "x": 0.5699996948242188,
+                "y": 4.088324546813965,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -2.3291626572608948,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 57,
+                "green": 25,
+                "blue": 16
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{f0d05c5d-5269-4a5a-8951-5611e2b54665}",
+            "type": "Material",
+            "name": "Box.Pillar.002.Material.Brick_06_3",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -2.3291626572608948,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "parentID": "{555180a8-38e0-499d-8616-b8f68f5c51b8}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/brick_wall_06.2.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 0.4000000059604645,
+                "y": 2.0
+            }
+        },
+        {
+            "id": "{b3516b20-f29c-4730-b41e-c1831dd844fb}",
+            "type": "Model",
+            "name": "Model.Window.004",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -0.8925000429153442,
+                "y": -2.0308094322681427,
+                "z": 9.981083869934082
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.7071067690849304,
+                "y": -6.181724643283815e-08,
+                "z": 6.18172535382655e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": -2.2578571140766144,
+                "y": 0.4693422317504883,
+                "z": 8.422414660453796,
+                "scale": 2.1607143878936768
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{b5ded7a0-260a-4be3-bf11-85a0a32ea60a}",
+            "type": "Model",
+            "name": "Model.Window.005",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -2.1075003147125244,
+                "y": -2.0308094322681427,
+                "z": 9.981084823608398
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.70710688829422,
+                "y": -1.0396406935342384e-07,
+                "z": 1.967041107775458e-08,
+                "w": 0.7071067094802856
+            },
+            "queryAACube": {
+                "x": -3.472857281565666,
+                "y": 0.4693421423435211,
+                "z": 8.422415092587471,
+                "scale": 2.160714477300644
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{f238b29c-18e9-4274-a4da-7a64b74745bc}",
+            "type": "Box",
+            "name": "Box.Pillar.003",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 2.999999523162842,
+                "y": -1.6968986093997955,
+                "z": 9.978312492370605
+            },
+            "dimensions": {
+                "x": 0.5699996948242188,
+                "y": 4.088324546813965,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.6708373427391052,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 57,
+                "green": 25,
+                "blue": 16
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{76c026bc-a294-4ece-ad47-6dd21edb230e}",
+            "type": "Material",
+            "name": "Box.Pillar.003.Material.Brick_06_3",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": 0.6708373427391052,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "parentID": "{f238b29c-18e9-4274-a4da-7a64b74745bc}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/brick_wall_06.2.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 0.4000000059604645,
+                "y": 2.0
+            }
+        },
+        {
+            "id": "{7d3aaa73-5100-4f88-9fbe-7a2f0c4f1c91}",
+            "type": "Model",
+            "name": "Model.Window.006",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 2.1074999570846558,
+                "y": -2.0308094322681427,
+                "z": 9.981083869934082
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.7071067690849304,
+                "y": -6.181724643283815e-08,
+                "z": 6.18172535382655e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": 0.7421428561210632,
+                "y": 0.4693422317504883,
+                "z": 8.422414660453796,
+                "scale": 2.1607143878936768
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{61e71fd9-1c5f-42e4-93d6-48679d7128c6}",
+            "type": "Model",
+            "name": "Model.Window.007",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0.8924997448921204,
+                "y": -2.0308094322681427,
+                "z": 9.981084823608398
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.70710688829422,
+                "y": -1.0396406935342384e-07,
+                "z": 1.967041107775458e-08,
+                "w": 0.7071067094802856
+            },
+            "queryAACube": {
+                "x": -0.4728573481455527,
+                "y": 0.4693421423435211,
+                "z": 8.422415092587471,
+                "scale": 2.160714477300644
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{de0fc01d-ac7c-4273-8a4a-8fd460a73b09}",
+            "type": "Box",
+            "name": "Box.Pillar.004",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 5.999999523162842,
+                "y": -1.6968986093997955,
+                "z": 9.978312492370605
+            },
+            "dimensions": {
+                "x": 0.5699996948242188,
+                "y": 4.088324546813965,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 3.6708373427391052,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 57,
+                "green": 25,
+                "blue": 16
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{41146270-1958-4405-854a-f35935621515}",
+            "type": "Material",
+            "name": "Box.Pillar.004.Material.Brick_06_3",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": 3.6708373427391052,
+                "y": -0.16055214405059814,
+                "z": 7.455837666988373,
+                "scale": 4.088324666023254
+            },
+            "parentID": "{de0fc01d-ac7c-4273-8a4a-8fd460a73b09}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/brick_wall_06.2.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 0.4000000059604645,
+                "y": 2.0
+            }
+        },
+        {
+            "id": "{68464f8f-9a19-4185-ab2b-4f45289989b3}",
+            "type": "Model",
+            "name": "Model.Window.008",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 5.107500076293945,
+                "y": -2.0308094322681427,
+                "z": 9.981083869934082
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.7071067690849304,
+                "y": -6.181724643283815e-08,
+                "z": 6.18172535382655e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": 3.7421430349349976,
+                "y": 0.4693422317504883,
+                "z": 8.422414660453796,
+                "scale": 2.1607143878936768
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{3f627392-1d73-4498-a63b-4495965a3657}",
+            "type": "Model",
+            "name": "Model.Window.009",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.8924996852874756,
+                "y": -2.0308094322681427,
+                "z": 9.981084823608398
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.70710688829422,
+                "y": -1.0396406935342384e-07,
+                "z": 1.967041107775458e-08,
+                "w": 0.7071067094802856
+            },
+            "queryAACube": {
+                "x": 2.527142718434334,
+                "y": 0.4693421423435211,
+                "z": 8.422415092587471,
+                "scale": 2.160714477300644
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{1d18d8db-8877-4e83-9ec6-0e11ff7f1fab}",
+            "type": "Model",
+            "name": "Model.Window.010",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 8.107500076293945,
+                "y": -2.0308094322681427,
+                "z": 9.981083869934082
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.7071067690849304,
+                "y": -6.181724643283815e-08,
+                "z": 6.18172535382655e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": 6.742143034934998,
+                "y": 0.4693422317504883,
+                "z": 8.422414660453796,
+                "scale": 2.1607143878936768
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{6c39d30b-69e6-4fbc-a760-e07cf5076939}",
+            "type": "Model",
+            "name": "Model.Window.011",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 6.892499923706055,
+                "y": -2.0308094322681427,
+                "z": 9.981084823608398
+            },
+            "dimensions": {
+                "x": 1.215000033378601,
+                "y": 0.050000131130218506,
+                "z": 2.1607143878936768
+            },
+            "rotation": {
+                "x": 0.70710688829422,
+                "y": -1.0396406935342384e-07,
+                "z": 1.967041107775458e-08,
+                "w": 0.7071067094802856
+            },
+            "queryAACube": {
+                "x": 5.527142837643623,
+                "y": 0.4693421423435211,
+                "z": 8.422415092587471,
+                "scale": 2.160714477300644
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Window.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{fd0ce0df-0843-4479-80a5-07c38e49aac8}",
+            "type": "Box",
+            "name": "Box.Pillar.Corner.001",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -9.71500015258789,
+                "y": -1.6607849895954132,
+                "z": 9.478312492370605
+            },
+            "dimensions": {
+                "x": 2.0,
+                "y": 4.160552024841309,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -12.080276072025299,
+                "y": -0.16055214405059814,
+                "z": 6.919723927974701,
+                "scale": 4.160552144050598
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 57,
+                "green": 25,
+                "blue": 16
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{8951f3ff-abce-478a-a37d-726a70d7f4a5}",
+            "type": "Material",
+            "name": "Box.Pillar.Corner.001.Material.Brick_06_2",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -12.080276072025299,
+                "y": -0.16055214405059814,
+                "z": 6.919723927974701,
+                "scale": 4.160552144050598
+            },
+            "parentID": "{fd0ce0df-0843-4479-80a5-07c38e49aac8}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/brick_wall_06.1.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 0.800000011920929,
+                "y": 1.7999999523162842
+            }
+        },
+        {
+            "id": "{1e5fa736-8dc8-4e64-b8f5-ea9b3c86f771}",
+            "type": "Box",
+            "name": "Box.Pillar.Corner",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 9.71500015258789,
+                "y": -1.6607849895954132,
+                "z": 9.478312492370605
+            },
+            "dimensions": {
+                "x": 2.0,
+                "y": 4.160552024841309,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 7.349724233150482,
+                "y": -0.16055214405059814,
+                "z": 6.919723927974701,
+                "scale": 4.160552144050598
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 57,
+                "green": 25,
+                "blue": 16
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{0dd57fdc-e3ac-4ae3-8e18-3fa58f3835f4}",
+            "type": "Material",
+            "name": "Box.Pillar.Corner.Material.Brick_06_2",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": 7.349724233150482,
+                "y": -0.16055214405059814,
+                "z": 6.919723927974701,
+                "scale": 4.160552144050598
+            },
+            "parentID": "{1e5fa736-8dc8-4e64-b8f5-ea9b3c86f771}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/brick_wall_06.1.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 0.800000011920929,
+                "y": 1.7999999523162842
+            }
+        },
+        {
+            "id": "{d8d11391-3679-4918-b5f0-2c4747defdda}",
+            "type": "Box",
+            "name": "Box.Window.Below",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0.0,
+                "y": -3.3458377718925476,
+                "z": 10.126928329467773
+            },
+            "dimensions": {
+                "x": 17.43000030517578,
+                "y": 0.4693421721458435,
+                "z": 0.7895183563232422
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -9.0,
+                "y": -8.480329066514969,
+                "z": 0.9336156845092773,
+                "scale": 17.43000030517578
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 204,
+                "green": 204,
+                "blue": 204
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{efc32d38-1b3d-4ae3-9e8d-5ad7aca31451}",
+            "type": "Material",
+            "name": "Box.Window.Below.Material.Wall_Paster_1",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -9.0,
+                "y": -8.480329066514969,
+                "z": 0.9336156845092773,
+                "scale": 17.43000030517578
+            },
+            "parentID": "{d8d11391-3679-4918-b5f0-2c4747defdda}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/white_plaster_02.1.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 10.0,
+                "y": 1.0
+            }
+        },
+        {
+            "id": "{fe3dacb5-0f04-4d5f-aee5-11ce8756cc9e}",
+            "type": "Box",
+            "name": "Box.Window.Above",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 2.9802322387695312e-08,
+                "y": -0.2654806673526764,
+                "z": 10.126928329467773
+            },
+            "dimensions": {
+                "x": 17.43000030517578,
+                "y": 1.3699432611465454,
+                "z": 0.7895185351371765
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -9.0,
+                "y": -5.399972081184387,
+                "z": 0.9336156845092773,
+                "scale": 17.43000030517578
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 204,
+                "green": 204,
+                "blue": 204
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{01b53663-bf08-4f9f-91d1-32557e2ee076}",
+            "type": "Material",
+            "name": "Box.Window.Above.Material.Wall_Paster_1",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -9.0,
+                "y": -5.399972081184387,
+                "z": 0.9336156845092773,
+                "scale": 17.43000030517578
+            },
+            "parentID": "{fe3dacb5-0f04-4d5f-aee5-11ce8756cc9e}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/white_plaster_02.1.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 10.0,
+                "y": 1.0
+            }
+        },
+        {
+            "id": "{d5bd50f9-bf76-4cd4-970d-16fc1f2e7053}",
+            "type": "Box",
+            "name": "Box.Floor",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0.2849998474121094,
+                "y": -3.680508852005005,
+                "z": 0.5
+            },
+            "dimensions": {
+                "x": 20.0,
+                "y": 0.19999998807907104,
+                "z": 20.04337501525879
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -10.021687507629395,
+                "y": -10.12168750166893,
+                "z": -10.0,
+                "scale": 20.04337501525879
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 204,
+                "green": 122,
+                "blue": 39
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{ca41f3bd-d08d-4246-ba0b-eb877e8199bc}",
+            "type": "Material",
+            "name": "Box.Floor.Material.Floor",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -10.021687507629395,
+                "y": -10.12168750166893,
+                "z": -10.0,
+                "scale": 20.04337501525879
+            },
+            "parentID": "{d5bd50f9-bf76-4cd4-970d-16fc1f2e7053}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/laminate_floor_02.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 10.0,
+                "y": 10.0
+            }
+        },
+        {
+            "id": "{e3cd943e-3a7c-4224-8d12-c44c41fcc866}",
+            "type": "Box",
+            "name": "Box.Front",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0.0,
+                "y": -0.16078487038612366,
+                "z": -10.021687507629395
+            },
+            "dimensions": {
+                "x": 21.43000030517578,
+                "y": 7.160552024841309,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -11.0,
+                "y": -7.295276165008545,
+                "z": -21.21500015258789,
+                "scale": 21.43000030517578
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 59,
+                "green": 70,
+                "blue": 64
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{8ce22f0f-bc9b-43eb-9c4f-f1eb0c730ba5}",
+            "type": "Material",
+            "name": "Box.Front.Material.Wall2",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -11.0,
+                "y": -7.295276165008545,
+                "z": -21.21500015258789,
+                "scale": 21.43000030517578
+            },
+            "parentID": "{e3cd943e-3a7c-4224-8d12-c44c41fcc866}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/concrete_wall_008.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 10.0,
+                "y": 10.0
+            }
+        },
+        {
+            "id": "{bd3deed7-9c8e-4a55-a040-32f4bc665741}",
+            "type": "Box",
+            "name": "Box.Left",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -10.21500015258789,
+                "y": -0.16078487038612366,
+                "z": -0.5216872692108154
+            },
+            "dimensions": {
+                "x": 1.0,
+                "y": 7.160552024841309,
+                "z": 18.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -19.5,
+                "y": -5.580276012420654,
+                "z": -10.0,
+                "scale": 18.0
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 57,
+                "green": 25,
+                "blue": 16
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{0a84d2aa-c131-48c7-9df2-bee5676dd21c}",
+            "type": "Material",
+            "name": "Box.Left.Material.Brick_06_1",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -19.5,
+                "y": -5.580276012420654,
+                "z": -10.0,
+                "scale": 18.0
+            },
+            "parentID": "{bd3deed7-9c8e-4a55-a040-32f4bc665741}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/brick_wall_06.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 10.0,
+                "y": 3.0
+            }
+        },
+        {
+            "id": "{67a0dcac-6077-4e73-afd2-a5ae8aefd180}",
+            "type": "Box",
+            "name": "Box.Right",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 10.21500015258789,
+                "y": -0.16078487038612366,
+                "z": -0.5216872692108154
+            },
+            "dimensions": {
+                "x": 1.0,
+                "y": 7.160552024841309,
+                "z": 18.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.9300003051757812,
+                "y": -5.580276012420654,
+                "z": -10.0,
+                "scale": 18.0
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 57,
+                "green": 25,
+                "blue": 16
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{6a7ac919-ca51-4179-a21d-3bcf412689cb}",
+            "type": "Material",
+            "name": "Box.Right.Material.Brick_06_1",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": 0.9300003051757812,
+                "y": -5.580276012420654,
+                "z": -10.0,
+                "scale": 18.0
+            },
+            "parentID": "{67a0dcac-6077-4e73-afd2-a5ae8aefd180}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/brick_wall_06.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 10.0,
+                "y": 3.0
+            }
+        },
+        {
+            "id": "{84a2192f-4aa2-4e1c-ad8f-4102b86b7800}",
+            "type": "Box",
+            "name": "Box.Roof",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0.0,
+                "y": 1.88082155585289,
+                "z": -0.041654765605926514
+            },
+            "dimensions": {
+                "x": 19.43000030517578,
+                "y": 0.3111705482006073,
+                "z": 21.195573806762695
+            },
+            "rotation": {
+                "x": 0.08266942948102951,
+                "y": -3.3450429169335485e-19,
+                "z": -5.999220863950052e-18,
+                "w": 0.9965770244598389
+            },
+            "queryAACube": {
+                "x": -10.76356840133667,
+                "y": -5.017238020896912,
+                "z": -10.99853515625,
+                "scale": 20.95713710784912
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 204,
+                "green": 204,
+                "blue": 204
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{107a5f1d-8e9d-4b45-802f-a30628f37b3d}",
+            "type": "Material",
+            "name": "Box.Roof.Material.Wall_Paster_2",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "queryAACube": {
+                "x": -10.76356840133667,
+                "y": -5.017238020896912,
+                "z": -10.99853515625,
+                "scale": 20.95713710784912
+            },
+            "parentID": "{84a2192f-4aa2-4e1c-ad8f-4102b86b7800}",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/white_plaster_02.json",
+            "priority": 1,
+            "materialMappingScale": {
+                "x": 10.0,
+                "y": 10.0
+            }
+        },
+        {
+            "id": "{34bad20e-102f-4463-8a5c-7e1cdc4331c5}",
+            "type": "Model",
+            "name": "Model.FrameT2",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 9.654034614562988,
+                "y": -0.6592027246952057,
+                "z": -2.026681423187256
+            },
+            "dimensions": {
+                "x": 0.12193131446838379,
+                "y": 2.0,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -1.0,
+                "z": 0.0,
+                "w": 1.9470718370939721e-07
+            },
+            "queryAACube": {
+                "x": 7.369034707546234,
+                "y": 0.9213060736656189,
+                "z": -4.504993915557861,
+                "scale": 4.0000001192092896
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.FrameT2.glb",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{41b54cdc-dd58-47a1-9ee1-e62e597fbf27}",
+            "type": "Model",
+            "name": "Model.Frame.002",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -9.654034614562988,
+                "y": -1.4677473604679108,
+                "z": -3.1995420455932617
+            },
+            "dimensions": {
+                "x": 0.12193053960800171,
+                "y": 2.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -10.939034938812256,
+                "y": 1.1127614974975586,
+                "z": -4.677854537963867,
+                "scale": 2.0
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Frame.glb",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{9b47dea6-ccc6-49f2-a703-ebca91627402}",
+            "type": "Model",
+            "name": "Model.Frame.001",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -9.654034614562988,
+                "y": -1.4677473604679108,
+                "z": -0.19954204559326172
+            },
+            "dimensions": {
+                "x": 0.12193053960800171,
+                "y": 2.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -10.939034938812256,
+                "y": 1.1127614974975586,
+                "z": -1.6778545379638672,
+                "scale": 2.0
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Frame.glb",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{4fca3114-02d6-4c24-a38b-2dca7d808625}",
+            "type": "Model",
+            "name": "Model.Frame",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -9.654034614562988,
+                "y": -1.4677473604679108,
+                "z": 2.8004581928253174
+            },
+            "dimensions": {
+                "x": 0.12193053960800171,
+                "y": 2.0,
+                "z": 2.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -10.939034938812256,
+                "y": 1.1127614974975586,
+                "z": 1.322145700454712,
+                "scale": 2.0
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/generated/Model.Frame.glb",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{bda7e2ac-7a0b-4e97-b654-6125ced18a37}",
+            "type": "Image",
+            "name": "Image.Rules1.002",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -9.660738945007324,
+                "y": -1.4652473032474518,
+                "z": -3.2020418643951416
+            },
+            "dimensions": {
+                "x": 1.8049999475479126,
+                "y": 1.8049999475479126,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 4.2146844236867764e-08,
+                "y": 0.7071067690849304,
+                "z": 4.2146844236867764e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": -10.848238825798035,
+                "y": 1.212761402130127,
+                "z": -4.582854270935059,
+                "scale": 1.8050000667572021
+            },
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/images/dixit-rules-page2.svg",
+            "emissive": true,
+            "keepAspectRatio": false,
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{36f98ac5-9676-4a88-acd7-7dd4d785ea92}",
+            "type": "Image",
+            "name": "Image.Rules1.001",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -9.660738945007324,
+                "y": -1.4652473032474518,
+                "z": -0.20204180479049683
+            },
+            "dimensions": {
+                "x": 1.8049999475479126,
+                "y": 1.8049999475479126,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 4.2146844236867764e-08,
+                "y": 0.7071067690849304,
+                "z": 4.2146844236867764e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": -10.84823889285326,
+                "y": 1.2127613350749016,
+                "z": -1.5828543901443481,
+                "scale": 1.805000200867653
+            },
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/images/dixit-rules-page1.svg",
+            "emissive": true,
+            "keepAspectRatio": false,
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{905b8cd3-a6a8-4eb0-9615-8d9310fa76cb}",
+            "type": "Image",
+            "name": "Image.Rules1",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -9.660738945007324,
+                "y": -1.4652473032474518,
+                "z": 2.7979581356048584
+            },
+            "dimensions": {
+                "x": 1.8049999475479126,
+                "y": 1.8049999475479126,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 4.2146844236867764e-08,
+                "y": 0.7071067690849304,
+                "z": 4.2146844236867764e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": -10.84823888540268,
+                "y": 1.2127613425254822,
+                "z": 1.4171456098556519,
+                "scale": 1.8050001859664917
+            },
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/images/dixit-cover.jpg",
+            "emissive": true,
+            "keepAspectRatio": false,
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{7178fe2f-bbb1-4fd5-81f2-6caaa24d8f89}",
+            "type": "Image",
+            "name": "Image.About",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 9.666047096252441,
+                "y": -0.6567029058933258,
+                "z": -2.0241808891296387
+            },
+            "dimensions": {
+                "x": 3.8050003051757812,
+                "y": 1.8050003051757812,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 4.2146844236867764e-08,
+                "y": -0.7071067690849304,
+                "z": -4.2146844236867764e-08,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": 7.478547066450119,
+                "y": 1.0213057696819305,
+                "z": -4.404993534088135,
+                "scale": 3.805000364780426
+            },
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/images/about.png",
+            "emissive": true,
+            "keepAspectRatio": false,
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{19f3b954-5d87-4a38-99f2-d67ae23a42f0}",
+            "type": "Model",
+            "name": "folding_chair",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 5.74909782409668,
+                "y": -3.1314147412776947,
+                "z": 5.763395309448242
+            },
+            "dimensions": {
+                "x": 0.48256248235702515,
+                "y": 0.8981882333755493,
+                "z": 0.5704184174537659
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.9848077297210693,
+                "z": 0.0,
+                "w": 0.17364822328090668
+            },
+            "queryAACube": {
+                "x": 5.015003859996796,
+                "y": 0.0,
+                "z": 4.835988700389862,
+                "scale": 0.8981882333755493
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{e81bbd0b-894d-47ef-a2d8-636ef300b0d9}",
+            "type": "Model",
+            "name": "folding_chair.001",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0.28500110153697733,
+                "y": -3.1314147412776947,
+                "z": 6.849854946136475
+            },
+            "dimensions": {
+                "x": 0.48256248235702515,
+                "y": 0.8981882333755493,
+                "z": 0.5704184174537659
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -1.0,
+                "z": 0.0,
+                "w": 1.9470718370939721e-07
+            },
+            "queryAACube": {
+                "x": -0.4490928575396538,
+                "y": 0.0,
+                "z": 5.9224483370780945,
+                "scale": 0.8981882333755493
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{c494b81c-87dd-4217-a20c-0b8d1b692951}",
+            "type": "Model",
+            "name": "folding_chair.002",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -2.5005345344543457,
+                "y": -3.1314147412776947,
+                "z": 6.5756072998046875
+            },
+            "dimensions": {
+                "x": 0.48256245255470276,
+                "y": 0.8981882333755493,
+                "z": 0.5704183578491211
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.9961947202682495,
+                "z": -0.0,
+                "w": 0.08715580403804779
+            },
+            "queryAACube": {
+                "x": -3.2346286177635193,
+                "y": 0.0,
+                "z": 5.6482009291648865,
+                "scale": 0.8981882333755493
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{133dc32e-08a6-46f9-a8d9-a44cbd347c5f}",
+            "type": "Model",
+            "name": "folding_chair.003",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -5.179099082946777,
+                "y": -3.1314147412776947,
+                "z": 5.763395309448242
+            },
+            "dimensions": {
+                "x": 0.48256248235702515,
+                "y": 0.8981882333755493,
+                "z": 0.5704184174537659
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.9848077297210693,
+                "z": -0.0,
+                "w": 0.17364822328090668
+            },
+            "queryAACube": {
+                "x": -5.913193047046661,
+                "y": 0.0,
+                "z": 4.835988700389862,
+                "scale": 0.8981882333755493
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{dbf2a8cf-71d2-43fb-9756-57ec5d17aa58}",
+            "type": "Model",
+            "name": "folding_chair.004",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -7.647827625274658,
+                "y": -3.1314147412776947,
+                "z": 4.444415092468262
+            },
+            "dimensions": {
+                "x": 0.48256248235702515,
+                "y": 0.8981882333755493,
+                "z": 0.5704184174537659
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.9659258127212524,
+                "z": -0.0,
+                "w": 0.2588190734386444
+            },
+            "queryAACube": {
+                "x": -8.381921589374542,
+                "y": 0.0,
+                "z": 3.5170084834098816,
+                "scale": 0.8981882333755493
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{08427565-e528-4aec-a2c7-2c9968984d4f}",
+            "type": "Model",
+            "name": "folding_chair.005",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.0705244541168213,
+                "y": -3.1314147412776947,
+                "z": 6.575608730316162
+            },
+            "dimensions": {
+                "x": 0.48256245255470276,
+                "y": 0.8981882333755493,
+                "z": 0.5704183578491211
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.996201753616333,
+                "z": 0.0,
+                "w": 0.08707516640424728
+            },
+            "queryAACube": {
+                "x": 2.336430609226227,
+                "y": 0.0,
+                "z": 5.648202359676361,
+                "scale": 0.8981882333755493
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{b46a1a57-aab3-4216-9559-8d564cb534e6}",
+            "type": "Model",
+            "name": "folding_chair.006",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 8.21782922744751,
+                "y": -3.1314147412776947,
+                "z": 4.444413423538208
+            },
+            "dimensions": {
+                "x": 0.48256248235702515,
+                "y": 0.8981882333755493,
+                "z": 0.5704184174537659
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.9659258127212524,
+                "z": 0.0,
+                "w": 0.2588190734386444
+            },
+            "queryAACube": {
+                "x": 7.483735263347626,
+                "y": 0.0,
+                "z": 3.5170066952705383,
+                "scale": 0.8981882333755493
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "shapeType": "static-mesh",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{7ce724c9-a751-4854-870b-9577982215f6}",
+            "type": "Model",
+            "name": "game_table",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 8.96500015258789,
+                "y": -3.1353675425052643,
+                "z": -3.9675092697143555
+            },
+            "dimensions": {
+                "x": 1.5,
+                "y": 0.8902828097343445,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 6.680000305175781,
+                "y": -1.5548587143421173,
+                "z": -6.445821762084961,
+                "scale": 4.0
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/game_table.glb",
+            "shapeType": "box",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{882da03b-dbad-4d6a-8aad-6cb43308e803}",
+            "type": "Model",
+            "name": "game_table.001",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 8.96500015258789,
+                "y": -3.1353675425052643,
+                "z": 0.10987970232963562
+            },
+            "dimensions": {
+                "x": 1.5,
+                "y": 0.8902828097343445,
+                "z": 4.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 6.680000305175781,
+                "y": -1.5548587143421173,
+                "z": -2.3684327602386475,
+                "scale": 4.0
+            },
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/game_table.glb",
+            "shapeType": "box",
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{c7959ece-6525-425e-8ca0-b894fd3c71b9}",
+            "type": "Box",
+            "name": "Plane.Sit",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 0.28500086441636086,
+                "y": -3.0234340131282806,
+                "z": 6.793755054473877
+            },
+            "dimensions": {
+                "x": 0.4825631380081177,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -0.24128055572509766,
+                "y": 0.3157932683825493,
+                "z": 6.074160985648632,
+                "scale": 0.48256315290927887
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{50baddde-d832-437d-9996-fd5b2cd933cb}",
+            "type": "Box",
+            "name": "Plane.Sit.001",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.0568034648895264,
+                "y": -3.0234340131282806,
+                "z": 6.497743606567383
+            },
+            "dimensions": {
+                "x": 0.4825631082057953,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.08715573698282242,
+                "z": -0.0,
+                "w": 0.9961947202682495
+            },
+            "queryAACube": {
+                "x": 2.494403123855591,
+                "y": 0.2796744704246521,
+                "z": 5.742030501365662,
+                "scale": 0.5548007488250732
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{b10ed804-34a1-4ab0-a750-0a308d2ed584}",
+            "type": "Box",
+            "name": "Plane.Sit.002",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 5.722055912017822,
+                "y": -3.0234340727329254,
+                "z": 5.689098358154297
+            },
+            "dimensions": {
+                "x": 0.4825631082057953,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.1736481636762619,
+                "z": -0.0,
+                "w": 0.9848077297210693
+            },
+            "queryAACube": {
+                "x": 5.131965637207031,
+                "y": 0.2519843578338623,
+                "z": 4.90569543838501,
+                "scale": 0.6101808547973633
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{233db681-dffd-4586-8175-de42e4172966}",
+            "type": "Box",
+            "name": "Plane.Sit.003",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 8.178296566009521,
+                "y": -3.0234340727329254,
+                "z": 4.375941038131714
+            },
+            "dimensions": {
+                "x": 0.4825631082057953,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.258819043636322,
+                "z": -0.0,
+                "w": 0.9659258127212524
+            },
+            "queryAACube": {
+                "x": 7.569786071777344,
+                "y": 0.23356413841247559,
+                "z": 3.57411789894104,
+                "scale": 0.6470212936401367
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{a10b261a-2924-4ff4-8e99-7e790aaa0067}",
+            "type": "Box",
+            "name": "Plane.Sit.004",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -2.4868052005767822,
+                "y": -3.0234340131282806,
+                "z": 6.497743129730225
+            },
+            "dimensions": {
+                "x": 0.4825631082057953,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.08715573698282242,
+                "z": 0.0,
+                "w": 0.9961947202682495
+            },
+            "queryAACube": {
+                "x": -3.0492055416107178,
+                "y": 0.2796744704246521,
+                "z": 5.742030501365662,
+                "scale": 0.5548007488250732
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{7ca6c460-0a55-431c-a331-a786247dee9a}",
+            "type": "Box",
+            "name": "Plane.Sit.005",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -5.152057647705078,
+                "y": -3.0234340131282806,
+                "z": 5.689098358154297
+            },
+            "dimensions": {
+                "x": 0.4825631082057953,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.1736481636762619,
+                "z": 0.0,
+                "w": 0.9848077297210693
+            },
+            "queryAACube": {
+                "x": -5.742147922515869,
+                "y": 0.251984179019928,
+                "z": 4.905694961547852,
+                "scale": 0.6101813316345215
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{009c14fb-1dff-4aa2-b5de-e6aeb26857a8}",
+            "type": "Box",
+            "name": "Plane.Sit.006",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -7.608295440673828,
+                "y": -3.0234340131282806,
+                "z": 4.3759424686431885
+            },
+            "dimensions": {
+                "x": 0.4825631082057953,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": -0.258819043636322,
+                "z": 0.0,
+                "w": 0.9659258127212524
+            },
+            "queryAACube": {
+                "x": -8.216805458068848,
+                "y": 0.23356443643569946,
+                "z": 3.5741195678710938,
+                "scale": 0.6470208168029785
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{46ca10e1-922d-49cb-a407-bdf0f18651ff}",
+            "type": "Box",
+            "name": "Plane.Sit.007",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 8.382161140441895,
+                "y": -2.530495673418045,
+                "z": 1.2670184969902039
+            },
+            "dimensions": {
+                "x": 0.4825631380081177,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.7071067690849304,
+                "z": -0.0,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": 7.855879247188568,
+                "y": 0.8087316155433655,
+                "z": 0.5474244356155396,
+                "scale": 0.4825631380081177
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{91084bdb-962a-4f59-a20c-19d83ad2a1b9}",
+            "type": "Box",
+            "name": "Plane.Sit.008",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 8.382161140441895,
+                "y": -2.530495673418045,
+                "z": -0.5829216241836548
+            },
+            "dimensions": {
+                "x": 0.4825631380081177,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.7071067690849304,
+                "z": -0.0,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": 7.855879247188568,
+                "y": 0.8087316155433655,
+                "z": -1.3025156259536743,
+                "scale": 0.4825631380081177
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{c7c810c1-ea6d-4235-8557-b6817f91f0ac}",
+            "type": "Box",
+            "name": "Plane.Sit.009",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 8.382161140441895,
+                "y": -2.530495673418045,
+                "z": -2.7524781227111816
+            },
+            "dimensions": {
+                "x": 0.4825631380081177,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.7071067690849304,
+                "z": -0.0,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": 7.855879187583923,
+                "y": 0.8087315559387207,
+                "z": -3.4720723628997803,
+                "scale": 0.4825632572174072
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        },
+        {
+            "id": "{96af5f87-35ef-43f2-b04f-1a438af27a29}",
+            "type": "Box",
+            "name": "Plane.Sit.010",
+            "lastEdited": 1685424520461556,
+            "created": 1685424520461556,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/scripts/sit/sitServer.js",
+            "userData": "{canClickOnModelToSit: true}",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "visible": false,
+            "locked": true,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 8.382161140441895,
+                "y": -2.530495673418045,
+                "z": -4.602418899536133
+            },
+            "dimensions": {
+                "x": 0.4825631380081177,
+                "y": 0.0,
+                "z": 0.45821866393089294
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.7071067690849304,
+                "z": -0.0,
+                "w": 0.7071067690849304
+            },
+            "queryAACube": {
+                "x": 7.855879068374634,
+                "y": 0.8087314367294312,
+                "z": -5.322012901306152,
+                "scale": 0.48256349563598633
+            },
+            "shape": "Cube",
+            "color": {
+                "red": 47430,
+                "green": 50745,
+                "blue": 52020
+            },
+            "parentID": "{3e4ec81f-c8df-4d62-9bb9-115655290f3e}"
+        }
+    ],
+    "Id": "{66aa31c4-a99d-4d1d-b999-2c933d029924}",
+    "Version": 133,
+    "Paths": {
+        "/": "/0.0,1.0,-0.0/0.0,0.0,-0.0,1.0"
+    }
+}

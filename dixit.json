@@ -2,147 +2,11 @@
     "DataVersion": 0,
     "Entities": [
         {
-            "id": "{90cbe10a-cca0-40b4-a7ae-3b5f9d495456}",
-            "type": "Zone",
-            "name": "Zone.Dixit",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
-            "clientOnly": false,
-            "avatarEntity": false,
-            "localEntity": false,
-            "isFacingAvatar": false,
-            "faceCamera": false,
-            "grab": {
-                "grabbable": false,
-                "equippableLeftRotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
-                    "w": 1
-                },
-                "equippableRightRotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
-                    "w": 1
-                }
-            },
-            "damping": 0.0,
-            "angularDamping": 0.0,
-            "position": {
-                "x": 0.0,
-                "y": 3.4000000655651093,
-                "z": -5.00000262260437
-            },
-            "dimensions": {
-                "x": 40.0000057220459,
-                "y": 27.19999986886978,
-                "z": 40.00000619888306
-            },
-            "rotation": {
-                "x": 0.0,
-                "y": 0.0,
-                "z": 0.0,
-                "w": 1
-            },
-            "queryAACube": {
-                "x": -10.000003099441528,
-                "y": -6.600003033876419,
-                "z": -15.000005722045898,
-                "scale": 20.000006198883057
-            },
-            "shapeType": "box",
-            "skybox": {
-                "url": "",
-                "color": {
-                    "red": 68,
-                    "green": 150,
-                    "blue": 243
-                }
-            },
-            "skyboxMode": "enabled",
-            "ambientLightMode": "enabled",
-            "ambientLight": {
-                "ambientIntensity": 0.5,
-                "ambientURL": ""
-            },
-            "keyLightMode": "enabled",
-            "keyLight": {
-                "direction": {
-                    "x": -6.181723932741079e-08,
-                    "y": -0.7071067094802856,
-                    "z": -0.7071068286895752
-                }
-            },
-            "intensity": 1.0,
-            "castShadows": false,
-            "shadowBias": 0.5,
-            "shadowMaxDistance": 40.0
-        },
-        {
-            "id": "{c1ff2983-3c07-45ed-bd0e-0bf3782aa1e4}",
-            "type": "Box",
-            "name": "Cube.Floor",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
-            "clientOnly": false,
-            "avatarEntity": false,
-            "localEntity": false,
-            "isFacingAvatar": false,
-            "faceCamera": false,
-            "grab": {
-                "grabbable": false,
-                "equippableLeftRotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
-                    "w": 1
-                },
-                "equippableRightRotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0,
-                    "w": 1
-                }
-            },
-            "damping": 0.0,
-            "angularDamping": 0.0,
-            "position": {
-                "x": 0.0,
-                "y": -3.4999999701976776,
-                "z": -2.384185791015625e-07
-            },
-            "dimensions": {
-                "x": 20.0,
-                "y": 0.19999992847442627,
-                "z": 20.0
-            },
-            "rotation": {
-                "x": 0.0,
-                "y": -1.0,
-                "z": 0.0,
-                "w": 1.9470718370939721e-07
-            },
-            "queryAACube": {
-                "x": -10.000003099441528,
-                "y": -10.100003004074097,
-                "z": -15.000005722045898,
-                "scale": 20.000006198883057
-            },
-            "shape": "Cube",
-            "color": {
-                "red": 204,
-                "green": 122,
-                "blue": 39
-            },
-            "parentID": "{90cbe10a-cca0-40b4-a7ae-3b5f9d495456}"
-        },
-        {
-            "id": "{d21397f5-8e09-4ed8-91b2-af8334b4b51d}",
+            "id": "{bb5d58f7-9407-43c0-b12d-88c9f3ebfac5}",
             "type": "Box",
             "name": "Cube.Wall",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
+            "lastEdited": 1685424020763160,
+            "created": 1685424020763160,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -167,8 +31,8 @@
             "angularDamping": 0.0,
             "position": {
                 "x": -6.258487701416016e-07,
-                "y": 0.09999993443489075,
-                "z": -7.250000238418579
+                "y": 3.5,
+                "z": -0.2500028610229492
             },
             "dimensions": {
                 "x": 16.0,
@@ -177,14 +41,14 @@
             },
             "rotation": {
                 "x": 0.0,
-                "y": -1.0,
-                "z": 0.0,
-                "w": 1.9470718370939721e-07
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
             },
             "queryAACube": {
                 "x": -8.000000953674316,
                 "y": -4.500000238418579,
-                "z": -20.25000309944153,
+                "z": -8.250003099441528,
                 "scale": 16.000000476837158
             },
             "shape": "Cube",
@@ -192,15 +56,14 @@
                 "red": 108,
                 "green": 108,
                 "blue": 108
-            },
-            "parentID": "{90cbe10a-cca0-40b4-a7ae-3b5f9d495456}"
+            }
         },
         {
-            "id": "{989fa5ce-5240-4df4-880d-92941de3b651}",
+            "id": "{e42ea2e0-1c8e-446e-a8ba-4ffe8a5335c6}",
             "type": "Text",
             "name": "Text.Screen",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
+            "lastEdited": 1685424020763160,
+            "created": 1685424020763160,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -227,8 +90,8 @@
             "angularDamping": 0.0,
             "position": {
                 "x": 1.9999992847442627,
-                "y": -0.40000006556510925,
-                "z": -6.9029457569122314
+                "y": 3.0,
+                "z": 0.09705162048339844
             },
             "dimensions": {
                 "x": 10.0,
@@ -237,15 +100,15 @@
             },
             "rotation": {
                 "x": 0.0,
-                "y": 3.2584136988589307e-07,
+                "y": 0.0,
                 "z": -0.0,
                 "w": 1.0
             },
             "queryAACube": {
                 "x": -3.0000007152557373,
-                "y": -2.0000001192092896,
-                "z": -16.90294849872589,
-                "scale": 10.000000238418579
+                "y": -1.9999998807907104,
+                "z": -4.902948260307312,
+                "scale": 9.999999761581421
             },
             "text": "Text",
             "lineHeight": 0.30000001192092896,
@@ -259,15 +122,14 @@
                 "red": 37,
                 "green": 37,
                 "blue": 37
-            },
-            "parentID": "{90cbe10a-cca0-40b4-a7ae-3b5f9d495456}"
+            }
         },
         {
-            "id": "{79785689-0ffd-4533-a066-e34126ee32d0}",
+            "id": "{8b7974f9-310b-42de-8778-a7c8e15e60af}",
             "type": "Text",
             "name": "Text.ButtonAbortGame",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
+            "lastEdited": 1685424020763160,
+            "created": 1685424020763160,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -292,24 +154,24 @@
             "angularDamping": 0.0,
             "position": {
                 "x": 3.500000238418579,
-                "y": -2.3999998569488525,
-                "z": -5.801332463306608e-07
+                "y": -2.4000000953674316,
+                "z": -5.811452865600586e-07
             },
             "dimensions": {
                 "x": 3.0,
-                "y": 0.6000000238418579,
+                "y": 0.6000002026557922,
                 "z": 0.01
             },
             "rotation": {
-                "x": -3.1940947760140008e-22,
-                "y": 3.178649876645068e-08,
-                "z": -1.0048589869535943e-14,
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
                 "w": 1.0
             },
             "queryAACube": {
                 "x": 3.999999523162842,
-                "y": -0.8999999165534973,
-                "z": -13.40295124053955,
+                "y": -0.9000000059604645,
+                "z": -1.4029489643871784,
                 "scale": 3.0
             },
             "text": "Abort game",
@@ -324,14 +186,14 @@
                 "green": 49,
                 "blue": 49
             },
-            "parentID": "{989fa5ce-5240-4df4-880d-92941de3b651}"
+            "parentID": "{e42ea2e0-1c8e-446e-a8ba-4ffe8a5335c6}"
         },
         {
-            "id": "{591e43e7-a976-4f8e-bb3e-f1dd1a56bb44}",
+            "id": "{0a88f70e-06cd-41c3-87e7-2d9e8ce5a1a2}",
             "type": "Text",
             "name": "Text.ButtonOpenPanel",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
+            "lastEdited": 1685424020763160,
+            "created": 1685424020763160,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -357,24 +219,24 @@
             "position": {
                 "x": -3.5,
                 "y": -2.4000000953674316,
-                "z": -2.280889475514414e-06
+                "z": -2.9727816581726074e-06
             },
             "dimensions": {
                 "x": 3.0,
-                "y": 0.6000000238418579,
+                "y": 0.6000001430511475,
                 "z": 0.01
             },
             "rotation": {
-                "x": -3.1940947760140008e-22,
-                "y": 3.178649876645068e-08,
-                "z": -1.0048589869535943e-14,
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
                 "w": 1.0
             },
             "queryAACube": {
-                "x": -3.0000007152557373,
-                "y": -0.9000000208616541,
-                "z": -13.402948439121275,
-                "scale": 3.0000001192093464
+                "x": -3.000000476837158,
+                "y": -0.8999999463558197,
+                "z": -1.402951292693615,
+                "scale": 2.9999998807907104
             },
             "text": "Open Panel",
             "lineHeight": 0.30000001192092896,
@@ -388,14 +250,14 @@
                 "green": 49,
                 "blue": 49
             },
-            "parentID": "{989fa5ce-5240-4df4-880d-92941de3b651}"
+            "parentID": "{e42ea2e0-1c8e-446e-a8ba-4ffe8a5335c6}"
         },
         {
-            "id": "{e075decb-da2f-4ec6-a457-4bd663d9c54c}",
+            "id": "{2a22d79b-6300-4e6c-9547-7edd597b74d5}",
             "type": "Text",
             "name": "Text.ButtonScreen",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
+            "lastEdited": 1685424020763160,
+            "created": 1685424020763160,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -419,26 +281,26 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 5.404076830473059e-08,
+                "x": 0.0,
                 "y": -1.4500000476837158,
-                "z": 0.10000038146972656
+                "z": 0.09999935328960419
             },
             "dimensions": {
                 "x": 3.200000047683716,
-                "y": 0.699999988079071,
+                "y": 0.7000001668930054,
                 "z": 0.01
             },
             "rotation": {
-                "x": -1.5970473880070004e-22,
-                "y": 3.178649876645068e-08,
-                "z": -5.024294934767972e-15,
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
                 "w": 1.0
             },
             "queryAACube": {
-                "x": 0.39999938011169434,
-                "y": -0.05000007152557373,
-                "z": -13.402948021888733,
-                "scale": 3.200000047683716
+                "x": 0.3999992609024048,
+                "y": -0.050000131130218506,
+                "z": -1.4029491096735,
+                "scale": 3.2000001668930054
             },
             "text": "New game",
             "lineHeight": 0.30000001192092896,
@@ -452,14 +314,14 @@
                 "green": 118,
                 "blue": 3
             },
-            "parentID": "{989fa5ce-5240-4df4-880d-92941de3b651}"
+            "parentID": "{e42ea2e0-1c8e-446e-a8ba-4ffe8a5335c6}"
         },
         {
-            "id": "{886f79b1-22bc-43d3-ade6-f032ff70de77}",
+            "id": "{11987750-9424-4aa4-8903-7ed3972c685c}",
             "type": "Text",
             "name": "Text.Players",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
+            "lastEdited": 1685424020763160,
+            "created": 1685424020763160,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -485,23 +347,23 @@
             "position": {
                 "x": -7.5,
                 "y": 0.0,
-                "z": -2.9802718017890584e-06
+                "z": -2.868473529815674e-06
             },
             "dimensions": {
-                "x": 3.0,
+                "x": 3.000000238418579,
                 "y": 4.0,
                 "z": 0.01
             },
             "rotation": {
-                "x": -1.5970473880070004e-22,
-                "y": 3.178649876645068e-08,
-                "z": -5.024294934767972e-15,
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
                 "w": 1.0
             },
             "queryAACube": {
-                "x": -7.500000953674316,
+                "x": -7.500000476837158,
                 "y": 1.0,
-                "z": -13.902946472167969,
+                "z": -1.9029512479901314,
                 "scale": 4.0
             },
             "text": "Text",
@@ -516,14 +378,14 @@
                 "green": 37,
                 "blue": 37
             },
-            "parentID": "{989fa5ce-5240-4df4-880d-92941de3b651}"
+            "parentID": "{e42ea2e0-1c8e-446e-a8ba-4ffe8a5335c6}"
         },
         {
-            "id": "{87e2292f-3951-42e6-8edd-320144a048ee}",
+            "id": "{8c862dff-de4a-4fa9-b7f6-7b8ec2d540f9}",
             "type": "Text",
             "name": "Text.PlayersTitle",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
+            "lastEdited": 1685424020763160,
+            "created": 1685424020763160,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -549,23 +411,23 @@
             "position": {
                 "x": -7.5,
                 "y": 2.5,
-                "z": -2.9802718017890584e-06
+                "z": -2.7567148208618164e-06
             },
             "dimensions": {
                 "x": 3.0,
-                "y": 1.0,
+                "y": 1.000000238418579,
                 "z": 0.01
             },
             "rotation": {
-                "x": -1.5970473880070004e-22,
-                "y": 3.178649876645068e-08,
-                "z": -5.024294934767972e-15,
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
                 "w": 1.0
             },
             "queryAACube": {
-                "x": -7.000000953674316,
+                "x": -7.000000476837158,
                 "y": 4.0,
-                "z": -13.402946472167969,
+                "z": -1.4029511362314224,
                 "scale": 3.0
             },
             "text": "Players",
@@ -578,14 +440,14 @@
                 "green": 0,
                 "blue": 0
             },
-            "parentID": "{989fa5ce-5240-4df4-880d-92941de3b651}"
+            "parentID": "{e42ea2e0-1c8e-446e-a8ba-4ffe8a5335c6}"
         },
         {
-            "id": "{6d7cb03a-057f-41b6-8ca3-d897ae8eee40}",
+            "id": "{2931b715-35ce-415e-bc59-c71fa841da9c}",
             "type": "Text",
             "name": "Text.ScreenTitle",
-            "lastEdited": 1685296780913381,
-            "created": 1685296780913381,
+            "lastEdited": 1685424020763160,
+            "created": 1685424020763160,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -609,26 +471,26 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 1.1920928955078125e-07,
+                "x": 0.0,
                 "y": 2.5,
-                "z": 7.768663642070128e-14
+                "z": -3.725290298461914e-07
             },
             "dimensions": {
                 "x": 10.0,
-                "y": 1.0,
+                "y": 1.0000039339065552,
                 "z": 0.01
             },
             "rotation": {
-                "x": -1.5970473880070004e-22,
-                "y": 3.178649876645068e-08,
-                "z": -5.024294934767972e-15,
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
                 "w": 1.0
             },
             "queryAACube": {
                 "x": -3.0000007152557373,
-                "y": 0.49999988079071045,
-                "z": -16.90294849872589,
-                "scale": 10.000000238418579
+                "y": 0.5000001192092896,
+                "z": -4.902948632836342,
+                "scale": 9.999999761581421
             },
             "text": "Dixit",
             "backgroundAlpha": 0.0,
@@ -640,12 +502,9 @@
                 "green": 0,
                 "blue": 0
             },
-            "parentID": "{989fa5ce-5240-4df4-880d-92941de3b651}"
+            "parentID": "{e42ea2e0-1c8e-446e-a8ba-4ffe8a5335c6}"
         }
     ],
-    "Id": "{9f473f65-426c-4ec7-a994-e8feca0fb1aa}",
-    "Version": 133,
-    "Paths": {
-        "/": "/0.0,1.0,-0.0/0.0,0.0,-0.0,1.0"
-    }
+    "Id": "{22f3571e-a38e-40f8-8f4f-2d680dd49bfb}",
+    "Version": 133
 }
