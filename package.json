@@ -4,8 +4,11 @@
   "description": "Dixit game script for Overte VR.",
   "main": "overte-dixit",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine \"tests/*.js\""
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^5.0.0"
+  }
 }

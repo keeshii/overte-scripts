@@ -20,10 +20,14 @@
   };
 
   DixitServer.prototype.preload = function (entityId) {
-    this.dixit.screen = new DixitScreen(entityId);
-    this.dixit.screen.findEntities();
-    this.dixit.init();
-    this.dixit.renderPlayers();
+    var dixit = this.dixit;
+    dixit.screen = new DixitScreen(entityId);
+
+    // Wait for the world json to load before initialization
+    Script.setTimeout(function () {
+      dixit.screen.findEntities();
+      dixit.init();
+    }, 500);
   };
 
   DixitServer.prototype.unload = function() {

@@ -33,6 +33,7 @@
 
     ArrayUtils.shuffle(this.images);
     this.renderScreen();
+    this.renderPlayers();
   };
 
   Dixit.prototype.draw = function(n) {
@@ -535,8 +536,6 @@
           this.callClient(player.sessionId, 'closePanel', null);
         }
         this.init();
-        this.renderScreen();
-        this.renderPlayers();
         break;
     }
   };
