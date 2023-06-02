@@ -34,7 +34,7 @@
     return result;
   };
 
-  ArrayUtils.find = function(arr, key, value) {
+  ArrayUtils.findItem = function(arr, key, value) {
     var i;
     for (i = 0; i < arr.length; i++) {
       if (arr[i][key] === value) {

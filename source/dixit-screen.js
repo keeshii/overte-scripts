@@ -1,5 +1,7 @@
 "use strict";
 
+/* global DixitMessages */
+
 (function (global) {
 
   Script.include('./messages.js');

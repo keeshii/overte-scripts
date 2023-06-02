@@ -1,5 +1,7 @@
 "use strict";
 
+/* global Dixit, DixitScreen */
+
 ((typeof module !== 'undefined' ? module : {}).exports = function () {
 
   Script.include([
@@ -17,7 +19,7 @@
       'handleClick',
       'applyHandCard'
     ];
-  };
+  }
 
   DixitServer.prototype.preload = function (entityId) {
     var dixit = this.dixit;
@@ -60,7 +62,9 @@
     var cardIndexes = [];
     try {
       cardIndexes = JSON.parse(params[1]);
-    } catch(e) { }
+    } catch(e) {
+      // error ignored
+    }
     if (cardIndexes.length > 0) {
       this.dixit.applyHandCard(sessionId, cardIndexes);
     }

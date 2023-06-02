@@ -25,7 +25,7 @@ describe("ArrayUtils", () => {
         // given
         const input = [{ x: 1 }, { x: 2 }, { x: 1 }];
         // when
-        const result = ArrayUtils.find(input, 'x', 2);
+        const result = ArrayUtils.findItem(input, 'x', 2);
         // then
         expect(result).toEqual({x: 2});
     });

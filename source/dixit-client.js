@@ -1,5 +1,7 @@
 "use strict";
 
+/* global DixitPanel */
+
 ((typeof module !== 'undefined' ? module : {}).exports = function () {
 
     Script.include('./dixit-panel.js');
@@ -95,7 +97,9 @@
       var images = null;
       try {
         images = JSON.parse(params[0]);
-      } catch (e) { }
+      } catch (e) {
+        // ignored
+      }
       this.panel.setHandImages(images);
     };
 

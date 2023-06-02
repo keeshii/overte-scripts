@@ -10,7 +10,7 @@ The [dixit-world.json](https://raw.githubusercontent.com/keeshii/overte-dixit/ma
 
 ## Unit tests
 
-To run unit tests, nodejs dependencies must be installed.
+To run unit tests and lint, nodejs dependencies must be installed.
 
 ```
 npm install
@@ -20,6 +20,7 @@ Then run the `test` script:
 
 ```
 npm run test
+npm run lint
 ```
 
 ### License

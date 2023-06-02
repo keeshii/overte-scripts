@@ -1,5 +1,7 @@
 "use strict";
 
+/* global ArrayUtils, DixitImagesData, DixitMessages */
+
 (function (global) {
 
   Script.include([
@@ -338,14 +340,14 @@
 
     // Players are sending their cards
     if (this.screenImages.length < this.getExpectedScreenImagesCount()) {
-      player = ArrayUtils.find(this.players, 'sessionId', sessionId);
+      player = ArrayUtils.findItem(this.players, 'sessionId', sessionId);
       if (player === null) {
         return;
       }
 
       cards = [];
       for (i = 0; i < cardIndexes.length; i++) {
-        screenImage = ArrayUtils.find(this.screenImages, 'image', player.handImages[cardIndexes[i]]);
+        screenImage = ArrayUtils.findItem(this.screenImages, 'image', player.handImages[cardIndexes[i]]);
         // Card already selected
         if (screenImage !== null) {
           return false;
@@ -380,7 +382,7 @@
     }
 
     if (this.votesLeft.indexOf(sessionId) !== -1) {
-      player = ArrayUtils.find(this.players, 'sessionId', sessionId);
+      player = ArrayUtils.findItem(this.players, 'sessionId', sessionId);
       index = this.votesLeft.indexOf(sessionId);
 
       // Not allowed to vote on your own card
@@ -407,7 +409,7 @@
   };
   
   Dixit.prototype.addPlayer = function(sessionId, name) {
-    if (ArrayUtils.find(this.players, 'sessionId', sessionId)) {
+    if (ArrayUtils.findItem(this.players, 'sessionId', sessionId)) {
       return;
     }
     if (this.players.length >= MAX_PLAYERS) {
@@ -431,7 +433,7 @@
   };
 
   Dixit.prototype.getHandImages = function(sessionId) {
-    var player = ArrayUtils.find(this.players, 'sessionId', sessionId);
+    var player = ArrayUtils.findItem(this.players, 'sessionId', sessionId);
     var result, i;
 
     if (!player) {
@@ -452,7 +454,7 @@
   };
 
   Dixit.prototype.getSubmitCount = function(sessionId) {
-    var player = ArrayUtils.find(this.players, 'sessionId', sessionId);
+    var player = ArrayUtils.findItem(this.players, 'sessionId', sessionId);
     if (!player) {
       this.callClient(sessionId, 'setSubmitCount', 0);
       return;
