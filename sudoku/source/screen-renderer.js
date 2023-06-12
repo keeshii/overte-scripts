@@ -74,7 +74,8 @@
           textEffect: 'outline fill',
           textEffectColor: { red: 0, green: 0, blue: 0 },
           textEffectThickness: 0.3,
-          unlit: true
+          unlit: true,
+          userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
         });
 
         this.digitIds.push(digitId);

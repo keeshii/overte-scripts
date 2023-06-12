@@ -11,7 +11,7 @@
   var DIGIR_MARGIN = 0.01;
   var MESSAGE_DURATION = 3; // 3 seconds
 
-  var COLOR_WHITE = { red: 255, green: 255, blue: 255 };
+  var COLOR_LIGHT = { red: 234, green: 237, blue: 237 };
   var COLOR_DARK = { red: 49, green: 49, blue: 49 };
 
   function SudokuOverlay() {
@@ -58,11 +58,12 @@
         localPosition: position,
         text: value,
         lineHeight: 0.1,
-        backgroundColor: COLOR_WHITE,
+        backgroundColor: COLOR_LIGHT,
         textColor: COLOR_DARK,
         topMargin: 0.025,
         unlit: true,
-        alignment: "center"
+        alignment: "center",
+        userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
       }, 'local');
     }
 
@@ -78,11 +79,12 @@
       localPosition: position,
       text: "_",
       lineHeight: 0.1,
-      backgroundColor: COLOR_WHITE,
+      backgroundColor: COLOR_LIGHT,
       textColor: COLOR_DARK,
       topMargin: 0.025,
       unlit: true,
-      alignment: "center"
+      alignment: "center",
+      userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
     }, 'local');
 
     x = DIGIT_SIZE + DIGIR_MARGIN;
@@ -97,10 +99,11 @@
       text: "X",
       lineHeight: 0.1,
       backgroundColor: COLOR_DARK,
-      textColor: COLOR_WHITE,
+      textColor: COLOR_LIGHT,
       topMargin: 0.025,
       unlit: true,
-      alignment: "center"
+      alignment: "center",
+      userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
     }, 'local');
   };
 
@@ -139,11 +142,12 @@
         localPosition: position,
         text: DIFFICULTY_LABELS[i],
         lineHeight: 0.1,
-        backgroundColor: COLOR_WHITE,
+        backgroundColor: COLOR_LIGHT,
         textColor: COLOR_DARK,
         topMargin: 0.025,
         unlit: true,
-        alignment: "center"
+        alignment: "center",
+        userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
       }, 'local');
     }
 
@@ -159,10 +163,11 @@
       text: "Cancel",
       lineHeight: 0.1,
       backgroundColor: COLOR_DARK,
-      textColor: COLOR_WHITE,
+      textColor: COLOR_LIGHT,
       topMargin: 0.025,
       unlit: true,
-      alignment: "center"
+      alignment: "center",
+      userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
     }, 'local');
   };
 
@@ -195,17 +200,17 @@
       backgroundColor: { r: 0, g: 0, b: 0 },
       backgroundAlpha: 0,                    
       lifetime: MESSAGE_DURATION,               
-      userData: '{"grabbableKey": {"grabbable": false, "triggerable": false}}'     
+      userData: '{"grabbableKey": {"grabbable": false, "triggerable": false}}'
     };
 
     if (HMD.active) {
-      properties.parentId = MyAvatar.sessionUUID;
+      properties.parentID = MyAvatar.sessionUUID;
       properties.parentJointIndex = MyAvatar.getJointIndex('Head');
     } else {
       cameraPosition = Camera.position;
       textPosition = Vec3.sum(cameraPosition,Vec3.multiplyQbyV(Camera.orientation, { x: 0, y: 0, z: -2 }));
       localPosition = Entities.worldToLocalPosition(textPosition, Camera.cameraEntity);
-      properties.parentId = Camera.cameraEntity;
+      properties.parentID = Camera.cameraEntity;
       properties.localPosition = localPosition;
     }
 
