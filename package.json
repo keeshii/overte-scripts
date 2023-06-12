@@ -4,8 +4,8 @@
   "description": "Dixit game script for Overte VR.",
   "main": "overte-dixit",
   "scripts": {
-    "test": "jasmine \"tests/*.js\"",
-    "lint": "eslint source"
+    "test": "jasmine \"dixit/tests/*.js\" \"sudoku/tests/*.js\"",
+    "lint": "eslint dixit/source sudoku/source"
   },
   "author": "",
   "license": "MIT",

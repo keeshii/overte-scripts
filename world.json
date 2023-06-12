@@ -83,8 +83,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/source/dixit-client.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/source/dixit-server.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/dixit/source/dixit-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/dixit/source/dixit-server.js",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
@@ -3253,7 +3253,7 @@
                 "z": 4.835988700389862,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3308,7 +3308,7 @@
                 "z": 5.9224483370780945,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3363,7 +3363,7 @@
                 "z": 5.6482009291648865,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3418,7 +3418,7 @@
                 "z": 4.835988700389862,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3473,7 +3473,7 @@
                 "z": 3.5170084834098816,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3528,7 +3528,7 @@
                 "z": 5.648202359676361,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3583,7 +3583,7 @@
                 "z": 3.5170066952705383,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3638,7 +3638,7 @@
                 "z": -6.445821762084961,
                 "scale": 4.0
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/game_table.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/models/game_table.glb",
             "shapeType": "box",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3693,7 +3693,7 @@
                 "z": -2.3684327602386475,
                 "scale": 4.0
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master//world/models/game_table.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/models/game_table.glb",
             "shapeType": "box",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },

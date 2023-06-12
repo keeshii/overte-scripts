@@ -4,9 +4,9 @@ The project implements the rules of the popular board game Dixit. The card image
 
 ## Installation
 
-To add a game to your world, simply import the [dixit.json](https://raw.githubusercontent.com/keeshii/overte-dixit/master/dixit.json) file via Create App. This file defines the minimum number of objects needed to run the game.
+To add a game to your world, simply import the [dixit.json](https://raw.githubusercontent.com/keeshii/overte-dixit/master/dixit/dixit.json) file via Create App. This file defines the minimum number of objects needed to run the game.
 
-The [dixit-world.json](https://raw.githubusercontent.com/keeshii/overte-dixit/master/dixit-world.json) file additionally contains a skybox and a room with chairs. Both of these files were exported from blender with the `io_export_overte` plugin. You will find the blender source file in the `blender` folder.
+The [world.json](https://raw.githubusercontent.com/keeshii/overte-dixit/master/world.json) file additionally contains a skybox and a room with chairs. Both of these files were exported from blender with the `io_export_overte` plugin. You will find the blender source file in the `blender` folder.
 
 ## Unit tests
 

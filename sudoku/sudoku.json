@@ -1,0 +1,196 @@
+{
+    "DataVersion": 0,
+    "Entities": [
+        {
+            "id": "{d117c9bf-0b82-405f-a088-59b465b62d01}",
+            "type": "Image",
+            "name": "Image.Sudoku",
+            "lastEdited": 1686562109512161,
+            "created": 1686562109512161,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/sudoku/source/sudoku-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/sudoku/source/sudoku-server.js",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 7.450580596923828e-09,
+                "y": 2.3000001907348633,
+                "z": -0.0
+            },
+            "dimensions": {
+                "x": 3.200000047683716,
+                "y": 3.200000047683716,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -1.6000000834465027,
+                "y": 0.7000001668930054,
+                "z": -1.6000000834465027,
+                "scale": 3.2000001668930054
+            },
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/sudoku/assets/board.svg",
+            "emissive": true
+        },
+        {
+            "id": "{0edd983e-655c-4b09-944c-ab9918c4e030}",
+            "type": "Text",
+            "name": "Text.Hint",
+            "lastEdited": 1686562109512161,
+            "created": 1686562109512161,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 1.0,
+                "y": -1.9000000953674316,
+                "z": -0.0
+            },
+            "dimensions": {
+                "x": 1.2000000476837158,
+                "y": 0.3999999761581421,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.3999999761581421,
+                "y": -0.19999992847442627,
+                "z": -0.6000000238418579,
+                "scale": 1.2000000476837158
+            },
+            "text": "Hint",
+            "lineHeight": 0.20000000298023224,
+            "alignment": "center",
+            "topMargin": 0.10000000149011612,
+            "unlit": true,
+            "textColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "backgroundColor": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "parentID": "{d117c9bf-0b82-405f-a088-59b465b62d01}"
+        },
+        {
+            "id": "{aa788f61-7f4e-4163-b72c-815f2b525579}",
+            "type": "Text",
+            "name": "Text.NewGame",
+            "lastEdited": 1686562109512161,
+            "created": 1686562109512161,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -0.9999998807907104,
+                "y": -1.9000000953674316,
+                "z": -0.0
+            },
+            "dimensions": {
+                "x": 1.2000000476837158,
+                "y": 0.3999999761581421,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -1.5999999046325684,
+                "y": -0.19999992847442627,
+                "z": -0.6000000238418579,
+                "scale": 1.2000000476837158
+            },
+            "text": "New Game",
+            "lineHeight": 0.20000000298023224,
+            "alignment": "center",
+            "topMargin": 0.10000000149011612,
+            "unlit": true,
+            "textColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "backgroundColor": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "parentID": "{d117c9bf-0b82-405f-a088-59b465b62d01}"
+        }
+    ],
+    "Id": "{a16ef0e6-7a34-4e88-bca8-aec1e5742f48}",
+    "Version": 133
+}

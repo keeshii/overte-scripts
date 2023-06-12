@@ -89,7 +89,7 @@
     "images/084.jpg"
   ];
 
-  var BASE_URL = Script.resolvePath(".");
+  var BASE_URL = Script.resolvePath("..");
   var i;
 
   for (i = 0; i < DixitImagesData.length; i++) {
