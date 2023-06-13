@@ -10,7 +10,7 @@
   var SCREEN_IMAGE_HEIGHT = SCREEN_IMAGE_WIDTH * 1.5;
   var SCREEN_MARGIN = 0.05;
   var SCREEN_OFFSET_Y = -0.25;
-  var CARDBACK = Script.resolvePath('./images/cardback.jpg');
+  var CARDBACK = Script.resolvePath('../images/cardback.jpg');
 
   var COLOR_GREEN = { red: 19, green: 118, blue: 3 };
   var COLOR_RED = { red: 196, green: 26, blue: 0 };

@@ -62,8 +62,7 @@
       rotation: rotation,
       dimensions: { x: PANEL_WIDTH, y: PANEL_HEIGHT, z: 0.01 },
       unlit: true,
-      text: '',
-      userData: '{"grabbableKey": {"grabbable": true, "triggerable": false}}'
+      text: ''
     }, 'local');
 
     x = (-PANEL_WIDTH + (PANEL_WIDTH - 2 * PANEL_BUTTON_WIDTH) / 3 + PANEL_BUTTON_WIDTH) / 2;

@@ -18,11 +18,10 @@
   var HAND_SIZE = 6;
   var WINNER_POINTS = 30;
 
-  function Dixit() {
-    this.images = DixitImagesData.slice();
-  }
+  function Dixit() { }
 
   Dixit.prototype.init = function() {
+    this.images = DixitImagesData.slice();
     this.players = [];
     this.narratorIndex = -1;
     this.screenImages = [];
