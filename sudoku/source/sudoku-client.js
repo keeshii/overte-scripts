@@ -2,7 +2,7 @@
 
 /* global
     Sudoku, SudokuServer, SudokuOverlay, SoundCache, Audio, CLIENT_SIDE_ONLY,
-    SUCCESS_SOUND, ERROR_SOUND, CLICK_SOUND, MESSAGE_SOLVED, MESSAGE_CLICK,
+    HMD, SUCCESS_SOUND, ERROR_SOUND, CLICK_SOUND, MESSAGE_SOLVED, MESSAGE_CLICK,
     MESSAGE_NO_SOLUTION, BUTTON_NEW_GAME, BUTTON_HINT, BUTTON_START, EMPTY
  */
 
@@ -15,12 +15,15 @@
     './sudoku-server-class.js'
   ]);
 
+  var CLICK_THROTTLE = 300;
+
   function SudokuClient() {
     this.sudoku = new Sudoku();
     this.index = '-1';
     this.entityId = '';
     this.server = null;
     this.mousePressOnEntityFn = null;
+    this.lastClickTime = 0;
     this.successSound = null;
     this.errorSound = null;
     this.clickSound = null;
@@ -113,7 +116,7 @@
 
   SudokuClient.prototype.onMousePress = function (entityId, event) {
     var properties, parentId, name;
-    var match, value, state;
+    var match, value, state, clickTime;
 
     if (event.button !== 'Primary') {
       return;
@@ -122,12 +125,19 @@
     properties = Entities.getEntityProperties(entityId, ["name", "text", "parentID"]);
     parentId = properties.parentID;
     name = properties.name;
+    clickTime = Date.now();
 
     if (parentId !== this.entityId && parentId !== this.overlay.entityId) {
       return;
     }
 
+    // Prevents clicks on the board right after closing the overlay
+    if (HMD.active && this.lastClickTime + CLICK_THROTTLE > clickTime) {
+      return;
+    }
+
     if (name === 'Text.Cancel') {
+      this.lastClickTime = clickTime;
       this.overlay.close();
       this.index = '-1';
       return;
@@ -135,6 +145,7 @@
 
     match = name.match(/^Text.Digit\[(\d+)\]$/);
     if (match !== null) {
+      this.lastClickTime = clickTime;
       this.overlay.close();
       this.index = match[1];
       this.callServer('clickDigit', [this.index]);
@@ -148,6 +159,7 @@
         return; // disabled button, ignore
       }
       this.callServer('setDigit', [this.index, value]);
+      this.lastClickTime = clickTime;
       this.overlay.close();
       this.index = '-1';
       return;
@@ -155,6 +167,7 @@
 
     match = name.match(/^Text.NewGame\[(\d+)\]$/);
     if (match !== null) {
+      this.lastClickTime = clickTime;
       this.overlay.close();
       value = parseInt(match[1], 10);
       state = value ? this.sudoku.generate(value) : '';

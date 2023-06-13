@@ -179,10 +179,6 @@
       this.messageId = '';
     }
 
-    if (color === undefined) {
-      color = COLOR_DARK;
-    }
-
     properties = {
       type: 'Text',
       name: 'Text.SudokuMessage',                       
@@ -214,7 +210,7 @@
       properties.localPosition = localPosition;
     }
 
-    Entities.addEntity(properties, 'local');
+    this.messageId = Entities.addEntity(properties, 'local');
   };
 
   SudokuOverlay.prototype.close = function() {

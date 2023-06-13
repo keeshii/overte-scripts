@@ -62,7 +62,8 @@
       rotation: rotation,
       dimensions: { x: PANEL_WIDTH, y: PANEL_HEIGHT, z: 0.01 },
       unlit: true,
-      text: ''
+      text: '',
+      userData: '{"grabbableKey": {"grabbable": true, "triggerable": false}}'
     }, 'local');
 
     x = (-PANEL_WIDTH + (PANEL_WIDTH - 2 * PANEL_BUTTON_WIDTH) / 3 + PANEL_BUTTON_WIDTH) / 2;
@@ -79,7 +80,8 @@
       lineHeight: 0.1,
       backgroundColor: COLOR_DARK,
       unlit: true,
-      alignment: "center"
+      alignment: "center",
+      userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
     }, 'local');
 
     x = (PANEL_WIDTH - (PANEL_WIDTH - 2 * PANEL_BUTTON_WIDTH) / 3 - PANEL_BUTTON_WIDTH) / 2;
@@ -96,7 +98,8 @@
       lineHeight: 0.1,
       backgroundColor: COLOR_DISABLED,
       unlit: true,
-      alignment: "center"
+      alignment: "center",
+      userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
     }, 'local');
   };
 
@@ -150,11 +153,12 @@
         lineHeight: 0.1,
         backgroundColor: COLOR_GREEN,
         unlit: true,
-        alignment: "center"
+        alignment: "center",
+        userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
       }, 'local');
 
     } else if (this.handImages.length === 0) {
-      this.joinButtonId = Entities.addEntity({
+      this.messageId = Entities.addEntity({
         type: "Text",
         name: "Text.PanelMessage",
         parentID: this.entityId,
@@ -166,7 +170,8 @@
         backgroundColor: COLOR_GREEN,
         backgroundAlpha: 0,
         unlit: true,
-        alignment: "center"
+        alignment: "center",
+        userData: '{"grabbableKey": {"grabbable": false, "triggerable": false}}'
       }, 'local');
 
     } else {
@@ -185,7 +190,8 @@
           dimensions: { x: PANEL_IMAGE_WIDTH, y: PANEL_IMAGE_HEIGHT, z: 0.01 },
           localPosition: position,
           emissive: true,
-          imageURL: this.handImages[i]
+          imageURL: this.handImages[i],
+          userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
         }, 'local');
 
         this.imagesId.push(imageId);
