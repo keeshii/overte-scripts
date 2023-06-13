@@ -10,8 +10,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/sudoku/source/sudoku-client.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/sudoku/source/sudoku-server.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/sudoku/source/sudoku-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/sudoku/source/sudoku-server.js",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
@@ -53,7 +53,7 @@
                 "z": -1.6000000834465027,
                 "scale": 3.2000001668930054
             },
-            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/sudoku/assets/board.svg",
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/sudoku/assets/board.svg",
             "emissive": true
         },
         {

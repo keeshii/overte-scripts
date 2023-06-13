@@ -1,4 +1,4 @@
-# Overte World
+# Overte Scripts
 
 The project contains an example world for the [Overte VR](https://overte.org/). The repository was created as part of learning how to write scripts and use blender.
 

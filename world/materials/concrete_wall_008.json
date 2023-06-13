@@ -5,9 +5,9 @@
       "name": "concrete_wall_008",
       "model": "hifi_pbr",
       "albedo": [1, 1, 1],
-      "albedoMap": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/textures/concrete_wall_008_diff_1k.jpg",
-      "roughnessMap": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/textures/concrete_wall_008_rough_1k.jpg",
-      "normalMap": "https://raw.githubusercontent.com/keeshii/overte-dixit/master/world/materials/textures/concrete_wall_008_nor_gl_1k.jpg"
+      "albedoMap": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/textures/concrete_wall_008_diff_1k.jpg",
+      "roughnessMap": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/textures/concrete_wall_008_rough_1k.jpg",
+      "normalMap": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/textures/concrete_wall_008_nor_gl_1k.jpg"
     }
   ]
 }

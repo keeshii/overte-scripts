@@ -53,13 +53,13 @@
             },
             "shapeType": "box",
             "skybox": {
-                "url": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/images/skybox.png"
+                "url": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/skybox.png"
             },
             "skyboxMode": "enabled",
             "ambientLightMode": "enabled",
             "ambientLight": {
                 "ambientIntensity": 0.5,
-                "ambientURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/images/skybox.png"
+                "ambientURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/skybox.png"
             },
             "keyLightMode": "enabled",
             "keyLight": {
@@ -83,8 +83,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/dixit/source/dixit-client.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/dixit/source/dixit-server.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/dixit/source/dixit-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/dixit/source/dixit-server.js",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
@@ -627,7 +627,7 @@
                 "scale": 4.088324666023254
             },
             "parentID": "{b80328e5-d963-4ac1-973b-fc64061ee63e}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/brick_wall_06.json?t=2",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
             "priority": 1,
             "materialMappingScale": {
                 "x": 0.4000000059604645,
@@ -685,7 +685,7 @@
                 "z": 8.422414660453796,
                 "scale": 2.1607143878936768
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -740,7 +740,7 @@
                 "z": 8.422415092587471,
                 "scale": 2.160714477300644
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -850,7 +850,7 @@
                 "scale": 4.088324666023254
             },
             "parentID": "{2bd76203-25d0-4d20-a726-9411019db283}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/brick_wall_06.json?t=2",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
             "priority": 1,
             "materialMappingScale": {
                 "x": 0.4000000059604645,
@@ -908,7 +908,7 @@
                 "z": 8.422414660453796,
                 "scale": 2.1607143878936768
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -963,7 +963,7 @@
                 "z": 8.422415092587471,
                 "scale": 2.160714477300644
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -1073,7 +1073,7 @@
                 "scale": 4.088324666023254
             },
             "parentID": "{7a3af4ec-6147-4535-9ac2-9551e30f3d5d}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/brick_wall_06.json?t=2",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
             "priority": 1,
             "materialMappingScale": {
                 "x": 0.4000000059604645,
@@ -1131,7 +1131,7 @@
                 "z": 8.422414660453796,
                 "scale": 2.1607143878936768
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -1186,7 +1186,7 @@
                 "z": 8.422415092587471,
                 "scale": 2.160714477300644
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -1296,7 +1296,7 @@
                 "scale": 4.088324666023254
             },
             "parentID": "{4343d87b-15cb-4b95-997a-ad2a9f08bee8}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/brick_wall_06.json?t=2",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
             "priority": 1,
             "materialMappingScale": {
                 "x": 0.4000000059604645,
@@ -1354,7 +1354,7 @@
                 "z": 8.422414660453796,
                 "scale": 2.1607143878936768
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -1409,7 +1409,7 @@
                 "z": 8.422415092587471,
                 "scale": 2.160714477300644
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -1519,7 +1519,7 @@
                 "scale": 4.088324666023254
             },
             "parentID": "{a6d95fa9-025d-481c-8d32-7db4cfc15f8e}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/brick_wall_06.json?t=2",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
             "priority": 1,
             "materialMappingScale": {
                 "x": 0.4000000059604645,
@@ -1577,7 +1577,7 @@
                 "z": 8.422414660453796,
                 "scale": 2.1607143878936768
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -1632,7 +1632,7 @@
                 "z": 8.422415092587471,
                 "scale": 2.160714477300644
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -1687,7 +1687,7 @@
                 "z": 8.422414660453796,
                 "scale": 2.1607143878936768
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -1742,7 +1742,7 @@
                 "z": 8.422415092587471,
                 "scale": 2.160714477300644
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Window.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -1852,7 +1852,7 @@
                 "scale": 4.160552144050598
             },
             "parentID": "{6b9b4529-f234-4797-9b3b-736cae8594b3}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/brick_wall_06.json?t=1",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=1",
             "priority": 1,
             "materialMappingScale": {
                 "x": 0.800000011920929,
@@ -1965,7 +1965,7 @@
                 "scale": 4.160552144050598
             },
             "parentID": "{82a3beef-2019-4bd0-9de8-a990966a7fd5}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/brick_wall_06.json?t=1",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=1",
             "priority": 1,
             "materialMappingScale": {
                 "x": 0.800000011920929,
@@ -2078,7 +2078,7 @@
                 "scale": 17.43000030517578
             },
             "parentID": "{53df7b69-d916-45d2-a572-693d1c29daf3}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/white_plaster_02.json?t=1",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json?t=1",
             "priority": 1,
             "materialMappingScale": {
                 "x": 10.0,
@@ -2191,7 +2191,7 @@
                 "scale": 17.43000030517578
             },
             "parentID": "{24f213a2-93a2-4164-9c50-240700adb3d2}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/white_plaster_02.json?t=1",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json?t=1",
             "priority": 1,
             "materialMappingScale": {
                 "x": 10.0,
@@ -2304,7 +2304,7 @@
                 "scale": 20.04337501525879
             },
             "parentID": "{d1f66cf2-b569-4d2e-8a67-71ae31a0061b}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/laminate_floor_02.json",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/laminate_floor_02.json",
             "priority": 1,
             "materialMappingScale": {
                 "x": 10.0,
@@ -2417,7 +2417,7 @@
                 "scale": 21.43000030517578
             },
             "parentID": "{3bbb82f0-468d-4809-a1ef-f1cda07bf5ac}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/concrete_wall_008.json",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/concrete_wall_008.json",
             "priority": 1,
             "materialMappingScale": {
                 "x": 10.0,
@@ -2530,7 +2530,7 @@
                 "scale": 18.0
             },
             "parentID": "{91e0d1de-48fd-4187-8be0-64ec53de1fc7}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/brick_wall_06.json",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json",
             "priority": 1,
             "materialMappingScale": {
                 "x": 10.0,
@@ -2643,7 +2643,7 @@
                 "scale": 18.0
             },
             "parentID": "{01eebf68-9f86-45a6-a41d-789e81f8490f}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/brick_wall_06.json",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json",
             "priority": 1,
             "materialMappingScale": {
                 "x": 10.0,
@@ -2755,7 +2755,7 @@
                 "scale": 20.95713710784912
             },
             "parentID": "{f72b2618-0db1-4287-9029-eaee869c28eb}",
-            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/materials/white_plaster_02.json",
+            "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json",
             "priority": 1,
             "materialMappingScale": {
                 "x": 10.0,
@@ -2813,7 +2813,7 @@
                 "z": -4.504993915557861,
                 "scale": 4.0000001192092896
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.FrameT2.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.FrameT2.glb",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
         {
@@ -2867,7 +2867,7 @@
                 "z": -4.677854537963867,
                 "scale": 2.0
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Frame.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Frame.glb",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
         {
@@ -2921,7 +2921,7 @@
                 "z": -1.6778545379638672,
                 "scale": 2.0
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Frame.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Frame.glb",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
         {
@@ -2975,7 +2975,7 @@
                 "z": 1.322145700454712,
                 "scale": 2.0
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/generated/Model.Frame.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Frame.glb",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
         {
@@ -3029,7 +3029,7 @@
                 "z": -4.582854270935059,
                 "scale": 1.8050000667572021
             },
-            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/images/dixit-rules-page2.svg",
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/dixit-rules-page2.svg",
             "emissive": true,
             "keepAspectRatio": false,
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
@@ -3085,7 +3085,7 @@
                 "z": -1.5828543901443481,
                 "scale": 1.805000200867653
             },
-            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/images/dixit-rules-page1.svg",
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/dixit-rules-page1.svg",
             "emissive": true,
             "keepAspectRatio": false,
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
@@ -3141,7 +3141,7 @@
                 "z": 1.4171456098556519,
                 "scale": 1.8050001859664917
             },
-            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/images/dixit-cover.jpg",
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/dixit-cover.jpg",
             "emissive": true,
             "keepAspectRatio": false,
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
@@ -3197,7 +3197,7 @@
                 "z": -4.404993534088135,
                 "scale": 3.805000364780426
             },
-            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/images/about.png",
+            "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/about.png",
             "emissive": true,
             "keepAspectRatio": false,
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
@@ -3253,7 +3253,7 @@
                 "z": 4.835988700389862,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3308,7 +3308,7 @@
                 "z": 5.9224483370780945,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3363,7 +3363,7 @@
                 "z": 5.6482009291648865,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3418,7 +3418,7 @@
                 "z": 4.835988700389862,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3473,7 +3473,7 @@
                 "z": 3.5170084834098816,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3528,7 +3528,7 @@
                 "z": 5.648202359676361,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3583,7 +3583,7 @@
                 "z": 3.5170066952705383,
                 "scale": 0.8981882333755493
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/models/folding_chair.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/models/folding_chair.glb",
             "shapeType": "static-mesh",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3638,7 +3638,7 @@
                 "z": -6.445821762084961,
                 "scale": 4.0
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/models/game_table.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/models/game_table.glb",
             "shapeType": "box",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3693,7 +3693,7 @@
                 "z": -2.3684327602386475,
                 "scale": 4.0
             },
-            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/models/game_table.glb",
+            "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/models/game_table.glb",
             "shapeType": "box",
             "parentID": "{5c73d6ef-07da-4755-bc3e-2f127b2ae89a}"
         },
@@ -3706,8 +3706,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -3771,8 +3771,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -3836,8 +3836,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -3901,8 +3901,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -3966,8 +3966,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -4031,8 +4031,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -4096,8 +4096,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -4161,8 +4161,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -4224,8 +4224,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -4287,8 +4287,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,
@@ -4350,8 +4350,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitClient.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/world/scripts/sit/sitServer.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitClient.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/scripts/sit/sitServer.js",
             "userData": "{canClickOnModelToSit: true}",
             "isFacingAvatar": false,
             "faceCamera": false,

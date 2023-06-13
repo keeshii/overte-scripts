@@ -67,8 +67,8 @@
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "https://raw.githubusercontent.com/keeshii/overte-world/master/dixit/source/dixit-client.js",
-            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-world/master/dixit/source/dixit-server.js",
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/dixit/source/dixit-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/dixit/source/dixit-server.js",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
