@@ -139,16 +139,19 @@
   };
 
   Sudoku.prototype._backtrace = function(state, candidates) {
-    var steps, step, newStep, solutions, value;
+    var steps, step, newStep, solutions, index, value;
 
     solutions = [];
     step = { state: state, index: 0, candidates: candidates };
+    step.order = this._orderCandidates(candidates);
+
     steps = [step];
 
     while (steps.length > 0) {
       step = steps[steps.length - 1];
+      index = step.order[step.index];
 
-      if (step.state[step.index] !== EMPTY) {
+      if (step.state[index] !== EMPTY) {
         step.index++;
         if (step.index === STATE_LENGTH) {
           solutions.push(step.state);
@@ -160,18 +163,19 @@
         continue;
       }
 
-      if (step.candidates[step.index].length === 0) {
+      if (step.candidates[index].length === 0) {
         steps.pop();
         continue;
       }
 
-      value = step.candidates[step.index][0];
-      step.candidates[step.index] = step.candidates[step.index].substring(1);
+      value = step.candidates[index][0];
+      step.candidates[index] = step.candidates[index].substring(1);
 
-      newStep = { index: step.index, empty: step.empty - 1 };
+      newStep = { index: 0, empty: step.empty - 1 };
       newStep.candidates = step.candidates.slice();
-      newStep.state = this.setValue(step.state, step.index, value);
-      this._reduceCandidates(newStep.candidates, step.index, value);
+      newStep.state = this.setValue(step.state, index, value);
+      this._reduceCandidates(newStep.candidates, index, value);
+      newStep.order = this._orderCandidates(newStep.candidates);
       steps.push(newStep);
     }
 
@@ -180,6 +184,21 @@
     }
 
     return { solution: false };
+  };
+
+  Sudoku.prototype._orderCandidates = function(candidates) {
+    var i, order;
+
+    order = [];
+    for (i = 0; i < STATE_LENGTH; i++) {
+      order.push(i);
+    }
+
+    order.sort(function(a, b) {
+      return candidates[a].length - candidates[b].length
+    });
+
+    return order;
   };
 
   Sudoku.prototype._shuffle = function(arr) {
