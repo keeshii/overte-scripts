@@ -175,10 +175,10 @@
 
     match = name.match(/^Text.NewGame\[(\d+)\]$/);
     if (match !== null) {
-      this.lastClickTime = clickTime;
       this.overlay.close();
       value = parseInt(match[1], 10);
       state = value ? this.sudoku.generate(value) : '';
+      this.lastClickTime = Date.now(); // get time after generation is done
       this.index = '-1';
       this.callServer('startNewGame', [state]);
       return;
