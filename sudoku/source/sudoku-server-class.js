@@ -1,8 +1,8 @@
 "use strict";
 
 /* global
-    Sudoku, ScreenRenderer, Settings, EMPTY_STATE, DEFAULT_DIFFICULTY, DIGITS,
-    STATE_LENGTH, MESSAGE_SOLVED, MESSAGE_CLICK, MESSAGE_NO_SOLUTION, EMPTY
+    Sudoku, ScreenRenderer, Settings, SoundPlayer, EMPTY_STATE, EMPTY,
+    DEFAULT_DIFFICULTY, DIGITS, STATE_LENGTH
  */
 
 (function (global) {
@@ -10,7 +10,8 @@
   Script.include([
     './config.js',
     './sudoku.js',
-    './screen-renderer.js'
+    './screen-renderer.js',
+    './sound-player.js'
   ]);
 
   function SudokuServer() {
@@ -24,21 +25,25 @@
       'clickDigit',
       'setDigit',
       'startNewGame',
-      'hint',
-      'start'
+      'clickHint',
+      'clickStart'
     ];
   }
 
   SudokuServer.prototype.preload = function(entityId) {
-    var state, server;
+    var state, server, position;
     
     server = this;
     server.renderer = new ScreenRenderer(entityId);
+    server.soundPlayer = new SoundPlayer();
 
     // Wait for the world json to load before initialization
     Script.setTimeout(function () {
       server.renderer.findEntities();
       server.renderer.init();
+
+      position = server.renderer.position;
+      server.soundPlayer.setPosition(position);
 
       Script.setTimeout(function () {
         if (!server.loadGame()) {
@@ -148,27 +153,30 @@
       return;
     }
 
-    this.callClient(sessionId, 'showMessage', [MESSAGE_CLICK]);
 
     if (!this.started) {
       this.baseState = this.sudoku.setValue(this.baseState, index, value);
       this.state = this.baseState;
       this.renderer.setBaseDigit(index, value);
+      this.soundPlayer.play(SoundPlayer.CLICK_SOUND);
       this.saveGame();
       return;
     }
 
     this.state = this.sudoku.setValue(this.state, index, value);
     this.renderer.setDigit(index, value);
+    this.saveGame();
 
     if (this.state.indexOf(EMPTY) === -1) {
-      this.callClient(sessionId, 'showMessage', [MESSAGE_SOLVED]);
+      this.callClient(sessionId, 'showSolved');
+      this.soundPlayer.play(SoundPlayer.SUCCESS_SOUND);
+    } else {
+      this.soundPlayer.play(SoundPlayer.CLICK_SOUND);
     }
-    this.saveGame();
   };
 
   SudokuServer.prototype.startNewGame = function (_id, params) {
-    var state, result, i;
+    var state, isValid, i;
 
     state = params[1];
 
@@ -194,9 +202,9 @@
       }
     }
 
-    // Check if possible to solve
-    result = this.sudoku.solve(state);
-    if (!result.solution || !result.unique) {
+    // Check if the state is valid
+    isValid = this.sudoku.validate(state);
+    if (!isValid) {
       return;
     }
 
@@ -208,46 +216,15 @@
     this.saveGame();
   };
 
-  SudokuServer.prototype.start = function () {
+  SudokuServer.prototype.clickStart = function () {
     this.renderer.setButtonLabel('Hint');
     this.started = true;
     this.saveGame();
   };
 
-  SudokuServer.prototype.hint = function (_id, params) {
-    var result, state, i, index, value, sessionId, empty = [];
-
-    sessionId = params[0];
-    state = this.state;
-    for (i = 0; i < state.length; i++) {
-      if (state[i] === EMPTY) {
-        empty.push(i);
-      }
-    }
-
-    if (empty.length === 0) {
-      return;
-    }
-
-    i = Math.floor(Math.random() * empty.length);
-    result = this.sudoku.solve(state);
-    if (result.solution) {
-      index = empty[i];
-      value = result.solution[empty[i]];
-      this.state = this.sudoku.setValue(this.state, index, value);
-      this.renderer.setDigit(index, value);
-
-      if (this.state.indexOf(EMPTY) === -1) {
-        this.callClient(sessionId, 'showMessage', [MESSAGE_SOLVED]);
-      } else {
-        this.callClient(sessionId, 'showMessage', [MESSAGE_CLICK]);
-      }
-
-      this.saveGame();
-    } else {
-      this.callClient(sessionId, 'showMessage', [MESSAGE_NO_SOLUTION]);
-    }
-
+  SudokuServer.prototype.clickHint = function (_id, params) {
+    var sessionId = params[0];
+    this.callClient(sessionId, 'giveHint', [this.state]);
   };
 
   global.SudokuServer = SudokuServer;

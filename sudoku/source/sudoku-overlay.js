@@ -191,7 +191,7 @@
       topMargin: 0.05, 
       billboardMode: 'full',  
       alignment: 'center',
-      localDimensions: { x: 1, y: 0.3, z: 0.01 },    
+      localDimensions: { x: 1.5, y: 0.3, z: 0.01 },    
       textColor: color,
       backgroundColor: { r: 0, g: 0, b: 0 },
       backgroundAlpha: 0,                    

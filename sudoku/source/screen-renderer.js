@@ -14,15 +14,17 @@
 
   function ScreenRenderer(entityId) {
     this.entityId = entityId;
+    this.position = null;
     this.buttonId = '';
     this.buttonLabel = BUTTON_HINT;
     this.digitIds = [];
   }
 
   ScreenRenderer.prototype.findEntities = function () {
-    var position = Entities.getEntityProperties(this.entityId, ['position']).position;
-    var entities = Entities.findEntities(position, 50);
-    var toDeleteIds, prop, i;
+    var entities, toDeleteIds, prop, i;
+
+    this.position = Entities.getEntityProperties(this.entityId, ['position']).position;
+    entities = Entities.findEntities(this.position, 50);
 
     toDeleteIds = [];
     for (i = 0; i < entities.length; i++) {

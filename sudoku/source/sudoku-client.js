@@ -1,9 +1,8 @@
 "use strict";
 
 /* global
-    Sudoku, SudokuServer, SudokuOverlay, SoundCache, Audio, CLIENT_SIDE_ONLY,
-    HMD, SUCCESS_SOUND, ERROR_SOUND, CLICK_SOUND, MESSAGE_SOLVED, MESSAGE_CLICK,
-    MESSAGE_NO_SOLUTION, BUTTON_NEW_GAME, BUTTON_HINT, BUTTON_START, EMPTY
+    Sudoku, SudokuServer, SudokuOverlay, SoundPlayer, CLIENT_SIDE_ONLY, HMD,
+    BUTTON_NEW_GAME, BUTTON_HINT, BUTTON_START, EMPTY
  */
 
 ((typeof module !== 'undefined' ? module : {}).exports = function () {
@@ -12,25 +11,25 @@
     './config.js',
     './sudoku.js',
     './sudoku-overlay.js',
-    './sudoku-server-class.js'
+    './sudoku-server-class.js',
+    './sound-player.js'
   ]);
 
   var CLICK_THROTTLE = 300;
+  var MESSAGE_SOLVED = 'Sudoku Solved';
+  var MESSAGE_NO_SOLUTION = 'No solution';
 
   function SudokuClient() {
-    this.sudoku = new Sudoku();
     this.index = '-1';
     this.entityId = '';
     this.server = null;
     this.mousePressOnEntityFn = null;
     this.lastClickTime = 0;
-    this.successSound = null;
-    this.errorSound = null;
-    this.clickSound = null;
 
     this.remotelyCallable = [
       'showDigitOverlay',
-      'showMessage'
+      'showSolved',
+      'giveHint'
     ];
   }
 
@@ -48,10 +47,10 @@
     }
 
     this.entityId = entityId;
+
+    this.sudoku = new Sudoku();
     this.overlay = new SudokuOverlay(this);
-    this.successSound = SoundCache.getSound(SUCCESS_SOUND);
-    this.errorSound = SoundCache.getSound(ERROR_SOUND);
-    this.clickSound = SoundCache.getSound(CLICK_SOUND);
+    this.soundPlayer = new SoundPlayer();
 
     Entities.mousePressOnEntity.connect(this.mousePressOnEntityFn);
   };
@@ -68,34 +67,43 @@
     }
   };
 
-  SudokuClient.prototype.showMessage = function(_id, params) {
-    var COLOR_GREEN = { red: 4, green: 202, blue: 4 };
+  SudokuClient.prototype.showNoSolutions = function() {
     var COLOR_RED = { red: 196, green: 26, blue: 0 };
-    var injectorOptions, sound;
-    var message = params[0];
+    this.overlay.showTextMessage(MESSAGE_NO_SOLUTION, COLOR_RED);
+    this.soundPlayer.playLocal(SoundPlayer.ERROR_SOUND);
+  };
 
-    switch (message) {
-      case MESSAGE_SOLVED:
-        this.overlay.showTextMessage(message, COLOR_GREEN);
-        sound = this.successSound;
-        break;
-      case MESSAGE_NO_SOLUTION:
-        this.overlay.showTextMessage(message, COLOR_RED);
-        sound = this.errorSound;
-        break;
-      case MESSAGE_CLICK:
-        sound = this.clickSound;
-        break;
+  SudokuClient.prototype.showSolved = function() {
+    var COLOR_GREEN = { red: 4, green: 202, blue: 4 };
+    this.overlay.showTextMessage(MESSAGE_SOLVED, COLOR_GREEN);
+    // success sound played by the domain-server
+  };
+
+  SudokuClient.prototype.giveHint = function (_id, params) {
+    var result, state, i, index, value, empty = [];
+
+    state = params[0];
+    for (i = 0; i < state.length; i++) {
+      if (state[i] === EMPTY) {
+        empty.push(i);
+      }
     }
 
-    if (sound) {
-      injectorOptions = {
-        position: MyAvatar.position,
-        volume: 0.1,
-        localOnly: true
-      };
-      Audio.playSound(sound, injectorOptions);    
+    if (empty.length === 0) {
+      return;
     }
+
+    i = Math.floor(Math.random() * empty.length);
+    result = this.sudoku.solve(state);
+
+    if (!result.solution) {
+      this.showNoSolutions();
+      return;
+    }
+
+    index = empty[i];
+    value = result.solution[empty[i]];
+    this.callServer('setDigit', [index, value]);
   };
 
   SudokuClient.prototype.showDigitOverlay = function(_id, params) {
@@ -182,10 +190,10 @@
           this.overlay.showNewGameOverlay();
           break;
         case BUTTON_HINT:
-          this.callServer('hint', []);
+          this.callServer('clickHint', []);
           break;
         case BUTTON_START:
-          this.callServer('start', []);
+          this.callServer('clickStart', []);
           break;
       }
     }

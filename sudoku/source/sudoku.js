@@ -138,11 +138,69 @@
     }
   };
 
+  Sudoku.prototype._reduceUniqueFor = function(candidates, indexes) {
+    var i, j, c, value, index, unique;
+    for (i = 0; i < BOARD_SIZE; i++) {
+      index = indexes[i];
+      if (candidates[index].length <= 1) {
+        continue;
+      }
+      for (c = 0; c < candidates[index].length; c++) {
+        value = candidates[index][c];
+        unique = true;
+        for (j = 0; j < BOARD_SIZE; j++) {
+          if (i !== j && candidates[indexes[j]].indexOf(value) !== -1) {
+            unique = false;
+            break;
+          }
+        }
+        if (unique) {
+          candidates[index] = value;
+          break;
+        }
+      }
+    }
+  };
+
+  Sudoku.prototype._reduceUnique = function(candidates, index) {
+    var i, j, row, col, boxRow, boxCol;
+    var rowIndexes, colIndexes, boxIndexes;
+
+    row = Math.floor(index / BOARD_SIZE);
+    col = index % BOARD_SIZE;
+
+    rowIndexes = [];
+    colIndexes = [];
+    for (i = 0; i < BOARD_SIZE; i++) {
+      rowIndexes.push(row * BOARD_SIZE + i);
+      colIndexes.push(col + i * BOARD_SIZE);
+    }
+    this._reduceUniqueFor(candidates, rowIndexes);
+    this._reduceUniqueFor(candidates, colIndexes);
+
+    boxRow = Math.floor(row / BOX_SIZE) * BOX_SIZE;
+    boxCol = Math.floor(col / BOX_SIZE) * BOX_SIZE;
+
+    boxIndexes = [];
+    for (i = boxRow; i < boxRow + BOX_SIZE; i++) {
+      for (j = boxCol; j < boxCol + BOX_SIZE; j++) {
+        boxIndexes.push(i * BOARD_SIZE + j);
+      }
+    }
+    this._reduceUniqueFor(candidates, boxIndexes);
+  };
+
   Sudoku.prototype._backtrace = function(state, candidates) {
     var steps, step, newStep, solutions, index, value;
 
     solutions = [];
     step = { state: state, index: 0, candidates: candidates };
+    for (index = 0; index < STATE_LENGTH; index++) {
+      if (state[index] === EMPTY) {
+        this._reduceUnique(candidates, index);
+      }
+    }
+
     step.order = this._orderCandidates(candidates);
 
     steps = [step];
@@ -175,6 +233,7 @@
       newStep.candidates = step.candidates.slice();
       newStep.state = this.setValue(step.state, index, value);
       this._reduceCandidates(newStep.candidates, index, value);
+      this._reduceUnique(newStep.candidates, index);
       newStep.order = this._orderCandidates(newStep.candidates);
       steps.push(newStep);
     }
@@ -195,7 +254,7 @@
     }
 
     order.sort(function(a, b) {
-      return candidates[a].length - candidates[b].length
+      return candidates[a].length - candidates[b].length;
     });
 
     return order;

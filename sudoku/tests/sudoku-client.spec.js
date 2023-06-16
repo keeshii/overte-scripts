@@ -18,7 +18,8 @@ describe("SudokuClient", () => {
         expect(sudokuClient).toBeTruthy();
         expect(sudokuClient.remotelyCallable).toEqual([
           'showDigitOverlay',
-          'showMessage'
+          'showSolved',
+          'giveHint'
         ]);
     });
 
