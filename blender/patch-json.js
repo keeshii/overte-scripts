@@ -55,12 +55,19 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     // Remove Cube.ToDelete from the Entities (it was used only to define the zone's size)
     json.Entities = json.Entities.filter(entity => entity.name !== 'Cube.ToDelete');
 
+    // Remove numbers from Sudoku buttons
+    json.Entities.forEach(entity => {
+      if (entity.name.match(/^Text\.(NewGame|Hint)\.\d+$/)) {
+        entity.name = entity.name.replace(/\.\d+$/, '');
+      }
+    });
+
     fs.writeFile(filePath, JSON.stringify(json, null, 2), (err, data) => {
       if (err) {
         console.error(err);
         process.exit(1);
       }
-      console.log('DONE');
+      console.log('Done');
     });
 
   } catch (e) {
