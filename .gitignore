@@ -1,1 +1,7 @@
 node_modules
+.nyc_output
+coverage
+codenames/dist/*
+
+!codenames/dist/codenames-client.js
+!codenames/dist/codenames-server.js

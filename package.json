@@ -4,14 +4,36 @@
   "description": "Dixit game script for Overte VR.",
   "main": "overte-dixit",
   "scripts": {
-    "test": "jasmine \"dixit/tests/*.js\" \"sudoku/tests/*.js\"",
-    "lint": "eslint dixit/source sudoku/source"
+    "test:js": "jasmine \"dixit/tests/*.js\" \"sudoku/tests/*.js\"",
+    "test:ts": "jasmine-ts \"codenames/tests/*.ts\"",
+    "test": "npm run test:js && npm run test:ts",
+    "lint:js": "eslint -c .eslintrc.es5.js dixit/source sudoku/source",
+    "lint:ts": "eslint -c .eslintrc.typescript.js codenames/tests codenames/source",
+    "lint": "npm run lint:js && npm run lint:ts",
+    "build:dev": "webpack --mode=development --devtool=cheap-source-map",
+    "build": "webpack",
+    "nyc": "nyc -e \".ts\" -x \"codenames/tests/*.spec.ts\" jasmine-ts \"codenames/tests/*.spec.ts\"",
+    "coverage": "npm run nyc && nyc report -r html",
+    "start": "nodemon -e ts --exec \"npm run build:dev\""
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/jasmine": "^4.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
     "eslint": "^8.41.0",
     "eslint-plugin-es5": "^1.5.0",
-    "jasmine": "^5.0.0"
-  }
+    "jasmine": "^3.9.0",
+    "jasmine-ts": "^0.4.0",
+    "nodemon": "^2.0.22",
+    "nyc": "^15.1.0",
+    "ts-loader": "^9.4.3",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.0.4",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "wrapper-webpack-plugin": "^2.2.2"
+  },
+  "dependencies": {}
 }

@@ -1,0 +1,2208 @@
+{
+  "DataVersion": 0,
+  "Entities": [
+    {
+      "id": "{816baefe-eb00-4dc8-bfa5-0a8b6ed6c1ae}",
+      "type": "Box",
+      "name": "Cube.Wall",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -7.46875,
+        "y": 3.3705291748046875,
+        "z": -9.832968711853027
+      },
+      "dimensions": {
+        "x": 0.4000002145767212,
+        "y": 7.600000381469727,
+        "z": 23.250001907348633
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -19.093750715255737,
+        "y": -8.254471898078918,
+        "z": -21.457969665527344,
+        "scale": 23.250001907348633
+      },
+      "shape": "Cube",
+      "color": {
+        "red": 63,
+        "green": 63,
+        "blue": 63
+      }
+    },
+    {
+      "id": "{76799bb7-a854-42ae-ba1f-0874e31a1062}",
+      "type": "Text",
+      "name": "Text.Wall.BlueTitle",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -7.207594394683838,
+        "y": 5.206297874450684,
+        "z": -9.332969665527344
+      },
+      "dimensions": {
+        "x": 2,
+        "y": 0.4715383052825928,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": 4.2146844236867764e-8,
+        "y": 0.7071067690849304,
+        "z": 4.2146844236867764e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -8.207594394683838,
+        "y": 4.206297874450684,
+        "z": -10.332969665527344,
+        "scale": 2
+      },
+      "text": "Blue Team",
+      "backgroundAlpha": 0,
+      "lineHeight": 0.4000000059604645,
+      "alignment": "center",
+      "textColor": {
+        "red": 9,
+        "green": 110,
+        "blue": 255
+      },
+      "backgroundColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      }
+    },
+    {
+      "id": "{caaa351a-8150-4ada-b4f3-1b00fdce3262}",
+      "type": "Text",
+      "name": "Text.Wall.RedTitle",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -7.207594871520996,
+        "y": 5.206297397613525,
+        "z": -2.3329696655273438
+      },
+      "dimensions": {
+        "x": 2,
+        "y": 0.47153860330581665,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -4.214685134229512e-8,
+        "y": 0.7071067690849304,
+        "z": 4.214684778958144e-8,
+        "w": 0.7071068286895752
+      },
+      "queryAACube": {
+        "x": -8.207594871520996,
+        "y": 4.206297397613525,
+        "z": -3.3329696655273438,
+        "scale": 2
+      },
+      "text": "Red Team",
+      "backgroundAlpha": 0,
+      "lineHeight": 0.4000000059604645,
+      "alignment": "center",
+      "textColor": {
+        "red": 255,
+        "green": 11,
+        "blue": 9
+      },
+      "backgroundColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      }
+    },
+    {
+      "id": "{fe17ade5-4ed7-4663-9475-272bcd565792}",
+      "type": "Box",
+      "name": "Cube.Board",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/dist/codenames-client.js",
+      "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/dist/codenames-server.js",
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 0.731249988079071,
+        "y": 0.020528823137283325,
+        "z": -5.832968711853027
+      },
+      "dimensions": {
+        "x": 10,
+        "y": 0.09999984502792358,
+        "z": 7.5
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.7071067690849304,
+        "z": 0,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -4.268750041723251,
+        "y": -4.979471266269684,
+        "z": -10.832968711853027,
+        "scale": 10.000000178813934
+      },
+      "shape": "Cube",
+      "color": {
+        "red": 9,
+        "green": 9,
+        "blue": 9
+      }
+    },
+    {
+      "id": "{51364cab-1d67-4277-81da-86d60354e895}",
+      "type": "Image",
+      "name": "Image.Wall.BlueCards",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 3.500000238418579,
+        "y": 3.2317230701446533,
+        "z": -7.938844680786133
+      },
+      "dimensions": {
+        "x": 1.4000000953674316,
+        "y": 3,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -5.960465188081798e-8,
+        "y": -5.960465188081798e-8,
+        "z": 1.0430812125150624e-7,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -8.707594990730286,
+        "y": 1.7522518634796143,
+        "z": -10.832969307899475,
+        "scale": 3.000000238418579
+      },
+      "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/assets/cards.png",
+      "keepAspectRatio": false,
+      "color": {
+        "red": 9,
+        "green": 110,
+        "blue": 255
+      },
+      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+    },
+    {
+      "id": "{ceaaf9c2-95a8-476a-b2e3-5641927d83fc}",
+      "type": "Image",
+      "name": "Image.Wall.Guesses",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 0.0000017773024865164189,
+        "y": 2.450000047683716,
+        "z": -7.933653831481934
+      },
+      "dimensions": {
+        "x": 3.8000001907348633,
+        "y": 0.20000003278255463,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -5.960465188081798e-8,
+        "y": -5.960465188081798e-8,
+        "z": 1.0430812125150624e-7,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -9.102404117584229,
+        "y": 0.5705287456512451,
+        "z": -7.732970237731934,
+        "scale": 3.8000001907348633
+      },
+      "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/assets/guesses.png",
+      "keepAspectRatio": false,
+      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+    },
+    {
+      "id": "{6b1f7cf2-00e4-4edc-a6be-205518f6de6c}",
+      "type": "Image",
+      "name": "Image.Wall.RedCards",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -3.499999523162842,
+        "y": 3.2317230701446533,
+        "z": -7.938844680786133
+      },
+      "dimensions": {
+        "x": 1.4000000953674316,
+        "y": 3,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -5.960465188081798e-8,
+        "y": -5.960465188081798e-8,
+        "z": 1.0430812125150624e-7,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -8.707594990730286,
+        "y": 1.7522518634796143,
+        "z": -3.832969009876251,
+        "scale": 3.000000238418579
+      },
+      "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/assets/cards.png",
+      "keepAspectRatio": false,
+      "color": {
+        "red": 255,
+        "green": 11,
+        "blue": 9
+      },
+      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+    },
+    {
+      "id": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "type": "Box",
+      "name": "Plane.Panel",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 9.977072715759277,
+        "y": 1.2270731925964355,
+        "z": 6.14925625086471e-7
+      },
+      "dimensions": {
+        "x": 5.700000286102295,
+        "y": 0.000001342401105830504,
+        "z": 2.280000925064087
+      },
+      "rotation": {
+        "x": 0.27059799432754517,
+        "y": 0.6532814502716064,
+        "z": -0.2705982029438019,
+        "w": 0.6532815098762512
+      },
+      "queryAACube": {
+        "x": -2.1187503337860107,
+        "y": -1.6023984998464584,
+        "z": -18.66004192829132,
+        "scale": 5.700001001358032
+      },
+      "shape": "Cube",
+      "color": {
+        "red": 9,
+        "green": 9,
+        "blue": 9
+      },
+      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+    },
+    {
+      "id": "{c66d7ad2-7d68-4f6c-bbd9-07ae5ab8cb0b}",
+      "type": "Box",
+      "name": "Plane.Panel.Board",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 9.933165756592643e-7,
+        "y": 0.009999573230743408,
+        "z": -0.1400020569562912
+      },
+      "dimensions": {
+        "x": 2.700000047683716,
+        "y": 2.813323192185635e-7,
+        "z": 1.799999713897705
+      },
+      "rotation": {
+        "x": -1.490114875934978e-8,
+        "y": 1.5454237001222282e-8,
+        "z": 1.5454222790367567e-8,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -0.6187508702278137,
+        "y": 0.003669172525405884,
+        "z": -17.068115383386612,
+        "scale": 2.7000001072883606
+      },
+      "shape": "Cube",
+      "color": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{09f46a7e-e53e-4ab0-9858-b8816e7fb7cb}",
+      "type": "Text",
+      "name": "Text.Panel.Abort",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 1.6728884588701476e-7,
+        "y": 0.019277453422546387,
+        "z": 0.9599995613098145
+      },
+      "dimensions": {
+        "x": 1.3000000715255737,
+        "y": 0.19999995827674866,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": 0.08125006407499313,
+        "y": -0.06758913770318031,
+        "z": -17.152494851499796,
+        "scale": 1.3000000789761543
+      },
+      "text": "Abort",
+      "lineHeight": 0.10000000149011612,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 0,
+        "green": 68,
+        "blue": 204
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{7e1a4da9-3eec-4362-8a39-c33cfe2091a7}",
+      "type": "Text",
+      "name": "Text.Panel.BlueGuesses",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 2.1000006198883057,
+        "y": 0.029277054592967033,
+        "z": -0.19000110030174255
+      },
+      "dimensions": {
+        "x": 0.30000001192092896,
+        "y": 0.29999998211860657,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -1.5187504291534424,
+        "y": 1.2526544332504272,
+        "z": -15.846392035484314,
+        "scale": 0.2999999523162842
+      },
+      "text": "1",
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 152,
+        "green": 152,
+        "blue": 152
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{5fe0fb5d-dd45-433b-826e-3bd8b669572d}",
+      "type": "Text",
+      "name": "Text.Panel.BlueMessage",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 2.1000008583068848,
+        "y": 0.01927514187991619,
+        "z": -0.5400021076202393
+      },
+      "dimensions": {
+        "x": 1.3000000715255737,
+        "y": 0.19999995827674866,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -2.0187509059906006,
+        "y": 0.9930700659751892,
+        "z": -16.09183168411255,
+        "scale": 1.3000001907348633
+      },
+      "text": "Give a clue to your team.",
+      "backgroundAlpha": 0,
+      "lineHeight": 0.10000000149011612,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{eaa7a856-582a-4bbd-93ae-1d3e5afe4270}",
+      "type": "Text",
+      "name": "Text.Panel.BlueMinus",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 1.7000007629394531,
+        "y": 0.02927692048251629,
+        "z": -0.19000105559825897
+      },
+      "dimensions": {
+        "x": 0.30000001192092896,
+        "y": 0.29999998211860657,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -1.1187505722045898,
+        "y": 1.2526544034481049,
+        "z": -15.846392065286636,
+        "scale": 0.30000001192092896
+      },
+      "text": "-",
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 0,
+        "green": 68,
+        "blue": 204
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{dbb61347-6b4d-4e13-b646-5a68593bbad2}",
+      "type": "Text",
+      "name": "Text.Panel.BluePlus",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 2.5000007152557373,
+        "y": 0.02927718684077263,
+        "z": -0.19000114500522614
+      },
+      "dimensions": {
+        "x": 0.30000001192092896,
+        "y": 0.29999998211860657,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -1.918750524520874,
+        "y": 1.2526544332504272,
+        "z": -15.846392035484314,
+        "scale": 0.2999999523162842
+      },
+      "text": "+",
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 0,
+        "green": 68,
+        "blue": 204
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{c3ad9ec9-890f-47fd-9cf7-d931d5505b18}",
+      "type": "Text",
+      "name": "Text.Panel.BlueSubmit",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 2.1000008583068848,
+        "y": 0.029277054592967033,
+        "z": 0.45999911427497864
+      },
+      "dimensions": {
+        "x": 1.3000000715255737,
+        "y": 0.19999995827674866,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -2.0187506675720215,
+        "y": 0.29303479194641113,
+        "z": -16.806011587381363,
+        "scale": 1.300000011920929
+      },
+      "text": "Submit",
+      "lineHeight": 0.10000000149011612,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 0,
+        "green": 68,
+        "blue": 204
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{ea863244-674b-41b1-8b2a-28f05bd0fdc5}",
+      "type": "Text",
+      "name": "Text.Panel.BlueTitle",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 2.1000008583068848,
+        "y": 0.019275767728686333,
+        "z": -0.8900023102760315
+      },
+      "dimensions": {
+        "x": 1.3000000715255737,
+        "y": 0.29999998211860657,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -2.0187506675720215,
+        "y": 1.24055814743042,
+        "z": -15.844344079494476,
+        "scale": 1.3000000715255737
+      },
+      "text": "Blue Team",
+      "backgroundAlpha": 0,
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "textColor": {
+        "red": 9,
+        "green": 110,
+        "blue": 255
+      },
+      "backgroundColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{19935f0a-30d4-4fa0-a0f5-99afc06decb8}",
+      "type": "Text",
+      "name": "Text.Panel.BlueWord",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 2.1000008583068848,
+        "y": 0.02927633933722973,
+        "z": 0.1599978506565094
+      },
+      "dimensions": {
+        "x": 1.3000000715255737,
+        "y": 0.19999995827674866,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -2.0187506675720215,
+        "y": 0.5051672756671906,
+        "z": -16.59387817978859,
+        "scale": 1.300000011920929
+      },
+      "text": "Click to enter a word",
+      "lineHeight": 0.10000000149011612,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 152,
+        "green": 152,
+        "blue": 152
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{002a0fa8-4a51-4868-b32c-a21d3c2c1563}",
+      "type": "Text",
+      "name": "Text.Panel.Message",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 4.359649494745099e-7,
+        "y": 0.019274979829788208,
+        "z": -0.29000210762023926
+      },
+      "dimensions": {
+        "x": 5.500000476837158,
+        "y": 0.699999988079071,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -2.0187506675720215,
+        "y": -1.2837063074111938,
+        "z": -18.368608713150024,
+        "scale": 5.500000476837158
+      },
+      "text": "Click button to start th Game",
+      "backgroundAlpha": 0,
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.10000000149011612,
+      "unlit": true,
+      "textColor": {
+        "red": 254,
+        "green": 254,
+        "blue": 255
+      },
+      "backgroundColor": {
+        "red": 204,
+        "green": 176,
+        "blue": 36
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{23828a21-73d5-4232-aa19-38b22f790d12}",
+      "type": "Text",
+      "name": "Text.Panel.RedGuesses",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -2.09999942779541,
+        "y": 0.02927565760910511,
+        "z": -0.19000059366226196
+      },
+      "dimensions": {
+        "x": 0.30000001192092896,
+        "y": 0.29999998211860657,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": 2.6812493801116943,
+        "y": 1.2526543140411377,
+        "z": -15.846392154693604,
+        "scale": 0.3000001907348633
+      },
+      "text": "1",
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 152,
+        "green": 152,
+        "blue": 152
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{661cce9b-7a28-444c-a50a-714f929e7138}",
+      "type": "Text",
+      "name": "Text.Panel.RedMessage",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -2.09999942779541,
+        "y": 0.019273744896054268,
+        "z": -0.5400015711784363
+      },
+      "dimensions": {
+        "x": 1.3000000715255737,
+        "y": 0.19999995827674866,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": 2.1812493801116943,
+        "y": 0.9930700659751892,
+        "z": -16.09183168411255,
+        "scale": 1.3000001907348633
+      },
+      "text": "Give a clue to your team.",
+      "backgroundAlpha": 0,
+      "lineHeight": 0.10000000149011612,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{129c57b5-af89-489c-96e1-7ddeef831e5c}",
+      "type": "Text",
+      "name": "Text.Panel.RedMinus",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -2.499999523162842,
+        "y": 0.029275525361299515,
+        "z": -0.19000054895877838
+      },
+      "dimensions": {
+        "x": 0.30000001192092896,
+        "y": 0.29999998211860657,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": 3.081249475479126,
+        "y": 1.2526543140411377,
+        "z": -15.846392154693604,
+        "scale": 0.3000001907348633
+      },
+      "text": "-",
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 0,
+        "green": 68,
+        "blue": 204
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{c0920b4f-4d00-4d5c-8ae0-9838329766d2}",
+      "type": "Text",
+      "name": "Text.Panel.RedPlus",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -1.6999989748001099,
+        "y": 0.029275791719555855,
+        "z": -0.19000063836574554
+      },
+      "dimensions": {
+        "x": 0.30000001192092896,
+        "y": 0.29999998211860657,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": 2.2812490463256836,
+        "y": 1.2526543140411377,
+        "z": -15.846392154693604,
+        "scale": 0.3000001907348633
+      },
+      "text": "+",
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 0,
+        "green": 68,
+        "blue": 204
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{dd242c25-c50d-4a31-a7b6-52e079ab6dae}",
+      "type": "Text",
+      "name": "Text.Panel.RedSubmit",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -2.09999942779541,
+        "y": 0.02927565760910511,
+        "z": 0.45999962091445923
+      },
+      "dimensions": {
+        "x": 1.3000000715255737,
+        "y": 0.19999995827674866,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": 2.1812493801116943,
+        "y": 0.2930348217487335,
+        "z": -16.80601155757904,
+        "scale": 1.2999999523162842
+      },
+      "text": "Submit",
+      "lineHeight": 0.10000000149011612,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 0,
+        "green": 68,
+        "blue": 204
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{fdb2c0cc-559c-43b7-9245-abfe5bf0883f}",
+      "type": "Text",
+      "name": "Text.Panel.RedTitle",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -2.09999942779541,
+        "y": 0.01927437074482441,
+        "z": -0.8900018334388733
+      },
+      "dimensions": {
+        "x": 1.3000000715255737,
+        "y": 0.29999998211860657,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": 2.1812493801116943,
+        "y": 1.2405580878257751,
+        "z": -15.844344139099121,
+        "scale": 1.3000001907348633
+      },
+      "text": "Red Team",
+      "backgroundAlpha": 0,
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "textColor": {
+        "red": 255,
+        "green": 11,
+        "blue": 9
+      },
+      "backgroundColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{7c81b4ee-8d8c-4118-b78d-ba0a1e454cae}",
+      "type": "Text",
+      "name": "Text.Panel.RedWord",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -2.09999942779541,
+        "y": 0.029274942353367805,
+        "z": 0.15999835729599
+      },
+      "dimensions": {
+        "x": 1.3000000715255737,
+        "y": 0.19999995827674866,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": 2.1812493801116943,
+        "y": 0.5051673054695129,
+        "z": -16.593878149986267,
+        "scale": 1.2999999523162842
+      },
+      "text": "Click to enter a word",
+      "lineHeight": 0.10000000149011612,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 152,
+        "green": 152,
+        "blue": 152
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{a0d21fd1-c018-45f1-99cb-408b439ef326}",
+      "type": "Text",
+      "name": "Text.Panel.Start",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 1.522630697081695e-7,
+        "y": 0.029274404048919678,
+        "z": 0.35999795794487
+      },
+      "dimensions": {
+        "x": 1.7000000476837158,
+        "y": 0.3999999463558197,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -0.7071067690849304,
+        "y": 4.546626374273433e-15,
+        "z": 2.1855607101883834e-8,
+        "w": 0.7071067690849304
+      },
+      "queryAACube": {
+        "x": -0.11874999105930328,
+        "y": 0.16374503821134567,
+        "z": -16.935299046337605,
+        "scale": 1.700000062584877
+      },
+      "text": "Start Game",
+      "lineHeight": 0.20000000298023224,
+      "alignment": "center",
+      "topMargin": 0.10000000149011612,
+      "unlit": true,
+      "backgroundColor": {
+        "red": 2,
+        "green": 130,
+        "blue": 0
+      },
+      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "renderWithZones": [
+        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+      ]
+    },
+    {
+      "id": "{06e661b3-f451-40a8-8e81-9fcd0ef12658}",
+      "type": "Text",
+      "name": "Text.Wall.BlueScore",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 3.5000011920928955,
+        "y": 2.950000286102295,
+        "z": -7.9588446617126465
+      },
+      "dimensions": {
+        "x": 2,
+        "y": 4,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -5.960465188081798e-8,
+        "y": -5.960465188081798e-8,
+        "z": 1.0430812125150624e-7,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -9.2275949716568,
+        "y": 0.9705288410186768,
+        "z": -11.332969784736633,
+        "scale": 4.000000238418579
+      },
+      "text": "0",
+      "lineHeight": 0.6000000238418579,
+      "alignment": "center",
+      "topMargin": 3.299999952316284,
+      "textColor": {
+        "red": 9,
+        "green": 110,
+        "blue": 255
+      },
+      "backgroundColor": {
+        "red": 9,
+        "green": 9,
+        "blue": 9
+      },
+      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+    },
+    {
+      "id": "{a1774c81-d285-4a68-a611-9b2c35facd57}",
+      "type": "Text",
+      "name": "Text.Wall.EndTurn",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 3.47892154195506e-7,
+        "y": 1.8794713020324707,
+        "z": -7.9588446617126465
+      },
+      "dimensions": {
+        "x": 2,
+        "y": 0.40000003576278687,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 5.960463766996327e-8,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -8.22759485244751,
+        "y": 0.9000000357627869,
+        "z": -6.832968711853027,
+        "scale": 2
+      },
+      "text": "End turn",
+      "lineHeight": 0.30000001192092896,
+      "alignment": "center",
+      "topMargin": 0.05000000074505806,
+      "backgroundColor": {
+        "red": 9,
+        "green": 9,
+        "blue": 9
+      },
+      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+    },
+    {
+      "id": "{9d699d24-76c5-4a00-8724-c5f9523acbde}",
+      "type": "Text",
+      "name": "Text.Wall.RedScore",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": -3.499999761581421,
+        "y": 2.9499998092651367,
+        "z": -7.958845138549805
+      },
+      "dimensions": {
+        "x": 2,
+        "y": 4,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -5.960465188081798e-8,
+        "y": -5.960465188081798e-8,
+        "z": 1.0430812125150624e-7,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -9.227595448493958,
+        "y": 0.9705283641815186,
+        "z": -4.332968831062317,
+        "scale": 4.000000238418579
+      },
+      "text": "0",
+      "lineHeight": 0.6000000238418579,
+      "alignment": "center",
+      "topMargin": 3.299999952316284,
+      "textColor": {
+        "red": 255,
+        "green": 11,
+        "blue": 9
+      },
+      "backgroundColor": {
+        "red": 9,
+        "green": 9,
+        "blue": 9
+      },
+      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+    },
+    {
+      "id": "{09d0b272-a251-40b5-80f0-14ff7cdc49a1}",
+      "type": "Text",
+      "name": "Text.Wall.Word",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 3.4789218261721544e-7,
+        "y": 3,
+        "z": -7.958845138549805
+      },
+      "dimensions": {
+        "x": 4.000000476837158,
+        "y": 1.5,
+        "z": 0.01
+      },
+      "rotation": {
+        "x": -5.960465188081798e-8,
+        "y": -5.960465188081798e-8,
+        "z": 1.0430812125150624e-7,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -9.227595806121826,
+        "y": 1.0205281972885132,
+        "z": -7.8329691886901855,
+        "scale": 4.000000953674316
+      },
+      "text": "Keyword: 5",
+      "lineHeight": 0.5,
+      "alignment": "center",
+      "topMargin": 0.4000000059604645,
+      "textColor": {
+        "red": 9,
+        "green": 110,
+        "blue": 255
+      },
+      "backgroundColor": {
+        "red": 9,
+        "green": 9,
+        "blue": 9
+      },
+      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+    },
+    {
+      "id": "{17dc114c-4312-4a67-aabf-e91e86a149ba}",
+      "type": "Box",
+      "name": "Cube.Floor",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 0.731249988079071,
+        "y": -0.2294711470603943,
+        "z": -9.832968711853027
+      },
+      "dimensions": {
+        "x": 16,
+        "y": 0.39999985694885254,
+        "z": 23.250001907348633
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -10.89375114440918,
+        "y": -11.85447210073471,
+        "z": -21.457969665527344,
+        "scale": 23.250001907348633
+      },
+      "shape": "Cube",
+      "color": {
+        "red": 0,
+        "green": 204,
+        "blue": 0
+      }
+    },
+    {
+      "id": "{d3ce6567-1bb7-4d1a-a015-432cf714bfcd}",
+      "type": "Box",
+      "name": "Cube.Panel.Base1",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 0.7312500476837158,
+        "y": 0.8705288767814636,
+        "z": -15.13296890258789
+      },
+      "dimensions": {
+        "x": 3.5999999046325684,
+        "y": 1.8000000715255737,
+        "z": 0.19999997317790985
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -1.0687499046325684,
+        "y": -0.9294710755348206,
+        "z": -16.932968854904175,
+        "scale": 3.5999999046325684
+      },
+      "shape": "Cube",
+      "color": {
+        "red": 63,
+        "green": 63,
+        "blue": 63
+      }
+    },
+    {
+      "id": "{57b0b9c8-14de-48f2-923e-f8bda628923e}",
+      "type": "Box",
+      "name": "Cube.Panel.Base2",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 0.7312500476837158,
+        "y": 0.2705288529396057,
+        "z": -16.332969665527344
+      },
+      "dimensions": {
+        "x": 3.5999999046325684,
+        "y": 0.6000000238418579,
+        "z": 0.19999997317790985
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -1.0687499046325684,
+        "y": -1.5294710993766785,
+        "z": -18.132969617843628,
+        "scale": 3.5999999046325684
+      },
+      "shape": "Cube",
+      "color": {
+        "red": 63,
+        "green": 63,
+        "blue": 63
+      }
+    },
+    {
+      "id": "{d35e1e73-9d53-4644-9658-8c8d3403826a}",
+      "type": "Box",
+      "name": "Cube.Panel.Base3",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 0.731249988079071,
+        "y": 1.1705286502838135,
+        "z": -15.732969284057617
+      },
+      "dimensions": {
+        "x": 6,
+        "y": 2.3999998569488525,
+        "z": 0.2000000923871994
+      },
+      "rotation": {
+        "x": 0.3826834559440613,
+        "y": 0,
+        "z": 0,
+        "w": 0.9238795042037964
+      },
+      "queryAACube": {
+        "x": -2.268749952316284,
+        "y": -1.8294712603092194,
+        "z": -18.732969284057617,
+        "scale": 6
+      },
+      "shape": "Cube",
+      "color": {
+        "red": 63,
+        "green": 63,
+        "blue": 63
+      }
+    },
+    {
+      "id": "{95292f8a-adf6-40bd-98ca-a857689e181e}",
+      "type": "Zone",
+      "name": "Zone.Panel",
+      "lastEdited": 1687938045701016,
+      "created": 1687938045701016,
+      "clientOnly": false,
+      "avatarEntity": false,
+      "localEntity": false,
+      "isFacingAvatar": false,
+      "faceCamera": false,
+      "grab": {
+        "grabbable": false,
+        "equippableLeftRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "equippableRightRotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "damping": 0,
+      "angularDamping": 0,
+      "position": {
+        "x": 0.75,
+        "y": 3.5,
+        "z": -17.40000009536743
+      },
+      "dimensions": {
+        "x": 6.5,
+        "y": 7,
+        "z": 5.199999809265137
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "queryAACube": {
+        "x": -2.75,
+        "y": 0,
+        "z": -20.90000009536743,
+        "scale": 7
+      },
+      "shapeType": "box"
+    }
+  ],
+  "Id": "{0d147cfa-9593-41c2-ab69-fe813d49c499}",
+  "Version": 133
+}
