@@ -512,7 +512,7 @@ var Panel = /** @class */ (function () {
         }
         for (var i = 0; i < ids.length; i++) {
             var prop = props[i];
-            if (prop.parentID !== this.panelEntityId) {
+            if (prop.parentID !== entityId && prop.parentID !== this.panelEntityId) {
                 continue;
             }
             if (prop.name.match(/^Text.Panel.Word\[(\d+)\]$/)) {
@@ -565,7 +565,13 @@ var Panel = /** @class */ (function () {
                     this.messageId = ids[i];
                     this.messageViewIds.push(ids[i]);
                     break;
-                default:
+                case 'Text.Panel.RedTitle':
+                case 'Text.Panel.BlueTitle':
+                case 'Text.Panel.RedPlus':
+                case 'Text.Panel.RedMinus':
+                case 'Text.Panel.BluePlus':
+                case 'Text.Panel.BlueMinus':
+                case 'Plane.Panel.Board':
                     this.boardViewIds.push(ids[i]);
             }
         }

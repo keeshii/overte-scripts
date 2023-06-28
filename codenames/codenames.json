@@ -2,11 +2,11 @@
   "DataVersion": 0,
   "Entities": [
     {
-      "id": "{816baefe-eb00-4dc8-bfa5-0a8b6ed6c1ae}",
+      "id": "{e2ef91fc-b1ea-48ee-b929-0fb02073227a}",
       "type": "Box",
       "name": "Cube.Wall",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -59,11 +59,11 @@
       }
     },
     {
-      "id": "{76799bb7-a854-42ae-ba1f-0874e31a1062}",
+      "id": "{b2961c23-e11f-46fb-a0df-93c310d1ceef}",
       "type": "Text",
       "name": "Text.Wall.BlueTitle",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -124,11 +124,11 @@
       }
     },
     {
-      "id": "{caaa351a-8150-4ada-b4f3-1b00fdce3262}",
+      "id": "{51839ec9-a389-496a-a8ab-e8dff2cef596}",
       "type": "Text",
       "name": "Text.Wall.RedTitle",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -189,11 +189,11 @@
       }
     },
     {
-      "id": "{fe17ade5-4ed7-4663-9475-272bcd565792}",
+      "id": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "type": "Box",
       "name": "Cube.Board",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -248,11 +248,11 @@
       }
     },
     {
-      "id": "{51364cab-1d67-4277-81da-86d60354e895}",
+      "id": "{ec4ec85a-f262-48ea-b713-fad9586736d6}",
       "type": "Image",
       "name": "Image.Wall.BlueCards",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -304,14 +304,14 @@
         "green": 110,
         "blue": 255
       },
-      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
     },
     {
-      "id": "{ceaaf9c2-95a8-476a-b2e3-5641927d83fc}",
+      "id": "{8c7b3dc0-5086-44af-a96e-05c13f757855}",
       "type": "Image",
       "name": "Image.Wall.Guesses",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -358,14 +358,14 @@
       },
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/assets/guesses.png",
       "keepAspectRatio": false,
-      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
     },
     {
-      "id": "{6b1f7cf2-00e4-4edc-a6be-205518f6de6c}",
+      "id": "{61c58d4c-d597-431f-a2df-24f9f48ef9a1}",
       "type": "Image",
       "name": "Image.Wall.RedCards",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -417,14 +417,14 @@
         "green": 11,
         "blue": 9
       },
-      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
     },
     {
-      "id": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "id": "{2e555ef2-a492-419b-9ec2-86ac09e81235}",
       "type": "Box",
       "name": "Plane.Panel",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -475,14 +475,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
     },
     {
-      "id": "{c66d7ad2-7d68-4f6c-bbd9-07ae5ab8cb0b}",
+      "id": "{93d32a7c-2681-4789-a119-918393ecd3a9}",
       "type": "Box",
       "name": "Plane.Panel.Board",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -506,9 +506,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 9.933165756592643e-7,
-        "y": 0.009999573230743408,
-        "z": -0.1400020569562912
+        "x": 9.885147094726562,
+        "y": 1.3331403732299805,
+        "z": -4.023715121093119e-7
       },
       "dimensions": {
         "x": 2.700000047683716,
@@ -516,10 +516,10 @@
         "z": 1.799999713897705
       },
       "rotation": {
-        "x": -1.490114875934978e-8,
-        "y": 1.5454237001222282e-8,
-        "z": 1.5454222790367567e-8,
-        "w": 1
+        "x": 0.27059799432754517,
+        "y": 0.6532814502716064,
+        "z": -0.2705981731414795,
+        "w": 0.6532815098762512
       },
       "queryAACube": {
         "x": -0.6187508702278137,
@@ -533,17 +533,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{09f46a7e-e53e-4ab0-9858-b8816e7fb7cb}",
+      "id": "{229aceec-9c85-4e87-9671-ba70a4cc26dc}",
       "type": "Text",
       "name": "Text.Panel.Abort",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -567,9 +567,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 1.6728884588701476e-7,
-        "y": 0.019277453422546387,
-        "z": 0.9599995613098145
+        "x": 10.669526100158691,
+        "y": 0.5618820190429688,
+        "z": 5.855890776729211e-7
       },
       "dimensions": {
         "x": 1.3000000715255737,
@@ -577,10 +577,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": 0.08125006407499313,
@@ -598,17 +598,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{7e1a4da9-3eec-4362-8a39-c33cfe2091a7}",
+      "id": "{2725dcd0-de13-4bb4-a65b-8075f583f664}",
       "type": "Text",
       "name": "Text.Panel.BlueGuesses",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -632,9 +632,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 2.1000006198883057,
-        "y": 0.029277054592967033,
-        "z": -0.19000110030174255
+        "x": 9.863423347473145,
+        "y": 1.3821256160736084,
+        "z": -2.0999999046325684
       },
       "dimensions": {
         "x": 0.30000001192092896,
@@ -642,10 +642,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": -1.5187504291534424,
@@ -663,17 +663,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{5fe0fb5d-dd45-433b-826e-3bd8b669572d}",
+      "id": "{4f017fca-2f63-45f3-9805-5469651122b6}",
       "type": "Text",
       "name": "Text.Panel.BlueMessage",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -697,9 +697,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 2.1000008583068848,
-        "y": 0.01927514187991619,
-        "z": -0.5400021076202393
+        "x": 9.60886287689209,
+        "y": 1.6225413084030151,
+        "z": -2.1000001430511475
       },
       "dimensions": {
         "x": 1.3000000715255737,
@@ -707,10 +707,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": -2.0187509059906006,
@@ -729,17 +729,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{eaa7a856-582a-4bbd-93ae-1d3e5afe4270}",
+      "id": "{ce386ca3-ee28-433d-8129-6985e053ebad}",
       "type": "Text",
       "name": "Text.Panel.BlueMinus",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -763,9 +763,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 1.7000007629394531,
-        "y": 0.02927692048251629,
-        "z": -0.19000105559825897
+        "x": 9.863423347473145,
+        "y": 1.3821256160736084,
+        "z": -1.7000000476837158
       },
       "dimensions": {
         "x": 0.30000001192092896,
@@ -773,10 +773,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": -1.1187505722045898,
@@ -794,17 +794,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{dbb61347-6b4d-4e13-b646-5a68593bbad2}",
+      "id": "{2e3266a9-f484-4e80-b7cc-143047600deb}",
       "type": "Text",
       "name": "Text.Panel.BluePlus",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -828,9 +828,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 2.5000007152557373,
-        "y": 0.02927718684077263,
-        "z": -0.19000114500522614
+        "x": 9.863423347473145,
+        "y": 1.3821256160736084,
+        "z": -2.5
       },
       "dimensions": {
         "x": 0.30000001192092896,
@@ -838,10 +838,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": -1.918750524520874,
@@ -859,17 +859,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{c3ad9ec9-890f-47fd-9cf7-d931d5505b18}",
+      "id": "{fdec95e3-f713-48d4-bddf-16239f435ef0}",
       "type": "Text",
       "name": "Text.Panel.BlueSubmit",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -893,9 +893,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 2.1000008583068848,
-        "y": 0.029277054592967033,
-        "z": 0.45999911427497864
+        "x": 10.323042869567871,
+        "y": 0.9225059747695923,
+        "z": -2.1000001430511475
       },
       "dimensions": {
         "x": 1.3000000715255737,
@@ -903,10 +903,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": -2.0187506675720215,
@@ -924,17 +924,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{ea863244-674b-41b1-8b2a-28f05bd0fdc5}",
+      "id": "{d4713ff7-9fbc-4b09-9d1f-4296dc02685f}",
       "type": "Text",
       "name": "Text.Panel.BlueTitle",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -958,9 +958,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 2.1000008583068848,
-        "y": 0.019275767728686333,
-        "z": -0.8900023102760315
+        "x": 9.36137580871582,
+        "y": 1.870029330253601,
+        "z": -2.1000001430511475
       },
       "dimensions": {
         "x": 1.3000000715255737,
@@ -968,10 +968,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": -2.0187506675720215,
@@ -995,17 +995,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{19935f0a-30d4-4fa0-a0f5-99afc06decb8}",
+      "id": "{67f245ad-76fa-4918-a8d7-b79b61c9f64f}",
       "type": "Text",
       "name": "Text.Panel.BlueWord",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1029,9 +1029,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 2.1000008583068848,
-        "y": 0.02927633933722973,
-        "z": 0.1599978506565094
+        "x": 10.110909461975098,
+        "y": 1.1346384286880493,
+        "z": -2.1000001430511475
       },
       "dimensions": {
         "x": 1.3000000715255737,
@@ -1039,10 +1039,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": -2.0187506675720215,
@@ -1060,17 +1060,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{002a0fa8-4a51-4868-b32c-a21d3c2c1563}",
+      "id": "{2987bab2-1199-4d65-bc35-825e56327861}",
       "type": "Text",
       "name": "Text.Panel.Message",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1094,9 +1094,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 4.359649494745099e-7,
-        "y": 0.019274979829788208,
-        "z": -0.29000210762023926
+        "x": 9.785639762878418,
+        "y": 1.4457651376724243,
+        "z": 1.2972068930139358e-7
       },
       "dimensions": {
         "x": 5.500000476837158,
@@ -1104,10 +1104,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": -2.0187506675720215,
@@ -1131,17 +1131,17 @@
         "green": 176,
         "blue": 36
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{23828a21-73d5-4232-aa19-38b22f790d12}",
+      "id": "{93ca54a7-6405-4e59-93aa-56013ce0644a}",
       "type": "Text",
       "name": "Text.Panel.RedGuesses",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1165,9 +1165,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": -2.09999942779541,
-        "y": 0.02927565760910511,
-        "z": -0.19000059366226196
+        "x": 9.863423347473145,
+        "y": 1.3821256160736084,
+        "z": 2.0999999046325684
       },
       "dimensions": {
         "x": 0.30000001192092896,
@@ -1175,10 +1175,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": 2.6812493801116943,
@@ -1196,17 +1196,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{661cce9b-7a28-444c-a50a-714f929e7138}",
+      "id": "{33dba3f3-f5df-49aa-b7a9-c50aa10d6420}",
       "type": "Text",
       "name": "Text.Panel.RedMessage",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1230,9 +1230,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": -2.09999942779541,
-        "y": 0.019273744896054268,
-        "z": -0.5400015711784363
+        "x": 9.60886287689209,
+        "y": 1.6225413084030151,
+        "z": 2.0999999046325684
       },
       "dimensions": {
         "x": 1.3000000715255737,
@@ -1240,10 +1240,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": 2.1812493801116943,
@@ -1262,17 +1262,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{129c57b5-af89-489c-96e1-7ddeef831e5c}",
+      "id": "{30888bd7-f235-410e-b68b-cc5a70d3926c}",
       "type": "Text",
       "name": "Text.Panel.RedMinus",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1296,9 +1296,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": -2.499999523162842,
-        "y": 0.029275525361299515,
-        "z": -0.19000054895877838
+        "x": 9.863423347473145,
+        "y": 1.3821256160736084,
+        "z": 2.5
       },
       "dimensions": {
         "x": 0.30000001192092896,
@@ -1306,10 +1306,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": 3.081249475479126,
@@ -1327,17 +1327,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{c0920b4f-4d00-4d5c-8ae0-9838329766d2}",
+      "id": "{6637bb27-4653-4ed2-9c5b-4205fbaab2a1}",
       "type": "Text",
       "name": "Text.Panel.RedPlus",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1361,9 +1361,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": -1.6999989748001099,
-        "y": 0.029275791719555855,
-        "z": -0.19000063836574554
+        "x": 9.863423347473145,
+        "y": 1.3821256160736084,
+        "z": 1.6999995708465576
       },
       "dimensions": {
         "x": 0.30000001192092896,
@@ -1371,10 +1371,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": 2.2812490463256836,
@@ -1392,17 +1392,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{dd242c25-c50d-4a31-a7b6-52e079ab6dae}",
+      "id": "{d8720002-4fb3-416a-9f3a-9e9be1f0d67a}",
       "type": "Text",
       "name": "Text.Panel.RedSubmit",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1426,9 +1426,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": -2.09999942779541,
-        "y": 0.02927565760910511,
-        "z": 0.45999962091445923
+        "x": 10.323042869567871,
+        "y": 0.9225059747695923,
+        "z": 2.0999999046325684
       },
       "dimensions": {
         "x": 1.3000000715255737,
@@ -1436,10 +1436,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": 2.1812493801116943,
@@ -1457,17 +1457,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{fdb2c0cc-559c-43b7-9245-abfe5bf0883f}",
+      "id": "{8e7e4fa0-3dd4-4bef-b9fd-aa24ad544482}",
       "type": "Text",
       "name": "Text.Panel.RedTitle",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1491,9 +1491,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": -2.09999942779541,
-        "y": 0.01927437074482441,
-        "z": -0.8900018334388733
+        "x": 9.36137580871582,
+        "y": 1.870029330253601,
+        "z": 2.0999999046325684
       },
       "dimensions": {
         "x": 1.3000000715255737,
@@ -1501,10 +1501,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": 2.1812493801116943,
@@ -1528,17 +1528,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{7c81b4ee-8d8c-4118-b78d-ba0a1e454cae}",
+      "id": "{197b4e25-f15e-4665-aae1-1160ae191dda}",
       "type": "Text",
       "name": "Text.Panel.RedWord",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1562,9 +1562,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": -2.09999942779541,
-        "y": 0.029274942353367805,
-        "z": 0.15999835729599
+        "x": 10.110909461975098,
+        "y": 1.1346384286880493,
+        "z": 2.0999999046325684
       },
       "dimensions": {
         "x": 1.3000000715255737,
@@ -1572,10 +1572,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": 2.1812493801116943,
@@ -1593,17 +1593,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{a0d21fd1-c018-45f1-99cb-408b439ef326}",
+      "id": "{78defe59-3694-4fdd-a76c-9753f8d6d695}",
       "type": "Text",
       "name": "Text.Panel.Start",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1627,9 +1627,9 @@
       "damping": 0,
       "angularDamping": 0,
       "position": {
-        "x": 1.522630697081695e-7,
-        "y": 0.029274404048919678,
-        "z": 0.35999795794487
+        "x": 10.25232982635498,
+        "y": 0.9932162761688232,
+        "z": 5.077482114757004e-7
       },
       "dimensions": {
         "x": 1.7000000476837158,
@@ -1637,10 +1637,10 @@
         "z": 0.01
       },
       "rotation": {
-        "x": -0.7071067690849304,
-        "y": 4.546626374273433e-15,
-        "z": 2.1855607101883834e-8,
-        "w": 0.7071067690849304
+        "x": -0.2705981433391571,
+        "y": 0.6532815098762512,
+        "z": 0.2705979645252228,
+        "w": 0.6532814502716064
       },
       "queryAACube": {
         "x": -0.11874999105930328,
@@ -1658,17 +1658,17 @@
         "green": 130,
         "blue": 0
       },
-      "parentID": "{9fe1df23-fa10-4e82-86f0-a7b681c3f0e3}",
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
       "renderWithZones": [
-        "{95292f8a-adf6-40bd-98ca-a857689e181e}"
+        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
       ]
     },
     {
-      "id": "{06e661b3-f451-40a8-8e81-9fcd0ef12658}",
+      "id": "{7f286e41-8adf-4b05-86b4-23db5db71653}",
       "type": "Text",
       "name": "Text.Wall.BlueScore",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1727,14 +1727,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
     },
     {
-      "id": "{a1774c81-d285-4a68-a611-9b2c35facd57}",
+      "id": "{0aa381f6-df24-4815-a3d3-d7c15bb734ba}",
       "type": "Text",
       "name": "Text.Wall.EndTurn",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1788,14 +1788,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
     },
     {
-      "id": "{9d699d24-76c5-4a00-8724-c5f9523acbde}",
+      "id": "{00694246-0aa2-4d14-b18b-84b288bef5f6}",
       "type": "Text",
       "name": "Text.Wall.RedScore",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1854,14 +1854,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
     },
     {
-      "id": "{09d0b272-a251-40b5-80f0-14ff7cdc49a1}",
+      "id": "{0d6baf32-bfaa-475d-8252-ccb5cc57bcb3}",
       "type": "Text",
       "name": "Text.Wall.Word",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1920,14 +1920,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe17ade5-4ed7-4663-9475-272bcd565792}"
+      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
     },
     {
-      "id": "{17dc114c-4312-4a67-aabf-e91e86a149ba}",
+      "id": "{cf988547-6b5f-428c-908f-ab84927cb71c}",
       "type": "Box",
       "name": "Cube.Floor",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1980,11 +1980,11 @@
       }
     },
     {
-      "id": "{d3ce6567-1bb7-4d1a-a015-432cf714bfcd}",
+      "id": "{366d4989-91c5-4c0a-b726-300160445af8}",
       "type": "Box",
       "name": "Cube.Panel.Base1",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2037,11 +2037,11 @@
       }
     },
     {
-      "id": "{57b0b9c8-14de-48f2-923e-f8bda628923e}",
+      "id": "{6f012430-ff2b-4ee7-b5cf-507ea400973a}",
       "type": "Box",
       "name": "Cube.Panel.Base2",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2094,11 +2094,11 @@
       }
     },
     {
-      "id": "{d35e1e73-9d53-4644-9658-8c8d3403826a}",
+      "id": "{7038475d-5f86-42a8-aa49-da9eb6bf8464}",
       "type": "Box",
       "name": "Cube.Panel.Base3",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2151,11 +2151,11 @@
       }
     },
     {
-      "id": "{95292f8a-adf6-40bd-98ca-a857689e181e}",
+      "id": "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}",
       "type": "Zone",
       "name": "Zone.Panel",
-      "lastEdited": 1687938045701016,
-      "created": 1687938045701016,
+      "lastEdited": 1687952369644105,
+      "created": 1687952369644105,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2203,6 +2203,9 @@
       "shapeType": "box"
     }
   ],
-  "Id": "{0d147cfa-9593-41c2-ab69-fe813d49c499}",
-  "Version": 133
+  "Id": "{4c096ba2-f8b8-4574-ac9e-e217e4339244}",
+  "Version": 133,
+  "Paths": {
+    "/": "/0.0,2.299999952316284,-0.0/0.0,0.0,-0.0,1.0"
+  }
 }

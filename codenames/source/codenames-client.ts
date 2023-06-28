@@ -5,7 +5,6 @@ import { Message } from './messages';
 export class CodenamesClient {
 
   private entityId: Uuid;
-  private panelEntityId: Uuid;
   private server: CodenamesServer;
   private lastClickTime: number;
   private mousePressOnEntityFn: (id: Uuid, event: PointerEvent) => void;
@@ -22,7 +21,6 @@ export class CodenamesClient {
 
     this.entityId = entityId;
 
-    Script.setTimeout(() => this.findPanelEntity(), CONFIG.INIT_ENTITIES_DELAY);
     Entities.mousePressOnEntity.connect(this.mousePressOnEntityFn);
   }
 
@@ -33,18 +31,6 @@ export class CodenamesClient {
     }
     if (CONFIG.CLIENT_SIDE_ONLY) {
       this.server.unload();
-    }
-  }
-
-  private findPanelEntity() {
-    const position = Entities.getEntityProperties(this.entityId, ['position']).position;
-    const entityIds = Entities.findEntities(position, 50);
-    for (const entityId of entityIds) {
-      const properties = Entities.getEntityProperties(entityId, ['parentID', 'name']);
-      if (properties.name === 'Plane.Panel' && properties.parentID === this.entityId) {
-        this.panelEntityId = entityId;
-        break;
-      }
     }
   }
 
@@ -66,7 +52,7 @@ export class CodenamesClient {
       return;
     }
 
-    if (parentId !== this.entityId && parentId !== this.panelEntityId) {
+    if (parentId !== this.entityId) {
       return;
     }
 

@@ -512,7 +512,7 @@ var Panel = /** @class */ (function () {
         }
         for (var i = 0; i < ids.length; i++) {
             var prop = props[i];
-            if (prop.parentID !== this.panelEntityId) {
+            if (prop.parentID !== entityId && prop.parentID !== this.panelEntityId) {
                 continue;
             }
             if (prop.name.match(/^Text.Panel.Word\[(\d+)\]$/)) {
@@ -565,7 +565,13 @@ var Panel = /** @class */ (function () {
                     this.messageId = ids[i];
                     this.messageViewIds.push(ids[i]);
                     break;
-                default:
+                case 'Text.Panel.RedTitle':
+                case 'Text.Panel.BlueTitle':
+                case 'Text.Panel.RedPlus':
+                case 'Text.Panel.RedMinus':
+                case 'Text.Panel.BluePlus':
+                case 'Text.Panel.BlueMinus':
+                case 'Plane.Panel.Board':
                     this.boardViewIds.push(ids[i]);
             }
         }
@@ -909,7 +915,6 @@ var CodenamesClient = /** @class */ (function () {
             this.server.preload(entityId);
         }
         this.entityId = entityId;
-        Script.setTimeout(function () { return _this.findPanelEntity(); }, constants_1.CONFIG.INIT_ENTITIES_DELAY);
         Entities.mousePressOnEntity.connect(this.mousePressOnEntityFn);
     };
     CodenamesClient.prototype.unload = function () {
@@ -919,18 +924,6 @@ var CodenamesClient = /** @class */ (function () {
         }
         if (constants_1.CONFIG.CLIENT_SIDE_ONLY) {
             this.server.unload();
-        }
-    };
-    CodenamesClient.prototype.findPanelEntity = function () {
-        var position = Entities.getEntityProperties(this.entityId, ['position']).position;
-        var entityIds = Entities.findEntities(position, 50);
-        for (var _i = 0, entityIds_1 = entityIds; _i < entityIds_1.length; _i++) {
-            var entityId = entityIds_1[_i];
-            var properties = Entities.getEntityProperties(entityId, ['parentID', 'name']);
-            if (properties.name === 'Plane.Panel' && properties.parentID === this.entityId) {
-                this.panelEntityId = entityId;
-                break;
-            }
         }
     };
     CodenamesClient.prototype.callServer = function (method, params) {
@@ -949,7 +942,7 @@ var CodenamesClient = /** @class */ (function () {
         if (event.button !== 'Primary') {
             return;
         }
-        if (parentId !== this.entityId && parentId !== this.panelEntityId) {
+        if (parentId !== this.entityId) {
             return;
         }
         // Prevents clicks on the board right after closing the overlay
