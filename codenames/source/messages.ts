@@ -7,6 +7,8 @@ export enum Message {
 
   WAITING_FOR_VOTES = 'Waiting for votes',
 
+  WAITING_FOR_SPYMASTER = 'Waiting for a clue from\nthe {color} spymaster',
+
   ABORT_GAME = 'Abort current game?',
 
   BUTTON_ABORT_CONFIRM = 'Yes, abort the game',
@@ -30,6 +32,8 @@ export enum Message {
   ROUND_OVER_ASSASIN = 'Team {team} has won the round,\nbecause the Assasin card was selected.',
 
   ROUND_OVER_ALL_AGENTS = 'Team {team} has won the round,\nbecause they uncovered all agents.',
+
+  START_GAME_INFO = 'Click the button on the panel\nto start the game.',
 
   INPUT_LABEL = 'Click to enter a word',
 

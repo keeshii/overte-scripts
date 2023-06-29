@@ -2,11 +2,11 @@
   "DataVersion": 0,
   "Entities": [
     {
-      "id": "{e2ef91fc-b1ea-48ee-b929-0fb02073227a}",
+      "id": "{e3f880da-c617-4de6-b353-796be7f01e5d}",
       "type": "Box",
       "name": "Cube.Wall",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -59,11 +59,11 @@
       }
     },
     {
-      "id": "{b2961c23-e11f-46fb-a0df-93c310d1ceef}",
+      "id": "{7ddd3620-fdb9-448e-ab40-8f8d67b71b0a}",
       "type": "Text",
       "name": "Text.Wall.BlueTitle",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -113,9 +113,9 @@
       "lineHeight": 0.4000000059604645,
       "alignment": "center",
       "textColor": {
-        "red": 9,
-        "green": 110,
-        "blue": 255
+        "red": 0,
+        "green": 72,
+        "blue": 193
       },
       "backgroundColor": {
         "red": 255,
@@ -124,11 +124,11 @@
       }
     },
     {
-      "id": "{51839ec9-a389-496a-a8ab-e8dff2cef596}",
+      "id": "{d338ab08-f240-44db-a7f3-7f5f2f6b788a}",
       "type": "Text",
       "name": "Text.Wall.RedTitle",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -179,8 +179,8 @@
       "alignment": "center",
       "textColor": {
         "red": 255,
-        "green": 11,
-        "blue": 9
+        "green": 13,
+        "blue": 1
       },
       "backgroundColor": {
         "red": 255,
@@ -189,11 +189,11 @@
       }
     },
     {
-      "id": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "id": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "type": "Box",
       "name": "Cube.Board",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -248,11 +248,11 @@
       }
     },
     {
-      "id": "{ec4ec85a-f262-48ea-b713-fad9586736d6}",
+      "id": "{c2aa8545-08fd-4126-b6b1-99372863ce58}",
       "type": "Image",
       "name": "Image.Wall.BlueCards",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -300,18 +300,18 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/assets/cards.png",
       "keepAspectRatio": false,
       "color": {
-        "red": 9,
-        "green": 110,
-        "blue": 255
+        "red": 0,
+        "green": 72,
+        "blue": 193
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}"
     },
     {
-      "id": "{8c7b3dc0-5086-44af-a96e-05c13f757855}",
+      "id": "{4d80f4cb-6580-4a46-ab01-e8ba391fbf10}",
       "type": "Image",
       "name": "Image.Wall.Guesses",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -358,14 +358,14 @@
       },
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/assets/guesses.png",
       "keepAspectRatio": false,
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}"
     },
     {
-      "id": "{61c58d4c-d597-431f-a2df-24f9f48ef9a1}",
+      "id": "{32533966-247b-43ab-bc6f-a3af282dd2ea}",
       "type": "Image",
       "name": "Image.Wall.RedCards",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -414,17 +414,17 @@
       "keepAspectRatio": false,
       "color": {
         "red": 255,
-        "green": 11,
-        "blue": 9
+        "green": 13,
+        "blue": 1
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}"
     },
     {
-      "id": "{2e555ef2-a492-419b-9ec2-86ac09e81235}",
+      "id": "{ec953d6c-4f0a-4298-9990-bb364da07ce2}",
       "type": "Box",
       "name": "Plane.Panel",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -475,14 +475,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}"
     },
     {
-      "id": "{93d32a7c-2681-4789-a119-918393ecd3a9}",
+      "id": "{04a28f0b-191d-4e34-812b-30405dcdfc54}",
       "type": "Box",
       "name": "Plane.Panel.Board",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -533,17 +533,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{229aceec-9c85-4e87-9671-ba70a4cc26dc}",
+      "id": "{cec2ccb4-ece2-430b-bda9-b4958a068154}",
       "type": "Text",
       "name": "Text.Panel.Abort",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -598,17 +598,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{2725dcd0-de13-4bb4-a65b-8075f583f664}",
+      "id": "{c9244ac0-a8b0-4341-be34-1825d2578b85}",
       "type": "Text",
       "name": "Text.Panel.BlueGuesses",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -663,17 +663,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{4f017fca-2f63-45f3-9805-5469651122b6}",
+      "id": "{54d649a8-f8c7-4bbc-be27-4175649ca3e6}",
       "type": "Text",
       "name": "Text.Panel.BlueMessage",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -729,17 +729,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{ce386ca3-ee28-433d-8129-6985e053ebad}",
+      "id": "{7a905493-310c-4f59-8ef3-d4d7178a5519}",
       "type": "Text",
       "name": "Text.Panel.BlueMinus",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -794,17 +794,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{2e3266a9-f484-4e80-b7cc-143047600deb}",
+      "id": "{8ecd1736-a508-4a76-b6dd-93e98d268e90}",
       "type": "Text",
       "name": "Text.Panel.BluePlus",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -859,17 +859,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{fdec95e3-f713-48d4-bddf-16239f435ef0}",
+      "id": "{7e11319c-82d5-4af6-8273-2bb73e3516c5}",
       "type": "Text",
       "name": "Text.Panel.BlueSubmit",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -924,17 +924,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{d4713ff7-9fbc-4b09-9d1f-4296dc02685f}",
+      "id": "{29810b86-09b2-46b5-8d67-3b1a31e28941}",
       "type": "Text",
       "name": "Text.Panel.BlueTitle",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -986,26 +986,26 @@
       "topMargin": 0.05000000074505806,
       "unlit": true,
       "textColor": {
-        "red": 9,
-        "green": 110,
-        "blue": 255
+        "red": 0,
+        "green": 72,
+        "blue": 193
       },
       "backgroundColor": {
         "red": 255,
         "green": 255,
         "blue": 255
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{67f245ad-76fa-4918-a8d7-b79b61c9f64f}",
+      "id": "{1843ca65-eecf-4d53-b05e-7da3c3f10d13}",
       "type": "Text",
       "name": "Text.Panel.BlueWord",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1060,17 +1060,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{2987bab2-1199-4d65-bc35-825e56327861}",
+      "id": "{3c0bdd45-d2cb-4eed-9759-a2d4d6b7a478}",
       "type": "Text",
       "name": "Text.Panel.Message",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1131,17 +1131,17 @@
         "green": 176,
         "blue": 36
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{93ca54a7-6405-4e59-93aa-56013ce0644a}",
+      "id": "{3742b257-eb6c-4560-a3b6-cc3cd4c1dff0}",
       "type": "Text",
       "name": "Text.Panel.RedGuesses",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1196,17 +1196,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{33dba3f3-f5df-49aa-b7a9-c50aa10d6420}",
+      "id": "{a03b2d4e-9c9a-4076-817d-77d48f3de55f}",
       "type": "Text",
       "name": "Text.Panel.RedMessage",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1262,17 +1262,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{30888bd7-f235-410e-b68b-cc5a70d3926c}",
+      "id": "{90157264-2cee-4d17-a491-d207e06f2537}",
       "type": "Text",
       "name": "Text.Panel.RedMinus",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1327,17 +1327,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{6637bb27-4653-4ed2-9c5b-4205fbaab2a1}",
+      "id": "{ce80b2c8-955c-4e42-b6b2-ced0ae08aca0}",
       "type": "Text",
       "name": "Text.Panel.RedPlus",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1392,17 +1392,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{d8720002-4fb3-416a-9f3a-9e9be1f0d67a}",
+      "id": "{9d667e0c-5219-415e-959a-bb781e697342}",
       "type": "Text",
       "name": "Text.Panel.RedSubmit",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1457,17 +1457,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{8e7e4fa0-3dd4-4bef-b9fd-aa24ad544482}",
+      "id": "{79e122c5-e38f-42ae-b98a-7c7c50014859}",
       "type": "Text",
       "name": "Text.Panel.RedTitle",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1520,25 +1520,25 @@
       "unlit": true,
       "textColor": {
         "red": 255,
-        "green": 11,
-        "blue": 9
+        "green": 13,
+        "blue": 1
       },
       "backgroundColor": {
         "red": 255,
         "green": 255,
         "blue": 255
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{197b4e25-f15e-4665-aae1-1160ae191dda}",
+      "id": "{2bfae8eb-83ea-47b7-8f16-5409b1b0f268}",
       "type": "Text",
       "name": "Text.Panel.RedWord",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1593,17 +1593,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{78defe59-3694-4fdd-a76c-9753f8d6d695}",
+      "id": "{c5f5b54d-feb7-43ab-9d23-84fdc0e1adbf}",
       "type": "Text",
       "name": "Text.Panel.Start",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1658,17 +1658,17 @@
         "green": 130,
         "blue": 0
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}",
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}",
       "renderWithZones": [
-        "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}"
+        "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}"
       ]
     },
     {
-      "id": "{7f286e41-8adf-4b05-86b4-23db5db71653}",
+      "id": "{dc4d0aa1-5e55-42e7-a02f-a04527c70e58}",
       "type": "Text",
       "name": "Text.Wall.BlueScore",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1718,23 +1718,23 @@
       "alignment": "center",
       "topMargin": 3.299999952316284,
       "textColor": {
-        "red": 9,
-        "green": 110,
-        "blue": 255
+        "red": 0,
+        "green": 72,
+        "blue": 193
       },
       "backgroundColor": {
         "red": 9,
         "green": 9,
         "blue": 9
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}"
     },
     {
-      "id": "{0aa381f6-df24-4815-a3d3-d7c15bb734ba}",
+      "id": "{c491f6da-54bb-4f9f-8e1f-771bbf2460f7}",
       "type": "Text",
       "name": "Text.Wall.EndTurn",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1788,14 +1788,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}"
     },
     {
-      "id": "{00694246-0aa2-4d14-b18b-84b288bef5f6}",
+      "id": "{c68294a9-a23f-470e-9579-a385eb66b2c9}",
       "type": "Text",
       "name": "Text.Wall.RedScore",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1846,22 +1846,22 @@
       "topMargin": 3.299999952316284,
       "textColor": {
         "red": 255,
-        "green": 11,
-        "blue": 9
+        "green": 13,
+        "blue": 1
       },
       "backgroundColor": {
         "red": 9,
         "green": 9,
         "blue": 9
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}"
     },
     {
-      "id": "{0d6baf32-bfaa-475d-8252-ccb5cc57bcb3}",
+      "id": "{37199737-96b8-4776-89d2-6a4dc1eb72b8}",
       "type": "Text",
       "name": "Text.Wall.Word",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1920,14 +1920,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{aeb1b41e-8545-4ef6-a247-1736a8f0697b}"
+      "parentID": "{65bae6f8-38ea-40ba-91d7-d9f065dca2a7}"
     },
     {
-      "id": "{cf988547-6b5f-428c-908f-ab84927cb71c}",
+      "id": "{0a28a5f9-5975-4d6d-9f20-b87865d3de3e}",
       "type": "Box",
       "name": "Cube.Floor",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1980,11 +1980,11 @@
       }
     },
     {
-      "id": "{366d4989-91c5-4c0a-b726-300160445af8}",
+      "id": "{fe93913a-c359-4abc-b7cc-3c1622269b3a}",
       "type": "Box",
       "name": "Cube.Panel.Base1",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2037,11 +2037,11 @@
       }
     },
     {
-      "id": "{6f012430-ff2b-4ee7-b5cf-507ea400973a}",
+      "id": "{02355afb-ce36-424c-a18d-f37cb22e7eb8}",
       "type": "Box",
       "name": "Cube.Panel.Base2",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2094,11 +2094,11 @@
       }
     },
     {
-      "id": "{7038475d-5f86-42a8-aa49-da9eb6bf8464}",
+      "id": "{5ee246f2-662d-449d-85d2-86e1b7dad9d3}",
       "type": "Box",
       "name": "Cube.Panel.Base3",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2151,11 +2151,11 @@
       }
     },
     {
-      "id": "{27b41e41-ad20-422e-a832-1fb0b1dbafe8}",
+      "id": "{b7100ef9-6f95-4f1f-9e89-cb76d8376399}",
       "type": "Zone",
       "name": "Zone.Panel",
-      "lastEdited": 1687952369644105,
-      "created": 1687952369644105,
+      "lastEdited": 1688044636485911,
+      "created": 1688044636485911,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2203,7 +2203,7 @@
       "shapeType": "box"
     }
   ],
-  "Id": "{4c096ba2-f8b8-4574-ac9e-e217e4339244}",
+  "Id": "{9f2659ac-2ff1-44a4-b403-4e69639b70b5}",
   "Version": 133,
   "Paths": {
     "/": "/0.0,2.299999952316284,-0.0/0.0,0.0,-0.0,1.0"

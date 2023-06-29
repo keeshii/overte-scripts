@@ -29,9 +29,9 @@ export const BLUE_TEAM = 1;
 
 export const COLOR = {
   BLACK: { red: 0, green: 0, blue: 0 },
-  RED: { red: 255, green: 0, blue: 0 },
-  BLUE: { red: 0, green: 0, blue: 255 },
-  YELLOW: { red: 255, green: 255, blue: 0 },
+  RED: { red: 209, green: 53, blue: 17 },
+  BLUE: { red: 7, green: 99, blue: 155 },
+  YELLOW: { red: 255, green: 208, blue: 138 },
   WHITE: { red: 255, green: 255, blue: 255 },
   GRAY: { red: 192, green: 192, blue: 192 }
 };

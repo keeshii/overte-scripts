@@ -5,6 +5,7 @@ import { Panel } from './panel';
 import { ScoreScreen } from './score-screen';
 import { Message } from './messages';
 import { WordScreen } from './word-screen';
+import { SoundPlayer } from './sound-player';
 
 export class CodenamesServer {
   private words: string[] = [];
@@ -19,6 +20,7 @@ export class CodenamesServer {
   private roundPending: boolean;
   private wordScreen: WordScreen;
   private scoreScreen: ScoreScreen;
+  private soundPlayer: SoundPlayer;
   private entityId: Uuid;
   private remotelyCallable: string[];
 
@@ -107,6 +109,7 @@ export class CodenamesServer {
       const teamLabel = opponentId === RED_TEAM ? Message.RED : Message.BLUE;
       this.scoreScreen.setScore(opponentId, opponent.score);
       this.showRoundOver(Message.ROUND_OVER_ASSASIN.replace('{team}', teamLabel));
+      this.soundPlayer.play(SoundPlayer.ASSASIN_SOUND);
       return;
     }
 
@@ -119,12 +122,14 @@ export class CodenamesServer {
         this.teams[RED_TEAM].score += 1;
         this.scoreScreen.setScore(RED_TEAM, this.teams[RED_TEAM].score);
         this.showRoundOver(Message.ROUND_OVER_ALL_AGENTS.replace('{team}', Message.RED));
+        this.soundPlayer.play(SoundPlayer.ROUND_OVER_SOUND);
         return;
       }
       if (blueLeft === 0) {
         this.teams[BLUE_TEAM].score += 1;
         this.scoreScreen.setScore(BLUE_TEAM, this.teams[BLUE_TEAM].score);
         this.showRoundOver(Message.ROUND_OVER_ALL_AGENTS.replace('{team}', Message.BLUE));
+        this.soundPlayer.play(SoundPlayer.ROUND_OVER_SOUND);
         return;
       }
     }
@@ -158,14 +163,16 @@ export class CodenamesServer {
     const message = params[0];
     switch (message) {
       case Message.BUTTON_START:
-        this.startNewRound();
+      case Message.BUTTON_NEXT_ROUND:
+        if (!this.roundPending) {
+          this.startNewRound();
+        }
         return;
       case Message.BUTTON_ABORT_CONFIRM:
-        this.resetGameState();
-        return;
-      case Message.BUTTON_NEXT_ROUND:
-        this.startNewRound();
-        return;
+        if (this.roundPending) {
+          this.resetGameState();
+          return;
+        }
     }
   }
 
@@ -194,8 +201,11 @@ export class CodenamesServer {
     this.clueSubmitted = false;
     this.panel.setTeamMessage(this.activeTeam, Message.WAITING_OTHER_TEAM);
     this.panel.setTeamMessage(opponentId, Message.GIVE_A_CLUE, Message.BUTTON_SUBMIT);
-    this.wordScreen.clear();
     this.activeTeam = opponentId;
+
+    const teamLabel = opponentId === RED_TEAM ? Message.RED : Message.BLUE;
+    const message = Message.WAITING_FOR_SPYMASTER.replace('{color}', teamLabel);
+    this.wordScreen.showMessage(message);
   }
 
   private resetGameState() {
@@ -217,7 +227,7 @@ export class CodenamesServer {
     }
 
     this.board.renderBoard(this.boardItems);
-    this.wordScreen.clear();
+    this.wordScreen.showMessage(Message.START_GAME_INFO);
     this.panel.setView('message');
     this.panel.setMessage(Message.START_GAME, Message.BUTTON_START);
   }
@@ -231,6 +241,7 @@ export class CodenamesServer {
     this.panel = new Panel(this.entityId, entityIds, entities);
     this.scoreScreen = new ScoreScreen(this.entityId, entityIds, entities);
     this.wordScreen = new WordScreen(this.entityId, entityIds, entities);
+    this.soundPlayer = new SoundPlayer(position);
   }
 
   private startNewRound() {
@@ -250,6 +261,10 @@ export class CodenamesServer {
     this.panel.setTeamMessage(opponentId, Message.WAITING_OTHER_TEAM);
     this.scoreScreen.setWordsLeft(this.activeTeam, 9);
     this.scoreScreen.setWordsLeft(opponentId, 8);
+
+    const teamLabel = this.activeTeam === RED_TEAM ? Message.RED : Message.BLUE;
+    const message = Message.WAITING_FOR_SPYMASTER.replace('{color}', teamLabel);
+    this.wordScreen.showMessage(message);
   }
 
   private showRoundOver(message: string) {
@@ -259,7 +274,7 @@ export class CodenamesServer {
       Message.BUTTON_NEXT_ROUND,
       Message.BUTTON_END_GAME
     );
-    this.wordScreen.clear();
+    this.wordScreen.showMessage(message);
     this.roundPending = false;
   }
 

@@ -2,11 +2,11 @@
   "DataVersion": 0,
   "Entities": [
     {
-      "id": "{25a940bd-f8c9-441f-942d-71cf3946a7c8}",
+      "id": "{65d5b8fb-6536-469c-a9aa-9d646525885e}",
       "type": "Zone",
       "name": "Zone.Sky",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -75,11 +75,11 @@
       "shadowMaxDistance": 40
     },
     {
-      "id": "{01712ead-b857-4e80-a98f-5e262699df12}",
+      "id": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}",
       "type": "Zone",
       "name": "Zone.Dixit",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -127,11 +127,11 @@
       "shapeType": "box"
     },
     {
-      "id": "{13e37af3-69c2-4f67-952f-c8d2b4de1f80}",
+      "id": "{6fa5e6f5-6bf3-408b-92d8-9759e8423a0f}",
       "type": "Text",
       "name": "Text.Screen",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -191,14 +191,14 @@
         "green": 37,
         "blue": 37
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{8136858b-3938-4918-b20c-592fd50ac3d8}",
+      "id": "{42108a32-324c-4e96-a99b-358857642959}",
       "type": "Text",
       "name": "Text.ButtonAbortGame",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -255,14 +255,14 @@
         "green": 49,
         "blue": 49
       },
-      "parentID": "{13e37af3-69c2-4f67-952f-c8d2b4de1f80}"
+      "parentID": "{6fa5e6f5-6bf3-408b-92d8-9759e8423a0f}"
     },
     {
-      "id": "{173f46d1-0e40-4522-9fd8-668ecfddd73e}",
+      "id": "{37691602-2458-45bf-8522-ca2e97511eb5}",
       "type": "Text",
       "name": "Text.ButtonOpenPanel",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -319,14 +319,14 @@
         "green": 49,
         "blue": 49
       },
-      "parentID": "{13e37af3-69c2-4f67-952f-c8d2b4de1f80}"
+      "parentID": "{6fa5e6f5-6bf3-408b-92d8-9759e8423a0f}"
     },
     {
-      "id": "{cd19346a-d39c-4dfe-bbe3-502d19602d6b}",
+      "id": "{2d5c8f20-7ee9-4292-87e4-f3ccee905e41}",
       "type": "Text",
       "name": "Text.ButtonScreen",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -383,14 +383,14 @@
         "green": 118,
         "blue": 3
       },
-      "parentID": "{13e37af3-69c2-4f67-952f-c8d2b4de1f80}"
+      "parentID": "{6fa5e6f5-6bf3-408b-92d8-9759e8423a0f}"
     },
     {
-      "id": "{b2bb6a7d-44fe-43f7-8bd4-eec6ac0c48b9}",
+      "id": "{c276f479-9855-4c76-9d8c-8ff725131cb7}",
       "type": "Text",
       "name": "Text.Players",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -447,14 +447,14 @@
         "green": 37,
         "blue": 37
       },
-      "parentID": "{13e37af3-69c2-4f67-952f-c8d2b4de1f80}"
+      "parentID": "{6fa5e6f5-6bf3-408b-92d8-9759e8423a0f}"
     },
     {
-      "id": "{50a586fe-de04-4130-b581-c2285bde6b74}",
+      "id": "{29620485-a080-4a3a-b6c7-9a145333dba6}",
       "type": "Text",
       "name": "Text.PlayersTitle",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -509,14 +509,14 @@
         "green": 0,
         "blue": 0
       },
-      "parentID": "{13e37af3-69c2-4f67-952f-c8d2b4de1f80}"
+      "parentID": "{6fa5e6f5-6bf3-408b-92d8-9759e8423a0f}"
     },
     {
-      "id": "{3138521e-b621-43b7-9868-00ecb27bb3ec}",
+      "id": "{f4e2aee3-edc1-48f1-97a4-c9e8b15501e8}",
       "type": "Text",
       "name": "Text.ScreenTitle",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -571,14 +571,14 @@
         "green": 0,
         "blue": 0
       },
-      "parentID": "{13e37af3-69c2-4f67-952f-c8d2b4de1f80}"
+      "parentID": "{6fa5e6f5-6bf3-408b-92d8-9759e8423a0f}"
     },
     {
-      "id": "{f7ebdcd2-2bf5-4161-9e85-75c5a56d74d6}",
+      "id": "{bf36a63a-a7e2-4dd8-806d-b93494a07559}",
       "type": "Box",
       "name": "Box.Pillar",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -630,14 +630,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{936c6e03-66ff-4895-ae2e-54f705aa2d30}",
+      "id": "{12070def-ca06-438c-a794-18e220b04952}",
       "type": "Material",
       "name": "Box.Pillar.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -678,7 +678,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{f7ebdcd2-2bf5-4161-9e85-75c5a56d74d6}",
+      "parentID": "{bf36a63a-a7e2-4dd8-806d-b93494a07559}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -687,11 +687,11 @@
       }
     },
     {
-      "id": "{78a4f9ec-c1a7-4815-a348-5f6f4878039e}",
+      "id": "{eb0ee863-ec8b-45f9-8ba8-406b649c4198}",
       "type": "Model",
       "name": "Model.Window.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -739,14 +739,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{a9651ea0-4c98-4b69-b864-fe7f85bcce34}",
+      "id": "{181e97bb-225b-46a6-94e9-ff37db4bfb46}",
       "type": "Model",
       "name": "Model.Window",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -794,14 +794,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{1479eae3-3ee6-4fe9-99a0-b1e32aa19ea2}",
+      "id": "{2857a44e-eda4-433d-a7d5-70dc54f3d8a0}",
       "type": "Box",
       "name": "Box.Pillar.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -853,14 +853,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{9ad1d0e5-79c7-490b-b481-0030adb5762e}",
+      "id": "{79c3fd0c-dde0-4ab5-b893-911d73d5fbc2}",
       "type": "Material",
       "name": "Box.Pillar.001.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -901,7 +901,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{1479eae3-3ee6-4fe9-99a0-b1e32aa19ea2}",
+      "parentID": "{2857a44e-eda4-433d-a7d5-70dc54f3d8a0}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -910,11 +910,11 @@
       }
     },
     {
-      "id": "{3537a71c-69b2-441e-980c-4bee97e37977}",
+      "id": "{f5d473ca-f123-4494-a21b-0e9334d79073}",
       "type": "Model",
       "name": "Model.Window.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -962,14 +962,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{3e7179aa-9f0a-4e91-b681-0b49b4462b89}",
+      "id": "{75f047d8-c55c-4c2b-9d36-66f78a69991e}",
       "type": "Model",
       "name": "Model.Window.003",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1017,14 +1017,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{8823869f-3bbf-4eb2-ace7-92e966df58d4}",
+      "id": "{ed20516b-dc39-4777-9971-39becb91a7a9}",
       "type": "Box",
       "name": "Box.Pillar.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1076,14 +1076,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{3e61e28d-3324-46c1-9249-e11aff3373c7}",
+      "id": "{3cb59009-65d1-4ee2-8f9f-d6e33ecd83ea}",
       "type": "Material",
       "name": "Box.Pillar.002.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1124,7 +1124,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{8823869f-3bbf-4eb2-ace7-92e966df58d4}",
+      "parentID": "{ed20516b-dc39-4777-9971-39becb91a7a9}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -1133,11 +1133,11 @@
       }
     },
     {
-      "id": "{cac1a11f-e4fd-462a-b8cb-81872a64b2ee}",
+      "id": "{dc94f3fd-050f-4604-b7a9-cf204e4f38a3}",
       "type": "Model",
       "name": "Model.Window.004",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1185,14 +1185,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{6dd6deff-cc09-423a-9d29-9466d77b2158}",
+      "id": "{562161bf-b511-4d14-b134-37eb1b23635a}",
       "type": "Model",
       "name": "Model.Window.005",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1240,14 +1240,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{52af2530-5ac5-4fde-ae39-208db40c0b79}",
+      "id": "{c5732a5c-9b1e-450a-b6c2-c656c1078ecc}",
       "type": "Box",
       "name": "Box.Pillar.003",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1299,14 +1299,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{9c45e3d2-37e9-4414-ab66-9f6f466c20f4}",
+      "id": "{356d777f-96f4-4e44-8d9c-01df3c75efb1}",
       "type": "Material",
       "name": "Box.Pillar.003.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1347,7 +1347,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{52af2530-5ac5-4fde-ae39-208db40c0b79}",
+      "parentID": "{c5732a5c-9b1e-450a-b6c2-c656c1078ecc}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -1356,11 +1356,11 @@
       }
     },
     {
-      "id": "{aee90d30-a8f1-4535-ba1d-aa8427903175}",
+      "id": "{d4b3afe2-8465-4aa5-b7cd-6ddbc7b8e440}",
       "type": "Model",
       "name": "Model.Window.006",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1408,14 +1408,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{0c33cf56-a8a0-440c-9bb8-a66d8de104d0}",
+      "id": "{9c153516-45d2-4d39-a187-779fd29b75a8}",
       "type": "Model",
       "name": "Model.Window.007",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1463,14 +1463,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{d2f698b5-bead-4ca5-9c2c-b69f829850eb}",
+      "id": "{418b574e-ab95-46d1-b2f1-ba155f4b7f2b}",
       "type": "Box",
       "name": "Box.Pillar.004",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1522,14 +1522,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{317a0c0c-9563-4fc1-ab39-5b333819788c}",
+      "id": "{4c9ae5d2-2d59-42f1-b8fd-1cb9c0de370f}",
       "type": "Material",
       "name": "Box.Pillar.004.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1570,7 +1570,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{d2f698b5-bead-4ca5-9c2c-b69f829850eb}",
+      "parentID": "{418b574e-ab95-46d1-b2f1-ba155f4b7f2b}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -1579,11 +1579,11 @@
       }
     },
     {
-      "id": "{5398da80-f2b8-47ba-9107-959836ddc169}",
+      "id": "{fc91c9c8-c369-4e72-b8d1-5a6ca28122aa}",
       "type": "Model",
       "name": "Model.Window.008",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1631,14 +1631,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{584e4a0f-f65a-4cf0-8904-cdb30fbc4207}",
+      "id": "{cf6bbd9f-1819-4e52-9eb4-3b8940be7788}",
       "type": "Model",
       "name": "Model.Window.009",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1686,14 +1686,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{e060662b-f356-4eb8-adf3-af527cfe9215}",
+      "id": "{672a9a21-f86c-475b-96a5-356ad9ee879c}",
       "type": "Model",
       "name": "Model.Window.010",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1741,14 +1741,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{ea00d8d5-6d86-499b-82ff-dd3e59aafeb9}",
+      "id": "{a4e626f8-fde9-4b8f-9046-e9e3898b538c}",
       "type": "Model",
       "name": "Model.Window.011",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1796,14 +1796,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{fed48284-b8b8-4959-8013-eeead7580f23}",
+      "id": "{8d6c5247-5bfc-48f9-94d7-a642d75a1178}",
       "type": "Box",
       "name": "Box.Pillar.Corner.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1855,14 +1855,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{536af0db-ad24-43e1-a3b7-08b2aad40a90}",
+      "id": "{86ef1afa-a263-497e-b11c-3a5f39d477b0}",
       "type": "Material",
       "name": "Box.Pillar.Corner.001.Material.Brick_06_2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1903,7 +1903,7 @@
         "z": 2.919723927974701,
         "scale": 4.160552144050598
       },
-      "parentID": "{fed48284-b8b8-4959-8013-eeead7580f23}",
+      "parentID": "{8d6c5247-5bfc-48f9-94d7-a642d75a1178}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=1",
       "priority": 1,
       "materialMappingScale": {
@@ -1912,11 +1912,11 @@
       }
     },
     {
-      "id": "{09f3d66f-42c2-413b-8c5e-2d9acdd23328}",
+      "id": "{ba3912b6-de6f-4e15-957d-30785515537a}",
       "type": "Box",
       "name": "Box.Pillar.Corner",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -1968,14 +1968,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{7f4d1c84-5b8f-4faf-964a-f60fb19b7a8d}",
+      "id": "{e95952fb-d968-4bb8-9d27-a99766a816a3}",
       "type": "Material",
       "name": "Box.Pillar.Corner.Material.Brick_06_2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2016,7 +2016,7 @@
         "z": 2.919723927974701,
         "scale": 4.160552144050598
       },
-      "parentID": "{09f3d66f-42c2-413b-8c5e-2d9acdd23328}",
+      "parentID": "{ba3912b6-de6f-4e15-957d-30785515537a}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=1",
       "priority": 1,
       "materialMappingScale": {
@@ -2025,11 +2025,11 @@
       }
     },
     {
-      "id": "{04e494b1-3cf0-48ac-be66-7e241c8ec19b}",
+      "id": "{d84220f8-ea27-4fbe-b2ea-605e607c2a06}",
       "type": "Box",
       "name": "Box.Window.Below",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2081,14 +2081,14 @@
         "green": 204,
         "blue": 204
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{aa19441c-05c6-41ad-a08e-79181aa4fd9c}",
+      "id": "{810896ad-58a5-4502-bba7-5550f31ebe9c}",
       "type": "Material",
       "name": "Box.Window.Below.Material.Wall_Paster_1",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2129,7 +2129,7 @@
         "z": -3.0663843154907227,
         "scale": 17.43000030517578
       },
-      "parentID": "{04e494b1-3cf0-48ac-be66-7e241c8ec19b}",
+      "parentID": "{d84220f8-ea27-4fbe-b2ea-605e607c2a06}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json?t=1",
       "priority": 1,
       "materialMappingScale": {
@@ -2138,11 +2138,11 @@
       }
     },
     {
-      "id": "{c880751b-7db2-42de-bc02-7f8da381ca4b}",
+      "id": "{5a5f545b-4b77-44de-8dd7-3e6f3f65c673}",
       "type": "Box",
       "name": "Box.Window.Above",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2194,14 +2194,14 @@
         "green": 204,
         "blue": 204
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{c8396456-82d3-410f-829f-a2cf199c6708}",
+      "id": "{0c7f34e9-29c9-40d9-a58a-4ae72fcca83d}",
       "type": "Material",
       "name": "Box.Window.Above.Material.Wall_Paster_1",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2242,7 +2242,7 @@
         "z": -3.0663843154907227,
         "scale": 17.43000030517578
       },
-      "parentID": "{c880751b-7db2-42de-bc02-7f8da381ca4b}",
+      "parentID": "{5a5f545b-4b77-44de-8dd7-3e6f3f65c673}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json?t=1",
       "priority": 1,
       "materialMappingScale": {
@@ -2251,11 +2251,11 @@
       }
     },
     {
-      "id": "{6a2deaa5-ba65-4de9-b5a3-d577fae4b313}",
+      "id": "{904ea97e-c255-4b60-afee-5834b707bf5c}",
       "type": "Box",
       "name": "Box.Floor",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2307,14 +2307,14 @@
         "green": 122,
         "blue": 39
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{d064c8a1-6f32-4e29-bb6c-aba0ac02537a}",
+      "id": "{f6a5de3e-d42f-446e-88c5-d4ab2e5c160f}",
       "type": "Material",
       "name": "Box.Floor.Material.Floor",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2355,7 +2355,7 @@
         "z": -14,
         "scale": 20.04337501525879
       },
-      "parentID": "{6a2deaa5-ba65-4de9-b5a3-d577fae4b313}",
+      "parentID": "{904ea97e-c255-4b60-afee-5834b707bf5c}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/laminate_floor_02.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -2364,11 +2364,11 @@
       }
     },
     {
-      "id": "{aae8c5d2-f1cf-4221-aff6-13c17f43ddb3}",
+      "id": "{d85faa10-4e59-40fa-a985-40882a556cfe}",
       "type": "Box",
       "name": "Box.Front",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2420,14 +2420,14 @@
         "green": 70,
         "blue": 64
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{59b5e74a-5e3e-4f71-a344-427885abf78f}",
+      "id": "{1a41bf6d-af6c-469d-ad0b-a1af5d9e729f}",
       "type": "Material",
       "name": "Box.Front.Material.Wall2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2468,7 +2468,7 @@
         "z": -25.21500015258789,
         "scale": 21.43000030517578
       },
-      "parentID": "{aae8c5d2-f1cf-4221-aff6-13c17f43ddb3}",
+      "parentID": "{d85faa10-4e59-40fa-a985-40882a556cfe}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/concrete_wall_008.json",
       "priority": 1,
       "materialMappingScale": {
@@ -2477,11 +2477,11 @@
       }
     },
     {
-      "id": "{b611eda0-e12b-40d4-807f-8fadecdbbe8f}",
+      "id": "{9ce68807-cad3-4621-87c3-4229284bc82e}",
       "type": "Box",
       "name": "Box.Left",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2533,14 +2533,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{5eb557f8-d803-455a-85ef-d2136a027085}",
+      "id": "{ff54674a-951d-42f4-8d30-6007078d9ec3}",
       "type": "Material",
       "name": "Box.Left.Material.Brick_06_1",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2581,7 +2581,7 @@
         "z": -14,
         "scale": 18
       },
-      "parentID": "{b611eda0-e12b-40d4-807f-8fadecdbbe8f}",
+      "parentID": "{9ce68807-cad3-4621-87c3-4229284bc82e}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json",
       "priority": 1,
       "materialMappingScale": {
@@ -2590,11 +2590,11 @@
       }
     },
     {
-      "id": "{9bc61e58-e374-45ae-87a2-88556ab45091}",
+      "id": "{7aaaf08e-534d-4906-9ef8-211b79a91dc0}",
       "type": "Box",
       "name": "Box.Roof",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2645,14 +2645,14 @@
         "green": 204,
         "blue": 204
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{51a2bb4d-cd9e-486e-b902-d7695f5a87a8}",
+      "id": "{976e1000-d215-433f-9ace-df9eacd4f087}",
       "type": "Material",
       "name": "Box.Roof.Material.Wall_Paster_2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2693,7 +2693,7 @@
         "z": -14.99853515625,
         "scale": 20.95713758468628
       },
-      "parentID": "{9bc61e58-e374-45ae-87a2-88556ab45091}",
+      "parentID": "{7aaaf08e-534d-4906-9ef8-211b79a91dc0}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json",
       "priority": 1,
       "materialMappingScale": {
@@ -2702,11 +2702,11 @@
       }
     },
     {
-      "id": "{96f43f79-7c36-431c-bdde-4f027997c9a6}",
+      "id": "{85c23db5-77b9-46f2-91be-319f3076ebcf}",
       "type": "Box",
       "name": "Box.Right.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2758,14 +2758,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{33f828b5-2fa4-4700-a4f4-7d158ff5f64e}",
+      "id": "{7b14bd32-9e6b-4e92-ab6f-5045abc13990}",
       "type": "Material",
       "name": "Box.Right.001.Material.Brick_06_1",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2806,7 +2806,7 @@
         "z": -14,
         "scale": 14
       },
-      "parentID": "{96f43f79-7c36-431c-bdde-4f027997c9a6}",
+      "parentID": "{85c23db5-77b9-46f2-91be-319f3076ebcf}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json",
       "priority": 1,
       "materialMappingScale": {
@@ -2815,11 +2815,11 @@
       }
     },
     {
-      "id": "{71dc9a52-8733-4dd4-87b8-265bd066b98f}",
+      "id": "{aa250e7d-91b8-4438-8605-17d11c1d05b5}",
       "type": "Model",
       "name": "Model.Frame.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2866,14 +2866,14 @@
         "scale": 2
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Frame.glb",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{0d79dadc-ce2b-429a-8087-37b4a45efcbf}",
+      "id": "{38e2a384-2391-495f-beee-f54efb3ff0e7}",
       "type": "Model",
       "name": "Model.Frame.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2920,14 +2920,14 @@
         "scale": 2
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Frame.glb",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{1f84fb96-0cf2-43e3-a154-97dc5631b101}",
+      "id": "{74caff5c-0f43-49fe-a3a7-cefea334493b}",
       "type": "Model",
       "name": "Model.Frame",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -2974,14 +2974,14 @@
         "scale": 2
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Frame.glb",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{64cf3612-4fbd-4e83-acbc-e3ffb5f25359}",
+      "id": "{6134a494-f05b-4280-b2d1-512bece9070e}",
       "type": "Image",
       "name": "Image.Rules1.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3030,14 +3030,14 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/dixit-rules-page2.svg",
       "emissive": true,
       "keepAspectRatio": false,
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{966903f4-a7e6-4d4c-b231-4ad805a6b9b7}",
+      "id": "{46d9159b-f382-4a86-8907-ec01cf101285}",
       "type": "Image",
       "name": "Image.Rules1.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3086,14 +3086,14 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/dixit-rules-page1.svg",
       "emissive": true,
       "keepAspectRatio": false,
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{1350b8bd-84d8-4049-a808-71c9f98c4461}",
+      "id": "{87235c7b-1d40-442f-9a65-91315d141b7d}",
       "type": "Image",
       "name": "Image.Rules1",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3142,14 +3142,14 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/dixit-cover.jpg",
       "emissive": true,
       "keepAspectRatio": false,
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{c1b7ba30-1006-4668-8056-91941d5a78d8}",
+      "id": "{75664ddf-0c7f-4904-833a-936964c910e7}",
       "type": "Model",
       "name": "Model.FrameT2.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3196,14 +3196,14 @@
         "scale": 3.999999523162842
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.FrameT2.glb",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{d12d063e-d1b8-4d14-bc03-e341b4269780}",
+      "id": "{008860f1-65f0-44a2-895a-021537be72db}",
       "type": "Image",
       "name": "Image.About.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3252,14 +3252,14 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/about.png",
       "emissive": true,
       "keepAspectRatio": false,
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{75d5c6bd-6307-4243-a610-a92872cc9d9d}",
+      "id": "{b0d7f550-ca39-4215-9a62-3507f2795cea}",
       "type": "Model",
       "name": "folding_chair",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3307,14 +3307,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{8fe88881-f21c-4882-8468-e57430a88401}",
+      "id": "{ac1b1e39-1b07-4fed-8c14-8c4694c6da9c}",
       "type": "Model",
       "name": "folding_chair.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3362,14 +3362,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{32034068-86c7-4846-985c-8b930b69730c}",
+      "id": "{1c6d7179-0a7b-46dc-ba33-a62a068e73fb}",
       "type": "Model",
       "name": "folding_chair.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3417,14 +3417,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{c251ecdf-a61d-4ea3-90f3-516dbcaf1857}",
+      "id": "{94a67ab2-f33d-4fd4-a6cb-945b78b39999}",
       "type": "Model",
       "name": "folding_chair.003",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3472,14 +3472,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{32151650-90b9-4ca5-b1c1-1b39ae2eb2e8}",
+      "id": "{ee8eac72-2f2e-4c33-9e4d-41813efb7c2c}",
       "type": "Model",
       "name": "folding_chair.004",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3527,14 +3527,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{b6d5cf35-5787-4676-baf0-35a56b33a306}",
+      "id": "{ff982c39-f791-4e29-928d-f21d137273d6}",
       "type": "Model",
       "name": "folding_chair.005",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3582,14 +3582,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{e52bec75-b4ca-4989-8a87-c85147b2f52f}",
+      "id": "{456f69ca-4c8a-46c5-b639-c310e1826b61}",
       "type": "Model",
       "name": "folding_chair.006",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3637,14 +3637,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{ff0681ef-fd97-444a-86de-eaf20c885494}",
+      "id": "{3a20e597-86b2-45da-a9d2-f56ec67083d6}",
       "type": "Model",
       "name": "game_table",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3692,14 +3692,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/game_table.glb",
       "shapeType": "box",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{20e323ac-0d2c-4e90-afa6-93072cb97831}",
+      "id": "{2a2c0f25-fd48-443a-8552-bdfa89ca154c}",
       "type": "Model",
       "name": "game_table.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3747,14 +3747,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/game_table.glb",
       "shapeType": "box",
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{d70b4d7e-9423-4661-8ac8-0745c6275718}",
+      "id": "{e05666a4-7c74-4a44-84ba-288bd63f4f69}",
       "type": "Box",
       "name": "Plane.Sit",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3812,14 +3812,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{4517224f-7157-4767-82e5-a9b23aa32dc1}",
+      "id": "{bf1ff474-76b7-4873-a63a-108b619d0864}",
       "type": "Box",
       "name": "Plane.Sit.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3877,14 +3877,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{ad69b03e-0700-4cdc-923c-d726e48a1269}",
+      "id": "{49590e17-c2da-4516-8dc6-e5a1b9c8132e}",
       "type": "Box",
       "name": "Plane.Sit.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -3942,14 +3942,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{50159bfc-62d3-4abe-b90c-87a1f4864f9c}",
+      "id": "{4d91612b-add3-48f0-9466-6ebcc646ef18}",
       "type": "Box",
       "name": "Plane.Sit.003",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4007,14 +4007,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{eece239b-6c0b-44e3-84dd-6bf4259474de}",
+      "id": "{476c24b6-97d0-4d9a-a935-cc94d8ad28db}",
       "type": "Box",
       "name": "Plane.Sit.004",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4072,14 +4072,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{fea5872b-0249-4ae0-8715-61de1b89c71a}",
+      "id": "{5758ce46-31ac-4821-a033-38be5dd5e298}",
       "type": "Box",
       "name": "Plane.Sit.005",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4137,14 +4137,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{e03c83b7-fbc7-4b47-82d9-a7551e51b17e}",
+      "id": "{7feeee12-1364-49a1-b0de-96fe5d4af127}",
       "type": "Box",
       "name": "Plane.Sit.006",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4202,14 +4202,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{96e10977-4609-49b8-b747-e572fa9e2496}",
+      "id": "{0c8be36d-fc0a-4874-88b9-0601c9c7fd3c}",
       "type": "Box",
       "name": "Plane.Sit.007",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4265,14 +4265,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{926031f9-b781-4450-a608-f8524e87069b}",
+      "id": "{635cdb2c-b217-4837-afd0-6759af0e629a}",
       "type": "Box",
       "name": "Plane.Sit.008",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4328,14 +4328,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{0ae1248a-026e-40b7-9dfd-6a03123ca797}",
+      "id": "{a1fb0823-5045-4a93-ad7a-bf0bf1d19b5d}",
       "type": "Box",
       "name": "Plane.Sit.009",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4391,14 +4391,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{d1d22940-489a-4972-896d-4f155adaa4af}",
+      "id": "{92d485b8-fe04-4ee8-9916-443d318ba653}",
       "type": "Box",
       "name": "Plane.Sit.010",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4454,14 +4454,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{01712ead-b857-4e80-a98f-5e262699df12}"
+      "parentID": "{121fcb2d-3d81-43e5-a1cf-6021b6831cbd}"
     },
     {
-      "id": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}",
+      "id": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}",
       "type": "Zone",
       "name": "Zone.Codenames",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4509,11 +4509,11 @@
       "shapeType": "box"
     },
     {
-      "id": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "id": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "type": "Box",
       "name": "Cube.Board",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4566,14 +4566,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{c214b3f7-3bc8-450a-bced-76dde81ff01c}",
+      "id": "{aa029184-dced-4299-89d2-f4057d7a4cab}",
       "type": "Image",
       "name": "Image.Wall.BlueCards",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4621,18 +4621,18 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/assets/cards.png",
       "keepAspectRatio": false,
       "color": {
-        "red": 9,
-        "green": 110,
-        "blue": 255
+        "red": 0,
+        "green": 72,
+        "blue": 193
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}"
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}"
     },
     {
-      "id": "{1fbb83ae-6cfa-40e3-aaec-9229564bdd7d}",
+      "id": "{267a91a4-aad3-4cf3-a670-b273baba59f0}",
       "type": "Image",
       "name": "Image.Wall.Guesses",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4679,14 +4679,14 @@
       },
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/codenames/assets/guesses.png",
       "keepAspectRatio": false,
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}"
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}"
     },
     {
-      "id": "{44f21bfe-88f8-4de8-bde1-a10a57985f02}",
+      "id": "{4749a3ad-f8e7-4655-8b83-098437bad400}",
       "type": "Image",
       "name": "Image.Wall.RedCards",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4735,17 +4735,17 @@
       "keepAspectRatio": false,
       "color": {
         "red": 255,
-        "green": 11,
-        "blue": 9
+        "green": 13,
+        "blue": 1
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}"
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}"
     },
     {
-      "id": "{b3fa8619-9bbc-4242-bf36-f746d8c9616a}",
+      "id": "{8ad4ca9c-c928-4820-9603-a0e0e746b37f}",
       "type": "Box",
       "name": "Plane.Panel",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4796,14 +4796,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}"
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}"
     },
     {
-      "id": "{1e8ff63a-ba53-4118-94cc-3ac617fccfac}",
+      "id": "{65e5dab5-f51f-4729-a20a-a508a1cf99ec}",
       "type": "Text",
       "name": "Text.Panel.BlueMessage",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4859,17 +4859,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{b3fa8619-9bbc-4242-bf36-f746d8c9616a}",
+      "parentID": "{8ad4ca9c-c928-4820-9603-a0e0e746b37f}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{a798eec6-fb14-4116-91bb-f8d0145eae98}",
+      "id": "{4ddf5f40-708c-42f3-bb6b-b3d6ca49256c}",
       "type": "Box",
       "name": "Plane.Panel.Board",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4920,17 +4920,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{38115800-ed40-42c9-ad76-8213228d94ce}",
+      "id": "{545348b3-9c75-4f62-bc9c-4275c17672e6}",
       "type": "Text",
       "name": "Text.Panel.Abort",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -4985,17 +4985,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{40c15968-b77f-4623-ad8a-5fd8ce2b1cac}",
+      "id": "{1075dce1-4187-4dfb-96b9-28af396d5f2d}",
       "type": "Text",
       "name": "Text.Panel.BlueGuesses",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5050,17 +5050,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{cb40b0fd-8a09-43bf-bf30-b20510da61f7}",
+      "id": "{22121170-b8c5-44b6-8c45-4d6bc018d066}",
       "type": "Text",
       "name": "Text.Panel.BlueMinus",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5115,17 +5115,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{0023bc40-3a12-4d2e-9529-4e8e2a44b32b}",
+      "id": "{762232b0-912b-4fbb-9f15-bf4398f49f63}",
       "type": "Text",
       "name": "Text.Panel.BluePlus",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5180,17 +5180,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{6e3d7a08-c35f-4c53-b10c-1e9851a9c49c}",
+      "id": "{581c373d-9bd6-43f5-878a-deea90b204b9}",
       "type": "Text",
       "name": "Text.Panel.BlueSubmit",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5245,17 +5245,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{0b49661f-df1a-47b8-9744-c8be6cc36e11}",
+      "id": "{950d5144-2fb3-4c81-9c85-476463cbcf4c}",
       "type": "Text",
       "name": "Text.Panel.BlueTitle",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5307,26 +5307,26 @@
       "topMargin": 0.05000000074505806,
       "unlit": true,
       "textColor": {
-        "red": 9,
-        "green": 110,
-        "blue": 255
+        "red": 0,
+        "green": 72,
+        "blue": 193
       },
       "backgroundColor": {
         "red": 255,
         "green": 255,
         "blue": 255
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{99f8abf3-9c69-4796-bc3a-ff7e8d3af22d}",
+      "id": "{58ee2a01-67f5-4e93-ad33-67cd2a4b4aaa}",
       "type": "Text",
       "name": "Text.Panel.BlueWord",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5381,17 +5381,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{bf312a29-317b-4008-b640-6d3de4c9e667}",
+      "id": "{5b48b5cc-6919-4a1f-a665-cedaa284f0e9}",
       "type": "Text",
       "name": "Text.Panel.Message",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5452,17 +5452,17 @@
         "green": 176,
         "blue": 36
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{e75a11a9-b62d-4836-947c-645dbaf733ff}",
+      "id": "{29f6fbd2-3788-4395-87e3-255e1340417a}",
       "type": "Text",
       "name": "Text.Panel.RedGuesses",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5517,17 +5517,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{2e24e980-2340-40ca-9fa6-a2526cb400ee}",
+      "id": "{c229206d-4e78-4e98-912f-0c97e51468e2}",
       "type": "Text",
       "name": "Text.Panel.RedMessage",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5583,17 +5583,17 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{5d3dc14c-9d7a-4c9c-b84c-c0823e097582}",
+      "id": "{dda24ba8-d345-4626-9922-b0efc32fc9a6}",
       "type": "Text",
       "name": "Text.Panel.RedMinus",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5648,17 +5648,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{053c2a41-9566-4c5b-8b3b-477ab79eef56}",
+      "id": "{d18bb32b-0e44-4272-81c7-b2605fad8c77}",
       "type": "Text",
       "name": "Text.Panel.RedPlus",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5713,17 +5713,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{4f441d68-a06c-4cee-9c28-893144e8a579}",
+      "id": "{3aec10fe-c084-4148-93f4-6c73cbd83e7d}",
       "type": "Text",
       "name": "Text.Panel.RedSubmit",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5778,17 +5778,17 @@
         "green": 68,
         "blue": 204
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{e11f09f3-7589-49a0-b787-82df5ff3e7dd}",
+      "id": "{9fe469f2-3087-4b8e-8dfb-b88d3fed866a}",
       "type": "Text",
       "name": "Text.Panel.RedTitle",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5841,25 +5841,25 @@
       "unlit": true,
       "textColor": {
         "red": 255,
-        "green": 11,
-        "blue": 9
+        "green": 13,
+        "blue": 1
       },
       "backgroundColor": {
         "red": 255,
         "green": 255,
         "blue": 255
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{941847e9-364c-4c29-ae95-141d667b739f}",
+      "id": "{6a931beb-761b-4b96-8161-2b93fac679f7}",
       "type": "Text",
       "name": "Text.Panel.RedWord",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5914,17 +5914,17 @@
         "green": 152,
         "blue": 152
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{f9bd5675-8cc0-49ca-8ad8-e7ab2d908260}",
+      "id": "{4756248f-e89e-4797-a241-ae079d04136a}",
       "type": "Text",
       "name": "Text.Panel.Start",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -5979,17 +5979,17 @@
         "green": 130,
         "blue": 0
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}",
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}",
       "renderWithZones": [
-        "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}"
+        "{7164c685-4b6e-4ce8-8880-c5b64920f15b}"
       ]
     },
     {
-      "id": "{8943c011-df7d-48ff-94ff-ca217ddc45b6}",
+      "id": "{1ac95651-0707-41dd-a752-91f56c57f21b}",
       "type": "Text",
       "name": "Text.Wall.BlueScore",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6039,23 +6039,23 @@
       "alignment": "center",
       "topMargin": 3.299999952316284,
       "textColor": {
-        "red": 9,
-        "green": 110,
-        "blue": 255
+        "red": 0,
+        "green": 72,
+        "blue": 193
       },
       "backgroundColor": {
         "red": 9,
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}"
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}"
     },
     {
-      "id": "{f84f800b-0c36-4838-bc35-5c84c2587357}",
+      "id": "{61585410-e48c-4f12-9db2-aa3f9ae3509a}",
       "type": "Text",
       "name": "Text.Wall.EndTurn",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6109,14 +6109,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}"
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}"
     },
     {
-      "id": "{fb9c4396-f292-460d-bb70-73b03ba7d52c}",
+      "id": "{03cb1697-af6f-4b79-93a2-39ce1ffddb55}",
       "type": "Text",
       "name": "Text.Wall.RedScore",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6167,22 +6167,22 @@
       "topMargin": 3.299999952316284,
       "textColor": {
         "red": 255,
-        "green": 11,
-        "blue": 9
+        "green": 13,
+        "blue": 1
       },
       "backgroundColor": {
         "red": 9,
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}"
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}"
     },
     {
-      "id": "{6bced411-da24-4fc4-bf51-5236d2603d8b}",
+      "id": "{994c45b0-e664-4bd2-8108-acb132f20b62}",
       "type": "Text",
       "name": "Text.Wall.Word",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6241,14 +6241,14 @@
         "green": 9,
         "blue": 9
       },
-      "parentID": "{fe68547b-b365-47e3-9d40-71894cf3156a}"
+      "parentID": "{3074a12e-fcc3-41c3-a16d-1337e1211b23}"
     },
     {
-      "id": "{051db9c6-bb91-4061-8811-4d078d6bf317}",
+      "id": "{28ba9183-bd83-43e9-ab28-77c15b877b0f}",
       "type": "Text",
       "name": "Text.Wall.BlueTitle",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6298,23 +6298,23 @@
       "lineHeight": 0.4000000059604645,
       "alignment": "center",
       "textColor": {
-        "red": 9,
-        "green": 110,
-        "blue": 255
+        "red": 0,
+        "green": 72,
+        "blue": 193
       },
       "backgroundColor": {
         "red": 255,
         "green": 255,
         "blue": 255
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{1100d0f7-2907-42e9-bb44-95dec5574cb0}",
+      "id": "{b8d32ccf-9df3-4cfd-9091-f6fcbc48bce4}",
       "type": "Text",
       "name": "Text.Wall.RedTitle",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6365,22 +6365,22 @@
       "alignment": "center",
       "textColor": {
         "red": 255,
-        "green": 11,
-        "blue": 9
+        "green": 13,
+        "blue": 1
       },
       "backgroundColor": {
         "red": 255,
         "green": 255,
         "blue": 255
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{4a846107-362d-44d9-a412-2d5c65cca42d}",
+      "id": "{5b802956-ddc2-43b5-9459-c9e5d0c9cec9}",
       "type": "Box",
       "name": "Cube.Panel.Base1",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6431,14 +6431,14 @@
         "green": 63,
         "blue": 63
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{d790df9a-f7e8-4d2d-9c2f-a0f13e77fe36}",
+      "id": "{c497e774-4768-4420-928d-8aa3eb0b2f8b}",
       "type": "Box",
       "name": "Cube.Panel.Base2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6489,14 +6489,14 @@
         "green": 63,
         "blue": 63
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{baf01b81-c473-4add-a57a-c45666a0f2d2}",
+      "id": "{21121880-f608-4eed-ac27-33d2c2b23a4a}",
       "type": "Box",
       "name": "Cube.Panel.Base3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6547,14 +6547,14 @@
         "green": 63,
         "blue": 63
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{7cb37c5f-e021-4b07-88c8-a9dc36b4218b}",
+      "id": "{7164c685-4b6e-4ce8-8880-c5b64920f15b}",
       "type": "Zone",
       "name": "Zone.Panel",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6602,11 +6602,11 @@
       "shapeType": "box"
     },
     {
-      "id": "{75e0616f-b91b-43e6-a475-a8a5cad7c423}",
+      "id": "{68149ab7-51da-4f54-afa7-c6c11d56afcd}",
       "type": "Box",
       "name": "Box.Front.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6658,14 +6658,14 @@
         "green": 70,
         "blue": 64
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{7c11245f-c989-46bb-847b-c4892628f2e3}",
+      "id": "{162a894d-b010-4b55-b294-b1a1e445eb5d}",
       "type": "Material",
       "name": "Box.Front.001.Material.Wall2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6706,7 +6706,7 @@
         "z": -21.751514434814453,
         "scale": 22.503028869628906
       },
-      "parentID": "{75e0616f-b91b-43e6-a475-a8a5cad7c423}",
+      "parentID": "{68149ab7-51da-4f54-afa7-c6c11d56afcd}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/concrete_wall_008.json",
       "priority": 1,
       "materialMappingScale": {
@@ -6715,11 +6715,11 @@
       }
     },
     {
-      "id": "{03911bc0-61c3-4173-9e77-a3930e712289}",
+      "id": "{45b2b12b-6fc7-4565-a367-db2118bed114}",
       "type": "Box",
       "name": "Box.Pillar.005",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6771,14 +6771,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{9f94d693-8e33-4312-b883-61353edae552}",
+      "id": "{3301ac59-2e69-4341-8047-4298788901a7}",
       "type": "Material",
       "name": "Box.Pillar.005.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6819,7 +6819,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{03911bc0-61c3-4173-9e77-a3930e712289}",
+      "parentID": "{45b2b12b-6fc7-4565-a367-db2118bed114}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -6828,11 +6828,11 @@
       }
     },
     {
-      "id": "{518edc03-67b9-491e-92e1-46d71906ee00}",
+      "id": "{70ca23a5-6119-4766-bad8-62cd98714fcb}",
       "type": "Box",
       "name": "Box.Pillar.006",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6884,14 +6884,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{4bd13a4f-3f34-4575-9e2f-a5e7a13472a8}",
+      "id": "{eee04cb7-6e9e-4983-b6e8-745879de370a}",
       "type": "Material",
       "name": "Box.Pillar.006.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6932,7 +6932,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{518edc03-67b9-491e-92e1-46d71906ee00}",
+      "parentID": "{70ca23a5-6119-4766-bad8-62cd98714fcb}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -6941,11 +6941,11 @@
       }
     },
     {
-      "id": "{0b1c1e8c-4b58-47b3-8dbe-4fa8501fa263}",
+      "id": "{01138d33-e5f0-49be-a159-37c427d3d9b2}",
       "type": "Box",
       "name": "Box.Pillar.007",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -6997,14 +6997,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{30da13c9-9009-4da6-8cee-13632d81332a}",
+      "id": "{a095b839-0390-4087-afa5-3adaa60fb015}",
       "type": "Material",
       "name": "Box.Pillar.007.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7045,7 +7045,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{0b1c1e8c-4b58-47b3-8dbe-4fa8501fa263}",
+      "parentID": "{01138d33-e5f0-49be-a159-37c427d3d9b2}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -7054,11 +7054,11 @@
       }
     },
     {
-      "id": "{6f23f5ca-ac05-4b2f-a706-5992027654b5}",
+      "id": "{3233cb9e-4472-4a2d-933b-7566eabe0588}",
       "type": "Box",
       "name": "Box.Pillar.008",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7110,14 +7110,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{b7a4ebce-21ed-4e78-a2eb-e57b0e0e58e2}",
+      "id": "{6962d782-e42e-49b3-9199-b9b0a5d2b41f}",
       "type": "Material",
       "name": "Box.Pillar.008.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7158,7 +7158,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{6f23f5ca-ac05-4b2f-a706-5992027654b5}",
+      "parentID": "{3233cb9e-4472-4a2d-933b-7566eabe0588}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -7167,11 +7167,11 @@
       }
     },
     {
-      "id": "{d20c78b5-b5cc-4954-a61f-9e9a552505bf}",
+      "id": "{19402d92-d9d0-48e3-963b-1ecb2466a196}",
       "type": "Box",
       "name": "Box.Pillar.009",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7223,14 +7223,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{8bcca8cd-9ab2-4a4b-91f6-90e8de364548}",
+      "id": "{b14d251a-96dd-484a-8195-24c327b81e1c}",
       "type": "Material",
       "name": "Box.Pillar.009.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7271,7 +7271,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{d20c78b5-b5cc-4954-a61f-9e9a552505bf}",
+      "parentID": "{19402d92-d9d0-48e3-963b-1ecb2466a196}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -7280,11 +7280,11 @@
       }
     },
     {
-      "id": "{27f2d273-8446-4b3d-b56d-dc769310ae31}",
+      "id": "{a42fa0b9-5e9c-4bd6-b4ef-752a4fa8623e}",
       "type": "Box",
       "name": "Box.Pillar.010",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7336,14 +7336,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{bb78a667-3e9a-4649-b57b-bb57ee32d0c9}",
+      "id": "{28bd6bb3-23a9-44ce-b9db-fea45a1a4369}",
       "type": "Material",
       "name": "Box.Pillar.010.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7384,7 +7384,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{27f2d273-8446-4b3d-b56d-dc769310ae31}",
+      "parentID": "{a42fa0b9-5e9c-4bd6-b4ef-752a4fa8623e}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -7393,11 +7393,11 @@
       }
     },
     {
-      "id": "{cca78690-257a-424a-b7e4-0cb554a11cbf}",
+      "id": "{b462ef2a-349f-4f3b-9daa-49669c548f1a}",
       "type": "Box",
       "name": "Box.Pillar.Corner.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7449,14 +7449,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{b090adb1-4147-4455-9450-65a5471ad893}",
+      "id": "{3f0d7faa-b636-4892-a373-a0a6b8542b60}",
       "type": "Material",
       "name": "Box.Pillar.Corner.002.Material.Brick_06_2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7497,7 +7497,7 @@
         "z": 2.919723927974701,
         "scale": 4.160552144050598
       },
-      "parentID": "{cca78690-257a-424a-b7e4-0cb554a11cbf}",
+      "parentID": "{b462ef2a-349f-4f3b-9daa-49669c548f1a}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=1",
       "priority": 1,
       "materialMappingScale": {
@@ -7506,11 +7506,11 @@
       }
     },
     {
-      "id": "{1682fa4b-9fe8-4a70-9c2e-6dfe123b5760}",
+      "id": "{2042790b-53af-42e8-bdee-7b958da6ca53}",
       "type": "Box",
       "name": "Box.Pillar.Corner.003",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7562,14 +7562,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{54e3a1fe-40fb-41af-a06e-9f1dc472e66e}",
+      "id": "{8213a862-f25c-4317-a503-5cac74e0e340}",
       "type": "Material",
       "name": "Box.Pillar.Corner.003.Material.Brick_06_2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7610,7 +7610,7 @@
         "z": 2.919723927974701,
         "scale": 4.160552144050598
       },
-      "parentID": "{1682fa4b-9fe8-4a70-9c2e-6dfe123b5760}",
+      "parentID": "{2042790b-53af-42e8-bdee-7b958da6ca53}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=1",
       "priority": 1,
       "materialMappingScale": {
@@ -7619,11 +7619,11 @@
       }
     },
     {
-      "id": "{6fdf0a60-2574-4d77-8d82-c2e3f0d083e2}",
+      "id": "{d2115f93-93fe-423f-be08-363e0cd198f9}",
       "type": "Box",
       "name": "Box.Right",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7675,14 +7675,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{54619efc-b0fd-4602-abc3-7369500e040a}",
+      "id": "{8c6deb9a-acdf-451b-a441-879586b33d32}",
       "type": "Material",
       "name": "Box.Right.Material.Brick_06_1",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7723,7 +7723,7 @@
         "z": -14,
         "scale": 18
       },
-      "parentID": "{6fdf0a60-2574-4d77-8d82-c2e3f0d083e2}",
+      "parentID": "{d2115f93-93fe-423f-be08-363e0cd198f9}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json",
       "priority": 1,
       "materialMappingScale": {
@@ -7732,11 +7732,11 @@
       }
     },
     {
-      "id": "{3cca37cd-5efc-4d33-a303-e4cffa434f60}",
+      "id": "{1d33bd8b-9da8-42a8-b572-5fcc8583c9ea}",
       "type": "Box",
       "name": "Box.Window.Above.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7788,14 +7788,14 @@
         "green": 204,
         "blue": 204
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{bb152ac5-70de-4e27-ac5f-9f2c4c7bcd9c}",
+      "id": "{e4ec50de-d9e3-44d1-9362-c6d5475d5727}",
       "type": "Material",
       "name": "Box.Window.Above.001.Material.Wall_Paster_1",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7836,7 +7836,7 @@
         "z": -4.566384315490723,
         "scale": 20.43000030517578
       },
-      "parentID": "{3cca37cd-5efc-4d33-a303-e4cffa434f60}",
+      "parentID": "{1d33bd8b-9da8-42a8-b572-5fcc8583c9ea}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json?t=1",
       "priority": 1,
       "materialMappingScale": {
@@ -7845,11 +7845,11 @@
       }
     },
     {
-      "id": "{d4fbf007-cbd6-416d-a6f8-32b3e2b34299}",
+      "id": "{4eea2c12-bc0f-4108-bd9c-c730bff4aec1}",
       "type": "Box",
       "name": "Box.Window.Below.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7901,14 +7901,14 @@
         "green": 204,
         "blue": 204
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{b37a9d24-28c4-492a-8ad1-d5ad3105693d}",
+      "id": "{16263d14-088b-4278-888e-80007b7fa9bd}",
       "type": "Material",
       "name": "Box.Window.Below.001.Material.Wall_Paster_1",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -7949,7 +7949,7 @@
         "z": -4.566384315490723,
         "scale": 20.43000030517578
       },
-      "parentID": "{d4fbf007-cbd6-416d-a6f8-32b3e2b34299}",
+      "parentID": "{4eea2c12-bc0f-4108-bd9c-c730bff4aec1}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json?t=1",
       "priority": 1,
       "materialMappingScale": {
@@ -7958,11 +7958,11 @@
       }
     },
     {
-      "id": "{79f6ba9d-d812-44b7-b881-9694364a944f}",
+      "id": "{dc1e71e0-0beb-4246-97ea-b6ae020503c5}",
       "type": "Model",
       "name": "Model.Window.012",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8010,14 +8010,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{64a4ead0-075f-49c6-b148-3f1699b73be3}",
+      "id": "{18c06e42-ef40-4f65-bba7-3e58fa60db9c}",
       "type": "Model",
       "name": "Model.Window.013",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8065,14 +8065,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{524554cd-cd4f-4b8f-bc21-adcbbeac1e44}",
+      "id": "{562f3708-e32c-49db-bcca-d0e4267585b0}",
       "type": "Model",
       "name": "Model.Window.014",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8120,14 +8120,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{b84df00b-ebd5-4d3f-8f29-626ed39ffbde}",
+      "id": "{4a2dc1e9-8db6-46b6-a91e-0459a3fc7f06}",
       "type": "Model",
       "name": "Model.Window.015",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8175,14 +8175,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{f068e939-0c4d-4233-a79d-d5c2c9a14c9f}",
+      "id": "{8849579d-ad08-41ee-8930-1922ab05eb45}",
       "type": "Model",
       "name": "Model.Window.016",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8230,14 +8230,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{86391d3a-78eb-44ba-8a4e-04557610f6ee}",
+      "id": "{1312e823-a001-4649-9f32-f4cdaab3765c}",
       "type": "Model",
       "name": "Model.Window.017",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8285,14 +8285,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{b4d6c16c-293e-42a4-8cbf-19cedfba0aa1}",
+      "id": "{ef92fed6-89df-4e44-b7af-b431a93fcba8}",
       "type": "Model",
       "name": "Model.Window.018",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8340,14 +8340,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{02e8b186-9877-41a5-9971-28c45aa47d07}",
+      "id": "{2a97f4a8-0d8d-44ab-9d92-f738af9d9915}",
       "type": "Model",
       "name": "Model.Window.019",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8395,14 +8395,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{a5bf3ff8-dbee-4a6f-a01c-b60597a95fbf}",
+      "id": "{8126d66f-c10d-45f9-b86f-f1e8a9d2986a}",
       "type": "Model",
       "name": "Model.Window.020",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8450,14 +8450,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{082a7323-8475-434f-88ff-2b15be2467d1}",
+      "id": "{140b10a4-1fbc-4209-8a52-97215a87b5a9}",
       "type": "Model",
       "name": "Model.Window.021",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8505,14 +8505,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{a7046f03-011f-4e21-a106-f6d4d7c3d1c1}",
+      "id": "{5483480b-70b0-492e-a293-2ed7ece2b6e3}",
       "type": "Model",
       "name": "Model.Window.022",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8560,14 +8560,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{5dde0482-6807-4f7e-ad9a-c5e0fa207e5a}",
+      "id": "{3e34c247-4cba-4102-acd0-9f1b6f5a8ddf}",
       "type": "Model",
       "name": "Model.Window.023",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8615,14 +8615,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{5ddc61cc-4b1a-457b-b4da-1d805baf1ec3}",
+      "id": "{139f8f3f-3f2f-4de4-bb0f-27e5c77c0c18}",
       "type": "Model",
       "name": "Model.Window.024",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8670,14 +8670,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{cbe7253e-8733-4996-9693-210f6e33c5c0}",
+      "id": "{c849b8c6-666e-4750-8730-fbdb086b9b6f}",
       "type": "Model",
       "name": "Model.Window.025",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8725,14 +8725,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{08aea453-c0c8-4aaf-a321-4ea5ad1f517c}",
+      "id": "{431f9c29-0fdb-4675-a788-4092b3c8750a}",
       "type": "Box",
       "name": "Box.Floor.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8784,14 +8784,14 @@
         "green": 122,
         "blue": 39
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{70d9f2d7-61ba-4c0b-9683-a801b9bd09f5}",
+      "id": "{8b099bd6-733c-49aa-a2ce-7e09df45b1d5}",
       "type": "Material",
       "name": "Box.Floor.001.Material.Floor",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8832,7 +8832,7 @@
         "z": -13.978312492370605,
         "scale": 23
       },
-      "parentID": "{08aea453-c0c8-4aaf-a321-4ea5ad1f517c}",
+      "parentID": "{431f9c29-0fdb-4675-a788-4092b3c8750a}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/laminate_floor_02.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -8841,11 +8841,11 @@
       }
     },
     {
-      "id": "{b21e6f6f-0091-4807-959c-0140dce54b38}",
+      "id": "{da356da3-0751-43ce-a1a1-98e7a95789ba}",
       "type": "Box",
       "name": "Box.Roof.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8896,14 +8896,14 @@
         "green": 204,
         "blue": 204
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{72ef7052-71e8-4cb5-9b78-f88339481310}",
+      "id": "{035e66fb-bb8a-4ad9-a590-c07cbab54eed}",
       "type": "Material",
       "name": "Box.Roof.001.Material.Wall_Paster_2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -8944,7 +8944,7 @@
         "z": -13.910582304000854,
         "scale": 22.68000030517578
       },
-      "parentID": "{b21e6f6f-0091-4807-959c-0140dce54b38}",
+      "parentID": "{da356da3-0751-43ce-a1a1-98e7a95789ba}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json",
       "priority": 1,
       "materialMappingScale": {
@@ -8953,11 +8953,11 @@
       }
     },
     {
-      "id": "{11f3adcd-1bb8-4c09-ab11-0ca373ad7c9b}",
+      "id": "{33e2b454-ea9f-41db-8b06-7a3517c6d646}",
       "type": "Model",
       "name": "folding_chair.007",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9005,14 +9005,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{7a729047-3bf3-4e6b-bee6-f719156bb8a9}",
+      "id": "{a2acadb6-b205-4ee0-846d-32a88d6813cc}",
       "type": "Model",
       "name": "folding_chair.008",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9060,14 +9060,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{0426439c-117a-4874-aba2-63e802f58415}",
+      "id": "{878f97eb-ae7f-4bd1-8f48-d20ae8730308}",
       "type": "Model",
       "name": "folding_chair.009",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9115,14 +9115,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{75153abc-a586-45b7-8c90-56656b7a30d4}",
+      "id": "{d11a938c-9538-4da4-a71b-feb9329df922}",
       "type": "Model",
       "name": "folding_chair.010",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9170,14 +9170,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{ebeb506b-d618-4c70-b591-ddcbdb803ff8}",
+      "id": "{db936cd1-524d-4b9f-9f05-332fafa00bfb}",
       "type": "Model",
       "name": "folding_chair.011",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9225,14 +9225,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{a19d4a48-1ca6-41d2-8550-250b83aa1bc3}",
+      "id": "{2ef39474-1e1e-426c-aefb-d7f4e322f3ed}",
       "type": "Model",
       "name": "folding_chair.012",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9280,14 +9280,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/folding_chair.glb",
       "shapeType": "static-mesh",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{30a0ad79-3479-4209-a10f-9450e7c09e8a}",
+      "id": "{55c1da63-edcc-4960-b573-ca2c719fc619}",
       "type": "Box",
       "name": "Plane.Sit.013",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9345,14 +9345,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{bba0df02-e159-45b6-ad84-55a4b02568be}",
+      "id": "{add3c95f-165d-49af-858f-35d154efc44b}",
       "type": "Box",
       "name": "Plane.Sit.014",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9410,14 +9410,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{da18dd53-630d-4fda-ad5e-07fdb01b1573}",
+      "id": "{17c12fdb-16e8-4a79-8e52-d7e6f4c243a9}",
       "type": "Box",
       "name": "Plane.Sit.015",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9475,14 +9475,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{bf98948c-3a14-4dd6-a589-95bc873b9e2a}",
+      "id": "{4e88e7a9-1df2-4bca-8b1a-98f083805eff}",
       "type": "Box",
       "name": "Plane.Sit.016",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9540,14 +9540,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{aadaff77-2381-469f-85b1-c493a4db5f54}",
+      "id": "{ca49cdad-b4c1-4c74-8b71-3d283225d5c9}",
       "type": "Box",
       "name": "Plane.Sit.017",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9605,14 +9605,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{9fbc141c-9697-41f8-968a-f8f7c6989ce5}",
+      "id": "{a81bf896-84e9-4dbf-91fa-0c681831722b}",
       "type": "Box",
       "name": "Plane.Sit.018",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9670,14 +9670,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{73e88840-adf7-420a-aa5a-bf917b53f1d8}",
+      "id": "{eaf7fd83-dec7-4297-aa1d-697f27dd2f8c}",
       "type": "Image",
       "name": "Image.Rules1.003",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9726,14 +9726,14 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/codenames-rules-page2.svg",
       "emissive": true,
       "keepAspectRatio": false,
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{6ea8d690-a22f-40ef-b86a-47d478ff1141}",
+      "id": "{c512ee1c-7a43-4562-8db6-77b185668ea2}",
       "type": "Image",
       "name": "Image.Rules1.004",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9782,14 +9782,14 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/codenames-rules-page1.svg",
       "emissive": true,
       "keepAspectRatio": false,
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{0737efae-0c1d-4f12-8c78-ec9107008edf}",
+      "id": "{3885bda1-0ddb-4e28-af5d-f406338c2871}",
       "type": "Image",
       "name": "Image.Rules1.005",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9838,14 +9838,14 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/codenames-rules-page3.svg",
       "emissive": true,
       "keepAspectRatio": false,
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{6185fd34-e3c3-4889-aa98-a2da294d8ef0}",
+      "id": "{8f675421-e3fc-41c0-8191-447694a8908b}",
       "type": "Model",
       "name": "Model.Frame.003",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9892,14 +9892,14 @@
         "scale": 2
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Frame.glb",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{96f744cf-a277-445d-8a06-7e234c63c335}",
+      "id": "{cc291feb-53f5-4c98-bc5c-8a06269955fa}",
       "type": "Model",
       "name": "Model.Frame.004",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -9946,14 +9946,14 @@
         "scale": 2
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Frame.glb",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{ed4d43c7-e0d6-48fd-9a46-116d8f1fc950}",
+      "id": "{c126eb4f-85fc-42b1-a609-9255d5ca2819}",
       "type": "Model",
       "name": "Model.Frame.005",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10000,14 +10000,14 @@
         "scale": 2
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Frame.glb",
-      "parentID": "{02bb7059-98d6-4694-bd3a-62f2c2fbeb9a}"
+      "parentID": "{42326b57-57a2-4ee3-b1f6-bc46dd318643}"
     },
     {
-      "id": "{2644f1bc-0624-4200-a136-7333261738f9}",
+      "id": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}",
       "type": "Zone",
       "name": "Zone.Sudoku",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10055,11 +10055,11 @@
       "shapeType": "box"
     },
     {
-      "id": "{42b31e5e-b385-4bf8-a089-7d8e0de9e7b3}",
+      "id": "{03ec81c5-fc43-45ab-8467-0b3ecc8df1ea}",
       "type": "Image",
       "name": "Image.Sudoku",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10108,14 +10108,14 @@
       },
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/sudoku/assets/board.svg",
       "emissive": true,
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{b1edaa15-c990-48bc-ade1-1c0ffe9ab3ed}",
+      "id": "{2f3546c4-2dcf-4538-9cce-29530e95c429}",
       "type": "Text",
       "name": "Text.Hint",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10175,14 +10175,14 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{42b31e5e-b385-4bf8-a089-7d8e0de9e7b3}"
+      "parentID": "{03ec81c5-fc43-45ab-8467-0b3ecc8df1ea}"
     },
     {
-      "id": "{6c8f44ce-f39f-4e93-99f5-4091b19b8b9b}",
+      "id": "{48e8787c-2cdb-4cb5-8d3b-601f2151d1bf}",
       "type": "Text",
       "name": "Text.NewGame",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10242,14 +10242,14 @@
         "green": 255,
         "blue": 255
       },
-      "parentID": "{42b31e5e-b385-4bf8-a089-7d8e0de9e7b3}"
+      "parentID": "{03ec81c5-fc43-45ab-8467-0b3ecc8df1ea}"
     },
     {
-      "id": "{90c5905e-bc5d-46f0-a523-7161fd171b24}",
+      "id": "{8886e720-c462-4294-814c-a04c3c9f50dd}",
       "type": "Box",
       "name": "Box.Pillar.011",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10301,14 +10301,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{c5f5bf64-e0e3-4b38-bc23-3a0ed3c6ffcb}",
+      "id": "{e96f8887-8a6b-4af3-b6b7-9ed46fb0de86}",
       "type": "Material",
       "name": "Box.Pillar.011.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10349,7 +10349,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{90c5905e-bc5d-46f0-a523-7161fd171b24}",
+      "parentID": "{8886e720-c462-4294-814c-a04c3c9f50dd}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -10358,11 +10358,11 @@
       }
     },
     {
-      "id": "{d34f9738-ddac-4eb9-a9c7-d867001602c7}",
+      "id": "{04e1f466-1d75-427c-873c-5c9b833ae844}",
       "type": "Box",
       "name": "Box.Pillar.012",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10414,14 +10414,14 @@
         "green": 25,
         "blue": 16
       },
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{8d6c6b21-f19f-424e-ac5c-b9323db20351}",
+      "id": "{ab0b8417-3318-4540-8eeb-e642b7f8f90b}",
       "type": "Material",
       "name": "Box.Pillar.012.Material.Brick_06_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10462,7 +10462,7 @@
         "z": 3.455837666988373,
         "scale": 4.088324666023254
       },
-      "parentID": "{d34f9738-ddac-4eb9-a9c7-d867001602c7}",
+      "parentID": "{04e1f466-1d75-427c-873c-5c9b833ae844}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/brick_wall_06.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -10471,11 +10471,11 @@
       }
     },
     {
-      "id": "{5499a65e-c1d3-4856-902b-1ea334096b2f}",
+      "id": "{0c6de5ab-b4d5-41b4-a22c-b0f5e660ce08}",
       "type": "Model",
       "name": "Model.Window.026",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10523,14 +10523,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{ac1bff90-c947-4364-92f1-e76942f44b06}",
+      "id": "{933a84e0-e072-4efe-a530-3eda704210d4}",
       "type": "Model",
       "name": "Model.Window.027",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10578,14 +10578,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{16e56286-264f-4746-8f6b-8d5f230193b2}",
+      "id": "{53e0c784-7cc7-42b3-b16c-924dada2d8fb}",
       "type": "Model",
       "name": "Model.Window.028",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10633,14 +10633,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{5bf8c871-4de3-4aca-aa0c-534d7c03b508}",
+      "id": "{f2cef8c3-2619-411b-a9f4-8d30bfecf79b}",
       "type": "Model",
       "name": "Model.Window.029",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10688,14 +10688,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.Window.glb",
       "shapeType": "static-mesh",
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{ae1b305e-d4f0-423b-bb18-b391c458339b}",
+      "id": "{3ee359a3-c0c9-4cbd-92f1-6f6e1dabb349}",
       "type": "Box",
       "name": "Box.Floor.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10747,14 +10747,14 @@
         "green": 122,
         "blue": 39
       },
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{04d8d316-7b1c-46da-acfa-75361d96be6c}",
+      "id": "{afcd2b1b-f045-46a5-bebb-bb804396ef44}",
       "type": "Material",
       "name": "Box.Floor.002.Material.Floor",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10795,7 +10795,7 @@
         "z": -11,
         "scale": 17.04337501525879
       },
-      "parentID": "{ae1b305e-d4f0-423b-bb18-b391c458339b}",
+      "parentID": "{3ee359a3-c0c9-4cbd-92f1-6f6e1dabb349}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/laminate_floor_02.json?t=2",
       "priority": 1,
       "materialMappingScale": {
@@ -10804,11 +10804,11 @@
       }
     },
     {
-      "id": "{5fa64948-54ed-4b22-9954-4d7e6c724671}",
+      "id": "{eea94694-5ad9-434c-b8b2-e5f19b955153}",
       "type": "Box",
       "name": "Box.Window.Above.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10860,14 +10860,14 @@
         "green": 204,
         "blue": 204
       },
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{13891915-9158-442f-86eb-d4ad8fe7c1b4}",
+      "id": "{46de46e6-c2f8-40f8-8a36-8d2e29e92c06}",
       "type": "Material",
       "name": "Box.Window.Above.002.Material.Wall_Paster_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10907,16 +10907,16 @@
         "z": 1.8636159896850586,
         "scale": 7.569999694824219
       },
-      "parentID": "{5fa64948-54ed-4b22-9954-4d7e6c724671}",
+      "parentID": "{eea94694-5ad9-434c-b8b2-e5f19b955153}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json?t=3",
       "priority": 1
     },
     {
-      "id": "{f84abfc8-3faf-4cc3-9f83-d4ae3872e285}",
+      "id": "{942857aa-9d79-4f9b-9f4b-b5425146df65}",
       "type": "Box",
       "name": "Box.Window.Below.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -10968,14 +10968,14 @@
         "green": 204,
         "blue": 204
       },
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{3caf1cea-bba6-47f8-a371-3fd250442dbe}",
+      "id": "{bccd79eb-6a4d-49b6-9f80-fde96db451af}",
       "type": "Material",
       "name": "Box.Window.Below.002.Material.Wall_Paster_3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11015,16 +11015,16 @@
         "z": 1.8636159896850586,
         "scale": 7.569999694824219
       },
-      "parentID": "{f84abfc8-3faf-4cc3-9f83-d4ae3872e285}",
+      "parentID": "{942857aa-9d79-4f9b-9f4b-b5425146df65}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json?t=3",
       "priority": 1
     },
     {
-      "id": "{7c1eb24c-dab6-417c-8f2f-ad47bccc6d82}",
+      "id": "{f37d1e6c-99c9-4356-987d-d9a814575ad8}",
       "type": "Box",
       "name": "Cube",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11075,14 +11075,14 @@
         "green": 70,
         "blue": 64
       },
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{1e0dd50a-bfab-448e-b163-919addc58a02}",
+      "id": "{51b77b96-b835-457a-9afa-78076de08d3e}",
       "type": "Material",
       "name": "Cube.Material.Wall3",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11122,7 +11122,7 @@
         "z": -14.472111225128174,
         "scale": 7.996971130371094
       },
-      "parentID": "{7c1eb24c-dab6-417c-8f2f-ad47bccc6d82}",
+      "parentID": "{f37d1e6c-99c9-4356-987d-d9a814575ad8}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/concrete_wall_008.json?t=1",
       "priority": 1,
       "materialMappingScale": {
@@ -11131,11 +11131,11 @@
       }
     },
     {
-      "id": "{1e6d429a-7869-44a1-8428-a939d360b96c}",
+      "id": "{6d151a31-8dac-4484-af62-b6d7f1801d1e}",
       "type": "Model",
       "name": "Model.DoorWall",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11182,14 +11182,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.DoorWall.glb",
       "shapeType": "static-mesh",
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{f07ef44f-5f08-4d44-9ea2-1c4cbd21c395}",
+      "id": "{435a11f8-3a42-4bb5-8f7d-8abd2a53ec3b}",
       "type": "Box",
       "name": "Box.Roof.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11240,14 +11240,14 @@
         "green": 204,
         "blue": 204
       },
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{7798d541-e747-4f17-954c-a260ab18bae9}",
+      "id": "{d06bb829-8d0b-4aa2-8ca5-98265cb1cf56}",
       "type": "Material",
       "name": "Box.Roof.002.Material.Wall_Paster_2",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11288,7 +11288,7 @@
         "z": -11.099766731262207,
         "scale": 17.058369159698486
       },
-      "parentID": "{f07ef44f-5f08-4d44-9ea2-1c4cbd21c395}",
+      "parentID": "{435a11f8-3a42-4bb5-8f7d-8abd2a53ec3b}",
       "materialURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/white_plaster_02.json",
       "priority": 1,
       "materialMappingScale": {
@@ -11297,11 +11297,11 @@
       }
     },
     {
-      "id": "{a648210a-d97e-4cf2-ac25-a824c53d1def}",
+      "id": "{ae791300-5821-4f58-b9ba-96ab396b4a55}",
       "type": "Model",
       "name": "game_table.002",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11349,14 +11349,14 @@
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master//world/models/game_table.glb",
       "shapeType": "box",
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{6fe42c3a-9f6b-44c9-aa41-506f0c26d110}",
+      "id": "{25c69727-0dd5-42d3-9e59-e60f00b88de9}",
       "type": "Box",
       "name": "Plane.Sit.011",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11412,14 +11412,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{a8deed29-bdc3-423f-bdd8-255e6571834a}",
+      "id": "{eb004e13-9381-4cfb-8027-e3b10a90bc34}",
       "type": "Box",
       "name": "Plane.Sit.012",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11475,14 +11475,14 @@
         "green": 50745,
         "blue": 52020
       },
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{aa4c5aec-c818-486d-9eee-77ceea00fb19}",
+      "id": "{615988de-c86b-4ca3-a4f8-fe4d41af60cc}",
       "type": "Image",
       "name": "Image.About.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11531,14 +11531,14 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/about.png",
       "emissive": true,
       "keepAspectRatio": false,
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{362583c2-6663-4c70-87a0-15b05de8e110}",
+      "id": "{fde62614-961c-457b-a734-c62cab6197c3}",
       "type": "Model",
       "name": "Model.FrameT2.001",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11585,14 +11585,14 @@
         "scale": 4.0000001192092896
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.FrameT2.glb",
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{dc6f2044-32b8-49dc-92bd-6d87bd7461e8}",
+      "id": "{986beacd-3efa-4d0b-8adc-8a5597f4b245}",
       "type": "Image",
       "name": "Image.About.003",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11641,14 +11641,14 @@
       "imageURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/images/games-about.png",
       "emissive": true,
       "keepAspectRatio": false,
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     },
     {
-      "id": "{b1a9d608-926b-43c5-8ccf-63aaaf3ab3d2}",
+      "id": "{d581be8f-cd31-41a8-8ba9-5756f1086c3f}",
       "type": "Model",
       "name": "Model.FrameT2.003",
-      "lastEdited": 1688025538626574,
-      "created": 1688025538626574,
+      "lastEdited": 1688044662036182,
+      "created": 1688044662036182,
       "clientOnly": false,
       "avatarEntity": false,
       "localEntity": false,
@@ -11695,10 +11695,10 @@
         "scale": 4.0000001192092896
       },
       "modelURL": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/generated/Model.FrameT2.glb",
-      "parentID": "{2644f1bc-0624-4200-a136-7333261738f9}"
+      "parentID": "{f3e9f9ae-dd04-4c60-9db4-1eae4e2a832d}"
     }
   ],
-  "Id": "{d3bf0582-f4c4-4897-9343-8486e4f608a9}",
+  "Id": "{e2cf7504-5b30-4dfd-b7dc-f1fb8a906556}",
   "Version": 133,
   "Paths": {
     "/": "/0.0,1.0,-0.0/0.0,0.0,-0.0,1.0"

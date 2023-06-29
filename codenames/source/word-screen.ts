@@ -33,11 +33,25 @@ export class WordScreen {
     }
   }
 
+  public showMessage(text: string) {
+    if (this.wordId) {
+      const textColor = COLOR.WHITE;
+      Entities.editEntity(this.wordId, { text, textColor, lineHeight: 0.2 } as any);
+    }
+
+    if (this.endTurnId) {
+      Entities.editEntity(this.endTurnId, { visible: false } as any);
+    }
+
+    this.setGuessesLeft(0);
+  }
+
+
   public setWord(team: number, word: string, guesses: number) {
     if (this.wordId) {
-      const text = word + ' = ' + String(guesses);
+      const text = word + ': ' + String(guesses);
       const textColor = team === RED_TEAM ? COLOR.RED : COLOR.BLUE;
-      Entities.editEntity(this.wordId, { text, textColor } as any);
+      Entities.editEntity(this.wordId, { text, textColor, lineHeight: 0.5 } as any);
     }
 
     if (this.endTurnId) {
@@ -72,18 +86,6 @@ export class WordScreen {
       subImage,
       visible: true
     } as any);
-  }
-
-  public clear() {
-    if (this.wordId) {
-      Entities.editEntity(this.wordId, { text: '' } as any);
-    }
-
-    if (this.endTurnId) {
-      Entities.editEntity(this.endTurnId, { visible: false } as any);
-    }
-
-    this.setGuessesLeft(0);
   }
 
 }

@@ -104,6 +104,7 @@ var panel_1 = __webpack_require__(899);
 var score_screen_1 = __webpack_require__(340);
 var messages_1 = __webpack_require__(349);
 var word_screen_1 = __webpack_require__(658);
+var sound_player_1 = __webpack_require__(538);
 var CodenamesServer = /** @class */ (function () {
     function CodenamesServer() {
         this.words = [];
@@ -185,6 +186,7 @@ var CodenamesServer = /** @class */ (function () {
             var teamLabel = opponentId === constants_1.RED_TEAM ? messages_1.Message.RED : messages_1.Message.BLUE;
             this.scoreScreen.setScore(opponentId, opponent.score);
             this.showRoundOver(messages_1.Message.ROUND_OVER_ASSASIN.replace('{team}', teamLabel));
+            this.soundPlayer.play(sound_player_1.SoundPlayer.ASSASIN_SOUND);
             return;
         }
         // No more agents cards left
@@ -196,12 +198,14 @@ var CodenamesServer = /** @class */ (function () {
                 this.teams[constants_1.RED_TEAM].score += 1;
                 this.scoreScreen.setScore(constants_1.RED_TEAM, this.teams[constants_1.RED_TEAM].score);
                 this.showRoundOver(messages_1.Message.ROUND_OVER_ALL_AGENTS.replace('{team}', messages_1.Message.RED));
+                this.soundPlayer.play(sound_player_1.SoundPlayer.ROUND_OVER_SOUND);
                 return;
             }
             if (blueLeft === 0) {
                 this.teams[constants_1.BLUE_TEAM].score += 1;
                 this.scoreScreen.setScore(constants_1.BLUE_TEAM, this.teams[constants_1.BLUE_TEAM].score);
                 this.showRoundOver(messages_1.Message.ROUND_OVER_ALL_AGENTS.replace('{team}', messages_1.Message.BLUE));
+                this.soundPlayer.play(sound_player_1.SoundPlayer.ROUND_OVER_SOUND);
                 return;
             }
         }
@@ -230,14 +234,16 @@ var CodenamesServer = /** @class */ (function () {
         var message = params[0];
         switch (message) {
             case messages_1.Message.BUTTON_START:
-                this.startNewRound();
+            case messages_1.Message.BUTTON_NEXT_ROUND:
+                if (!this.roundPending) {
+                    this.startNewRound();
+                }
                 return;
             case messages_1.Message.BUTTON_ABORT_CONFIRM:
-                this.resetGameState();
-                return;
-            case messages_1.Message.BUTTON_NEXT_ROUND:
-                this.startNewRound();
-                return;
+                if (this.roundPending) {
+                    this.resetGameState();
+                    return;
+                }
         }
     };
     CodenamesServer.prototype.onCancelClick = function (_id, params) {
@@ -264,8 +270,10 @@ var CodenamesServer = /** @class */ (function () {
         this.clueSubmitted = false;
         this.panel.setTeamMessage(this.activeTeam, messages_1.Message.WAITING_OTHER_TEAM);
         this.panel.setTeamMessage(opponentId, messages_1.Message.GIVE_A_CLUE, messages_1.Message.BUTTON_SUBMIT);
-        this.wordScreen.clear();
         this.activeTeam = opponentId;
+        var teamLabel = opponentId === constants_1.RED_TEAM ? messages_1.Message.RED : messages_1.Message.BLUE;
+        var message = messages_1.Message.WAITING_FOR_SPYMASTER.replace('{color}', teamLabel);
+        this.wordScreen.showMessage(message);
     };
     CodenamesServer.prototype.resetGameState = function () {
         this.words = constants_1.CONFIG.WORDS.slice();
@@ -285,7 +293,7 @@ var CodenamesServer = /** @class */ (function () {
             this.panel.setTeamWord(id, '');
         }
         this.board.renderBoard(this.boardItems);
-        this.wordScreen.clear();
+        this.wordScreen.showMessage(messages_1.Message.START_GAME_INFO);
         this.panel.setView('message');
         this.panel.setMessage(messages_1.Message.START_GAME, messages_1.Message.BUTTON_START);
     };
@@ -297,6 +305,7 @@ var CodenamesServer = /** @class */ (function () {
         this.panel = new panel_1.Panel(this.entityId, entityIds, entities);
         this.scoreScreen = new score_screen_1.ScoreScreen(this.entityId, entityIds, entities);
         this.wordScreen = new word_screen_1.WordScreen(this.entityId, entityIds, entities);
+        this.soundPlayer = new sound_player_1.SoundPlayer(position);
     };
     CodenamesServer.prototype.startNewRound = function () {
         var board = this.drawNewBoard();
@@ -313,11 +322,14 @@ var CodenamesServer = /** @class */ (function () {
         this.panel.setTeamMessage(opponentId, messages_1.Message.WAITING_OTHER_TEAM);
         this.scoreScreen.setWordsLeft(this.activeTeam, 9);
         this.scoreScreen.setWordsLeft(opponentId, 8);
+        var teamLabel = this.activeTeam === constants_1.RED_TEAM ? messages_1.Message.RED : messages_1.Message.BLUE;
+        var message = messages_1.Message.WAITING_FOR_SPYMASTER.replace('{color}', teamLabel);
+        this.wordScreen.showMessage(message);
     };
     CodenamesServer.prototype.showRoundOver = function (message) {
         this.panel.setView('message');
         this.panel.setMessage(message, messages_1.Message.BUTTON_NEXT_ROUND, messages_1.Message.BUTTON_END_GAME);
-        this.wordScreen.clear();
+        this.wordScreen.showMessage(message);
         this.roundPending = false;
     };
     CodenamesServer.prototype.getWordsLeft = function () {
@@ -421,9 +433,9 @@ exports.RED_TEAM = 0;
 exports.BLUE_TEAM = 1;
 exports.COLOR = {
     BLACK: { red: 0, green: 0, blue: 0 },
-    RED: { red: 255, green: 0, blue: 0 },
-    BLUE: { red: 0, green: 0, blue: 255 },
-    YELLOW: { red: 255, green: 255, blue: 0 },
+    RED: { red: 209, green: 53, blue: 17 },
+    BLUE: { red: 7, green: 99, blue: 155 },
+    YELLOW: { red: 255, green: 208, blue: 138 },
     WHITE: { red: 255, green: 255, blue: 255 },
     GRAY: { red: 192, green: 192, blue: 192 }
 };
@@ -456,6 +468,7 @@ var Message;
     Message["START_GAME"] = "Click the button to start the game.";
     Message["WAITING_OTHER_TEAM"] = "Waiting for the other team";
     Message["WAITING_FOR_VOTES"] = "Waiting for votes";
+    Message["WAITING_FOR_SPYMASTER"] = "Waiting for a clue from\nthe {color} spymaster";
     Message["ABORT_GAME"] = "Abort current game?";
     Message["BUTTON_ABORT_CONFIRM"] = "Yes, abort the game";
     Message["GIVE_A_CLUE"] = "Give a clue to your team";
@@ -468,6 +481,7 @@ var Message;
     Message["ENTER_CLUE"] = "Enter your clue";
     Message["ROUND_OVER_ASSASIN"] = "Team {team} has won the round,\nbecause the Assasin card was selected.";
     Message["ROUND_OVER_ALL_AGENTS"] = "Team {team} has won the round,\nbecause they uncovered all agents.";
+    Message["START_GAME_INFO"] = "Click the button on the panel\nto start the game.";
     Message["INPUT_LABEL"] = "Click to enter a word";
     Message["BLUE"] = "Blue";
     Message["RED"] = "Red";
@@ -769,6 +783,54 @@ exports.ScoreScreen = ScoreScreen;
 
 /***/ }),
 
+/***/ 538:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SoundPlayer = void 0;
+var constants_1 = __webpack_require__(140);
+var SoundPlayer = exports.SoundPlayer = /** @class */ (function () {
+    function SoundPlayer(position) {
+        this.position = position;
+        this.ROUND_OVER_SOUND_FILE_NAME = '/325112__fisch12345__success.wav';
+        this.ASSASIN_SOUND_FILE_NAME = '/456963__funwithsound__failure-drum-sound-effect-2.wav';
+        this.SOUND_VOLUMES = [1, 1];
+        var assetsPath = Script.resolvePath('../assets');
+        this.sounds = [
+            SoundCache.getSound(assetsPath + this.ROUND_OVER_SOUND_FILE_NAME),
+            SoundCache.getSound(assetsPath + this.ASSASIN_SOUND_FILE_NAME),
+        ];
+    }
+    SoundPlayer.prototype.play = function (soundIndex) {
+        if (!this.sounds[soundIndex]) {
+            return;
+        }
+        if (constants_1.CONFIG.CLIENT_SIDE_ONLY) {
+            return this.playLocal(soundIndex);
+        }
+        var injectorOptions = {
+            position: this.position,
+            volume: this.SOUND_VOLUMES[soundIndex]
+        };
+        Audio.playSound(this.sounds[soundIndex], injectorOptions);
+    };
+    SoundPlayer.prototype.playLocal = function (soundIndex) {
+        var injectorOptions = {
+            position: MyAvatar.position,
+            volume: this.SOUND_VOLUMES[soundIndex] / 5,
+            localOnly: true
+        };
+        Audio.playSound(this.sounds[soundIndex], injectorOptions);
+    };
+    SoundPlayer.ROUND_OVER_SOUND = 0;
+    SoundPlayer.ASSASIN_SOUND = 1;
+    return SoundPlayer;
+}());
+
+
+/***/ }),
+
 /***/ 924:
 /***/ (function(__unused_webpack_module, exports) {
 
@@ -817,11 +879,21 @@ var WordScreen = /** @class */ (function () {
             }
         }
     }
+    WordScreen.prototype.showMessage = function (text) {
+        if (this.wordId) {
+            var textColor = constants_1.COLOR.WHITE;
+            Entities.editEntity(this.wordId, { text: text, textColor: textColor, lineHeight: 0.2 });
+        }
+        if (this.endTurnId) {
+            Entities.editEntity(this.endTurnId, { visible: false });
+        }
+        this.setGuessesLeft(0);
+    };
     WordScreen.prototype.setWord = function (team, word, guesses) {
         if (this.wordId) {
-            var text = word + ' = ' + String(guesses);
+            var text = word + ': ' + String(guesses);
             var textColor = team === constants_1.RED_TEAM ? constants_1.COLOR.RED : constants_1.COLOR.BLUE;
-            Entities.editEntity(this.wordId, { text: text, textColor: textColor });
+            Entities.editEntity(this.wordId, { text: text, textColor: textColor, lineHeight: 0.5 });
         }
         if (this.endTurnId) {
             Entities.editEntity(this.endTurnId, { visible: true });
@@ -849,15 +921,6 @@ var WordScreen = /** @class */ (function () {
             subImage: subImage,
             visible: true
         });
-    };
-    WordScreen.prototype.clear = function () {
-        if (this.wordId) {
-            Entities.editEntity(this.wordId, { text: '' });
-        }
-        if (this.endTurnId) {
-            Entities.editEntity(this.endTurnId, { visible: false });
-        }
-        this.setGuessesLeft(0);
     };
     return WordScreen;
 }());

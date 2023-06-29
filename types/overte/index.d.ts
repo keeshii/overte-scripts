@@ -3243,6 +3243,14 @@ declare namespace MyAvatar {
      */
     function endReaction(reactionName: string): boolean;
     /**
+     * The position of the avatar.
+     */
+    const position: TVec3;
+    /**
+     * The orientation of the avatar.
+     */
+    const orientation: TQuat;
+    /**
      * <p>Specifies the initial conditions of the IK solver.</p>
     <table>
       <thead>
