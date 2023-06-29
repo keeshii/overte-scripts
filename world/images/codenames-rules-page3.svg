@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="210mm"
+   viewBox="0 0 210 210"
+   version="1.1"
+   id="svg1292"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1289" />
+  <g
+     id="layer1"
+     transform="translate(152.91577,173.82525)">
+    <path
+       d="m -152.91577,-173.82525 h 210 v 210 h -210 z"
+       style="fill:#8f1056;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.110269"
+       id="path20" />
+    <path
+       d="M -148.54341,28.280415 V -155.67748 c 0,-0.19154 0.0127,-0.38122 0.0381,-0.56906 0.0254,-0.18787 0.0631,-0.37026 0.11292,-0.5472 0.0499,-0.17697 0.11099,-0.34504 0.18338,-0.50431 0.0724,-0.15923 0.15465,-0.30657 0.24678,-0.44199 0.0921,-0.13553 0.19237,-0.25637 0.30071,-0.36277 0.10833,-0.10642 0.22269,-0.19625 0.34307,-0.26955 0.12038,-0.0733 0.24446,-0.12862 0.37225,-0.16599 0.1278,-0.0373 0.25684,-0.056 0.38714,-0.056 H 51.34928 c 0.130285,0 0.259334,0.0187 0.387122,0.056 0.127787,0.0373 0.251858,0.0927 0.372245,0.16599 0.120379,0.0734 0.23473,0.16318 0.343069,0.26959 0.10834,0.10642 0.208577,0.22727 0.300719,0.36273 0.09213,0.13538 0.174397,0.28276 0.246778,0.44199 0.07239,0.15927 0.133537,0.32734 0.183388,0.50428 0.04986,0.17697 0.08751,0.35936 0.112929,0.5472 0.0254,0.18787 0.03811,0.37755 0.03813,0.56909 V 28.280415 c -1.7e-5,0.191509 -0.01273,0.381176 -0.03813,0.569028 -0.02542,0.187888 -0.06307,0.370286 -0.112929,0.547209 -0.04985,0.176947 -0.110998,0.344999 -0.183388,0.504223 -0.07238,0.159301 -0.154643,0.30663 -0.246778,0.442048 -0.09214,0.135453 -0.192379,0.256373 -0.300702,0.362782 -0.108348,0.106364 -0.222707,0.196212 -0.343086,0.269516 -0.120387,0.07327 -0.244458,0.128662 -0.372245,0.165995 -0.127788,0.03733 -0.256837,0.05605 -0.387122,0.05608 h -197.90831 c -0.1303,-3.6e-5 -0.25934,-0.01867 -0.38714,-0.05608 -0.12779,-0.03733 -0.25187,-0.09273 -0.37225,-0.165995 -0.12038,-0.07331 -0.23474,-0.163146 -0.34307,-0.269516 -0.10834,-0.106409 -0.20858,-0.227327 -0.30071,-0.362782 -0.0921,-0.135425 -0.17439,-0.282747 -0.24678,-0.442048 -0.0724,-0.159224 -0.13352,-0.327276 -0.18338,-0.504223 -0.0499,-0.176923 -0.0875,-0.359321 -0.11292,-0.547209 -0.0254,-0.187852 -0.0381,-0.377531 -0.0381,-0.569028 z"
+       style="fill:#f6dad4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.320781"
+       id="path30" />
+    <path
+       d="M -148.54341,28.280415 V -155.67748 c 0,-0.19154 0.0127,-0.38122 0.0381,-0.56906 0.0254,-0.18787 0.0631,-0.37026 0.11292,-0.5472 0.0499,-0.17697 0.11099,-0.34504 0.18338,-0.50431 0.0724,-0.15923 0.15465,-0.30657 0.24678,-0.44199 0.0921,-0.13553 0.19237,-0.25637 0.30071,-0.36277 0.10833,-0.10642 0.22269,-0.19625 0.34307,-0.26955 0.12038,-0.0733 0.24446,-0.12862 0.37225,-0.16599 0.1278,-0.0373 0.25684,-0.056 0.38714,-0.056 H 51.34928 c 0.130285,0 0.259334,0.0187 0.387122,0.056 0.127787,0.0373 0.251858,0.0927 0.372245,0.16599 0.120379,0.0734 0.23473,0.16318 0.343069,0.26959 0.10834,0.10642 0.208577,0.22727 0.300719,0.36273 0.09213,0.13538 0.174397,0.28276 0.246778,0.44199 0.07239,0.15927 0.133537,0.32734 0.183388,0.50428 0.04986,0.17697 0.08751,0.35936 0.112929,0.5472 0.0254,0.18787 0.03811,0.37755 0.03813,0.56909 V 28.280415 c -1.7e-5,0.191509 -0.01273,0.381177 -0.03813,0.569026 -0.02542,0.187889 -0.06307,0.370289 -0.112929,0.547211 -0.04985,0.176948 -0.110998,0.344998 -0.183388,0.504224 -0.07238,0.159299 -0.154643,0.306628 -0.246778,0.442046 -0.09214,0.135454 -0.192379,0.256375 -0.300702,0.362782 -0.108348,0.106363 -0.222707,0.196212 -0.343086,0.269516 -0.120387,0.07327 -0.244458,0.128663 -0.372245,0.165997 -0.127788,0.03733 -0.256837,0.05605 -0.387122,0.05608 h -197.90831 c -0.1303,-3.7e-5 -0.25934,-0.01867 -0.38714,-0.05608 -0.12779,-0.03733 -0.25187,-0.09273 -0.37225,-0.165997 -0.12038,-0.07331 -0.23474,-0.163145 -0.34307,-0.269516 -0.10834,-0.106407 -0.20858,-0.227326 -0.30071,-0.362782 -0.0921,-0.135423 -0.17439,-0.282747 -0.24678,-0.442046 -0.0724,-0.159226 -0.13352,-0.327276 -0.18338,-0.504224 -0.0499,-0.176922 -0.0875,-0.359322 -0.11292,-0.547211 -0.0254,-0.187849 -0.0381,-0.377529 -0.0381,-0.569026 z"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path32" />
+    <path
+       d="M -144.11421,-47.117256 H 49.031606 v 0.264584 H -144.11421 Z"
+       style="fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="path40" />
+    <text
+       style="font-variant:normal;font-weight:bold;font-size:7.40833px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text228"
+       x="-71.965645"
+       y="-162.49625"><tspan
+         x="-71.965645 -67.574181 -62.224129 -57.698814 -55.640541 -50.290489 -48.232216 -42.882149 -38.35685 -33.006783 -28.065483"
+         y="-162.49625"
+         id="tspan226"
+         style="stroke-width:0.264583">VALID CLUES</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text232"
+       x="-144.11421"
+       y="-150.85458"><tspan
+         x="-144.11421 -141.64355 -139.58347 -136.49788 -134.43779 -133.40866 -131.55658 -130.73363 -128.67355 -126.61347 -124.76138 -123.73225 -121.67217 -120.43865 -118.37857 -117.34943 -116.52648 -114.46641 -112.61433 -110.55424 -109.73129 -108.90835 -106.84827 -105.81914 -103.75904 -101.69897 -99.846886 -97.786804 -95.726723 -93.874641 -91.814568 -90.785423 -89.756287 -87.696205 -85.636131 -83.78405 -82.754906 -80.902824 -80.079872 -78.019798 -77.196846 -75.136772 -74.107628 -72.047554 -71.01841 -69.989281 -67.929207 -65.869118 -64.839989 -62.987892 -60.927818 -60.104866 -58.871361 -58.048409 -57.019264 -55.990135 -53.930046 -52.900917 -51.871788 -50.842644 -48.78257 -46.722481 -45.693352 -43.633263 -41.573189 -38.487587 -36.427498"
+         y="-150.85458"
+         id="tspan230"
+         style="stroke-width:0.264583">Some clues are invalid because they violate the spirit of the game.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:bold;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Bold;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text236"
+       x="-144.11421"
+       y="-141.85876"><tspan
+         x="-144.11421 -141.91847 -139.65582 -137.39317 -135.95166 -134.92252 -132.86244 -131.8333 -129.57065 -127.51057 -126.48144 -123.18784 -120.92519 -118.8651 -117.63159 -116.60245 -114.3398 -112.27972 -111.25059 -109.19051 -106.92784 -104.66519 -102.40254 -101.16902 -100.13989 -98.906387 -96.643723 -94.583641 -93.554504 -90.260918 -88.200829 -86.140755 -83.87809 -82.848961 -80.586311 -78.323662 -77.294518 -75.031868 -73.798347 -72.769218 -71.535698 -69.273048 -67.212959 -66.18383 -63.302605 -61.039955 -59.598442 -57.335793 -55.275703"
+         y="-141.85876"
+         id="tspan234"
+         style="stroke-width:0.264583">Your clue must be about the meaning of the words.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text240"
+       x="-53.280479"
+       y="-141.85876"><tspan
+         x="-53.280479 -51.149864 -49.089775 -47.029701 -46.000557 -44.148476 -42.088402 -40.028313 -39.321129 -38.291985 -37.262856 -35.202766 -33.350685 -31.290611 -30.261467 -28.409386 -26.349312 -24.289223 -23.055717 -22.026573 -20.174507 -19.35154 -17.291466 -15.231392 -14.202248 -13.173103 -11.113029 -10.0839 -9.0547562 -6.9946818 -6.1717296 -4.319633 -3.2905195 -1.2304304 0.82964349 2.8897326 4.9498067 5.978951 7.00808 8.0372086 10.097298 12.157372 13.186516 14.009453 16.069542 17.098671 18.127815 20.187889 21.42141 23.273491 24.302635 25.125572 27.185661 28.21479 30.274879 31.304008 33.979057 36.039116 37.272636 39.332726 40.361855 42.421944 43.655464 44.684608 45.507545 46.53669"
+         y="-141.85876"
+         id="tspan238"
+         style="stroke-width:0.264583">You can't use your clue to talk about the letters in a word or its</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text244"
+       x="-144.11421"
+       y="-136.56708"><tspan
+         x="-144.11421 -142.05412 -139.99405 -138.14195 -137.31902 -136.28987 -135.46693 -133.40685 -131.34677 -130.31763 -128.25755 -126.19747 -125.16833 -124.1392 -122.07912 -120.01904 -118.98991 -117.96077 -115.90069 -113.84061 -113.01766 -110.95759 -109.92844"
+         y="-136.56708"
+         id="tspan242"
+         style="stroke-width:0.264583">position on the table.</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text248"
+       x="-108.89569"
+       y="-136.56708"><tspan
+         x="-108.89569 -106.01447 -105.19152 -103.13143 -101.07136"
+         y="-136.56708"
+         id="tspan246"
+         style="stroke-width:0.264583">Gland</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text252"
+       x="-97.981888"
+       y="-136.56708"><tspan
+         x="-97.981888 -97.158936 -95.306854 -94.277718 -92.217636 -90.157555 -89.128418 -88.099281 -86.039207 -85.010063 -83.157982 -81.097908 -80.274956 -79.452003 -77.39193 -76.362785 -74.510704 -73.687767 -71.627678 -69.567604 -68.53846 -67.509331 -65.449242 -64.215736 -63.186592 -60.71595 -58.040916 -55.159691 -53.099617 -50.62896 -47.953926 -45.278908 -44.249763 -43.287544 -41.156929 -39.096855 -37.036766 -36.007637 -34.155556 -32.095467 -30.035393 -29.328194 -28.299065 -27.26992 -26.240791 -25.417839 -23.357765 -22.328621 -19.857964 -17.182945 -14.30172 -13.272591 -12.243446 -9.7728043 -7.3021464 -4.6271129 -3.5979841 -2.568855 -0.50876594 1.5513079 3.6113818 4.6405263 7.1111684 9.9923935 13.488564 14.517693 15.546837 17.606911 19.667 21.727089 22.756218 24.816307 26.876381 28.109886 29.13903 31.814064 32.637016 33.666145 35.726234 36.755363 38.815453 39.844582 41.696663 42.51963 44.579689"
+         y="-136.56708"
+         id="tspan250"
+         style="stroke-width:0.264583">is not a valid clue for ENGLAND. You can't tie BUG, BED, and BOW together with a clue</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text256"
+       x="-144.11421"
+       y="-131.27542"><tspan
+         x="-144.11421 -143.29126 -142.46831 -140.61623 -138.55615"
+         y="-131.27542"
+         id="tspan254"
+         style="stroke-width:0.264583">like</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text260"
+       x="-137.52443"
+       y="-131.27542"><tspan
+         x="-137.52443 -135.46434 -134.43521 -133.40607"
+         y="-131.27542"
+         id="tspan258"
+         style="stroke-width:0.264583">b: 3</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text264"
+       x="-130.31479"
+       y="-131.27542"><tspan
+         x="-130.31479 -128.25471 -126.19463 -124.96111 -123.93198 -121.25695 -120.434 -119.40487 -117.34479 -116.31565 -114.25558 -113.22643 -111.37435 -110.55139 -108.49132 -106.43124 -105.40211 -104.57915 -103.75622 -101.90412 -99.844048"
+         y="-131.27542"
+         id="tspan262"
+         style="stroke-width:0.264583">nor with a clue like</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text268"
+       x="-98.812584"
+       y="-131.27542"><tspan
+         x="-98.812584 -97.783447 -95.723366 -94.489853 -92.429771 -90.369698 -89.340553 -88.311409"
+         y="-131.27542"
+         id="tspan266"
+         style="stroke-width:0.264583">three: 3</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text272"
+       x="-86.249016"
+       y="-131.27542"><tspan
+         x="-86.249016 -85.219872 -84.190742 -81.515709 -79.45562 -76.780602 -74.720512 -72.868431 -70.808357 -69.779213 -68.750084 -67.72094"
+         y="-131.27542"
+         id="tspan270"
+         style="stroke-width:0.264583">. However...</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:bold;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Bold;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text276"
+       x="-144.11421"
+       y="-122.27958"><tspan
+         x="-144.11421 -141.85155 -139.79147 -138.55795 -137.32443 -135.26436 -133.82285 -131.76276 -130.73363 -128.67355 -126.4109 -124.14825 -123.11911 -120.85645 -118.5938 -115.3002 -113.03755 -110.97748 -109.53596 -107.47588 -106.44673 -104.38667 -102.94514 -100.88507 -99.855934 -97.795853 -95.735771 -94.706635 -93.677498 -91.414841 -90.385712 -88.32563 -87.296486 -85.033836 -82.973763 -80.913673 -79.884544 -78.8554 -76.795326 -74.735237 -73.706108 -72.676964 -70.414314 -68.151665 -65.889015 -64.859871 -62.799797 -60.739723 -59.710579 -58.477058 -56.214409 -54.154335 -52.094246 -51.065117 -49.623604 -47.563515 -46.329994 -44.26992 -42.828407 -41.799263 -40.565758 -38.303108 -37.273964 -33.98037 -31.92028 -29.860207 -27.597557 -26.568413 -24.305763 -22.043114 -19.98304"
+         y="-122.27958"
+         id="tspan274"
+         style="stroke-width:0.264583">Letters and numbers are valid clues, as long as they refer to meanings.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text280"
+       x="-17.991676"
+       y="-122.27958"><tspan
+         x="-17.991676 -15.861046 -13.800972 -11.740883 -10.711754 -8.8596725 -6.799583 -4.7395091 -3.7103803 -1.6502912 0.20179011 2.2618792 3.2910082 5.7616506 6.7907948 7.8199239 9.8800125 10.909142 12.969231 14.821312 15.850441 17.91053 18.939659 20.79174 21.614677 23.674767 25.73484 26.763985 27.793114 29.853203 31.086723 32.115852 34.790886 36.986626 38.979774 40.008919 40.971138 43.101753 45.161842"
+         y="-122.27958"
+         id="tspan278"
+         style="stroke-width:0.264583">You can use X: 1 as a clue for RAY. You</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text284"
+       x="-144.11421"
+       y="-116.98792"><tspan
+         x="-144.11421 -142.26212 -140.20204 -138.14195 -137.11282 -135.05275 -133.20065 -131.14058"
+         y="-116.98792"
+         id="tspan282"
+         style="stroke-width:0.264583">can use</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text288"
+       x="-130.10782"
+       y="-116.98792"><tspan
+         x="-130.10782 -128.04774 -127.2248 -125.16472 -123.10464 -122.0755 -121.04636 -120.01723"
+         y="-116.98792"
+         id="tspan286"
+         style="stroke-width:0.264583">eight: 3</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text292"
+       x="-116.9244"
+       y="-116.98792"><tspan
+         x="-116.9244 -114.86431 -113.01224 -111.98309 -109.92301 -108.89388 -107.04179 -106.21884 -104.15877 -102.09869 -101.06956 -100.04041 -97.980331 -96.746811 -95.717682 -93.247032 -90.776382 -88.716301 -86.656227 -85.627083 -84.597954 -82.335289 -81.30616 -78.424934 -75.749916 -73.074883 -70.604225 -69.575096 -68.545952 -66.485878 -64.425789 -62.365715 -61.336586 -58.45536 -55.780327 -53.584602 -50.703377 -48.232719 -45.557701 -43.087044 -42.057915 -41.095695 -38.833046 -36.772957 -34.712883 -33.683739 -31.623665 -29.563591 -26.477989 -24.4179 -22.357826 -21.124306 -20.095177 -18.24308 -16.183006 -14.122932 -13.093788 -11.241707 -9.1816177 -7.329536 -6.3004069 -4.2403178 -3.211189 -2.18206 -0.12197087 1.1115496 2.1406786 3.9927599 6.052834 8.1129227 9.3464432 10.375572 12.227654 13.050606 15.11068 17.170769 18.199898 20.051979 22.112083 24.172142 24.879341 25.90847 26.937614 28.997688 31.057777 32.086906 34.146996 35.999077 38.059151 40.11924 41.148384 43.208473 45.060555 46.089668"
+         y="-116.98792"
+         id="tspan290"
+         style="stroke-width:0.264583">as a clue for BALL, FIGURE, and OCTOPUS. The number you say after your clue can't be used as a</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text296"
+       x="-144.11421"
+       y="-111.69624"><tspan
+         x="-144.11421 -142.26212 -141.43918 -139.37909 -137.31902 -136.28987"
+         y="-111.69624"
+         id="tspan294"
+         style="stroke-width:0.264583">clue.</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text300"
+       x="-135.25893"
+       y="-111.69624"><tspan
+         x="-135.25893 -132.58391 -131.76096 -130.73181 -129.49831 -127.43822 -125.58614 -124.55701 -123.52787"
+         y="-111.69624"
+         id="tspan298"
+         style="stroke-width:0.264583">Citrus: 8</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text304"
+       x="-120.43839"
+       y="-111.69624"><tspan
+         x="-120.43839 -119.61545 -117.76337 -116.73423 -114.67414 -112.61407 -111.58494 -110.55579 -108.49571 -107.46658 -105.61449 -103.55441 -102.73147 -101.90852 -99.848434 -98.819305 -96.967216 -96.144272 -94.084198 -92.024101 -90.994972 -89.965836 -87.905754 -86.672234 -85.643105 -83.583031 -81.112373 -78.026772 -75.145561 -72.470528 -71.441383 -69.38131 -67.32122 -65.261147 -64.232002 -61.350792 -58.675758 -56.480034 -53.598808 -51.128151 -48.453133 -45.982475"
+         y="-111.69624"
+         id="tspan302"
+         style="stroke-width:0.264583">is not a valid clue for LEMON and OCTOPUS.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:bold;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Bold;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text308"
+       x="-144.11421"
+       y="-102.70042"><tspan
+         x="-144.11421 -141.91847 -139.65582 -137.39317 -136.36403 -133.07043 -130.80779 -128.7477 -127.51419 -126.48505 -124.2224 -123.19327 -121.13319 -119.0731 -118.04397 -117.01483 -114.75217 -113.72305 -111.2524 -108.98973 -106.72708 -105.69795 -104.66882 -102.60873 -100.34608"
+         y="-102.70042"
+         id="tspan306"
+         style="stroke-width:0.264583">You must play in English.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text312"
+       x="-98.492188"
+       y="-102.70042"><tspan
+         x="-98.492188 -96.225922 -95.196785 -94.167641 -92.107567 -90.874054 -88.813972 -87.99102 -85.930946 -83.870857 -82.841728 -80.166695 -78.106621 -76.8731 -74.813011 -73.783882 -72.96093 -71.108849 -70.07972 -68.01963 -67.196693 -66.373741 -64.313652 -61.638634 -59.578545 -57.518471 -56.489326 -54.429253 -52.369164 -51.546227 -49.69413 -48.665001 -47.842049 -46.81292 -45.783775 -44.754646 -42.694557 -40.634483 -39.605354 -37.545265 -36.722313 -34.662239 -32.810158 -30.750069 -29.516563 -27.664482 -26.635338 -25.812386 -23.752312 -22.723167 -20.871086 -18.811012 -16.750923 -15.517418 -14.488274 -12.4282 -11.194679 -9.1346054 -7.0745158 -5.014442 -3.9852979 -1.3102643 0.7498095 2.8098834 3.6328356 5.6929097 6.722054 8.7821274 10.634209 12.694298 13.723427 14.546379 15.575508 16.604652 17.427605 19.487679 20.516823 22.576897 24.636986 25.666115 28.136757 30.196846 32.25692 33.079887 33.902824 35.754906"
+         y="-102.70042"
+         id="tspan310"
+         style="stroke-width:0.264583">A foreign word is allowed only if the players in your group would use it in an English</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text316"
+       x="-144.11421"
+       y="-97.408752"><tspan
+         x="-144.11421 -142.26212 -140.20204 -138.14195 -137.11282 -135.05275 -132.99266 -131.14058 -129.08049 -128.05136 -127.02223 -124.75957 -122.69949 -121.46598 -120.43684 -118.37676 -116.52468 -114.46461 -111.379 -109.31892 -108.49597 -106.4359 -105.40675 -104.37762 -102.52554 -100.46545 -98.405373 -97.376236 -95.524155 -93.464073 -91.403992 -90.696808 -89.667664 -88.638527 -86.578453 -84.726357 -82.666283"
+         y="-97.408752"
+         id="tspan314"
+         style="stroke-width:0.264583">sentence. For example, you can't use</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text320"
+       x="-81.635338"
+       y="-97.408752"><tspan
+         x="-81.635338 -79.164696 -77.104607 -76.075478 -74.015388"
+         y="-97.408752"
+         id="tspan318"
+         style="stroke-width:0.264583">Apfel</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text324"
+       x="-72.16021"
+       y="-97.408752"><tspan
+         x="-72.16021 -70.100121 -68.248039 -67.21891 -65.158821 -64.129692 -62.277611 -61.454659 -59.394585 -57.334496 -56.305367 -55.276222 -53.216148 -51.982628 -51.157875 -48.687218 -46.216576 -43.745918 -41.685844 -39.215187 -38.186058 -36.125969 -34.065895 -32.005806 -30.976677 -28.50602 -26.035378 -23.360344 -21.30027 -20.271126 -17.596107 -16.566963 -15.537819 -13.477745 -11.417671 -10.388527 -9.3593979 -7.5073161 -5.447227 -3.3871534 -2.3580091 -0.5059278 1.5541461 3.6142352 4.6433644 6.7034535 8.5555344 10.615608"
+         y="-97.408752"
+         id="tspan322"
+         style="stroke-width:0.264583">as a clue for APPLE and BERLIN, but you can use</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text328"
+       x="11.646812"
+       y="-97.408752"><tspan
+         x="11.646812 13.498894 14.528038 15.761543 17.821632 19.881706 21.941795"
+         y="-97.408752"
+         id="tspan326"
+         style="stroke-width:0.264583">strudel</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text332"
+       x="22.767586"
+       y="-97.408752"><tspan
+         x="22.767586"
+         y="-97.408752"
+         id="tspan330"
+         style="stroke-width:0.264583">.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:bold;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Bold;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text336"
+       x="-144.11421"
+       y="-88.412918"><tspan
+         x="-144.11421 -141.91847 -139.65582 -137.39317 -136.36403 -134.30396 -132.24387 -129.98122 -129.10039 -127.86688 -126.83775 -124.77766 -122.71758 -120.6575 -119.62836 -117.56829 -115.30563 -113.24555 -112.21642 -110.9829 -108.72025 -107.27873 -103.98514 -102.956 -100.69334 -99.459831 -98.430695 -96.370613 -95.341476 -93.281395 -92.252251 -90.192177 -89.163048 -86.900398 -85.871254 -83.81118 -82.782036 -79.900826 -77.638161 -76.196648 -73.933998 -72.904869 -70.64222 -68.379555 -67.350426 -66.116905 -63.854256 -61.794167 -60.765038 -59.531517 -57.471443 -55.208794 -54.179649 -52.119576"
+         y="-88.412918"
+         id="tspan334"
+         style="stroke-width:0.264583">You can't say any form of a visible word on the table.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text340"
+       x="-50.059227"
+       y="-88.412918"><tspan
+         x="-50.059227 -47.384193 -45.32412 -44.294991 -43.472038 -42.649086 -41.619957 -39.1493 -36.474266 -34.003624 -31.532967 -29.062325 -28.03318 -27.210243 -25.358162 -24.329018 -22.476936 -20.416862 -18.564766 -16.504692 -15.271187 -13.211098 -11.151009 -10.12188 -8.0617905 -6.0017161 -4.9725871 -2.9124982 -1.0604169 -0.031272631 2.0288012 3.0579302 4.9100118 6.9701009 8.2036057 10.263695 11.292824 12.321968 14.174049 16.234123 18.294212 19.323341 21.175423 23.235497 25.295586 26.002769 27.031914 28.061043 29.913124 31.973213 33.82531"
+         y="-88.412918"
+         id="tspan338"
+         style="stroke-width:0.264583">Until BREAK is covered up by a card, you can't say</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text344"
+       x="34.855736"
+       y="-88.412918"><tspan
+         x="34.855736 36.915825 38.149345 40.209419 42.269508"
+         y="-88.412918"
+         id="tspan342"
+         style="stroke-width:0.264583">break</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text348"
+       x="44.124428"
+       y="-88.412918"><tspan
+         x="44.124428"
+         y="-88.412918"
+         id="tspan346"
+         style="stroke-width:0.264583">,</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text352"
+       x="-144.11421"
+       y="-83.121254"><tspan
+         x="-144.11421 -142.05412 -140.8206 -138.76053 -136.90845 -134.84836"
+         y="-83.121254"
+         id="tspan350"
+         style="stroke-width:0.264583">broken</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text356"
+       x="-132.78673"
+       y="-83.121254"><tspan
+         x="-132.78673 -131.7576"
+         y="-83.121254"
+         id="tspan354"
+         style="stroke-width:0.264583">,</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text360"
+       x="-130.72794"
+       y="-83.121254"><tspan
+         x="-130.72794 -128.66786 -127.43435 -125.37427 -123.31419 -121.4621 -119.40202 -117.34194"
+         y="-83.121254"
+         id="tspan358"
+         style="stroke-width:0.264583">breakage</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text364"
+       x="-115.27876"
+       y="-83.121254"><tspan
+         x="-115.27876 -114.24963 -113.2205 -111.16041 -109.9269"
+         y="-83.121254"
+         id="tspan362"
+         style="stroke-width:0.264583">, or</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text368"
+       x="-108.89569"
+       y="-83.121254"><tspan
+         x="-108.89569 -106.83562 -105.60208 -103.54201 -101.48193 -99.629845 -97.569763 -95.509682 -92.834656"
+         y="-83.121254"
+         id="tspan366"
+         style="stroke-width:0.264583">breakdown</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text372"
+       x="-90.771721"
+       y="-83.121254"><tspan
+         x="-90.771721"
+         y="-83.121254"
+         id="tspan370"
+         style="stroke-width:0.264583">.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:bold;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Bold;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text376"
+       x="-144.11421"
+       y="-74.12542"><tspan
+         x="-144.11421 -141.91847 -139.65582 -137.39317 -136.36403 -134.30396 -132.24387 -129.98122 -129.10039 -127.86688 -126.83775 -124.77766 -122.71758 -120.6575 -119.62836 -117.36572 -115.30563 -113.86413 -112.63061 -111.60146 -109.33881 -108.1053 -107.07616 -105.01608 -103.98695 -101.92686 -99.664215 -96.370613 -94.107964 -91.845306 -89.582657 -87.32 -85.05735 -84.028221 -81.146996 -78.884346 -77.442833 -75.180183 -74.151039 -71.88839 -69.62574 -68.596596 -67.363091 -65.100426 -63.040352 -62.011208 -60.777702 -58.717613 -56.454964 -55.425835 -53.365746"
+         y="-74.12542"
+         id="tspan374"
+         style="stroke-width:0.264583">You can't say part of a compound word on the table.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text380"
+       x="-51.303596"
+       y="-74.12542"><tspan
+         x="-51.303596 -48.628563 -46.568489 -45.539345 -44.716408 -43.893456 -42.864326 -40.189293 -37.308067 -34.633034 -32.162392 -29.691734 -27.221092 -24.546059 -21.664833 -19.194191 -18.165062 -17.34211 -15.490013 -14.460884 -12.608803 -10.548714 -8.6966476 -6.6365581 -5.4030375 -3.3429639 -1.2828901 -0.25374576 1.8063281 3.8664172 4.8955464 5.9246907 7.776772 9.8368454 11.896935 12.926064 14.778145 16.838234 18.898308 19.605507 20.634651 21.663765 23.515862 25.575951 27.428032"
+         y="-74.12542"
+         id="tspan378"
+         style="stroke-width:0.264583">Until HORSESHOE is covered up, you can't say</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text384"
+       x="28.460258"
+       y="-74.12542"><tspan
+         x="28.460258 30.520348 32.580421 33.813942 35.666023"
+         y="-74.12542"
+         id="tspan382"
+         style="stroke-width:0.264583">horse</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text388"
+       x="37.728935"
+       y="-74.12542"><tspan
+         x="37.728935 38.758064"
+         y="-74.12542"
+         id="tspan386"
+         style="stroke-width:0.264583">,</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text392"
+       x="39.787727"
+       y="-74.12542"><tspan
+         x="39.787727 41.639809 43.699898 45.759987"
+         y="-74.12542"
+         id="tspan390"
+         style="stroke-width:0.264583">shoe</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text396"
+       x="47.82032"
+       y="-74.12542"><tspan
+         x="47.82032"
+         y="-74.12542"
+         id="tspan394"
+         style="stroke-width:0.264583">,</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text400"
+       x="-144.11421"
+       y="-68.833755"><tspan
+         x="-144.11421 -142.05412 -139.99405 -137.93396 -135.87389 -134.64037 -132.78828 -130.7282"
+         y="-68.833755"
+         id="tspan398"
+         style="stroke-width:0.264583">unhorsed</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text404"
+       x="-128.66502"
+       y="-68.833755"><tspan
+         x="-128.66502 -127.63589 -126.60675 -124.54667 -123.31316"
+         y="-68.833755"
+         id="tspan402"
+         style="stroke-width:0.264583">, or</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text408"
+       x="-122.28195"
+       y="-68.833755"><tspan
+         x="-122.28195 -120.42987 -118.36979 -116.30971 -113.63467 -111.78259 -109.72251 -107.66244"
+         y="-68.833755"
+         id="tspan406"
+         style="stroke-width:0.264583">snowshoe</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text412"
+       x="-105.60081"
+       y="-68.833755"><tspan
+         x="-105.60081"
+         y="-68.833755"
+         id="tspan410"
+         style="stroke-width:0.264583">.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:bold;font-size:5.55625px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Bold;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text416"
+       x="-144.11421"
+       y="-49.233921"><tspan
+         x="-144.11421 -140.10165 -135.77983 -131.76729 -130.44604 -127.05207 -125.50837 -121.49583 -117.78985 -116.24615 -112.95255 -108.63071 -107.08701 -103.38104 -99.987068 -95.974518 -94.430801 -90.418266"
+         y="-49.233921"
+         id="tspan414"
+         style="stroke-width:0.264583">DON'T BE TO STRICT</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text420"
+       x="-144.11421"
+       y="-42.090172"><tspan
+         x="-144.11421 -141.64355 -139.58347 -137.52339 -136.70044 -134.64037 -132.58028 -130.5202 -129.49107 -127.43099 -125.37091 -123.31083 -122.28169 -121.45875 -119.60666 -118.78371 -116.72363 -114.66355 -112.60348 -111.57433 -108.89931 -106.83923 -105.60571 -103.54563 -102.51649 -100.45641 -99.222893 -98.399948 -96.339867 -95.516922 -93.456848 -91.396751 -90.573807 -89.750862 -87.898781 -86.869637 -85.017555 -82.957481 -79.87188 -77.811806 -75.751717 -73.691643 -71.631554 -69.57148 -68.542336 -65.867317 -63.807228 -62.573708 -60.513634 -58.661552 -57.632408 -56.603279 -54.54319 -52.483116 -51.453972 -50.424843 -49.601891 -47.541817 -46.512672 -45.483543 -43.423454 -42.600517 -40.748436 -39.719292 -37.86721 -35.807137 -33.747047 -32.717918 -30.657829 -29.424309 -27.847145 -26.818016 -25.788872 -24.965935 -23.113853 -22.290901 -20.230827 -18.170738 -16.110664 -15.08152 -14.258583 -12.406487 -11.377357 -9.3172684 -8.2881393 -6.4360423 -4.3759685 -3.5530317 -2.7300794 -0.67000556 0.35913876 2.21122 3.0341723 5.0942464 7.1543202 8.1834641 9.2125931 11.272682 12.506187 13.535332 16.005974 18.681007 21.562233 23.622307 26.092964 28.767998 31.443016 32.47216 33.501289 35.971947 37.824028 39.884102"
+         y="-42.090172"
+         id="tspan418"
+         style="stroke-width:0.264583">England and island were originally compound words, but in this century, island is a valid clue for ENGLAND. Even</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text424"
+       x="-144.11421"
+       y="-36.798504"><tspan
+         x="-144.11421 -143.29126 -141.23117 -139.1711 -137.11101 -136.08188 -135.25893 -133.40685 -132.37772 -130.31763 -129.2885 -127.43642 -125.37634 -124.55339 -123.73044 -121.67036 -120.64123 -118.78914 -117.96619 -115.90611 -113.84603 -112.81689 -111.78776 -109.72768 -108.49416 -107.46503 -104.99438 -102.31934 -99.438126 -97.378044 -94.907394 -92.232361 -89.557335 -88.528206 -87.703438 -85.232796 -83.172707 -81.112633 -80.083488 -78.023415 -75.963341 -74.111244 -72.05117 -69.991096 -67.931007 -66.078926 -65.049782 -62.374763 -60.314674 -58.254601 -57.225456 -55.373375 -53.313301 -51.461205 -49.609123 -48.579994 -46.727913 -44.667824 -42.60775 -41.578606 -39.726524 -37.666451 -35.606361 -34.899178 -33.870033 -32.840904 -30.988823 -28.928734 -27.076653"
+         y="-36.798504"
+         id="tspan422"
+         style="stroke-width:0.264583">land is a valid clue for ENGLAND. And anybody who says you can't say</tspan></text>
+    <text
+       style="font-style:italic;font-variant:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Italic;writing-mode:lr-tb;fill:#731752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text428"
+       x="-26.043907"
+       y="-36.798504"><tspan
+         x="-26.043907 -24.191826 -22.131737 -20.071663 -18.838142 -17.604637 -15.544533"
+         y="-36.798504"
+         id="tspan426"
+         style="stroke-width:0.264583">sparrow</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text432"
+       x="-11.839348"
+       y="-36.798504"><tspan
+         x="-11.839348 -9.164299 -7.1042247 -5.0441356 -2.984062 -1.9549177 0.72010064 3.6013262 7.0974965 8.1266251 8.9495773 10.801659 11.830788 13.890877 15.950951 16.980095 18.009224 20.069313 22.129372 23.158516 24.187645 26.247734 28.307808 29.130775 31.190834 32.219978 33.042915 34.895012 35.924156 36.747093 38.807182 40.659279"
+         y="-36.798504"
+         id="tspan430"
+         style="stroke-width:0.264583">when ROW is on the table is just</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text436"
+       x="-144.11421"
+       y="-31.50684"><tspan
+         x="-144.11421 -143.08507 -141.85155 -139.99947 -139.17651 -137.11644 -135.05637 -134.02722 -132.99809 -130.938 -129.90887 -128.05679 -125.99671 -123.93663 -122.08455 -120.02447 -118.99533 -117.96619 -116.73267 -114.67261 -112.61251 -110.55244 -109.72948 -107.66941"
+         y="-31.50684"
+         id="tspan434"
+         style="stroke-width:0.264583">trying to cause trouble.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:bold;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans-Bold;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text440"
+       x="-144.11421"
+       y="-22.511007"><tspan
+         x="-144.11421 -143.08507 -141.85155 -140.82242 -139.5889 -137.32625 -135.26616 -134.23703 -131.97438 -129.71173 -127.44907 -125.18642 -123.12634 -122.09721 -119.83456 -117.5719 -116.54276 -114.48268 -112.22003 -110.15996 -106.86636 -104.80627 -102.74619 -101.51269 -99.452591 -98.011086 -96.981941 -94.921867 -93.892731 -92.863594 -90.600937 -87.719719 -85.659645 -84.630501 -83.601372 -82.367851 -81.338722 -80.309578 -79.076057 -76.813408 -74.753334 -73.72419 -71.664116 -70.634972 -68.372337 -66.312248 -65.283104 -64.253975 -62.193886 -61.164757 -59.104668 -57.044594 -56.01545 -54.98632 -52.723671"
+         y="-22.511007"
+         id="tspan438"
+         style="stroke-width:0.264583">If the opposing spymaster allows it, the clue is valid.</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text444"
+       x="-50.662804"
+       y="-22.511007"><tspan
+         x="-50.662804 -49.633675 -48.604546 -47.575401 -45.72332 -43.663246 -41.603157 -40.574028 -38.513939 -37.280418 -35.220345 -33.160271 -32.453072 -31.423943 -30.394798 -28.542717 -26.482628 -25.249123 -23.189034 -22.159904 -21.13076 -19.070686 -17.218605 -15.366524 -14.337379 -12.485298 -10.425224 -8.3651352 -7.1316142 -6.1024852 -4.0424113 -1.9823377 0.077766679 2.1378405 4.1979146 6.2580037 8.3180771 9.3472061 10.37635 12.436424 14.496513 15.525642 17.585732 18.819237 20.879326 21.908455 23.760536 25.820625 27.880699 30.966301 31.789253 32.818382 33.847527 34.670464 36.730553 38.790627 39.819771"
+         y="-22.511007"
+         id="tspan442"
+         style="stroke-width:0.264583">If you aren't sure, ask your opponent before submitting a</tspan></text>
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.70417px;font-family:'Liberation Sans';-inkscape-font-specification:LiberationSans;writing-mode:lr-tb;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.264583"
+       id="text448"
+       x="-144.11421"
+       y="-17.219341"><tspan
+         x="-144.11421 -142.26212 -141.43918 -139.37909 -137.31902 -136.28987 -135.26074 -134.02722 -130.53105 -129.70811 -128.67897 -126.6189 -124.55882 -122.49873 -121.4696 -120.44046 -118.58838 -116.5283 -114.67622 -113.85326 -111.79318 -109.7331 -108.70397 -107.88103 -106.85188 -105.82275 -103.76267 -102.93973 -100.87963 -98.819557 -96.759483 -95.730347"
+         y="-17.219341"
+         id="tspan446"
+         style="stroke-width:0.264583">clue. (Without saying it aloud.)</tspan></text>
+  </g>
+</svg>

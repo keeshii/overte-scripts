@@ -239,6 +239,7 @@ export class CodenamesServer {
     this.boardItems = this.createBoardKey(this.activeTeam, board);
     this.board.renderBoard(this.boardItems);
     this.roundPending = true;
+    this.clueSubmitted = false;
 
     const { opponentId } = this.findTeams(this.activeTeam);
 

@@ -304,6 +304,7 @@ var CodenamesServer = /** @class */ (function () {
         this.boardItems = this.createBoardKey(this.activeTeam, board);
         this.board.renderBoard(this.boardItems);
         this.roundPending = true;
+        this.clueSubmitted = false;
         var opponentId = this.findTeams(this.activeTeam).opponentId;
         this.panel.setView('board');
         this.panel.renderBoard(this.boardItems);
