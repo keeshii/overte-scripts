@@ -1,6 +1,6 @@
 import { AGENT_COLOR, BLUE_TEAM, BOARD_SIZE_X, BOARD_SIZE_Y, COLOR, RED_TEAM } from './constants';
 import { Message } from './messages';
-import { AgentType, BoardItem } from './types';
+import { AgentType, BoardItem, ViewType } from './types';
 
 export class Panel {
   private readonly BOARD_WIDTH = 2.7;
@@ -9,6 +9,8 @@ export class Panel {
   private readonly WORD_ENTITY_WIDTH = this.BOARD_WIDTH / BOARD_SIZE_X - 2 * this.WORD_MARGIN;
   private readonly WORD_ENTITY_HEIGHT = this.BOARD_HEIGHT / BOARD_SIZE_Y - 2 * this.WORD_MARGIN;
   private readonly WORD_TOP_OFFSET = -0.13;
+
+  public view: string;
 
   private entityId: Uuid;
   private panelEntityId: Uuid;
@@ -116,19 +118,21 @@ export class Panel {
     this.clearBoard();
   }
 
-  public setView(view: 'board' | 'message') {
+  public setView(view: ViewType) {
+    this.view = view;
+
     for (const id of this.boardViewIds) {
-      Entities.editEntity(id, { visible: view === 'board' } as any);
+      Entities.editEntity(id, { visible: view === ViewType.BOARD } as any);
     }
     for (const id of this.wordIds) {
-      Entities.editEntity(id, { visible: view === 'board' } as any);
+      Entities.editEntity(id, { visible: view === ViewType.BOARD } as any);
     }
     for (const id of this.messageViewIds) {
-      Entities.editEntity(id, { visible: view === 'message' } as any);
+      Entities.editEntity(id, { visible: view === ViewType.MESSAGE } as any);
     }
     for (const i of [RED_TEAM, BLUE_TEAM]) {
       const id = this.teamSubmitIds[i];
-      const visible = this.teamSubmitText[i] && view === 'board';
+      const visible = this.teamSubmitText[i] && view === ViewType.BOARD;
       Entities.editEntity(id, { visible } as any);
     }
   }

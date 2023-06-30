@@ -1,6 +1,6 @@
 "use strict";
 
-/* global STATE_LENGTH, EMPTY, DIGITS, BOARD_SIZE, BOX_SIZE */
+/* global STATE_LENGTH, EMPTY, EMPTY_STATE, DIGITS, BOARD_SIZE, BOX_SIZE */
 
 (function (global) {
 
@@ -18,7 +18,7 @@
   Sudoku.prototype.generate = function(minFilledSquares) {
     var state, newState, candidates, result, i, order, filled;
 
-    state = Array(STATE_LENGTH + 1).join('.');
+    state = EMPTY_STATE;
     candidates = this.getCandidates(state);
 
     order = [];

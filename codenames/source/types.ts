@@ -7,6 +7,11 @@ export enum AgentType {
   ASSASIN = 'assasin'
 }
 
+export enum ViewType {
+  MESSAGE = 'message',
+  BOARD = 'board'
+}
+
 export interface BoardItem {
   word: string;
   agentType: AgentType;

@@ -43,7 +43,7 @@ export class CodenamesClient {
   }
 
   private onMousePress(entityId: Uuid, event: PointerEvent) {
-    const properties = Entities.getEntityProperties(entityId, ['name', 'text', 'parentID']);
+    const properties = Entities.getEntityProperties(entityId, ['name', 'text', 'parentID', 'visible']);
     const parentId = properties.parentID;
     const name = properties.name;
     const clickTime = Date.now();
@@ -52,7 +52,7 @@ export class CodenamesClient {
       return;
     }
 
-    if (parentId !== this.entityId) {
+    if (parentId !== this.entityId || properties.visible === false) {
       return;
     }
 

@@ -2,7 +2,7 @@
 
 /* global
     Sudoku, ScreenRenderer, Settings, SoundPlayer, EMPTY_STATE, EMPTY,
-    DEFAULT_DIFFICULTY, DIGITS, STATE_LENGTH
+    DEFAULT_DIFFICULTY, DIGITS, STATE_LENGTH, BUTTON_START, BUTTON_HINT
  */
 
 (function (global) {
@@ -184,7 +184,7 @@
       this.baseState = EMPTY_STATE;
       this.state = EMPTY_STATE;
       this.renderer.setState(EMPTY_STATE, EMPTY_STATE);
-      this.renderer.setButtonLabel('Start');
+      this.renderer.setButtonLabel(BUTTON_START);
       this.started = false;
       this.saveGame();
       return;
@@ -211,13 +211,13 @@
     this.baseState = state;
     this.state = state;
     this.renderer.setState(state, state);
-    this.renderer.setButtonLabel('Hint');
+    this.renderer.setButtonLabel(BUTTON_HINT);
     this.started = true;
     this.saveGame();
   };
 
   SudokuServer.prototype.clickStart = function () {
-    this.renderer.setButtonLabel('Hint');
+    this.renderer.setButtonLabel(BUTTON_HINT);
     this.started = true;
     this.saveGame();
   };

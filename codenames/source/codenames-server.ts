@@ -1,6 +1,6 @@
 import { BOARD_SIZE, RED_TEAM, BLUE_TEAM, CONFIG } from './constants';
 import { Board } from './board';
-import { AgentType, BoardItem, Team } from './types';
+import { AgentType, BoardItem, Team, ViewType } from './types';
 import { Panel } from './panel';
 import { ScoreScreen } from './score-screen';
 import { Message } from './messages';
@@ -52,17 +52,6 @@ export class CodenamesServer {
   }
 
   public unload() { }
-
-  public setWord(_id: Uuid, params: string[]) {
-    const teamId = params[0] === Message.RED ? RED_TEAM : BLUE_TEAM;
-    const word = params[1];
-    const team = this.teams[teamId];
-    if (team === undefined) {
-      return;
-    }
-    team.word = word;
-    this.panel.setTeamWord(teamId, word);
-  }
 
   public submitClue(_id: Uuid, params: string[]) {
     const teamId = params[0] === Message.RED ? RED_TEAM : BLUE_TEAM;
@@ -146,6 +135,9 @@ export class CodenamesServer {
   }
 
   public increaseGuesses(_id: Uuid, params: string[]) {
+    if (this.panel.view !== ViewType.BOARD) {
+      return;
+    }
     const teamId = params[0] === Message.RED ? RED_TEAM : BLUE_TEAM;
     const team = this.teams[teamId];
     team.guesses = Math.min(9, team.guesses + 1);
@@ -153,14 +145,31 @@ export class CodenamesServer {
   }
 
   public decreaseGuesses(_id: Uuid, params: string[]) {
+    if (this.panel.view !== ViewType.BOARD) {
+      return;
+    }
     const teamId = params[0] === Message.RED ? RED_TEAM : BLUE_TEAM;
     const team = this.teams[teamId];
     team.guesses = Math.max(0, team.guesses - 1);
     this.panel.setGuessValue(teamId, team.guesses);
   }
 
+  public setWord(_id: Uuid, params: string[]) {
+    if (this.panel.view !== ViewType.BOARD) {
+      return;
+    }
+    const teamId = params[0] === Message.RED ? RED_TEAM : BLUE_TEAM;
+    const word = params[1];
+    const team = this.teams[teamId];
+    team.word = word;
+    this.panel.setTeamWord(teamId, word);
+  }
+
   public onSubmitClick(_id: Uuid, params: string[]) {
     const message = params[0];
+    if (this.panel.view !== ViewType.MESSAGE) {
+      return;
+    }
     switch (message) {
       case Message.BUTTON_START:
       case Message.BUTTON_NEXT_ROUND:
@@ -180,15 +189,21 @@ export class CodenamesServer {
     const message = params[0];
     switch (message) {
       case Message.BUTTON_ABORT:
-        this.panel.setView('message');
-        this.panel.setMessage(Message.ABORT_GAME, Message.BUTTON_ABORT_CONFIRM, Message.BUTTON_CANCEL);
+        if (this.roundPending) {
+          this.panel.setView(ViewType.MESSAGE);
+          this.panel.setMessage(Message.ABORT_GAME, Message.BUTTON_ABORT_CONFIRM, Message.BUTTON_CANCEL);
+        }
         return;
       case Message.BUTTON_CANCEL:
-        this.panel.setView('board');
-        this.panel.setAbortButton(Message.BUTTON_ABORT);
+        if (this.roundPending) {
+          this.panel.setView(ViewType.BOARD);
+          this.panel.setAbortButton(Message.BUTTON_ABORT);
+        }
         return;
       case Message.BUTTON_END_GAME:
-        this.resetGameState();
+        if (!this.roundPending) {
+          this.resetGameState();
+        }
         return;
     }
   }
@@ -228,7 +243,7 @@ export class CodenamesServer {
 
     this.board.renderBoard(this.boardItems);
     this.wordScreen.showMessage(Message.START_GAME_INFO);
-    this.panel.setView('message');
+    this.panel.setView(ViewType.MESSAGE);
     this.panel.setMessage(Message.START_GAME, Message.BUTTON_START);
   }
 
@@ -254,7 +269,7 @@ export class CodenamesServer {
 
     const { opponentId } = this.findTeams(this.activeTeam);
 
-    this.panel.setView('board');
+    this.panel.setView(ViewType.BOARD);
     this.panel.renderBoard(this.boardItems);
     this.panel.setAbortButton(Message.BUTTON_ABORT);
     this.panel.setTeamMessage(this.activeTeam, Message.GIVE_A_CLUE, Message.BUTTON_SUBMIT);
@@ -268,7 +283,7 @@ export class CodenamesServer {
   }
 
   private showRoundOver(message: string) {
-    this.panel.setView('message');
+    this.panel.setView(ViewType.MESSAGE);
     this.panel.setMessage(
       message,
       Message.BUTTON_NEXT_ROUND,

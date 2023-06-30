@@ -136,16 +136,6 @@ var CodenamesServer = /** @class */ (function () {
         ];
     };
     CodenamesServer.prototype.unload = function () { };
-    CodenamesServer.prototype.setWord = function (_id, params) {
-        var teamId = params[0] === messages_1.Message.RED ? constants_1.RED_TEAM : constants_1.BLUE_TEAM;
-        var word = params[1];
-        var team = this.teams[teamId];
-        if (team === undefined) {
-            return;
-        }
-        team.word = word;
-        this.panel.setTeamWord(teamId, word);
-    };
     CodenamesServer.prototype.submitClue = function (_id, params) {
         var teamId = params[0] === messages_1.Message.RED ? constants_1.RED_TEAM : constants_1.BLUE_TEAM;
         var team = this.teams[teamId];
@@ -219,19 +209,38 @@ var CodenamesServer = /** @class */ (function () {
         this.onEndTurnClick();
     };
     CodenamesServer.prototype.increaseGuesses = function (_id, params) {
+        if (this.panel.view !== types_1.ViewType.BOARD) {
+            return;
+        }
         var teamId = params[0] === messages_1.Message.RED ? constants_1.RED_TEAM : constants_1.BLUE_TEAM;
         var team = this.teams[teamId];
         team.guesses = Math.min(9, team.guesses + 1);
         this.panel.setGuessValue(teamId, team.guesses);
     };
     CodenamesServer.prototype.decreaseGuesses = function (_id, params) {
+        if (this.panel.view !== types_1.ViewType.BOARD) {
+            return;
+        }
         var teamId = params[0] === messages_1.Message.RED ? constants_1.RED_TEAM : constants_1.BLUE_TEAM;
         var team = this.teams[teamId];
         team.guesses = Math.max(0, team.guesses - 1);
         this.panel.setGuessValue(teamId, team.guesses);
     };
+    CodenamesServer.prototype.setWord = function (_id, params) {
+        if (this.panel.view !== types_1.ViewType.BOARD) {
+            return;
+        }
+        var teamId = params[0] === messages_1.Message.RED ? constants_1.RED_TEAM : constants_1.BLUE_TEAM;
+        var word = params[1];
+        var team = this.teams[teamId];
+        team.word = word;
+        this.panel.setTeamWord(teamId, word);
+    };
     CodenamesServer.prototype.onSubmitClick = function (_id, params) {
         var message = params[0];
+        if (this.panel.view !== types_1.ViewType.MESSAGE) {
+            return;
+        }
         switch (message) {
             case messages_1.Message.BUTTON_START:
             case messages_1.Message.BUTTON_NEXT_ROUND:
@@ -250,15 +259,21 @@ var CodenamesServer = /** @class */ (function () {
         var message = params[0];
         switch (message) {
             case messages_1.Message.BUTTON_ABORT:
-                this.panel.setView('message');
-                this.panel.setMessage(messages_1.Message.ABORT_GAME, messages_1.Message.BUTTON_ABORT_CONFIRM, messages_1.Message.BUTTON_CANCEL);
+                if (this.roundPending) {
+                    this.panel.setView(types_1.ViewType.MESSAGE);
+                    this.panel.setMessage(messages_1.Message.ABORT_GAME, messages_1.Message.BUTTON_ABORT_CONFIRM, messages_1.Message.BUTTON_CANCEL);
+                }
                 return;
             case messages_1.Message.BUTTON_CANCEL:
-                this.panel.setView('board');
-                this.panel.setAbortButton(messages_1.Message.BUTTON_ABORT);
+                if (this.roundPending) {
+                    this.panel.setView(types_1.ViewType.BOARD);
+                    this.panel.setAbortButton(messages_1.Message.BUTTON_ABORT);
+                }
                 return;
             case messages_1.Message.BUTTON_END_GAME:
-                this.resetGameState();
+                if (!this.roundPending) {
+                    this.resetGameState();
+                }
                 return;
         }
     };
@@ -294,7 +309,7 @@ var CodenamesServer = /** @class */ (function () {
         }
         this.board.renderBoard(this.boardItems);
         this.wordScreen.showMessage(messages_1.Message.START_GAME_INFO);
-        this.panel.setView('message');
+        this.panel.setView(types_1.ViewType.MESSAGE);
         this.panel.setMessage(messages_1.Message.START_GAME, messages_1.Message.BUTTON_START);
     };
     CodenamesServer.prototype.initLayoutEntities = function () {
@@ -315,7 +330,7 @@ var CodenamesServer = /** @class */ (function () {
         this.roundPending = true;
         this.clueSubmitted = false;
         var opponentId = this.findTeams(this.activeTeam).opponentId;
-        this.panel.setView('board');
+        this.panel.setView(types_1.ViewType.BOARD);
         this.panel.renderBoard(this.boardItems);
         this.panel.setAbortButton(messages_1.Message.BUTTON_ABORT);
         this.panel.setTeamMessage(this.activeTeam, messages_1.Message.GIVE_A_CLUE, messages_1.Message.BUTTON_SUBMIT);
@@ -327,7 +342,7 @@ var CodenamesServer = /** @class */ (function () {
         this.wordScreen.showMessage(message);
     };
     CodenamesServer.prototype.showRoundOver = function (message) {
-        this.panel.setView('message');
+        this.panel.setView(types_1.ViewType.MESSAGE);
         this.panel.setMessage(message, messages_1.Message.BUTTON_NEXT_ROUND, messages_1.Message.BUTTON_END_GAME);
         this.wordScreen.showMessage(message);
         this.roundPending = false;
@@ -593,22 +608,23 @@ var Panel = /** @class */ (function () {
         this.clearBoard();
     }
     Panel.prototype.setView = function (view) {
+        this.view = view;
         for (var _i = 0, _a = this.boardViewIds; _i < _a.length; _i++) {
             var id = _a[_i];
-            Entities.editEntity(id, { visible: view === 'board' });
+            Entities.editEntity(id, { visible: view === types_1.ViewType.BOARD });
         }
         for (var _b = 0, _c = this.wordIds; _b < _c.length; _b++) {
             var id = _c[_b];
-            Entities.editEntity(id, { visible: view === 'board' });
+            Entities.editEntity(id, { visible: view === types_1.ViewType.BOARD });
         }
         for (var _d = 0, _e = this.messageViewIds; _d < _e.length; _d++) {
             var id = _e[_d];
-            Entities.editEntity(id, { visible: view === 'message' });
+            Entities.editEntity(id, { visible: view === types_1.ViewType.MESSAGE });
         }
         for (var _f = 0, _g = [constants_1.RED_TEAM, constants_1.BLUE_TEAM]; _f < _g.length; _f++) {
             var i = _g[_f];
             var id = this.teamSubmitIds[i];
-            var visible = this.teamSubmitText[i] && view === 'board';
+            var visible = this.teamSubmitText[i] && view === types_1.ViewType.BOARD;
             Entities.editEntity(id, { visible: visible });
         }
     };
@@ -836,7 +852,7 @@ var SoundPlayer = exports.SoundPlayer = /** @class */ (function () {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.AgentType = void 0;
+exports.ViewType = exports.AgentType = void 0;
 var AgentType;
 (function (AgentType) {
     AgentType["RED"] = "red";
@@ -844,6 +860,11 @@ var AgentType;
     AgentType["INNOCENT"] = "innocent";
     AgentType["ASSASIN"] = "assasin";
 })(AgentType = exports.AgentType || (exports.AgentType = {}));
+var ViewType;
+(function (ViewType) {
+    ViewType["MESSAGE"] = "message";
+    ViewType["BOARD"] = "board";
+})(ViewType = exports.ViewType || (exports.ViewType = {}));
 
 
 /***/ }),
@@ -893,7 +914,7 @@ var WordScreen = /** @class */ (function () {
         if (this.wordId) {
             var text = word + ': ' + String(guesses);
             var textColor = team === constants_1.RED_TEAM ? constants_1.COLOR.RED : constants_1.COLOR.BLUE;
-            Entities.editEntity(this.wordId, { text: text, textColor: textColor, lineHeight: 0.5 });
+            Entities.editEntity(this.wordId, { text: text, textColor: textColor, lineHeight: 0.4 });
         }
         if (this.endTurnId) {
             Entities.editEntity(this.endTurnId, { visible: true });

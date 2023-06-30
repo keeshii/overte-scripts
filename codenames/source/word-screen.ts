@@ -51,7 +51,7 @@ export class WordScreen {
     if (this.wordId) {
       const text = word + ': ' + String(guesses);
       const textColor = team === RED_TEAM ? COLOR.RED : COLOR.BLUE;
-      Entities.editEntity(this.wordId, { text, textColor, lineHeight: 0.5 } as any);
+      Entities.editEntity(this.wordId, { text, textColor, lineHeight: 0.4 } as any);
     }
 
     if (this.endTurnId) {
