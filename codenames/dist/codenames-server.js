@@ -302,6 +302,7 @@ var CodenamesServer = /** @class */ (function () {
             var id = _a[_i];
             this.teams[id].score = 0;
             this.teams[id].guesses = 1;
+            this.teams[id].word = '';
             this.scoreScreen.setScore(id, 0);
             this.scoreScreen.setWordsLeft(id, 0);
             this.panel.setGuessValue(id, 1);

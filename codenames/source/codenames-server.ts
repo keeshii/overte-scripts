@@ -235,6 +235,7 @@ export class CodenamesServer {
     for (const id of [RED_TEAM, BLUE_TEAM]) {
       this.teams[id].score = 0;
       this.teams[id].guesses = 1;
+      this.teams[id].word = '';
       this.scoreScreen.setScore(id, 0);
       this.scoreScreen.setWordsLeft(id, 0);
       this.panel.setGuessValue(id, 1);
