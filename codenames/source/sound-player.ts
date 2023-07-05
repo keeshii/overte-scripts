@@ -3,11 +3,11 @@ import { CONFIG } from './constants';
 export class SoundPlayer {
 
   private readonly ROUND_OVER_SOUND_FILE_NAME = '/325112__fisch12345__success.wav';
-  private readonly ASSASIN_SOUND_FILE_NAME = '/456963__funwithsound__failure-drum-sound-effect-2.wav';
+  private readonly ASSASSIN_SOUND_FILE_NAME = '/456963__funwithsound__failure-drum-sound-effect-2.wav';
   private readonly SOUND_VOLUMES = [1, 1];
 
   public static readonly ROUND_OVER_SOUND = 0;
-  public static readonly ASSASIN_SOUND = 1;
+  public static readonly ASSASSIN_SOUND = 1;
 
   private sounds: SoundObject[];
 
@@ -16,7 +16,7 @@ export class SoundPlayer {
 
     this.sounds = [
       SoundCache.getSound(assetsPath + this.ROUND_OVER_SOUND_FILE_NAME),
-      SoundCache.getSound(assetsPath + this.ASSASIN_SOUND_FILE_NAME),
+      SoundCache.getSound(assetsPath + this.ASSASSIN_SOUND_FILE_NAME),
     ];
 
   }

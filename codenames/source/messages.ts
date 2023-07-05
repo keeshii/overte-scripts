@@ -29,7 +29,7 @@ export enum Message {
 
   ENTER_CLUE = 'Enter your clue',
 
-  ROUND_OVER_ASSASIN = 'Team {team} has won the round,\nbecause the Assasin card was selected.',
+  ROUND_OVER_ASSASSIN = 'Team {team} has won the round,\nbecause the Assassin card was selected.',
 
   ROUND_OVER_ALL_AGENTS = 'Team {team} has won the round,\nbecause they uncovered all agents.',
 

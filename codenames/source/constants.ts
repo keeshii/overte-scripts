@@ -38,7 +38,7 @@ export const COLOR = {
 
 export const AGENT_COLOR = (agentType: AgentType) => {
   switch (agentType) {
-    case AgentType.ASSASIN:
+    case AgentType.ASSASSIN:
       return COLOR.BLACK;
     case AgentType.INNOCENT:
       return COLOR.YELLOW;

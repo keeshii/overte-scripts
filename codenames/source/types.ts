@@ -4,7 +4,7 @@ export enum AgentType {
   RED = 'red',
   BLUE = 'blue',
   INNOCENT = 'innocent',
-  ASSASIN = 'assasin'
+  ASSASSIN = 'assassin'
 }
 
 export enum ViewType {

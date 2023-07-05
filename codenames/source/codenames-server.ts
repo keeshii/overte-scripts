@@ -93,12 +93,12 @@ export class CodenamesServer {
     const { team, opponent, opponentId } = this.findTeams(this.activeTeam);
 
     // First check if round is not over
-    if (boardItem.agentType === AgentType.ASSASIN) {
+    if (boardItem.agentType === AgentType.ASSASSIN) {
       opponent.score += 1;
       const teamLabel = opponentId === RED_TEAM ? Message.RED : Message.BLUE;
       this.scoreScreen.setScore(opponentId, opponent.score);
-      this.showRoundOver(Message.ROUND_OVER_ASSASIN.replace('{team}', teamLabel));
-      this.soundPlayer.play(SoundPlayer.ASSASIN_SOUND);
+      this.showRoundOver(Message.ROUND_OVER_ASSASSIN.replace('{team}', teamLabel));
+      this.soundPlayer.play(SoundPlayer.ASSASSIN_SOUND);
       return;
     }
 
@@ -345,8 +345,8 @@ export class CodenamesServer {
       keys.push(AgentType.INNOCENT);
     }
 
-    // one assasin
-    keys.push(AgentType.ASSASIN);
+    // one assassin
+    keys.push(AgentType.ASSASSIN);
     this.shuffle(keys);
 
     return board.map((word, index) => ({

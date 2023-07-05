@@ -171,12 +171,12 @@ var CodenamesServer = /** @class */ (function () {
         this.panel.setFacedown(index, boardItem.agentType);
         var _a = this.findTeams(this.activeTeam), team = _a.team, opponent = _a.opponent, opponentId = _a.opponentId;
         // First check if round is not over
-        if (boardItem.agentType === types_1.AgentType.ASSASIN) {
+        if (boardItem.agentType === types_1.AgentType.ASSASSIN) {
             opponent.score += 1;
             var teamLabel = opponentId === constants_1.RED_TEAM ? messages_1.Message.RED : messages_1.Message.BLUE;
             this.scoreScreen.setScore(opponentId, opponent.score);
-            this.showRoundOver(messages_1.Message.ROUND_OVER_ASSASIN.replace('{team}', teamLabel));
-            this.soundPlayer.play(sound_player_1.SoundPlayer.ASSASIN_SOUND);
+            this.showRoundOver(messages_1.Message.ROUND_OVER_ASSASSIN.replace('{team}', teamLabel));
+            this.soundPlayer.play(sound_player_1.SoundPlayer.ASSASSIN_SOUND);
             return;
         }
         // No more agents cards left
@@ -393,8 +393,8 @@ var CodenamesServer = /** @class */ (function () {
         for (var i = 0; i < 7; i++) {
             keys.push(types_1.AgentType.INNOCENT);
         }
-        // one assasin
-        keys.push(types_1.AgentType.ASSASIN);
+        // one assassin
+        keys.push(types_1.AgentType.ASSASSIN);
         this.shuffle(keys);
         return board.map(function (word, index) { return ({
             word: word,
@@ -457,7 +457,7 @@ exports.COLOR = {
 };
 var AGENT_COLOR = function (agentType) {
     switch (agentType) {
-        case types_1.AgentType.ASSASIN:
+        case types_1.AgentType.ASSASSIN:
             return exports.COLOR.BLACK;
         case types_1.AgentType.INNOCENT:
             return exports.COLOR.YELLOW;
@@ -495,7 +495,7 @@ var Message;
     Message["BUTTON_NEXT_ROUND"] = "Next Round";
     Message["BUTTON_END_GAME"] = "End Game";
     Message["ENTER_CLUE"] = "Enter your clue";
-    Message["ROUND_OVER_ASSASIN"] = "Team {team} has won the round,\nbecause the Assasin card was selected.";
+    Message["ROUND_OVER_ASSASSIN"] = "Team {team} has won the round,\nbecause the Assassin card was selected.";
     Message["ROUND_OVER_ALL_AGENTS"] = "Team {team} has won the round,\nbecause they uncovered all agents.";
     Message["START_GAME_INFO"] = "Click the button on the panel\nto start the game.";
     Message["INPUT_LABEL"] = "Click to enter a word";
@@ -811,12 +811,12 @@ var SoundPlayer = exports.SoundPlayer = /** @class */ (function () {
     function SoundPlayer(position) {
         this.position = position;
         this.ROUND_OVER_SOUND_FILE_NAME = '/325112__fisch12345__success.wav';
-        this.ASSASIN_SOUND_FILE_NAME = '/456963__funwithsound__failure-drum-sound-effect-2.wav';
+        this.ASSASSIN_SOUND_FILE_NAME = '/456963__funwithsound__failure-drum-sound-effect-2.wav';
         this.SOUND_VOLUMES = [1, 1];
         var assetsPath = Script.resolvePath('../assets');
         this.sounds = [
             SoundCache.getSound(assetsPath + this.ROUND_OVER_SOUND_FILE_NAME),
-            SoundCache.getSound(assetsPath + this.ASSASIN_SOUND_FILE_NAME),
+            SoundCache.getSound(assetsPath + this.ASSASSIN_SOUND_FILE_NAME),
         ];
     }
     SoundPlayer.prototype.play = function (soundIndex) {
@@ -841,7 +841,7 @@ var SoundPlayer = exports.SoundPlayer = /** @class */ (function () {
         Audio.playSound(this.sounds[soundIndex], injectorOptions);
     };
     SoundPlayer.ROUND_OVER_SOUND = 0;
-    SoundPlayer.ASSASIN_SOUND = 1;
+    SoundPlayer.ASSASSIN_SOUND = 1;
     return SoundPlayer;
 }());
 
@@ -859,7 +859,7 @@ var AgentType;
     AgentType["RED"] = "red";
     AgentType["BLUE"] = "blue";
     AgentType["INNOCENT"] = "innocent";
-    AgentType["ASSASIN"] = "assasin";
+    AgentType["ASSASSIN"] = "assassin";
 })(AgentType = exports.AgentType || (exports.AgentType = {}));
 var ViewType;
 (function (ViewType) {
