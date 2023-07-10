@@ -162,7 +162,7 @@ var CodenamesServer = /** @class */ (function () {
                 break;
             }
         }
-        if (boardItem === undefined) {
+        if (!boardItem || boardItem.facedown) {
             return;
         }
         boardItem.facedown = true;
@@ -495,8 +495,8 @@ var Message;
     Message["BUTTON_NEXT_ROUND"] = "Next Round";
     Message["BUTTON_END_GAME"] = "End Game";
     Message["ENTER_CLUE"] = "Enter your clue";
-    Message["ROUND_OVER_ASSASSIN"] = "Team {team} has won the round,\nbecause the Assassin card was selected.";
-    Message["ROUND_OVER_ALL_AGENTS"] = "Team {team} has won the round,\nbecause they uncovered all agents.";
+    Message["ROUND_OVER_ASSASSIN"] = "Team {team} won the round,\nbecause the Assassin card was selected.";
+    Message["ROUND_OVER_ALL_AGENTS"] = "Team {team} won the round,\nbecause they uncovered all agents.";
     Message["START_GAME_INFO"] = "Click the button on the panel\nto start the game.";
     Message["INPUT_LABEL"] = "Click to enter a word";
     Message["BLUE"] = "Blue";

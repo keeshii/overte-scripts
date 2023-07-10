@@ -81,7 +81,7 @@ export class CodenamesServer {
         break;
       }
     }
-    if (boardItem === undefined) {
+    if (!boardItem || boardItem.facedown) {
       return;
     }
     boardItem.facedown = true;

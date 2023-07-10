@@ -29,9 +29,9 @@ export enum Message {
 
   ENTER_CLUE = 'Enter your clue',
 
-  ROUND_OVER_ASSASSIN = 'Team {team} has won the round,\nbecause the Assassin card was selected.',
+  ROUND_OVER_ASSASSIN = 'Team {team} won the round,\nbecause the Assassin card was selected.',
 
-  ROUND_OVER_ALL_AGENTS = 'Team {team} has won the round,\nbecause they uncovered all agents.',
+  ROUND_OVER_ALL_AGENTS = 'Team {team} won the round,\nbecause they uncovered all agents.',
 
   START_GAME_INFO = 'Click the button on the panel\nto start the game.',
 
