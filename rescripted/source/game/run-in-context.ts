@@ -1,4 +1,4 @@
-export function runInContext(module: { export?: () => void }) {
+export function runInContext() {
   'use strict';
   const require: any = undefined;
   const process: any = undefined;
@@ -27,8 +27,7 @@ export function runInContext(module: { export?: () => void }) {
   delete this._vm.apiUnlocked;
   delete this._vm.api;
 
-  module.export = eval('\'use strict\';' + String(this._vm.code));
-  this._vm.instance = module.export();
+  this._vm.instance = eval('\'use strict\';' + String(this._vm.code))();
 
   if (this._vm.instance.preload) {
     this._vm.instance.preload(this._vm.fileName);

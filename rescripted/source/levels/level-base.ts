@@ -1,7 +1,7 @@
-import { Board } from '../board';
-import { Editor } from '../editor';
-import { ColorMap, Position, Shot } from '../rescripted.interface';
-import { ShotManager } from '../shot-manager';
+import { Board } from '../game/board';
+import { Editor } from '../game/editor';
+import { ColorMap, Position, Shot } from '../game/game.interface';
+import { ShotManager } from '../game/shot-manager';
 
 const COLOR_MAP: ColorMap = {
   '@': 'B',

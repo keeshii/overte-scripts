@@ -1,6 +1,6 @@
 import { LevelBase } from './level-base';
 import { shuffle } from '../utils/array-utils';
-import { Position } from '../rescripted.interface';
+import { Position } from '../game/game.interface';
 
 const CONTENT = `
 "use strict";

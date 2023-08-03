@@ -1,4 +1,4 @@
-import { EditorState, UpdateAction } from "./rescripted.interface";
+import { EditorState, UpdateAction } from "./game.interface";
 
 export class Editor {
 

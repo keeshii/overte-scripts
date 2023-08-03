@@ -3,7 +3,9 @@ const path = require('path');
 
 const outputFiles = [
   {basePath: 'codenames', name: 'codenames-client'},
-  {basePath: 'codenames', name: 'codenames-server'}
+  {basePath: 'codenames', name: 'codenames-server'},
+  {basePath: 'rescripted', name: 'rescripted-client'},
+  {basePath: 'rescripted', name: 'rescripted-server'}
 ];
 
 const configs = [];

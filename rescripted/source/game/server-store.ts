@@ -1,16 +1,16 @@
-import { Level_00 } from './levels/level-00';
-import { Level_01 } from './levels/level-01';
-import { Level_02 } from './levels/level-02';
-import { Level_03 } from './levels/level-03';
-import { Level_04 } from './levels/level-04';
-import { Level_05 } from './levels/level-05';
-import { Level_06 } from './levels/level-06';
-import { Level_07 } from './levels/level-07';
-import { Level_08 } from './levels/level-08';
-import { Level_09 } from './levels/level-09';
-import { Level_10 } from './levels/level-10';
-import { LevelBase } from './levels/level-base';
-import { LocalStoreData } from './rescripted.interface';
+import { Level_00 } from '../levels/level-00';
+import { Level_01 } from '../levels/level-01';
+import { Level_02 } from '../levels/level-02';
+import { Level_03 } from '../levels/level-03';
+import { Level_04 } from '../levels/level-04';
+import { Level_05 } from '../levels/level-05';
+import { Level_06 } from '../levels/level-06';
+import { Level_07 } from '../levels/level-07';
+import { Level_08 } from '../levels/level-08';
+import { Level_09 } from '../levels/level-09';
+import { Level_10 } from '../levels/level-10';
+import { LevelBase } from '../levels/level-base';
+import { LocalStoreData } from './game.interface';
 
 export class ServerStore {
 
@@ -87,7 +87,7 @@ export class ServerStore {
     return level;
   }
 
-  public reloadLevel(levelNo: number) {
+  public reloadLevel(levelNo?: number) {
     if (levelNo === undefined) {
       levelNo = this.levelNo;
     }

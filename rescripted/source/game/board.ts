@@ -1,4 +1,4 @@
-import { BoardState, ColorMap, Position } from "./rescripted.interface";
+import { BoardState, ColorMap, Position } from "./game.interface";
 
 
 export class Board {

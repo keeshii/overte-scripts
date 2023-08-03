@@ -1,5 +1,5 @@
 import { Board } from "./board";
-import { Position, Shot } from "./rescripted.interface";
+import { Position, Shot } from "./game.interface";
 
 export type ShotCollisionFn = (target: string, x: number, y: number) => void;
 export type ShotDirection = 'right' | 'left' | 'top' | 'bottom';

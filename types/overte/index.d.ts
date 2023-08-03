@@ -2066,6 +2066,10 @@ declare namespace MyAvatar {
      */
     type SitStandModelType = number;
     /**
+     * Unique ID of the avatar in the domain. Read-only.
+     */
+    const sessionUUID: Uuid;
+    /**
      * Resets the sensor positioning of your HMD (if in use) and recenters your avatar body and head.
      */
     function resetSensorsAndBody(): void;
@@ -17573,6 +17577,21 @@ declare namespace Entities {
     const mousePressOnEntity: Signal<[entityID: Uuid, event: PointerEvent]>;
 
     /**
+     * Triggered when a script in a Web entity's HTML sends an event over
+     * the entity's HTML event bridge. The HTML web page can send a message
+     * by calling: EventBridge.emitWebEvent(message);
+     *
+     * Use Entities.emitScriptEvent to send messages to the Web entity's
+     * HTML page. Alternatively, you can use Entities.getEntityObject
+     * to exchange messages over a Web entity's HTML event bridge.
+     *
+     * See also, Entity Methods and Script.addEventHandler.
+     * @param entityID - The ID of the Web entity that the message was received from.
+     * @param message - The message received.
+     */
+    const webEventReceived: Signal<[entityID: Uuid, message: string]>;
+
+    /**
      * <p>An entity may be one of the following types:</p>
     <table>
       <thead>
@@ -20550,6 +20569,17 @@ declare namespace Messages {
      * @param channel - The channel to unsubscribe from.
      */
     function unsubscribe(channel: string): void;
+
+    /**
+     * Triggered when a text message is received.
+     *
+     * @param channel - The channel that the message was sent on. This can be used to filter out messages not relevant to your script.
+     * @param message - The message received.
+     * @param senderID - The UUID of the sender: the user's session UUID if sent by an Interface or client entity script, the UUID of the entity script server if sent by a server entity script, or the UUID of the assignment client instance if sent by an assignment client script.
+     * @param localOnly - true if the message was sent with localOnly == true.
+     */
+    const messageReceived: Signal<[channel: string, message: string, senderID: Uuid, localOnly: boolean]>;
+    
 }
 
 /**

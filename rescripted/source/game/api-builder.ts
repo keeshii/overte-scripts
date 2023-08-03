@@ -1,5 +1,5 @@
-import { LevelBase } from "./levels/level-base";
-import { Tick } from "./rescripted.interface";
+import { LevelBase } from "../levels/level-base";
+import { Tick } from "./game.interface";
 import { ShotDirection } from "./shot-manager";
 
 export const MAX_ACTIONS_COUNT = 1024;
@@ -28,18 +28,30 @@ export class ApiBuilder {
     const self = this, globals: {[key: string]: any} = {};
 
     const playerApi = {
-      get x() {
-        return self.level.player.x;
-      },
-      get y() {
-        return self.level.player.y;
-      },
       move: function(x: number, y: number) {
         const level = self.level;
         level.move(level.player, x, y);
         self.tick();
       }
     };
+
+    Object.defineProperty(playerApi, 'x', {
+      get() {
+        return self.level.player.x;
+      },
+      set(newValue) {},
+      enumerable: true,
+      configurable: true
+    });
+
+    Object.defineProperty(playerApi, 'y', {
+      get() {
+        return self.level.player.y;
+      },
+      set(newValue) {},
+      enumerable: true,
+      configurable: true
+    });
 
     const mapApi = {
       findObject: function(value: string) {
@@ -64,9 +76,6 @@ export class ApiBuilder {
     };
 
     const gunApi = {
-      get energy() {
-        return self.level.energy;
-      },
       fire: function(direction: ShotDirection) {
         const level = self.level;
         const player = level.player;
@@ -78,6 +87,15 @@ export class ApiBuilder {
         self.tick();
       }
     };
+
+    Object.defineProperty(gunApi, 'energy', {
+      get() {
+        return self.level.energy;
+      },
+      set(newValue) {},
+      enumerable: true,
+      configurable: true
+    });
 
     return {
       include: function(path: string) {

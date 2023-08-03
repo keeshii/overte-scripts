@@ -1,13 +1,13 @@
 import { ApiBuilder } from './api-builder';
-import { LevelBase } from './levels/level-base';
-import { StatusType, Tick } from './rescripted.interface';
+import { LevelBase } from '../levels/level-base';
+import { ErrorInfo, StatusType, Tick } from './game.interface';
 import { runInContext } from './run-in-context';
 
 export class Runner {
   private tickCallback: (tick: Tick) => void;
   private loadTimer?: number;
   private runTimer?: number;
-  private status: StatusType;
+  public status: StatusType;
 
   constructor() {
     this.tickCallback = function () {};
@@ -85,12 +85,34 @@ export class Runner {
     } };
 
     try {
-      const module = {};
-      runInContext.call(context, module);
+      runInContext.call(context);
     } catch (error) {
-      ticks.push({ state: level.board.state, error: error });
+      const maxLineNumber = level.editor.state.content.split('\n').length;
+      const errorInfo = this.getErrorInfo(error, maxLineNumber);
+      ticks.push({ state: level.board.state, error: errorInfo });
     }
     return ticks;
+  }
+
+  private getErrorInfo(error: Error, maxLineNumber: number): ErrorInfo {
+    let message: string = error.toString();
+    let line: number;
+    let col: number;
+
+    if (error.stack !== undefined) {
+      const match = error.stack.match(/<anonymous>:(\d+):(\d+)/);
+      if (match) {
+        line = parseInt(match[1], 10);
+        col = parseInt(match[2], 10);
+      }
+    } else {
+      let lineNumber: number = (error as any).lineNumber;
+      if (lineNumber !== undefined && lineNumber <= maxLineNumber) {
+        line = lineNumber;
+        col = 1;
+      }
+    }
+    return { message, line, col };
   }
 
   private setStatus(status: StatusType) {
