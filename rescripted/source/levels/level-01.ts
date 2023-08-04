@@ -23,7 +23,8 @@ const CONTENT = `
 
   Level.prototype.run = function(_id, params) {
     // ----- EDIT CODE HERE ------
-    for (let i = 0; i < 3; i++) {
+    var i;
+    for (i = 0; i < 3; i++) {
       player.move(0, 1);
       player.move(0, -1);
     }
@@ -35,15 +36,14 @@ const CONTENT = `
   return new Level();
 });
 `;
-        
-const BOARD_TEXT = `
-################
-# @  #         #
-#    #    #    #
-#    #    #    #
-#         #  X #
-################
-`;
+
+const BOARD_TEXT
+  = '################\n'
+  + '# @  #         #\n'
+  + '#    #    #    #\n'
+  + '#    #    #    #\n'
+  + '#         #  X #\n'
+  + '################\n';
 
 
 export class Level_01 extends LevelBase {
@@ -53,8 +53,8 @@ export class Level_01 extends LevelBase {
 
     this.editor.state.fileName = 'tmp://level-01.js';
 
-    this.board.state.offsetX = 2;
-    this.board.state.offsetY = 2;
+    this.board.state.offsetX = 10;
+    this.board.state.offsetY = 3;
   }
 
 }

@@ -72,7 +72,7 @@ export class BoardRenderer {
         const layerId = COLOR_TO_LAYER[color] || 0;
         return layerId === i ? match : ' '; // '\u2800';
       });
-      layers.push('\u200C' + Array(state.width).join(' ') + layer);
+      layers.push(layer);
     }
     return layers;
   }
@@ -94,9 +94,9 @@ export class BoardRenderer {
       lines[i] = lines[i] ? offset + lines[i] : '';
     }
     for (let i = 0; i < offsetY; i++) {
-      lines.splice(1, 0, '');
+      lines.unshift('');
     }
-    lines.splice(1, offsetY, '');
+    lines.unshift('\u200C');
     return lines.join('\n').replace(/\n+$/, '');
   }
 

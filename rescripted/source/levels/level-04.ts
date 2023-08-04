@@ -36,19 +36,18 @@ const CONTENT = `
 });
 `;
 
-const BOARD_TEXT = `
-  ############  
-  #          #  
-  #  ### ### #  
-  #  #     # #  
-###  #     # ###
-#@            X#
-###  #     # ###
-  #  #     # #  
-  #  ### ### #  
-  #          #  
-  ############  
-`;
+const BOARD_TEXT
+  = '  ############  \n'
+  + '  #          #  \n'
+  + '  #  ### ### #  \n'
+  + '  #  #     # #  \n'
+  + '###  #     # ###\n'
+  + '#@            X#\n'
+  + '###  #     # ###\n'
+  + '  #  #     # #  \n'
+  + '  #  ### ### #  \n'
+  + '  #          #  \n'
+  + '  ############  \n';
 
 
 export class Level_04 extends LevelBase {
@@ -62,8 +61,8 @@ export class Level_04 extends LevelBase {
     this.editor.state.fileName = 'tmp://level-04.js';
     this.drone = { x: 8, y: 1 + Math.floor(Math.random() * 9) };
     this.droneTargets = shuffle([{x: 8, y: 1}, {x: 8, y: 9 }]);
-    this.board.state.offsetX = 2;
-    this.board.state.offsetY = 2;
+    this.board.state.offsetX = 10;
+    this.board.state.offsetY = 1;
     this.items.push('d');
     this.board.setValue(this.drone.x, this.drone.y, 'd', 'R');
   }

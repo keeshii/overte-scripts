@@ -28,7 +28,8 @@ const CONTENT = `
 
   Level.prototype.run = function(_id, params) {
     // ----- EDIT CODE HERE ------
-    for (let i = 0; i < 20; i++) {
+    var i;
+    for (i = 0; i < 20; i++) {
         player.move(0, 0);
     }
     // ---------------------------
@@ -42,22 +43,21 @@ const CONTENT = `
 });
 `;
 
-const BOARD_TEXT = `
-  ###########
-  #        X#
-  #    D    #
-  #=========#
-  #         #
-  #         #
-  #         #
-  #         #
-  #         #
-  #         #
-######   ####
-#@          #
-#E E E   E E#
-#############
-`;
+const BOARD_TEXT
+  = '  ###########\n'
+  + '  #        X#\n'
+  + '  #    D    #\n'
+  + '  #=========#\n'
+  + '  #         #\n'
+  + '  #         #\n'
+  + '  #         #\n'
+  + '  #         #\n'
+  + '  #         #\n'
+  + '  #         #\n'
+  + '######   ####\n'
+  + '#@          #\n'
+  + '#E E E   E E#\n'
+  + '#############\n';
 
 
 export class Level_08 extends LevelBase {
@@ -72,8 +72,8 @@ export class Level_08 extends LevelBase {
     super(CONTENT, BOARD_TEXT, { 'E': 'Y', '=': 'B', 'D': 'R' });
 
     this.editor.state.fileName = 'tmp://level-08.js';
-    this.board.state.offsetX = 2;
-    this.board.state.offsetY = 2;
+    this.board.state.offsetX = 11;
+    this.board.state.offsetY = 0;
     this.items.push('E', 'd', 'D');
     this.drones = [];
     this.droneReloads = [];

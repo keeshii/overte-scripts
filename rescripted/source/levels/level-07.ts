@@ -35,7 +35,7 @@ const CONTENT = `
 
   Level.prototype.run = function(_id, params) {
     // ----- EDIT CODE HERE ------
-    var target, path;
+    var target, path, i;
 
     target = map.findObject('E');
     while ((path = map.pathTo(target.x, target.y))) {
@@ -43,7 +43,7 @@ const CONTENT = `
     }
 
     gun.fire('top');
-    for (let i = 0; i < 10; i++) {
+    for (i = 0; i < 10; i++) {
         player.move(0, 0);
     }
     // ---------------------------
@@ -57,20 +57,19 @@ const CONTENT = `
 });
 `;
 
-const BOARD_TEXT = `
-    ##########################
-#####                    #   #
-#                        |   #
-#   #                    | X #
-#   #                    #   #
-#   ##########################
-#   #                         
-#   #####                     
-#   @   #                     
-#       #                     
-# E E E #                     
-#########                     
-`;
+const BOARD_TEXT
+  = '    ##########################\n'
+  + '#####                    #   #\n'
+  + '#                        |   #\n'
+  + '#   #                    | X #\n'
+  + '#   #                    #   #\n'
+  + '#   ##########################\n'
+  + '#   #                         \n'
+  + '#   #####                     \n'
+  + '#   @   #                     \n'
+  + '#       #                     \n'
+  + '# E E E #                     \n'
+  + '#########                     \n';
 
 
 export class Level_07 extends LevelBase {
@@ -82,8 +81,8 @@ export class Level_07 extends LevelBase {
     super(CONTENT, BOARD_TEXT, { 'E': 'Y', '|': 'R' });
 
     this.editor.state.fileName = 'tmp://level-07.js';
-    this.board.state.offsetX = 2;
-    this.board.state.offsetY = 2;
+    this.board.state.offsetX = 4;
+    this.board.state.offsetY = 0;
     this.items.push('E', 'd');
     this.drones = [];
     this.droneTargets = [];

@@ -45,17 +45,16 @@ const CONTENT = `
 });
 `;
 
-const BOARD_TEXT = `
-####################   
-#k                 #   
-#                  #   
-#                  #   
-#                  ####
-#                  | X#
-#                  ####
-#@                 #   
-####################   
-`;
+const BOARD_TEXT
+  = '####################   \n'
+  + '#k                 #   \n'
+  + '#                  #   \n'
+  + '#                  #   \n'
+  + '#                  ####\n'
+  + '#                  | X#\n'
+  + '#                  ####\n'
+  + '#@                 #   \n'
+  + '####################   \n';
 
 
 export class Level_02 extends LevelBase {
@@ -66,7 +65,7 @@ export class Level_02 extends LevelBase {
     super(CONTENT, BOARD_TEXT, { '|': 'Y', 'k': 'Y' });
 
     this.editor.state.fileName = 'tmp://level-02.js';
-    this.board.state.offsetX = 2;
+    this.board.state.offsetX = 8;
     this.board.state.offsetY = 2;
     this.items.push('k');
     this.hasKey = false

@@ -42,15 +42,14 @@ const CONTENT = `
 });
 `;
 
-const BOARD_TEXT = `
-#####################
-#                   #
-#                   #
-# @               X #
-#                   #
-#                   #
-#####################
-`;
+const BOARD_TEXT
+  = '#####################\n'
+  + '#                   #\n'
+  + '#                   #\n'
+  + '# @               X #\n'
+  + '#                   #\n'
+  + '#                   #\n'
+  + '#####################\n';
 
 
 export class Level_03 extends LevelBase {
@@ -63,8 +62,8 @@ export class Level_03 extends LevelBase {
 
     this.editor.state.fileName = 'tmp://level-03.js';
     this.lasers = shuffle([5, 10, 15]);
-    this.board.state.offsetX = 2;
-    this.board.state.offsetY = 2;
+    this.board.state.offsetX = 8;
+    this.board.state.offsetY = 3;
     this.tickNo += this.lasers.length;
     this.tick();
     this.tickNo = Math.floor(Math.random() * 10);

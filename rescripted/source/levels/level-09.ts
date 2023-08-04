@@ -48,19 +48,18 @@ const CONTENT = `
 });
 `;
 
-const BOARD_TEXT = `
- ############# 
-##           ##
-#             #
-#             #
-#             #
-#      @      #
-#             #
-#             #
-#             #
-##           ##
- ############# 
-`;
+const BOARD_TEXT
+  = ' ############# \n'
+  + '##           ##\n'
+  + '#             #\n'
+  + '#             #\n'
+  + '#             #\n'
+  + '#      @      #\n'
+  + '#             #\n'
+  + '#             #\n'
+  + '#             #\n'
+  + '##           ##\n'
+  + ' ############# \n';
 
 
 export class Level_09 extends LevelBase {
@@ -71,8 +70,8 @@ export class Level_09 extends LevelBase {
     super(CONTENT, BOARD_TEXT);
 
     this.editor.state.fileName = 'tmp://level-09.js';
-    this.board.state.offsetX = 2;
-    this.board.state.offsetY = 2;
+    this.board.state.offsetX = 11;
+    this.board.state.offsetY = 1;
     this.items.push('d');
     this.drones = [];
 

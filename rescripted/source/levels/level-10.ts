@@ -15,11 +15,7 @@ const CONTENT = `
 (function () { return this; });
 `;
 
-const BOARD_TEXT = `
-
-  The end.
-
-`;
+const BOARD_TEXT = 'The end.\n';
 
 export class Level_10 extends LevelBase {
   
@@ -28,7 +24,7 @@ export class Level_10 extends LevelBase {
 
     this.editor.state.fileName = 'tmp://level-10.js';
 
-    this.board.state.offsetX = 2;
+    this.board.state.offsetX = 4;
     this.board.state.offsetY = 2;
     this.completed = false;
   }

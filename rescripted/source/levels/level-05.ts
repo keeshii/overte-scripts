@@ -36,13 +36,12 @@ const CONTENT = `
 });
 `;
 
-const BOARD_TEXT = `
-#################
-#           |   #
-# @         | X #
-#           |   #
-#################
-`;
+const BOARD_TEXT
+  = '#################\n'
+  + '#           |   #\n'
+  + '# @         | X #\n'
+  + '#           |   #\n'
+  + '#################\n';
 
 
 export class Level_05 extends LevelBase {
@@ -53,8 +52,8 @@ export class Level_05 extends LevelBase {
     super(CONTENT, BOARD_TEXT, { '|': 'R' });
 
     this.editor.state.fileName = 'tmp://level-05.js';
-    this.board.state.offsetX = 2;
-    this.board.state.offsetY = 2;
+    this.board.state.offsetX = 8;
+    this.board.state.offsetY = 4;
     this.items.push('+');
     this.switches = [];
 

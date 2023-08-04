@@ -22,11 +22,9 @@ const CONTENT = `
 (function () { return this; });
 `;
 
-const BOARD_TEXT = `
-
-Press the Next button to
- enter the first level. 
-`;
+const BOARD_TEXT
+  = '    Press Next button    \n'
+  + 'to enter the first level.\n';
 
 export class Level_00 extends LevelBase {
   
@@ -35,8 +33,8 @@ export class Level_00 extends LevelBase {
 
     this.editor.state.fileName = 'tmp://level-00.js';
 
-    this.board.state.offsetX = 4;
-    this.board.state.offsetY = 2;
+    this.board.state.offsetX = 6;
+    this.board.state.offsetY = 5;
     this.completed = true;
   }
 

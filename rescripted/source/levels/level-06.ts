@@ -55,21 +55,20 @@ const CONTENT = `
 });
 `;
 
-const BOARD_TEXT = `
-#################
-#             @ #
-#               #
-#               #
-###P#      ######
-    #      #     
-    #      #     
-    #      #     
-    #      #     
-#####      ######
-#               #
-# X             #
-#################
-`;
+const BOARD_TEXT
+  = '#################\n'
+  + '#             @ #\n'
+  + '#               #\n'
+  + '#               #\n'
+  + '###P#      ######\n'
+  + '    #      #     \n'
+  + '    #      #     \n'
+  + '    #      #     \n'
+  + '    #      #     \n'
+  + '#####      ######\n'
+  + '#               #\n'
+  + '# X             #\n'
+  + '#################\n';
 
 
 export class Level_06 extends LevelBase {
@@ -85,8 +84,8 @@ export class Level_06 extends LevelBase {
     super(CONTENT, BOARD_TEXT, { 'P': 'W' });
 
     this.editor.state.fileName = 'tmp://level-06.js';
-    this.board.state.offsetX = 2;
-    this.board.state.offsetY = 2;
+    this.board.state.offsetX = 10;
+    this.board.state.offsetY = 0;
     this.items.push('<', '>', 'd');
     this.assignment = shuffle(['R', 'G', 'B', 'Y', 'W']);
     this.ticksToRenew = 0;
