@@ -8,7 +8,7 @@ export class Maze {
 
   private _width: number;
   private _height: number;
-  private _map: Array<(0 | 1)[]>
+  private _map: Array<(0 | 1)[]>;
   private _stack: Array<number[]>;
 
   constructor(width: number, height: number) {
@@ -17,15 +17,15 @@ export class Maze {
   }
 
   create(callback: (x: number, y: number, solid: number) => void) {
-    var w = this._width;
-    var h = this._height;
+    const w = this._width;
+    const h = this._height;
 
     this._map = [];
 
     for (let i = 0; i < w; i++) {
       this._map.push([]);
       for (let j = 0; j < h; j++) {
-        let border = (i === 0 || j === 0 || i + 1 === w || j + 1 === h);
+        const border = (i === 0 || j === 0 || i + 1 === w || j + 1 === h);
         this._map[i].push(border ? 1 : 0);
       }
     }
@@ -46,7 +46,7 @@ export class Maze {
 
   _process() {
     while (this._stack.length) {
-      let room = this._stack.shift(); /* [left, top, right, bottom] */
+      const room = this._stack.shift(); /* [left, top, right, bottom] */
       this._partitionRoom(room);
     }
   }
@@ -75,8 +75,8 @@ export class Maze {
       return;
     }
 
-    let x: number = randomValue(availX);
-    let y: number = randomValue(availY);
+    const x: number = randomValue(availX);
+    const y: number = randomValue(availY);
 
     this._map[x][y] = 1;
 
@@ -110,14 +110,14 @@ export class Maze {
       w.push([x, j]);
     }
 
-    let solid = randomValue(walls);
+    const solid = randomValue(walls);
     for (let i = 0; i < walls.length; i++) {
       w = walls[i];
       if (w === solid) {
         continue;
       }
 
-      let hole = randomValue(w);
+      const hole = randomValue(w);
       this._map[hole[0]][hole[1]] = 0;
     }
 

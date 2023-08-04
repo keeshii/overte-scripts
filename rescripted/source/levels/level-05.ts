@@ -1,5 +1,4 @@
 import { LevelBase } from './level-base';
-import { shuffle } from '../utils/array-utils';
 import { Position } from '../game/game.interface';
 
 const CONTENT = `
@@ -84,7 +83,7 @@ export class Level_05 extends LevelBase {
   }
 
   private createDominata() {
-    let x, y, r;
+    let x: number, y: number, r: number;
     for (y = 1; y < 4; y++) {
       for (x = 4; x < 11; x++) {
         r = Math.floor(Math.random() * 2);
@@ -111,7 +110,7 @@ export class Level_05 extends LevelBase {
   }
 
   private switchItem(x: number, y: number, value: string) {
-    var item, allGreen, i;
+    let item: any, i: number;
     for (i = 0; i < this.switches.length; i++) {
       item = this.switches[i];
       if (item.x === x && item.y === y) {
@@ -129,7 +128,7 @@ export class Level_05 extends LevelBase {
   }
 
   private redrawSwitch(x: number, y: number) {
-    var item, i;
+    let item: any, i: number;
     for (i = 0; i < this.switches.length; i++) {
       item = this.switches[i];
       if (item.x === x && item.y === y) {

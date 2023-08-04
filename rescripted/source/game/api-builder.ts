@@ -1,6 +1,6 @@
-import { LevelBase } from "../levels/level-base";
-import { Tick } from "./game.interface";
-import { ShotDirection } from "./shot-manager";
+import { LevelBase } from '../levels/level-base';
+import { Tick } from './game.interface';
+import { ShotDirection } from './shot-manager';
 
 export const MAX_ACTIONS_COUNT = 1024;
 export type RefreshGlobalFn = (globals: {[key: string]: any}) => void;
@@ -16,7 +16,7 @@ export class ApiBuilder {
   }
 
   createConsole() {
-    const self = this;
+    const self = this; // eslint-disable-line @typescript-eslint/no-this-alias
     return {
       log: function(...args: any[]) {
         self.ticks.push({ logs: [...args] });
@@ -25,7 +25,8 @@ export class ApiBuilder {
   }
 
   createScript(refreshGlobalsFn: RefreshGlobalFn) {
-    const self = this, globals: {[key: string]: any} = {};
+    const self = this; // eslint-disable-line @typescript-eslint/no-this-alias
+    const globals: {[key: string]: any} = {};
 
     const playerApi = {
       move: function(x: number, y: number) {
@@ -122,7 +123,7 @@ export class ApiBuilder {
   }
 
   createEntities() {
-    const self = this;
+    const self = this; // eslint-disable-line @typescript-eslint/no-this-alias
     return {
       callEntityServerMethod: function(id: string, method: string, params: string[]) {
         const level = self.level;

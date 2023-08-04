@@ -1,5 +1,5 @@
 import { LevelBase } from './level-base';
-import { shuffle, randomValue } from '../utils/array-utils';
+import { shuffle } from '../utils/array-utils';
 import { Position } from '../game/game.interface';
 
 const CONTENT = `
@@ -79,7 +79,8 @@ export class Level_09 extends LevelBase {
   }
 
   private createDrones() {
-    let i, slots = [];
+    let i: number;
+    const slots: Position[] = [];
 
     for (i = 2; i < 13; i++) {
       slots.push({ x: i, y: 1 });

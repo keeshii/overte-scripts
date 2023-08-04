@@ -3,10 +3,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./rescripted/source/board-renderer.ts":
-/*!*********************************************!*\
-  !*** ./rescripted/source/board-renderer.ts ***!
-  \*********************************************/
+/***/ 611:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -111,10 +108,7 @@ exports.BoardRenderer = BoardRenderer;
 
 /***/ }),
 
-/***/ "./rescripted/source/constants.ts":
-/*!****************************************!*\
-  !*** ./rescripted/source/constants.ts ***!
-  \****************************************/
+/***/ 197:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -127,10 +121,7 @@ exports.CONFIG = typeof Script !== 'undefined'
 
 /***/ }),
 
-/***/ "./rescripted/source/game/api-builder.ts":
-/*!***********************************************!*\
-  !*** ./rescripted/source/game/api-builder.ts ***!
-  \***********************************************/
+/***/ 635:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -163,7 +154,7 @@ var ApiBuilder = /** @class */ (function () {
         this.ticks = ticks;
     }
     ApiBuilder.prototype.createConsole = function () {
-        var self = this;
+        var self = this; // eslint-disable-line @typescript-eslint/no-this-alias
         return {
             log: function () {
                 var args = [];
@@ -175,7 +166,8 @@ var ApiBuilder = /** @class */ (function () {
         };
     };
     ApiBuilder.prototype.createScript = function (refreshGlobalsFn) {
-        var self = this, globals = {};
+        var self = this; // eslint-disable-line @typescript-eslint/no-this-alias
+        var globals = {};
         var playerApi = {
             move: function (x, y) {
                 var level = self.level;
@@ -264,7 +256,7 @@ var ApiBuilder = /** @class */ (function () {
         };
     };
     ApiBuilder.prototype.createEntities = function () {
-        var self = this;
+        var self = this; // eslint-disable-line @typescript-eslint/no-this-alias
         return {
             callEntityServerMethod: function (id, method, params) {
                 var level = self.level;
@@ -293,10 +285,7 @@ exports.ApiBuilder = ApiBuilder;
 
 /***/ }),
 
-/***/ "./rescripted/source/game/board.ts":
-/*!*****************************************!*\
-  !*** ./rescripted/source/game/board.ts ***!
-  \*****************************************/
+/***/ 882:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -370,7 +359,6 @@ var Board = /** @class */ (function () {
             this.state.colors = before + color + after;
         }
     };
-    ;
     Board.prototype.findPath = function (fromX, fromY, toX, toY, walkable) {
         var i, index, item, value, canEnter, x, y;
         if (fromX === toX && fromY === toY) {
@@ -408,10 +396,7 @@ exports.Board = Board;
 
 /***/ }),
 
-/***/ "./rescripted/source/game/editor.ts":
-/*!******************************************!*\
-  !*** ./rescripted/source/game/editor.ts ***!
-  \******************************************/
+/***/ 632:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -448,10 +433,7 @@ exports.Editor = Editor;
 
 /***/ }),
 
-/***/ "./rescripted/source/game/run-in-context.ts":
-/*!**************************************************!*\
-  !*** ./rescripted/source/game/run-in-context.ts ***!
-  \**************************************************/
+/***/ 427:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -459,6 +441,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.runInContext = void 0;
 function runInContext() {
     'use strict';
+    /* eslint-disable @typescript-eslint/no-unused-vars */
     var require = undefined;
     var process = undefined;
     var Runner = undefined;
@@ -480,6 +463,7 @@ function runInContext() {
             level = apiUnlocked ? globals['level'] : undefined;
         });
     }(this, this._vm.apiUnlocked));
+    /* eslint-enable @typescript-eslint/no-unused-vars */
     delete this._vm.apiUnlocked;
     delete this._vm.api;
     this._vm.instance = eval('\'use strict\';' + String(this._vm.code))();
@@ -496,10 +480,7 @@ exports.runInContext = runInContext;
 
 /***/ }),
 
-/***/ "./rescripted/source/game/runner.ts":
-/*!******************************************!*\
-  !*** ./rescripted/source/game/runner.ts ***!
-  \******************************************/
+/***/ 487:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -516,8 +497,8 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Runner = void 0;
-var api_builder_1 = __webpack_require__(/*! ./api-builder */ "./rescripted/source/game/api-builder.ts");
-var run_in_context_1 = __webpack_require__(/*! ./run-in-context */ "./rescripted/source/game/run-in-context.ts");
+var api_builder_1 = __webpack_require__(635);
+var run_in_context_1 = __webpack_require__(427);
 var Runner = /** @class */ (function () {
     function Runner() {
         this.tickCallback = function () { };
@@ -543,7 +524,7 @@ var Runner = /** @class */ (function () {
             return;
         }
         this.setStatus('RUNNING');
-        var self = this;
+        var self = this; // eslint-disable-line @typescript-eslint/no-this-alias
         function executeAction(ticks) {
             self.runTimer = Script.setTimeout(function () {
                 var tick;
@@ -626,26 +607,23 @@ exports.Runner = Runner;
 
 /***/ }),
 
-/***/ "./rescripted/source/game/server-store.ts":
-/*!************************************************!*\
-  !*** ./rescripted/source/game/server-store.ts ***!
-  \************************************************/
+/***/ 45:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ServerStore = void 0;
-var level_00_1 = __webpack_require__(/*! ../levels/level-00 */ "./rescripted/source/levels/level-00.ts");
-var level_01_1 = __webpack_require__(/*! ../levels/level-01 */ "./rescripted/source/levels/level-01.ts");
-var level_02_1 = __webpack_require__(/*! ../levels/level-02 */ "./rescripted/source/levels/level-02.ts");
-var level_03_1 = __webpack_require__(/*! ../levels/level-03 */ "./rescripted/source/levels/level-03.ts");
-var level_04_1 = __webpack_require__(/*! ../levels/level-04 */ "./rescripted/source/levels/level-04.ts");
-var level_05_1 = __webpack_require__(/*! ../levels/level-05 */ "./rescripted/source/levels/level-05.ts");
-var level_06_1 = __webpack_require__(/*! ../levels/level-06 */ "./rescripted/source/levels/level-06.ts");
-var level_07_1 = __webpack_require__(/*! ../levels/level-07 */ "./rescripted/source/levels/level-07.ts");
-var level_08_1 = __webpack_require__(/*! ../levels/level-08 */ "./rescripted/source/levels/level-08.ts");
-var level_09_1 = __webpack_require__(/*! ../levels/level-09 */ "./rescripted/source/levels/level-09.ts");
-var level_10_1 = __webpack_require__(/*! ../levels/level-10 */ "./rescripted/source/levels/level-10.ts");
+var level_00_1 = __webpack_require__(383);
+var level_01_1 = __webpack_require__(214);
+var level_02_1 = __webpack_require__(302);
+var level_03_1 = __webpack_require__(104);
+var level_04_1 = __webpack_require__(517);
+var level_05_1 = __webpack_require__(423);
+var level_06_1 = __webpack_require__(375);
+var level_07_1 = __webpack_require__(833);
+var level_08_1 = __webpack_require__(387);
+var level_09_1 = __webpack_require__(647);
+var level_10_1 = __webpack_require__(786);
 var ServerStore = /** @class */ (function () {
     function ServerStore() {
     }
@@ -758,10 +736,7 @@ exports.ServerStore = ServerStore;
 
 /***/ }),
 
-/***/ "./rescripted/source/game/shot-manager.ts":
-/*!************************************************!*\
-  !*** ./rescripted/source/game/shot-manager.ts ***!
-  \************************************************/
+/***/ 784:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -774,29 +749,28 @@ var ShotManager = /** @class */ (function () {
         this.shots = [];
     }
     ShotManager.prototype.tick = function () {
-        var i, j, shot, x, y, dx, dy;
+        var shot;
         // Move shots
-        for (var i_1 = 0; i_1 < this.shots.length; i_1++) {
-            shot = this.shots[i_1];
-            var _a = this.shots[i_1], x_1 = _a.x, y_1 = _a.y, dx_1 = _a.dx, dy_1 = _a.dy;
-            var state = this.board.state;
-            var targetIndex = this.board.getIndex(x_1 + dx_1, y_1 + dy_1);
+        for (var i = 0; i < this.shots.length; i++) {
+            shot = this.shots[i];
+            var _a = this.shots[i], x = _a.x, y = _a.y, dx = _a.dx, dy = _a.dy;
+            var targetIndex = this.board.getIndex(x + dx, y + dy);
             var targetValue = this.board.state.values[targetIndex];
             // no collision
             if (targetValue === ' ') {
                 if (shot.value) {
-                    this.board.setValue(x_1, y_1, ' ', ' ');
+                    this.board.setValue(x, y, ' ', ' ');
                 }
-                shot.value = dx_1 ? '-' : '|';
-                this.board.setValue(x_1 + dx_1, y_1 + dy_1, shot.value, 'Y');
-                this.shots[i_1].x = x_1 + dx_1;
-                this.shots[i_1].y = y_1 + dy_1;
+                shot.value = dx ? '-' : '|';
+                this.board.setValue(x + dx, y + dy, shot.value, 'Y');
+                this.shots[i].x = x + dx;
+                this.shots[i].y = y + dy;
                 continue;
             }
             // collsion, remove shot
-            this.markToRemove(x_1, y_1);
-            if (!this.markToRemove(x_1 + dx_1, y_1 + dy_1) && targetValue) {
-                this.shotCollisionFn(targetValue, x_1 + dx_1, y_1 + dy_1);
+            this.markToRemove(x, y);
+            if (!this.markToRemove(x + dx, y + dy) && targetValue) {
+                this.shotCollisionFn(targetValue, x + dx, y + dy);
             }
         }
         this.removeMarked();
@@ -804,7 +778,6 @@ var ShotManager = /** @class */ (function () {
     ShotManager.prototype.move = function (position, dx, dy) {
         var x = position.x;
         var y = position.y;
-        var i;
         var sourceIndex = this.board.getIndex(x, y);
         var sourceValue = this.board.state.values[sourceIndex];
         if (!sourceValue) {
@@ -866,10 +839,7 @@ exports.ShotManager = ShotManager;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-00.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-00.ts ***!
-  \**********************************************/
+/***/ 383:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -890,7 +860,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_00 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
+var level_base_1 = __webpack_require__(358);
 var CONTENT = "\n/*\n * Rescripted -or- The mission of the Dr Eval.\n *\n * Help Dr Eval to complete levels by writing the code that solves\n * variety of algorithmic problems in JavaScript.\n *\n * Your code will be executed with the eval function in your interface app.\n *\n * Controls:\n * - save - saves the game state in your interface app\n * - run - executes the code (even if not saved),\n * - reload - restores the game state,\n * - reset level - reverts all changes in the currently displayed level,\n * - back/next - navigate through levels\n *\n * Good luck hero,\n * The fate of Dr Eval lies in your hands.\n */\n(function () { return this; });\n";
 var BOARD_TEXT = '    Press Next button    \n'
     + 'to enter the first level.\n';
@@ -911,10 +881,7 @@ exports.Level_00 = Level_00;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-01.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-01.ts ***!
-  \**********************************************/
+/***/ 214:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -935,8 +902,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_01 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
-var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 1 - baby steps\n\n  Basically in every level our goal is the same - reach the exit.\n  Move the player using the following function:\n\n  player.move(x, y) -> moves by x, and y squares,\n                       x and y must be an integer between -1 and 1.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    for (let i = 0; i < 3; i++) {\n      player.move(0, 1);\n      player.move(0, -1);\n    }\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) { };\n\n  return new Level();\n});\n";
+var level_base_1 = __webpack_require__(358);
+var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 1 - baby steps\n\n  Basically in every level our goal is the same - reach the exit.\n  Move the player using the following function:\n\n  player.move(x, y) -> moves by x, and y squares,\n                       x and y must be an integer between -1 and 1.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    var i;\n    for (i = 0; i < 3; i++) {\n      player.move(0, 1);\n      player.move(0, -1);\n    }\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) { };\n\n  return new Level();\n});\n";
 var BOARD_TEXT = '################\n'
     + '# @  #         #\n'
     + '#    #    #    #\n'
@@ -959,10 +926,7 @@ exports.Level_01 = Level_01;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-02.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-02.ts ***!
-  \**********************************************/
+/***/ 302:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -983,8 +947,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_02 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
-var maze_1 = __webpack_require__(/*! ../utils/maze */ "./rescripted/source/utils/maze.ts");
+var level_base_1 = __webpack_require__(358);
+var maze_1 = __webpack_require__(940);
 var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 2 - path finding\n\n  Things are getting complicated. The floor layout seems to change\n  after each execution.\n\n  Fortunately I know the functions, which makes the problem easier:\n  \n  Use following API:\n  - player.x, player.y  -> returns player coordinates,\n  - map.findObject('X') -> returns absolute position of the given object (x, y),\n  - map.pathTo(x, y)    -> returns relative position (x, y) to the nearest\n                           square on the path to given coordinates.\n                           Or undefined if the destination is not reachable.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    var exit, path;\n\n    exit = map.findObject('X');\n\n    while ((path = map.pathTo(exit.x, exit.y))) {\n      player.move(path.x, path.y);\n    }\n  };\n\n  Level.prototype.preload = function(_id) { };\n\n  return new Level();\n});\n";
 var BOARD_TEXT = '####################   \n'
     + '#k                 #   \n'
@@ -1036,10 +1000,7 @@ exports.Level_02 = Level_02;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-03.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-03.ts ***!
-  \**********************************************/
+/***/ 104:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1060,8 +1021,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_03 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
-var array_utils_1 = __webpack_require__(/*! ../utils/array-utils */ "./rescripted/source/utils/array-utils.ts");
+var level_base_1 = __webpack_require__(358);
+var array_utils_1 = __webpack_require__(919);
 var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 3 - map awarness\n\n  They know we are after them and activated the security protocols.\n  We must avoid the lasers. In this level the timing is crusial.\n\n  Use following functions:\n  - map.getValue(x, y) -> returns map value at x, y,\n  - map.getColor(x, y) -> returns map color at x, y\n\n  Hint:\n  - use player.move(0, 0) -> to wait without moving.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    var i;\n    for (i = 0; i < 16; i++) {\n      player.move(1, 0);\n    }\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) { };\n\n  return new Level();\n});\n";
 var BOARD_TEXT = '#####################\n'
     + '#                   #\n'
@@ -1123,10 +1084,7 @@ exports.Level_03 = Level_03;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-04.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-04.ts ***!
-  \**********************************************/
+/***/ 517:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1147,8 +1105,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_04 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
-var array_utils_1 = __webpack_require__(/*! ../utils/array-utils */ "./rescripted/source/utils/array-utils.ts");
+var level_base_1 = __webpack_require__(358);
+var array_utils_1 = __webpack_require__(919);
 var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 4 - first contact\n\n  Oh no, there is a security drone. It will chase you as soon\n  as you enter its teritory. Be careful.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    var i;\n    for (i = 0; i < 20; i++) {\n        player.move(0, 0);\n    }\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) { };\n\n  return new Level();\n});\n";
 var BOARD_TEXT = '  ############  \n'
     + '  #          #  \n'
@@ -1206,10 +1164,7 @@ exports.Level_04 = Level_04;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-05.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-05.ts ***!
-  \**********************************************/
+/***/ 423:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1230,7 +1185,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_05 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
+var level_base_1 = __webpack_require__(358);
 var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 5 - switches\n\n  The security is getting stronger. All switches on the floor must be\n  turned on, in order to deactivate the laser beam.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    var i;\n    for (i = 0; i < 12; i++) {\n        player.move(1, 0);\n    }\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) { };\n\n  return new Level();\n});\n";
 var BOARD_TEXT = '#################\n'
     + '#           |   #\n'
@@ -1296,7 +1251,7 @@ var Level_05 = /** @class */ (function (_super) {
         }
     };
     Level_05.prototype.switchItem = function (x, y, value) {
-        var item, allGreen, i;
+        var item, i;
         for (i = 0; i < this.switches.length; i++) {
             item = this.switches[i];
             if (item.x === x && item.y === y) {
@@ -1329,10 +1284,7 @@ exports.Level_05 = Level_05;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-06.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-06.ts ***!
-  \**********************************************/
+/***/ 375:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1353,8 +1305,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_06 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
-var array_utils_1 = __webpack_require__(/*! ../utils/array-utils */ "./rescripted/source/utils/array-utils.ts");
+var level_base_1 = __webpack_require__(358);
+var array_utils_1 = __webpack_require__(919);
 var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 6 - barrier\n\n  The way is blocked by a 4 layer barrier. You can open it by entering\n  the correct code. The code is 4 digit with numbers between 1 and 5.\n\n  Each color has assigned a different number. The layer disappears,\n  if the digit in your code matches the color of the layer.\n\n  Each 3-5 ticks, the barrier is renewed.\n\n  To submit a code, you need to invoke the server method \"submitCode\",\n  while standing next to the panel:\n\n  Entities.callEntityServerMethod(this.id, 'submitCode', ['1111']);\n\n  Just try not to make too many mistakes...\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    var panel, path;\n\n    panel = map.findObject('P');\n\n    while ((path = map.pathTo(panel.x, panel.y - 1))) {\n      player.move(path.x, path.y);\n    }\n\n    Entities.callEntityServerMethod(this.id, 'submitCode', ['1111']);\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) {\n    this.id = _id;\n  };\n\n  return new Level();\n});\n";
 var BOARD_TEXT = '#################\n'
     + '#             @ #\n'
@@ -1395,7 +1347,7 @@ var Level_06 = /** @class */ (function (_super) {
         }
     };
     Level_06.prototype.renewBarrier = function () {
-        var i, x, value, color;
+        var i;
         if (this.unlocked) {
             return;
         }
@@ -1478,10 +1430,7 @@ exports.Level_06 = Level_06;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-07.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-07.ts ***!
-  \**********************************************/
+/***/ 833:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1502,9 +1451,9 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_07 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
-var array_utils_1 = __webpack_require__(/*! ../utils/array-utils */ "./rescripted/source/utils/array-utils.ts");
-var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 7 - shooter\n\n  You did it! We have broken through the security and now we are in the\n  protected area.\n\n  For now on, you are allowed to use the 'gun' API:\n  - gun.fire('right')  -> fires a laser beam in given direction.\n                          Direction can be 'right', 'left', 'top' or 'bottom'.\n\n  The gun is powered by the energy. After you pick the yellow 'E', you\n  will have 3 shots. Then your gun needs to be recharged again.\n\n  - gun.energy         -> returns current amount of energy\n\n  Show them who they are up against.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n  Script.include('./api/gun.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    var target, path;\n\n    target = map.findObject('E');\n    while ((path = map.pathTo(target.x, target.y))) {\n      player.move(path.x, path.y);\n    }\n\n    gun.fire('top');\n    for (let i = 0; i < 10; i++) {\n        player.move(0, 0);\n    }\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) {\n    this.id = _id;\n  };\n\n  return new Level();\n});\n";
+var level_base_1 = __webpack_require__(358);
+var array_utils_1 = __webpack_require__(919);
+var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 7 - shooter\n\n  You did it! We have broken through the security and now we are in the\n  protected area.\n\n  For now on, you are allowed to use the 'gun' API:\n  - gun.fire('right')  -> fires a laser beam in given direction.\n                          Direction can be 'right', 'left', 'top' or 'bottom'.\n\n  The gun is powered by the energy. After you pick the yellow 'E', you\n  will have 3 shots. Then your gun needs to be recharged again.\n\n  - gun.energy         -> returns current amount of energy\n\n  Show them who they are up against.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n  Script.include('./api/gun.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    var target, path, i;\n\n    target = map.findObject('E');\n    while ((path = map.pathTo(target.x, target.y))) {\n      player.move(path.x, path.y);\n    }\n\n    gun.fire('top');\n    for (i = 0; i < 10; i++) {\n        player.move(0, 0);\n    }\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) {\n    this.id = _id;\n  };\n\n  return new Level();\n});\n";
 var BOARD_TEXT = '    ##########################\n'
     + '#####                    #   #\n'
     + '#                        |   #\n'
@@ -1532,8 +1481,8 @@ var Level_07 = /** @class */ (function (_super) {
         return _this;
     }
     Level_07.prototype.createWalls = function () {
-        var i, x, y;
-        y = [1, 2, 3, 4];
+        var i, x;
+        var y = [1, 2, 3, 4];
         for (i = 0; i < 4; i++) {
             x = 8 + i * 4;
             (0, array_utils_1.shuffle)(y);
@@ -1617,10 +1566,7 @@ exports.Level_07 = Level_07;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-08.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-08.ts ***!
-  \**********************************************/
+/***/ 387:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1641,8 +1587,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_08 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
-var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 7 - boss\n\n  Finally, we're arrived to the CORE. The drones were expecting us, and worse,\n  they copied my gun's code. We must defeat them with our wits.\n  Use all the API calls you discovered so far.\n\n  If we succeed, we will regain full control of the grid.\n  I belive in you.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n  Script.include('./api/gun.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    for (let i = 0; i < 20; i++) {\n        player.move(0, 0);\n    }\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) {\n    this.id = _id;\n  };\n\n  return new Level();\n});\n";
+var level_base_1 = __webpack_require__(358);
+var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 7 - boss\n\n  Finally, we're arrived to the CORE. The drones were expecting us, and worse,\n  they copied my gun's code. We must defeat them with our wits.\n  Use all the API calls you discovered so far.\n\n  If we succeed, we will regain full control of the grid.\n  I belive in you.\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n  Script.include('./api/gun.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    var i;\n    for (i = 0; i < 20; i++) {\n        player.move(0, 0);\n    }\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) {\n    this.id = _id;\n  };\n\n  return new Level();\n});\n";
 var BOARD_TEXT = '  ###########\n'
     + '  #        X#\n'
     + '  #    D    #\n'
@@ -1691,7 +1637,7 @@ var Level_08 = /** @class */ (function (_super) {
     };
     Level_08.prototype.tick = function () {
         _super.prototype.tick.call(this);
-        var i, boss, target;
+        var i, target;
         // Shooting drones
         for (i = 0; i < this.drones.length; i++) {
             if (this.droneReloads[i] > 0) {
@@ -1702,7 +1648,7 @@ var Level_08 = /** @class */ (function (_super) {
             this.droneReloads[i] = 3 + Math.floor(Math.random() * 3);
         }
         // Boss when drones on the map
-        boss = this.boss;
+        var boss = this.boss;
         if (!boss) {
             return;
         }
@@ -1774,10 +1720,7 @@ exports.Level_08 = Level_08;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-09.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-09.ts ***!
-  \**********************************************/
+/***/ 647:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1798,8 +1741,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_09 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
-var array_utils_1 = __webpack_require__(/*! ../utils/array-utils */ "./rescripted/source/utils/array-utils.ts");
+var level_base_1 = __webpack_require__(358);
+var array_utils_1 = __webpack_require__(919);
 var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 9 - limitless\n\n  You were amazing. Now we have full controll over the game state.\n\n  Check the new API:\n  level.board.setValue(x, y, value, color) -> Changes the board squere\n*/\n\n(function () {\n\n  Script.include('./api/player.js');\n  Script.include('./api/map.js');\n  Script.include('./api/level.js');\n\n  function Level() {\n    this.remotelyCallable = ['run'];\n  }\n\n  Level.prototype.run = function(_id, params) {\n    // ----- EDIT CODE HERE ------\n    var drone;\n\n    player.move(0, 0);\n    player.move(0, 0);\n\n    level.drones = []; // drones are no more\n    while (drone = map.findObject('d')) {\n      level.board.setValue(drone.x, drone.y, ' ');\n    }\n\n    player.move(0, 0);\n    // ---------------------------\n  };\n\n  Level.prototype.preload = function(_id) {\n    this.id = _id;\n  };\n\n  return new Level();\n});\n";
 var BOARD_TEXT = ' ############# \n'
     + '##           ##\n'
@@ -1825,7 +1768,8 @@ var Level_09 = /** @class */ (function (_super) {
         return _this;
     }
     Level_09.prototype.createDrones = function () {
-        var i, slots = [];
+        var i;
+        var slots = [];
         for (i = 2; i < 13; i++) {
             slots.push({ x: i, y: 1 });
             slots.push({ x: i, y: 9 });
@@ -1870,10 +1814,7 @@ exports.Level_09 = Level_09;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-10.ts":
-/*!**********************************************!*\
-  !*** ./rescripted/source/levels/level-10.ts ***!
-  \**********************************************/
+/***/ 786:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1894,7 +1835,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_10 = void 0;
-var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
+var level_base_1 = __webpack_require__(358);
 var CONTENT = "\n\"use strict\";\n\n/*\n  Chapter 9 - the end\n\n  Congratulations. Dr Eval escaped, the world is saved, etc.\n\n  Hope you liked the game. As the reward, the level API is\n  now unlocked in all levels.\n*/\n(function () { return this; });\n";
 var BOARD_TEXT = 'The end.\n';
 var Level_10 = /** @class */ (function (_super) {
@@ -1914,10 +1855,7 @@ exports.Level_10 = Level_10;
 
 /***/ }),
 
-/***/ "./rescripted/source/levels/level-base.ts":
-/*!************************************************!*\
-  !*** ./rescripted/source/levels/level-base.ts ***!
-  \************************************************/
+/***/ 358:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -1934,9 +1872,9 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.LevelBase = void 0;
-var board_1 = __webpack_require__(/*! ../game/board */ "./rescripted/source/game/board.ts");
-var editor_1 = __webpack_require__(/*! ../game/editor */ "./rescripted/source/game/editor.ts");
-var shot_manager_1 = __webpack_require__(/*! ../game/shot-manager */ "./rescripted/source/game/shot-manager.ts");
+var board_1 = __webpack_require__(882);
+var editor_1 = __webpack_require__(632);
+var shot_manager_1 = __webpack_require__(784);
 var COLOR_MAP = {
     '@': 'B',
     'X': 'W'
@@ -1970,7 +1908,6 @@ var LevelBase = /** @class */ (function () {
             throw new Error('Invalid position');
         }
         var x = position.x, y = position.y;
-        var state = this.board.state;
         // handle moving into shots
         this.shotManager.move(position, dx, dy);
         var sourceIndex = this.board.getIndex(x, y);
@@ -2009,15 +1946,11 @@ var LevelBase = /** @class */ (function () {
     return LevelBase;
 }());
 exports.LevelBase = LevelBase;
-;
 
 
 /***/ }),
 
-/***/ "./rescripted/source/utils/array-utils.ts":
-/*!************************************************!*\
-  !*** ./rescripted/source/utils/array-utils.ts ***!
-  \************************************************/
+/***/ 919:
 /***/ (function(__unused_webpack_module, exports) {
 
 
@@ -2042,16 +1975,13 @@ exports.randomValue = randomValue;
 
 /***/ }),
 
-/***/ "./rescripted/source/utils/maze.ts":
-/*!*****************************************!*\
-  !*** ./rescripted/source/utils/maze.ts ***!
-  \*****************************************/
+/***/ 940:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Maze = void 0;
-var array_utils_1 = __webpack_require__(/*! ./array-utils */ "./rescripted/source/utils/array-utils.ts");
+var array_utils_1 = __webpack_require__(919);
 /**
  * @class Recursively divided maze, http://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_division_method
  */
@@ -2189,16 +2119,13 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
 var exports = __webpack_exports__;
-/*!************************************************!*\
-  !*** ./rescripted/source/rescripted-server.ts ***!
-  \************************************************/
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.RescriptedServer = void 0;
-var board_renderer_1 = __webpack_require__(/*! ./board-renderer */ "./rescripted/source/board-renderer.ts");
-var constants_1 = __webpack_require__(/*! ./constants */ "./rescripted/source/constants.ts");
-var runner_1 = __webpack_require__(/*! ./game/runner */ "./rescripted/source/game/runner.ts");
-var server_store_1 = __webpack_require__(/*! ./game/server-store */ "./rescripted/source/game/server-store.ts");
+var board_renderer_1 = __webpack_require__(611);
+var constants_1 = __webpack_require__(197);
+var runner_1 = __webpack_require__(487);
+var server_store_1 = __webpack_require__(45);
 var RescriptedServer = /** @class */ (function () {
     function RescriptedServer() {
         this.runner = new runner_1.Runner();
@@ -2260,9 +2187,9 @@ var RescriptedServer = /** @class */ (function () {
         this.boardRenderer.render(board.state);
     };
     RescriptedServer.prototype.showNextLevel = function (_id, params) {
-        /*if (!this.level.completed) {
-          return;
-        }*/
+        if (!this.level.completed) {
+            return;
+        }
         var level = this.serverStore.nextLevel();
         if (level === undefined) {
             return;
@@ -2374,7 +2301,6 @@ var RescriptedServer = /** @class */ (function () {
         }
         Entities.callEntityClientMethod(clientId, this.entityId, methodName, params);
     };
-    ;
     RescriptedServer.prototype.sendToClient = function (clientId, action) {
         this.callClient(clientId, 'emitWebEvent', [JSON.stringify(action)]);
     };
@@ -2393,4 +2319,3 @@ if(__webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target
 /******/ })()
 ;
 return self["default"];})
-//# sourceMappingURL=rescripted-server.js.map

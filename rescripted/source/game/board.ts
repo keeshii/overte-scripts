@@ -1,4 +1,4 @@
-import { BoardState, ColorMap, Position } from "./game.interface";
+import { BoardState, ColorMap, Position } from './game.interface';
 
 
 export class Board {
@@ -84,7 +84,7 @@ export class Board {
       after = this.state.colors.substring(index + 1, this.state.values.length);
       this.state.colors = before + color + after;
     }
-  };
+  }
 
   public findPath(fromX: number, fromY: number, toX: number, toY: number, walkable: string[]): Position | undefined {
     let i, index, item, value, canEnter, x, y;

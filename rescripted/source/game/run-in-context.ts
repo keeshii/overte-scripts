@@ -1,5 +1,7 @@
 export function runInContext() {
   'use strict';
+  
+  /* eslint-disable @typescript-eslint/no-unused-vars */
   const require: any = undefined;
   const process: any = undefined;
   const Runner: any = undefined;
@@ -23,6 +25,7 @@ export function runInContext() {
       level = apiUnlocked ? globals['level'] : undefined;
     });
   }(this, this._vm.apiUnlocked));
+  /* eslint-enable @typescript-eslint/no-unused-vars */
 
   delete this._vm.apiUnlocked;
   delete this._vm.api;

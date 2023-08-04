@@ -1,6 +1,6 @@
 import { BoardRenderer } from './board-renderer';
 import { CONFIG, MESSAGE_CHANNEL } from './constants';
-import { StatusType, Tick, UpdateAction } from './game/game.interface';
+import { StatusType, Tick } from './game/game.interface';
 import { Runner } from './game/runner';
 import { ServerStore } from './game/server-store';
 import { LevelBase } from './levels/level-base';
@@ -208,7 +208,7 @@ export class RescriptedServer {
       return;
     }
     Entities.callEntityClientMethod(clientId, this.entityId, methodName, params);
-  };
+  }
 
   private sendToClient(clientId: Uuid, action: WebAction) {
     this.callClient(clientId, 'emitWebEvent', [JSON.stringify(action)]);

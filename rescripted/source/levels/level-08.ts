@@ -1,5 +1,4 @@
 import { LevelBase } from './level-base';
-import { shuffle, randomValue } from '../utils/array-utils';
 import { Position } from '../game/game.interface';
 
 const CONTENT = `
@@ -106,7 +105,7 @@ export class Level_08 extends LevelBase {
   public tick() {
     super.tick();
 
-    let i: number, boss: Position, target: Position;
+    let i: number, target: Position;
 
     // Shooting drones
     for (i = 0; i < this.drones.length; i++) {
@@ -119,7 +118,7 @@ export class Level_08 extends LevelBase {
     }
 
     // Boss when drones on the map
-    boss = this.boss;
+    const boss = this.boss;
     if (!boss) {
       return;
     }

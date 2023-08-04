@@ -38,7 +38,7 @@ export class Runner {
     }
     this.setStatus('RUNNING');
 
-    const self = this;
+    const self = this; // eslint-disable-line @typescript-eslint/no-this-alias
     function executeAction(ticks: Tick[]) {
       self.runTimer = Script.setTimeout(() => {
         let tick;
@@ -94,7 +94,7 @@ export class Runner {
   }
 
   private getErrorInfo(error: Error, maxLineNumber: number): ErrorInfo {
-    let message: string = error.toString();
+    const message: string = error.toString();
     let line: number;
     let col: number;
 
@@ -105,7 +105,7 @@ export class Runner {
         col = parseInt(match[2], 10);
       }
     } else {
-      let lineNumber: number = (error as any).lineNumber;
+      const lineNumber: number = (error as any).lineNumber;
       if (lineNumber !== undefined && lineNumber <= maxLineNumber) {
         line = lineNumber;
         col = 1;

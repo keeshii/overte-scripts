@@ -1,4 +1,4 @@
-import { BoardState } from "./game/game.interface";
+import { BoardState } from './game/game.interface';
 
 const LAYERS_COUNT = 6;
 

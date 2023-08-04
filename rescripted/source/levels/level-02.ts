@@ -68,7 +68,7 @@ export class Level_02 extends LevelBase {
     this.board.state.offsetX = 8;
     this.board.state.offsetY = 2;
     this.items.push('k');
-    this.hasKey = false
+    this.hasKey = false;
     
     this.createMaze();
   }

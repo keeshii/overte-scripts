@@ -1,5 +1,4 @@
 import { LevelBase } from './level-base';
-import { shuffle, randomValue } from '../utils/array-utils';
 
 const CONTENT = `
 "use strict";

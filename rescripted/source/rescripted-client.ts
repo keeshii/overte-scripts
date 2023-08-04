@@ -1,7 +1,6 @@
 import { CONFIG, MESSAGE_CHANNEL } from './constants';
 import { LocalStore } from './game/local-store';
 import { RescriptedServer } from './rescripted-server';
-import { LocalStoreData } from './game/game.interface';
 import { WebAction } from './rescripted.interface';
 import { Runner } from './game/runner';
 import { ServerStore } from './game/server-store';
@@ -22,7 +21,7 @@ export class RescriptedClient {
     this.entityClickFn = (id, event) => this.onEntityClick(id, event);
     this.webEventReceivedFn = (id, message) => this.onWebEventReceived(id, message);
     this.messageReceivedFn = (channel, message, senderId, localOnly) =>
-      { this.onMessageReceivedFn(channel, message, senderId, localOnly); };
+    { this.onMessageReceivedFn(channel, message, senderId, localOnly); };
 
     this.localStore = new LocalStore();
     this.runner = new Runner();
@@ -143,7 +142,6 @@ export class RescriptedClient {
 
     switch (action.type) {
       case 'INITIALIZE': {
-        // console.log('EDITOR> ', { type: 'SET_STATE', state: editor.state });
         this.callServer('initialize');
         break;
       }
@@ -168,11 +166,13 @@ export class RescriptedClient {
       case 'STOP':
         this.callServer('stopScript');
         break;
+      case 'CLOSE':
+        this.emitToWebView({ type: 'SHOW_MESSAGE', message: 'This editor cannot be closed' });
+        break;
     }
   }
 
-  private onMessageReceivedFn(channel: string, message: string, senderId: Uuid, localOnly: boolean) {
-    let action: WebAction;
+  private onMessageReceivedFn(channel: string, message: string, _senderId: Uuid, _localOnly: boolean) {
     if (channel !== MESSAGE_CHANNEL) {
       return;
     }

@@ -1,7 +1,7 @@
 
 
 export function shuffle(arr: Array<any>) {
-  var i, r, tmp;
+  let i, r, tmp;
 
   for (i = 0; i < arr.length; i++) {
     r = Math.floor(Math.random() * arr.length);

@@ -1,5 +1,5 @@
 import { LevelBase } from './level-base';
-import { shuffle, randomValue } from '../utils/array-utils';
+import { shuffle } from '../utils/array-utils';
 import { Position } from '../game/game.interface';
 
 const CONTENT = `
@@ -92,9 +92,8 @@ export class Level_07 extends LevelBase {
   }
 
   private createWalls() {
-    let i, x, y;
-
-    y = [1, 2, 3, 4];
+    let i: number, x: number;
+    const y = [1, 2, 3, 4];
 
     for (i = 0; i < 4; i++) {
       x = 8 + i * 4;

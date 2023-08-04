@@ -1,5 +1,5 @@
-import { Board } from "./board";
-import { Position, Shot } from "./game.interface";
+import { Board } from './board';
+import { Position, Shot } from './game.interface';
 
 export type ShotCollisionFn = (target: string, x: number, y: number) => void;
 export type ShotDirection = 'right' | 'left' | 'top' | 'bottom';
@@ -16,13 +16,12 @@ export class ShotManager {
   }
 
   public tick() {
-    let i: number, j: number, shot: Shot, x: number, y: number, dx: number, dy: number;
+    let shot: Shot;
 
     // Move shots
     for (let i = 0; i < this.shots.length; i++) {
       shot = this.shots[i];
       const { x, y, dx, dy } = this.shots[i];
-      const state = this.board.state;
       const targetIndex = this.board.getIndex(x + dx, y + dy);
       const targetValue = this.board.state.values[targetIndex];
 
@@ -52,8 +51,6 @@ export class ShotManager {
   public move(position: Position, dx: number, dy: number) {
     const x = position.x;
     const y = position.y;
-    let i;
-
     const sourceIndex = this.board.getIndex(x, y);
     const sourceValue = this.board.state.values[sourceIndex];
 
@@ -69,7 +66,7 @@ export class ShotManager {
   }
 
   public fire(x: number, y: number, direction: ShotDirection) {
-    let shot = { x, y, dx: 0, dy: 0, value: '' };
+    const shot = { x, y, dx: 0, dy: 0, value: '' };
     switch (direction) {
       case 'right':
         shot.dx = 1;

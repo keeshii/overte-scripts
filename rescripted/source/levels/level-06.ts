@@ -107,7 +107,7 @@ export class Level_06 extends LevelBase {
   }
 
   private renewBarrier() {
-    let i, x, value, color;
+    let i: number;
 
     if (this.unlocked) {
       return;
@@ -127,7 +127,7 @@ export class Level_06 extends LevelBase {
   }
 
   public submitCode(id: string, params: string[]) {
-    let i, color, invalidCode;
+    let i: number, color: string, invalidCode: boolean;
 
     if (!params || !(params instanceof Array) || params.length !== 1) {
       throw new Error('Invalid params');

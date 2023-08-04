@@ -1,6 +1,6 @@
 import { Board } from '../game/board';
 import { Editor } from '../game/editor';
-import { ColorMap, Position, Shot } from '../game/game.interface';
+import { ColorMap, Position } from '../game/game.interface';
 import { ShotManager } from '../game/shot-manager';
 
 const COLOR_MAP: ColorMap = {
@@ -53,7 +53,6 @@ export abstract class LevelBase {
     }
 
     const { x, y } = position;
-    const state = this.board.state;
 
     // handle moving into shots
     this.shotManager.move(position, dx, dy);
@@ -98,4 +97,4 @@ export abstract class LevelBase {
     }
   }
 
-};
+}
