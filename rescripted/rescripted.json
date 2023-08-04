@@ -1,0 +1,746 @@
+{
+    "DataVersion": 0,
+    "Entities": [
+        {
+            "id": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}",
+            "type": "Web",
+            "name": "Web.Rescripted",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/rescripted/dist/rescripted-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/rescripted/dist/rescripted-server.js",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -2.299999952316284,
+                "y": 1.8500001430511475,
+                "z": -2.220446049250313e-16
+            },
+            "dimensions": {
+                "x": 3.3999996185302734,
+                "y": 2.299999952316284,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -3.999999761581421,
+                "y": 0.15000027418136597,
+                "z": -1.6999998092651385,
+                "scale": 3.3999996185302734
+            },
+            "sourceUrl": "https://metaverse.kuro.ryuu.eu/public/scripts/overte-editor-app/index.html",
+            "dpi": 10
+        },
+        {
+            "id": "{0a46edd0-0d59-487d-a179-0a4037842e2d}",
+            "type": "Text",
+            "name": "Text.Rescripted.Back",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.249999761581421,
+                "y": -1.1000001430511475,
+                "z": 2.220446049250313e-16
+            },
+            "dimensions": {
+                "x": 0.675000011920929,
+                "y": 0.22499999403953552,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.6124998331069946,
+                "y": 0.41249996423721313,
+                "z": -0.33750003576278687,
+                "scale": 0.6750000715255737
+            },
+            "text": "Back",
+            "lineHeight": 0.10000000149011612,
+            "alignment": "center",
+            "topMargin": 0.07000000029802322,
+            "unlit": true,
+            "textColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "backgroundColor": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        },
+        {
+            "id": "{3c14adc7-16c3-4a36-a17c-9420a08fa69e}",
+            "type": "Text",
+            "name": "Text.Rescripted.Board.B",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-server.js",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.700000047683716,
+                "y": -0.14999985694885254,
+                "z": 0.009166717529296875
+            },
+            "dimensions": {
+                "x": 1.9999998807907104,
+                "y": 1.600000023841858,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.4000001549720764,
+                "y": 0.7000002861022949,
+                "z": -0.9908332526683807,
+                "scale": 1.9999999403953552
+            },
+            "text": "Text",
+            "backgroundAlpha": 0.0,
+            "lineHeight": 0.10000000149011612,
+            "font": "Inconsolata",
+            "unlit": true,
+            "textColor": {
+                "red": 0,
+                "green": 20,
+                "blue": 255
+            },
+            "backgroundColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        },
+        {
+            "id": "{7623e12d-51e1-4a67-ba4b-77224604e17d}",
+            "type": "Text",
+            "name": "Text.Rescripted.Board.Base",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-server.js",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.700000047683716,
+                "y": -0.14999985694885254,
+                "z": 0.004166603088378906
+            },
+            "dimensions": {
+                "x": 1.9999998807907104,
+                "y": 1.600000023841858,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.4000001549720764,
+                "y": 0.7000002861022949,
+                "z": -0.9958333671092987,
+                "scale": 1.9999999403953552
+            },
+            "text": "Text",
+            "lineHeight": 0.10000000149011612,
+            "font": "Inconsolata",
+            "unlit": true,
+            "textColor": {
+                "red": 56,
+                "green": 56,
+                "blue": 56
+            },
+            "backgroundColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        },
+        {
+            "id": "{fbc08d33-c82f-4957-b244-146558b36717}",
+            "type": "Text",
+            "name": "Text.Rescripted.Board.G",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-server.js",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.700000047683716,
+                "y": -0.14999985694885254,
+                "z": 0.009166717529296875
+            },
+            "dimensions": {
+                "x": 1.9999998807907104,
+                "y": 1.600000023841858,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.4000001549720764,
+                "y": 0.7000002861022949,
+                "z": -0.9908332526683807,
+                "scale": 1.9999999403953552
+            },
+            "text": "Text",
+            "backgroundAlpha": 0.0,
+            "lineHeight": 0.10000000149011612,
+            "font": "Inconsolata",
+            "unlit": true,
+            "textColor": {
+                "red": 0,
+                "green": 255,
+                "blue": 1
+            },
+            "backgroundColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        },
+        {
+            "id": "{6c789573-08d1-4cf2-ac78-c73fe4c773ec}",
+            "type": "Text",
+            "name": "Text.Rescripted.Board.R",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-server.js",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.700000047683716,
+                "y": -0.14999985694885254,
+                "z": 0.009166717529296875
+            },
+            "dimensions": {
+                "x": 1.9999998807907104,
+                "y": 1.600000023841858,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.4000001549720764,
+                "y": 0.7000002861022949,
+                "z": -0.9908332526683807,
+                "scale": 1.9999999403953552
+            },
+            "text": "Text",
+            "backgroundAlpha": 0.0,
+            "lineHeight": 0.10000000149011612,
+            "font": "Inconsolata",
+            "unlit": true,
+            "textColor": {
+                "red": 255,
+                "green": 0,
+                "blue": 0
+            },
+            "backgroundColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        },
+        {
+            "id": "{73b0cc89-6948-488d-8e3d-e3d2c4806af6}",
+            "type": "Text",
+            "name": "Text.Rescripted.Board.W",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-server.js",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.700000047683716,
+                "y": -0.14999985694885254,
+                "z": 0.009166717529296875
+            },
+            "dimensions": {
+                "x": 1.9999998807907104,
+                "y": 1.600000023841858,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.4000001549720764,
+                "y": 0.7000002861022949,
+                "z": -0.9908332526683807,
+                "scale": 1.9999999403953552
+            },
+            "text": "Text",
+            "backgroundAlpha": 0.0,
+            "lineHeight": 0.10000000149011612,
+            "font": "Inconsolata",
+            "unlit": true,
+            "textColor": {
+                "red": 250,
+                "green": 251,
+                "blue": 255
+            },
+            "backgroundColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        },
+        {
+            "id": "{5fbff2d8-c542-4091-8ab2-1631556c5b99}",
+            "type": "Text",
+            "name": "Text.Rescripted.Board.Y",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "script": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-client.js",
+            "serverScripts": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/source/sudoku-server.js",
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 3.700000047683716,
+                "y": -0.14999985694885254,
+                "z": 0.009166717529296875
+            },
+            "dimensions": {
+                "x": 1.9999998807907104,
+                "y": 1.600000023841858,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 0.4000001549720764,
+                "y": 0.7000002861022949,
+                "z": -0.9908332526683807,
+                "scale": 1.9999999403953552
+            },
+            "text": "Text",
+            "backgroundAlpha": 0.0,
+            "lineHeight": 0.10000000149011612,
+            "font": "Inconsolata",
+            "unlit": true,
+            "textColor": {
+                "red": 255,
+                "green": 233,
+                "blue": 0
+            },
+            "backgroundColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        },
+        {
+            "id": "{2bec85dc-f730-4dfa-9604-ea2327933620}",
+            "type": "Text",
+            "name": "Text.Rescripted.Next",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": 4.162499904632568,
+                "y": -1.1000001430511475,
+                "z": 2.220446049250313e-16
+            },
+            "dimensions": {
+                "x": 0.675000011920929,
+                "y": 0.22499999403953552,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": 1.524999976158142,
+                "y": 0.41249996423721313,
+                "z": -0.33750003576278687,
+                "scale": 0.6750000715255737
+            },
+            "text": "Next",
+            "lineHeight": 0.10000000149011612,
+            "alignment": "center",
+            "topMargin": 0.07000000029802322,
+            "unlit": true,
+            "textColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "backgroundColor": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        },
+        {
+            "id": "{71cf6416-1e68-4b7f-9bd8-fb2615d3a0f3}",
+            "type": "Text",
+            "name": "Text.Rescripted.ResetGame",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -1.249999761581421,
+                "y": -1.3000001907348633,
+                "z": 4.663010077654713e-16
+            },
+            "dimensions": {
+                "x": 0.9000000357627869,
+                "y": 0.22499996423721313,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -3.999999761581421,
+                "y": 0.09999997913837433,
+                "z": -0.4500000476837158,
+                "scale": 0.9000000953674316
+            },
+            "text": "Reset Game",
+            "lineHeight": 0.10000000149011612,
+            "alignment": "center",
+            "topMargin": 0.07000000029802322,
+            "unlit": true,
+            "textColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "backgroundColor": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        },
+        {
+            "id": "{afcb7921-a5dc-47fe-90f1-aaa2e967768a}",
+            "type": "Text",
+            "name": "Text.Rescripted.ResetLevel",
+            "lastEdited": 1691172320202448,
+            "created": 1691172320202448,
+            "clientOnly": false,
+            "avatarEntity": false,
+            "localEntity": false,
+            "isFacingAvatar": false,
+            "faceCamera": false,
+            "grab": {
+                "grabbable": false,
+                "equippableLeftRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "equippableRightRotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            },
+            "damping": 0.0,
+            "angularDamping": 0.0,
+            "position": {
+                "x": -0.2499995231628418,
+                "y": -1.3000001907348633,
+                "z": 4.663010077654713e-16
+            },
+            "dimensions": {
+                "x": 0.9000000357627869,
+                "y": 0.22499996423721313,
+                "z": 0.01
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.0,
+                "w": 1.0
+            },
+            "queryAACube": {
+                "x": -2.999999523162842,
+                "y": 0.09999997913837433,
+                "z": -0.4500000476837158,
+                "scale": 0.9000000953674316
+            },
+            "text": "Reset Level",
+            "lineHeight": 0.10000000149011612,
+            "alignment": "center",
+            "topMargin": 0.07000000029802322,
+            "unlit": true,
+            "textColor": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            },
+            "backgroundColor": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+        }
+    ],
+    "Id": "{93572610-4dfc-4bd9-ad25-b41c93a72e3a}",
+    "Version": 133,
+    "Paths": {
+        "/": "/0.0,1.0,-0.0/0.0,0.0,-0.0,1.0"
+    }
+}
