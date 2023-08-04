@@ -24,7 +24,8 @@ const CONTENT = `
 
 const BOARD_TEXT = `
 
-Press the Next button to enter the first level.
+Press the Next button to
+ enter the first level. 
 `;
 
 export class Level_00 extends LevelBase {
@@ -32,10 +33,10 @@ export class Level_00 extends LevelBase {
   constructor() {
     super(CONTENT, BOARD_TEXT);
 
-    this.editor.state.fileName = 'tmp://level-00';
+    this.editor.state.fileName = 'tmp://level-00.js';
 
-    this.board.state.offsetX = 100;
-    this.board.state.offsetY = 100;
+    this.board.state.offsetX = 4;
+    this.board.state.offsetY = 2;
     this.completed = true;
   }
 

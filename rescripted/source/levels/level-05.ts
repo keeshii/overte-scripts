@@ -52,9 +52,9 @@ export class Level_05 extends LevelBase {
   constructor() {
     super(CONTENT, BOARD_TEXT, { '|': 'R' });
 
-    this.editor.state.fileName = 'tmp://level-05';
-    this.board.state.offsetX = 100;
-    this.board.state.offsetY = 100;
+    this.editor.state.fileName = 'tmp://level-05.js';
+    this.board.state.offsetX = 2;
+    this.board.state.offsetY = 2;
     this.items.push('+');
     this.switches = [];
 

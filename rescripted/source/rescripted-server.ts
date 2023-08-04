@@ -41,6 +41,7 @@ export class RescriptedServer {
       'saveGameState',
       'loadGameState',
       'runScript',
+      'runSimulation',
       'stopScript'
     ];
   }
@@ -49,11 +50,21 @@ export class RescriptedServer {
 
 
   public resetGame(_id: Uuid, params: string[]) {
-    this.boardRenderer.render(this.level.board.state);
+    this.runner.stop();
+    this.level = this.serverStore.resetAll();
+    const { content, fileName } = this.level.editor.state;
+    const board = this.level.board;
+    this.sendToAll({ type: 'SET_STATE', content, fileName });
+    this.boardRenderer.render(board.state);
   }
 
   public resetLevel(_id: Uuid, params: string[]) {
-
+    this.runner.stop();
+    this.level = this.serverStore.resetLevel();
+    const { content, fileName } = this.level.editor.state;
+    const board = this.level.board;
+    this.sendToAll({ type: 'SET_STATE', content, fileName });
+    this.boardRenderer.render(board.state);
   }
 
   public showPreviousLevel(_id: Uuid, params: string[]) {
@@ -108,22 +119,53 @@ export class RescriptedServer {
   }
 
   public saveGameState(_id: Uuid, params: string[]) {
-
+    const clientId = params[0];
+    const gameState = this.serverStore.toLocalStore();
+    this.callClient(clientId, 'persistGameState', [JSON.stringify(gameState)]);
   }
 
   public loadGameState(_id: Uuid, params: string[]) {
-    const store = params[1];
+    const clientId = params[0];
+    let gameState: any;
+    try {
+      gameState = JSON.parse(params[1]);
+    } catch (e) {
+      return;
+    }
+    this.runner.stop();
+    this.level = this.serverStore.fromLocalStore(gameState);
+    const { content, fileName } = this.level.editor.state;
+    const status = this.runner.status;
+    this.sendToAll({ type: 'SET_STATE', content, fileName, status });
+    this.boardRenderer.render(this.level.board.state);
+    this.sendToClient(clientId, { type: 'SHOW_MESSAGE', message: 'Game loaded' });
   }
 
   public runScript(_id: Uuid, params: string[]) {
+    const clientId = params[0];
     const apiUnlocked = this.serverStore.isApiUnlocked(this.level);
-    this.level = this.serverStore.reloadLevel();
-    this.boardRenderer.render(this.level.board.state);
-    this.runner.execute(this.level, apiUnlocked);
+    const levelNo = this.serverStore.levelNo;
+    const content = this.level.editor.state.content;
+    this.runner.prepareForExecute();
+    this.callClient(clientId, 'createSimulation', [
+      String(levelNo),
+      content,
+      apiUnlocked ? 'true' : 'false'
+    ]);
+  }
+
+  public runSimulation(_id: Uuid, params: string[]) {
+    let simulation: any;
+    try {
+      simulation = JSON.parse(params[1]);
+    } catch (e) {
+      return;
+    }
+    this.runner.execute(simulation);
   }
 
   public stopScript(_id: Uuid, params: string[]) {
-
+    this.runner.stop();
   }
 
   private handleRunnerTick(tick: Tick) {
@@ -146,6 +188,10 @@ export class RescriptedServer {
     if (tick.state) {
       this.level.board.state = tick.state;
       this.boardRenderer.render(tick.state);
+    }
+
+    if (tick.completed) {
+      this.level.completed = tick.completed;
     }
   }
 

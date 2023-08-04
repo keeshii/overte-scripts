@@ -51,10 +51,10 @@ export class Level_01 extends LevelBase {
   constructor() {
     super(CONTENT, BOARD_TEXT);
 
-    this.editor.state.fileName = 'tmp://level-01';
+    this.editor.state.fileName = 'tmp://level-01.js';
 
-    this.board.state.offsetX = 100;
-    this.board.state.offsetY = 100;
+    this.board.state.offsetX = 2;
+    this.board.state.offsetY = 2;
   }
 
 }

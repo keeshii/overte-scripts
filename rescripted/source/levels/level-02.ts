@@ -65,9 +65,9 @@ export class Level_02 extends LevelBase {
   constructor() {
     super(CONTENT, BOARD_TEXT, { '|': 'Y', 'k': 'Y' });
 
-    this.editor.state.fileName = 'tmp://level-02';
-    this.board.state.offsetX = 100;
-    this.board.state.offsetY = 100;
+    this.editor.state.fileName = 'tmp://level-02.js';
+    this.board.state.offsetX = 2;
+    this.board.state.offsetY = 2;
     this.items.push('k');
     this.hasKey = false
     

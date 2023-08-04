@@ -3,6 +3,8 @@ import { LocalStore } from './game/local-store';
 import { RescriptedServer } from './rescripted-server';
 import { LocalStoreData } from './game/game.interface';
 import { WebAction } from './rescripted.interface';
+import { Runner } from './game/runner';
+import { ServerStore } from './game/server-store';
 
 export class RescriptedClient {
 
@@ -12,6 +14,8 @@ export class RescriptedClient {
   private webEventReceivedFn: (id: Uuid, message: string) => void;
   private messageReceivedFn: (channel: string, message: string, senderId: Uuid, localOnly: boolean) => void;
   private localStore: LocalStore;
+  private runner: Runner;
+  private serverStore: ServerStore;
   public remotelyCallable: string[];
 
   constructor() {
@@ -21,9 +25,13 @@ export class RescriptedClient {
       { this.onMessageReceivedFn(channel, message, senderId, localOnly); };
 
     this.localStore = new LocalStore();
+    this.runner = new Runner();
+    this.serverStore = new ServerStore();
 
     this.remotelyCallable = [
-      'emitWebEvent'
+      'emitWebEvent',
+      'createSimulation',
+      'persistGameState'
     ];
   }
 
@@ -51,15 +59,37 @@ export class RescriptedClient {
     }
   }
 
-  public emitWebEvent(_id: string, params: string[]) {
-    const message = params[0];
-    Entities.emitScriptEvent(this.entityId, message);
+  public createSimulation(_id: string, params: string[]) {
+    if (params.length < 2) {
+      return;
+    }
+    const levelNo = parseInt(params[0], 10);
+    const content = params[1];
+    const apiUnlocked = params[2] === 'true';
+    const level = this.serverStore.load(levelNo);
+    if (level === undefined) {
+      return;
+    }
+    level.editor.state.content = content;
+    const ticks = this.runner.simulate(level, apiUnlocked);
+    this.callServer('runSimulation', [JSON.stringify(ticks)]);
   }
 
-  public saveGameState(gameState: LocalStoreData) {
+  public persistGameState(_id: string, params: string[]) {
+    let gameState: any;
+    try {
+      gameState = JSON.parse(params[0]);
+    } catch (e) {
+      return;
+    }
     this.localStore.saveStore(gameState, () => {
       this.emitToWebView({ type: 'SHOW_MESSAGE', message: 'Game saved' });
     });
+  }
+
+  public emitWebEvent(_id: string, params: string[]) {
+    const message = params[0];
+    Entities.emitScriptEvent(this.entityId, message);
   }
 
   private callServer(method: string, params: string[] = []) {
@@ -121,7 +151,7 @@ export class RescriptedClient {
         this.callServer('update', [JSON.stringify(action)]);
         break;
       case 'SET_SCROLL':
-        
+        this.sendToAll(action);
         break;
       case 'SAVE':
         this.callServer('saveGameState');
@@ -135,7 +165,7 @@ export class RescriptedClient {
       case 'RUN':
         this.callServer('runScript');
         break;
-      case 'RUN':
+      case 'STOP':
         this.callServer('stopScript');
         break;
     }
@@ -147,6 +177,10 @@ export class RescriptedClient {
       return;
     }
     this.emitWebEvent(this.entityId, [message]);
+  }
+
+  private sendToAll(action: WebAction) {
+    Messages.sendMessage(MESSAGE_CHANNEL, JSON.stringify(action));
   }
 
   private emitToWebView(action: WebAction) {

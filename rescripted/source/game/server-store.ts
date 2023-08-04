@@ -54,13 +54,28 @@ export class ServerStore {
 
   public fromLocalStore(localStore: LocalStoreData) {
     this.levelNo = localStore.levelNo;
-    this.levels = localStore.levels.map((level, index) => {
-      const newLevel = this.load(index);
-      newLevel.editor.state = level.editor.state;
-      newLevel.completed = level.completed;
-      return newLevel;
-    });
+    this.levels = [];
+    for (let i = 0; i < localStore.levels.length; i++) {
+      const newLevel = this.load(i);
+      newLevel.editor.state.content = localStore.levels[i].editor.state.content;
+      newLevel.completed = localStore.levels[i].completed;
+      this.levels.push(newLevel);
+    }
     return this.levels[this.levelNo];
+  }
+
+  public toLocalStore(): LocalStoreData {
+    const store: LocalStoreData = {
+      levelNo: this.levelNo,
+      levels: []
+    };
+    for (let i = 0; i < this.levels.length; i++) {
+      store.levels.push({
+        editor: this.levels[i].editor,
+        completed: this.levels[i].completed
+      });
+    }
+    return store;
   }
 
   public nextLevel() {
@@ -105,7 +120,9 @@ export class ServerStore {
   }
 
   public resetLevel() {
+    const completed = this.levels[this.levelNo].completed;
     const newLevel = this.load(this.levelNo);
+    newLevel.completed = completed;
     this.levels[this.levelNo] = newLevel;
     return newLevel;
   }

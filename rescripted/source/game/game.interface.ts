@@ -47,6 +47,7 @@ export interface Tick {
   error?: ErrorInfo;
   status?: StatusType;
   state?: BoardState
+  completed?: boolean;
 }
 
 export interface LocalStoreData {

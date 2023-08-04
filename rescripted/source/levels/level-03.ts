@@ -61,10 +61,10 @@ export class Level_03 extends LevelBase {
   constructor() {
     super(CONTENT, BOARD_TEXT);
 
-    this.editor.state.fileName = 'tmp://level-03';
+    this.editor.state.fileName = 'tmp://level-03.js';
     this.lasers = shuffle([5, 10, 15]);
-    this.board.state.offsetX = 100;
-    this.board.state.offsetY = 100;
+    this.board.state.offsetX = 2;
+    this.board.state.offsetY = 2;
     this.tickNo += this.lasers.length;
     this.tick();
     this.tickNo = Math.floor(Math.random() * 10);

@@ -84,9 +84,9 @@ export class Level_06 extends LevelBase {
   constructor() {
     super(CONTENT, BOARD_TEXT, { 'P': 'W' });
 
-    this.editor.state.fileName = 'tmp://level-06';
-    this.board.state.offsetX = 100;
-    this.board.state.offsetY = 100;
+    this.editor.state.fileName = 'tmp://level-06.js';
+    this.board.state.offsetX = 2;
+    this.board.state.offsetY = 2;
     this.items.push('<', '>', 'd');
     this.assignment = shuffle(['R', 'G', 'B', 'Y', 'W']);
     this.ticksToRenew = 0;

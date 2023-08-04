@@ -12,9 +12,19 @@
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.BoardRenderer = void 0;
+var LAYERS_COUNT = 6;
+var COLOR_TO_LAYER = {
+    BASE: 0,
+    R: 1,
+    G: 2,
+    B: 3,
+    Y: 4,
+    W: 5
+};
 var BoardRenderer = /** @class */ (function () {
     function BoardRenderer(entityId, ids, props) {
         this.boards = {};
+        this.layers = [];
         this.entityId = entityId;
         for (var i = 0; i < ids.length; i++) {
             var prop = props[i];
@@ -23,35 +33,76 @@ var BoardRenderer = /** @class */ (function () {
             }
             switch (prop.name) {
                 case 'Text.Rescripted.Board.Base':
-                    this.boards['_'] = ids[i];
+                    this.boards[COLOR_TO_LAYER.BASE] = ids[i];
                     break;
                 case 'Text.Rescripted.Board.R':
-                    this.boards['R'] = ids[i];
+                    this.boards[COLOR_TO_LAYER.R] = ids[i];
                     break;
                 case 'Text.Rescripted.Board.G':
-                    this.boards['R'] = ids[i];
+                    this.boards[COLOR_TO_LAYER.G] = ids[i];
                     break;
                 case 'Text.Rescripted.Board.B':
-                    this.boards['R'] = ids[i];
+                    this.boards[COLOR_TO_LAYER.B] = ids[i];
                     break;
                 case 'Text.Rescripted.Board.Y':
-                    this.boards['R'] = ids[i];
+                    this.boards[COLOR_TO_LAYER.Y] = ids[i];
                     break;
                 case 'Text.Rescripted.Board.W':
-                    this.boards['R'] = ids[i];
+                    this.boards[COLOR_TO_LAYER.W] = ids[i];
                     break;
             }
         }
     }
     BoardRenderer.prototype.render = function (state) {
+        var lines;
+        var layers = this.splitColors(state);
+        for (var i = 0; i < layers.length; i++) {
+            lines = this.splitLines(layers[i], state.width);
+            layers[i] = this.combineLines(lines, state.offsetX, state.offsetY);
+            console.log(layers[i]);
+        }
+        for (var i = 0; i < layers.length; i++) {
+            if (layers[i] !== this.layers[i]) {
+                this.layers[i] = layers[i];
+                Entities.editEntity(this.boards[i], { text: layers[i] });
+            }
+        }
+    };
+    BoardRenderer.prototype.splitColors = function (state) {
+        var layers = [];
+        var _loop_1 = function (i) {
+            var layer = state.values.replace(/./g, function (match, offset) {
+                var color = state.colors[offset];
+                var layerId = COLOR_TO_LAYER[color] || 0;
+                return layerId === i ? match : ' '; // '\u2800';
+            });
+            layers.push('\u200C' + Array(state.width).join(' ') + layer);
+        };
+        for (var i = 0; i < LAYERS_COUNT; i++) {
+            _loop_1(i);
+        }
+        return layers;
+    };
+    BoardRenderer.prototype.splitLines = function (layer, width) {
         var lines = [];
         var pos = 0;
-        while (pos < state.values.length) {
-            lines.push(state.values.substring(pos, pos + state.width));
-            pos += state.width;
+        while (pos < layer.length) {
+            lines.push(layer.substring(pos, pos + width));
+            pos += width;
         }
-        var text = lines.join('\n');
-        Entities.editEntity(this.boards['_'], { text: text });
+        return lines;
+    };
+    BoardRenderer.prototype.combineLines = function (lines, offsetX, offsetY) {
+        var offset = Array(offsetX + 1).join(' ');
+        for (var i = 0; i < lines.length; i++) {
+            lines[i] = lines[i].replace(/\s+$/, '');
+            lines[i] = lines[i] ? offset + lines[i] : '';
+        }
+        for (var i = 0; i < offsetY; i++) {
+            lines.splice(1, 0, '');
+        }
+        lines.splice(1, offsetY, '');
+        return lines.join('\n').replace(/\n+$/, '');
     };
     return BoardRenderer;
 }());
@@ -477,38 +528,37 @@ var Runner = /** @class */ (function () {
     Runner.prototype.setTickCallback = function (callback) {
         this.tickCallback = callback;
     };
-    Runner.prototype.execute = function (level, apiUnlocked) {
+    Runner.prototype.prepareForExecute = function () {
         var _this = this;
-        var ACTION_TIME = 250;
-        var SCRIPT_LOAD_TIME = 250;
+        var SCRIPT_LOAD_TIMEOUT = 5000;
+        this.stop();
         this.setStatus('PENDING');
-        if (this.runTimer) {
-            Script.clearTimeout(this.runTimer);
-            this.runTimer = undefined;
-        }
-        if (this.loadTimer) {
-            Script.clearTimeout(this.loadTimer);
-        }
         this.loadTimer = Script.setTimeout(function () {
-            _this.setStatus('RUNNING');
-            var self = _this;
-            function executeAction(ticks) {
-                self.runTimer = Script.setTimeout(function () {
-                    var tick;
-                    do {
-                        tick = ticks.shift();
-                        self.tickCallback(tick);
-                    } while (ticks.length > 0 && !tick.state);
-                    if (ticks.length === 0) {
-                        self.setStatus('UNLOADED');
-                        return;
-                    }
-                    executeAction(ticks);
-                }, ACTION_TIME);
-            }
-            var allTicks = _this.run(level, apiUnlocked);
-            executeAction(allTicks);
-        }, SCRIPT_LOAD_TIME);
+            _this.setStatus('UNLOADED');
+        }, SCRIPT_LOAD_TIMEOUT);
+    };
+    Runner.prototype.execute = function (simulation) {
+        var ACTION_TIME = 250;
+        if (this.status !== 'PENDING') {
+            return;
+        }
+        this.setStatus('RUNNING');
+        var self = this;
+        function executeAction(ticks) {
+            self.runTimer = Script.setTimeout(function () {
+                var tick;
+                do {
+                    tick = ticks.shift();
+                    self.tickCallback(tick);
+                } while (ticks.length > 0 && !tick.state);
+                if (ticks.length === 0) {
+                    self.setStatus('UNLOADED');
+                    return;
+                }
+                executeAction(ticks);
+            }, ACTION_TIME);
+        }
+        executeAction(simulation);
     };
     Runner.prototype.stop = function () {
         if (this.runTimer) {
@@ -521,7 +571,7 @@ var Runner = /** @class */ (function () {
         }
         this.setStatus('UNLOADED');
     };
-    Runner.prototype.run = function (level, apiUnlocked) {
+    Runner.prototype.simulate = function (level, apiUnlocked) {
         var ticks = [{ state: level.board.state }];
         level.board.state = __assign({}, level.board.state);
         var context = { _vm: {
@@ -537,6 +587,9 @@ var Runner = /** @class */ (function () {
             var maxLineNumber = level.editor.state.content.split('\n').length;
             var errorInfo = this.getErrorInfo(error, maxLineNumber);
             ticks.push({ state: level.board.state, error: errorInfo });
+        }
+        if (level.completed && ticks.length > 0) {
+            ticks[ticks.length - 1].completed = true;
         }
         return ticks;
     };
@@ -628,15 +681,28 @@ var ServerStore = /** @class */ (function () {
         }
     };
     ServerStore.prototype.fromLocalStore = function (localStore) {
-        var _this = this;
         this.levelNo = localStore.levelNo;
-        this.levels = localStore.levels.map(function (level, index) {
-            var newLevel = _this.load(index);
-            newLevel.editor.state = level.editor.state;
-            newLevel.completed = level.completed;
-            return newLevel;
-        });
+        this.levels = [];
+        for (var i = 0; i < localStore.levels.length; i++) {
+            var newLevel = this.load(i);
+            newLevel.editor.state.content = localStore.levels[i].editor.state.content;
+            newLevel.completed = localStore.levels[i].completed;
+            this.levels.push(newLevel);
+        }
         return this.levels[this.levelNo];
+    };
+    ServerStore.prototype.toLocalStore = function () {
+        var store = {
+            levelNo: this.levelNo,
+            levels: []
+        };
+        for (var i = 0; i < this.levels.length; i++) {
+            store.levels.push({
+                editor: this.levels[i].editor,
+                completed: this.levels[i].completed
+            });
+        }
+        return store;
     };
     ServerStore.prototype.nextLevel = function () {
         var levelNo = this.levelNo + 1;
@@ -673,7 +739,9 @@ var ServerStore = /** @class */ (function () {
         return newLevel;
     };
     ServerStore.prototype.resetLevel = function () {
+        var completed = this.levels[this.levelNo].completed;
         var newLevel = this.load(this.levelNo);
+        newLevel.completed = completed;
         this.levels[this.levelNo] = newLevel;
         return newLevel;
     };
@@ -824,14 +892,14 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Level_00 = void 0;
 var level_base_1 = __webpack_require__(/*! ./level-base */ "./rescripted/source/levels/level-base.ts");
 var CONTENT = "\n/*\n * Rescripted -or- The mission of the Dr Eval.\n *\n * Help Dr Eval to complete levels by writing the code that solves\n * variety of algorithmic problems in JavaScript.\n *\n * Your code will be executed with the eval function in your interface app.\n *\n * Controls:\n * - save - saves the game state in your interface app\n * - run - executes the code (even if not saved),\n * - reload - restores the game state,\n * - reset level - reverts all changes in the currently displayed level,\n * - back/next - navigate through levels\n *\n * Good luck hero,\n * The fate of Dr Eval lies in your hands.\n */\n(function () { return this; });\n";
-var BOARD_TEXT = "\n\nPress the Next button to enter the first level.\n";
+var BOARD_TEXT = "\n\nPress the Next button to\n enter the first level. \n";
 var Level_00 = /** @class */ (function (_super) {
     __extends(Level_00, _super);
     function Level_00() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT) || this;
-        _this.editor.state.fileName = 'tmp://level-00';
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.editor.state.fileName = 'tmp://level-00.js';
+        _this.board.state.offsetX = 4;
+        _this.board.state.offsetY = 2;
         _this.completed = true;
         return _this;
     }
@@ -873,9 +941,9 @@ var Level_01 = /** @class */ (function (_super) {
     __extends(Level_01, _super);
     function Level_01() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT) || this;
-        _this.editor.state.fileName = 'tmp://level-01';
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.editor.state.fileName = 'tmp://level-01.js';
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         return _this;
     }
     return Level_01;
@@ -917,9 +985,9 @@ var Level_02 = /** @class */ (function (_super) {
     __extends(Level_02, _super);
     function Level_02() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT, { '|': 'Y', 'k': 'Y' }) || this;
-        _this.editor.state.fileName = 'tmp://level-02';
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.editor.state.fileName = 'tmp://level-02.js';
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         _this.items.push('k');
         _this.hasKey = false;
         _this.createMaze();
@@ -986,10 +1054,10 @@ var Level_03 = /** @class */ (function (_super) {
     __extends(Level_03, _super);
     function Level_03() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT) || this;
-        _this.editor.state.fileName = 'tmp://level-03';
+        _this.editor.state.fileName = 'tmp://level-03.js';
         _this.lasers = (0, array_utils_1.shuffle)([5, 10, 15]);
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         _this.tickNo += _this.lasers.length;
         _this.tick();
         _this.tickNo = Math.floor(Math.random() * 10);
@@ -1067,11 +1135,11 @@ var Level_04 = /** @class */ (function (_super) {
     __extends(Level_04, _super);
     function Level_04() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT) || this;
-        _this.editor.state.fileName = 'tmp://level-04';
+        _this.editor.state.fileName = 'tmp://level-04.js';
         _this.drone = { x: 8, y: 1 + Math.floor(Math.random() * 9) };
         _this.droneTargets = (0, array_utils_1.shuffle)([{ x: 8, y: 1 }, { x: 8, y: 9 }]);
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         _this.items.push('d');
         _this.board.setValue(_this.drone.x, _this.drone.y, 'd', 'R');
         return _this;
@@ -1139,9 +1207,9 @@ var Level_05 = /** @class */ (function (_super) {
     __extends(Level_05, _super);
     function Level_05() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT, { '|': 'R' }) || this;
-        _this.editor.state.fileName = 'tmp://level-05';
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.editor.state.fileName = 'tmp://level-05.js';
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         _this.items.push('+');
         _this.switches = [];
         _this.createDominata();
@@ -1259,9 +1327,9 @@ var Level_06 = /** @class */ (function (_super) {
     __extends(Level_06, _super);
     function Level_06() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT, { 'P': 'W' }) || this;
-        _this.editor.state.fileName = 'tmp://level-06';
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.editor.state.fileName = 'tmp://level-06.js';
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         _this.items.push('<', '>', 'd');
         _this.assignment = (0, array_utils_1.shuffle)(['R', 'G', 'B', 'Y', 'W']);
         _this.ticksToRenew = 0;
@@ -1396,9 +1464,9 @@ var Level_07 = /** @class */ (function (_super) {
     __extends(Level_07, _super);
     function Level_07() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT, { 'E': 'Y', '|': 'R' }) || this;
-        _this.editor.state.fileName = 'tmp://level-07';
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.editor.state.fileName = 'tmp://level-07.js';
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         _this.items.push('E', 'd');
         _this.drones = [];
         _this.droneTargets = [];
@@ -1523,9 +1591,9 @@ var Level_08 = /** @class */ (function (_super) {
     __extends(Level_08, _super);
     function Level_08() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT, { 'E': 'Y', '=': 'B', 'D': 'R' }) || this;
-        _this.editor.state.fileName = 'tmp://level-08';
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.editor.state.fileName = 'tmp://level-08.js';
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         _this.items.push('E', 'd', 'D');
         _this.drones = [];
         _this.droneReloads = [];
@@ -1668,9 +1736,9 @@ var Level_09 = /** @class */ (function (_super) {
     __extends(Level_09, _super);
     function Level_09() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT) || this;
-        _this.editor.state.fileName = 'tmp://level-09';
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.editor.state.fileName = 'tmp://level-09.js';
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         _this.items.push('d');
         _this.drones = [];
         _this.createDrones();
@@ -1753,9 +1821,9 @@ var Level_10 = /** @class */ (function (_super) {
     __extends(Level_10, _super);
     function Level_10() {
         var _this = _super.call(this, CONTENT, BOARD_TEXT) || this;
-        _this.editor.state.fileName = 'tmp://level-10';
-        _this.board.state.offsetX = 100;
-        _this.board.state.offsetY = 100;
+        _this.editor.state.fileName = 'tmp://level-10.js';
+        _this.board.state.offsetX = 2;
+        _this.board.state.offsetY = 2;
         _this.completed = false;
         return _this;
     }
@@ -2075,14 +2143,26 @@ var RescriptedServer = /** @class */ (function () {
             'saveGameState',
             'loadGameState',
             'runScript',
+            'runSimulation',
             'stopScript'
         ];
     };
     RescriptedServer.prototype.unload = function () { };
     RescriptedServer.prototype.resetGame = function (_id, params) {
-        this.boardRenderer.render(this.level.board.state);
+        this.runner.stop();
+        this.level = this.serverStore.resetAll();
+        var _a = this.level.editor.state, content = _a.content, fileName = _a.fileName;
+        var board = this.level.board;
+        this.sendToAll({ type: 'SET_STATE', content: content, fileName: fileName });
+        this.boardRenderer.render(board.state);
     };
     RescriptedServer.prototype.resetLevel = function (_id, params) {
+        this.runner.stop();
+        this.level = this.serverStore.resetLevel();
+        var _a = this.level.editor.state, content = _a.content, fileName = _a.fileName;
+        var board = this.level.board;
+        this.sendToAll({ type: 'SET_STATE', content: content, fileName: fileName });
+        this.boardRenderer.render(board.state);
     };
     RescriptedServer.prototype.showPreviousLevel = function (_id, params) {
         if (this.serverStore.levelNo === 0) {
@@ -2133,17 +2213,51 @@ var RescriptedServer = /** @class */ (function () {
         }
     };
     RescriptedServer.prototype.saveGameState = function (_id, params) {
+        var clientId = params[0];
+        var gameState = this.serverStore.toLocalStore();
+        this.callClient(clientId, 'persistGameState', [JSON.stringify(gameState)]);
     };
     RescriptedServer.prototype.loadGameState = function (_id, params) {
-        var store = params[1];
+        var clientId = params[0];
+        var gameState;
+        try {
+            gameState = JSON.parse(params[1]);
+        }
+        catch (e) {
+            return;
+        }
+        this.runner.stop();
+        this.level = this.serverStore.fromLocalStore(gameState);
+        var _a = this.level.editor.state, content = _a.content, fileName = _a.fileName;
+        var status = this.runner.status;
+        this.sendToAll({ type: 'SET_STATE', content: content, fileName: fileName, status: status });
+        this.boardRenderer.render(this.level.board.state);
+        this.sendToClient(clientId, { type: 'SHOW_MESSAGE', message: 'Game loaded' });
     };
     RescriptedServer.prototype.runScript = function (_id, params) {
+        var clientId = params[0];
         var apiUnlocked = this.serverStore.isApiUnlocked(this.level);
-        this.level = this.serverStore.reloadLevel();
-        this.boardRenderer.render(this.level.board.state);
-        this.runner.execute(this.level, apiUnlocked);
+        var levelNo = this.serverStore.levelNo;
+        var content = this.level.editor.state.content;
+        this.runner.prepareForExecute();
+        this.callClient(clientId, 'createSimulation', [
+            String(levelNo),
+            content,
+            apiUnlocked ? 'true' : 'false'
+        ]);
+    };
+    RescriptedServer.prototype.runSimulation = function (_id, params) {
+        var simulation;
+        try {
+            simulation = JSON.parse(params[1]);
+        }
+        catch (e) {
+            return;
+        }
+        this.runner.execute(simulation);
     };
     RescriptedServer.prototype.stopScript = function (_id, params) {
+        this.runner.stop();
     };
     RescriptedServer.prototype.handleRunnerTick = function (tick) {
         if (tick.logs) {
@@ -2162,6 +2276,9 @@ var RescriptedServer = /** @class */ (function () {
         if (tick.state) {
             this.level.board.state = tick.state;
             this.boardRenderer.render(tick.state);
+        }
+        if (tick.completed) {
+            this.level.completed = tick.completed;
         }
     };
     RescriptedServer.prototype.initLayoutEntities = function () {

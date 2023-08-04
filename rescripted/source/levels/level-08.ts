@@ -71,9 +71,9 @@ export class Level_08 extends LevelBase {
   constructor() {
     super(CONTENT, BOARD_TEXT, { 'E': 'Y', '=': 'B', 'D': 'R' });
 
-    this.editor.state.fileName = 'tmp://level-08';
-    this.board.state.offsetX = 100;
-    this.board.state.offsetY = 100;
+    this.editor.state.fileName = 'tmp://level-08.js';
+    this.board.state.offsetX = 2;
+    this.board.state.offsetY = 2;
     this.items.push('E', 'd', 'D');
     this.drones = [];
     this.droneReloads = [];

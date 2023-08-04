@@ -21,44 +21,40 @@ export class Runner {
   }
 
 
-  public execute(level: LevelBase, apiUnlocked: boolean) {
-    const ACTION_TIME = 250;
-    const SCRIPT_LOAD_TIME = 250;
-
+  public prepareForExecute() {
+    const SCRIPT_LOAD_TIMEOUT = 5000;
+    this.stop();
     this.setStatus('PENDING');
-
-    if (this.runTimer) {
-      Script.clearTimeout(this.runTimer);
-      this.runTimer = undefined;
-    }
-
-    if (this.loadTimer) {
-      Script.clearTimeout(this.loadTimer);
-    }
-
     this.loadTimer = Script.setTimeout(() => {
-      this.setStatus('RUNNING');
+      this.setStatus('UNLOADED');
+    }, SCRIPT_LOAD_TIMEOUT);
+  }
 
-      const self = this;
-      function executeAction(ticks: Tick[]) {
-        self.runTimer = Script.setTimeout(() => {
-          let tick;
-          do {
-            tick = ticks.shift();
-            self.tickCallback(tick);
-          } while (ticks.length > 0 && !tick.state);
-          if (ticks.length === 0) {
-            self.setStatus('UNLOADED');
-            return;
-          }
-          executeAction(ticks);
-        }, ACTION_TIME);
-      }
+  public execute(simulation: Tick[]) {
+    const ACTION_TIME = 250;
 
-      const allTicks = this.run(level, apiUnlocked);
-      executeAction(allTicks);
+    if (this.status !== 'PENDING') {
+      return;
+    }
+    this.setStatus('RUNNING');
 
-    }, SCRIPT_LOAD_TIME);
+    const self = this;
+    function executeAction(ticks: Tick[]) {
+      self.runTimer = Script.setTimeout(() => {
+        let tick;
+        do {
+          tick = ticks.shift();
+          self.tickCallback(tick);
+        } while (ticks.length > 0 && !tick.state);
+        if (ticks.length === 0) {
+          self.setStatus('UNLOADED');
+          return;
+        }
+        executeAction(ticks);
+      }, ACTION_TIME);
+    }
+
+    executeAction(simulation);
   }
 
   public stop() {
@@ -73,7 +69,7 @@ export class Runner {
     this.setStatus('UNLOADED');
   }
 
-  private run(level: LevelBase, apiUnlocked: boolean) {
+  public simulate(level: LevelBase, apiUnlocked: boolean) {
     const ticks: Tick[] = [{ state: level.board.state }];
     level.board.state = { ...level.board.state };
 
@@ -90,6 +86,9 @@ export class Runner {
       const maxLineNumber = level.editor.state.content.split('\n').length;
       const errorInfo = this.getErrorInfo(error, maxLineNumber);
       ticks.push({ state: level.board.state, error: errorInfo });
+    }
+    if (level.completed && ticks.length > 0) {
+      ticks[ticks.length - 1].completed = true;
     }
     return ticks;
   }
