@@ -5,9 +5,9 @@
       "name": "dark_wood",
       "model": "hifi_pbr",
       "albedo": [1, 1, 1],
-      "albedoMap": "http://localhost/www/overte-scripts/world/materials/textures/wood_table_001_diff_1k.jpg",
-      "roughnessMap": "http://localhost/www/overte-scripts/world/materials/textures/wood_table_001_rough_1k.jpg",
-      "normalMap": "http://localhost/www/overte-scripts/world/materials/textures/wood_table_001_nor_gl_1k.jpg"
+      "albedoMap": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/textures/wood_table_001_diff_1k.jpg",
+      "roughnessMap": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/textures/wood_table_001_rough_1k.jpg",
+      "normalMap": "https://raw.githubusercontent.com/keeshii/overte-scripts/master/world/materials/textures/wood_table_001_nor_gl_1k.jpg"
     }
   ]
 }
