@@ -753,6 +753,9 @@ var ShotManager = /** @class */ (function () {
         // Move shots
         for (var i = 0; i < this.shots.length; i++) {
             shot = this.shots[i];
+            if (shot.deleted) {
+                continue;
+            }
             var _a = this.shots[i], x = _a.x, y = _a.y, dx = _a.dx, dy = _a.dy;
             var targetIndex = this.board.getIndex(x + dx, y + dy);
             var targetValue = this.board.state.values[targetIndex];

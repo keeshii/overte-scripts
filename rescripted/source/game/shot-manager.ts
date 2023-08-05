@@ -21,6 +21,11 @@ export class ShotManager {
     // Move shots
     for (let i = 0; i < this.shots.length; i++) {
       shot = this.shots[i];
+
+      if (shot.deleted) {
+        continue;
+      }
+
       const { x, y, dx, dy } = this.shots[i];
       const targetIndex = this.board.getIndex(x + dx, y + dy);
       const targetValue = this.board.state.values[targetIndex];

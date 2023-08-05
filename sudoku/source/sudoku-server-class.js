@@ -168,7 +168,7 @@
     this.saveGame();
 
     if (this.state.indexOf(EMPTY) === -1) {
-      this.callClient(sessionId, 'showSolved');
+      this.callClient(sessionId, 'showSolved', []);
       this.soundPlayer.play(SoundPlayer.SUCCESS_SOUND);
     } else {
       this.soundPlayer.play(SoundPlayer.CLICK_SOUND);
