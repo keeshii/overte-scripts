@@ -2,11 +2,11 @@
     "DataVersion": 0,
     "Entities": [
         {
-            "id": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}",
+            "id": "{89c80d8a-16ea-415f-b8da-542d6b774fde}",
             "type": "Web",
             "name": "Web.Rescripted",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -57,11 +57,11 @@
             "dpi": 10
         },
         {
-            "id": "{0a46edd0-0d59-487d-a179-0a4037842e2d}",
+            "id": "{102d94e6-5a28-4fad-ab9d-3dc8f062056f}",
             "type": "Text",
             "name": "Text.Rescripted.Back",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -85,7 +85,7 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 3.249999761581421,
+                "x": 2.749999761581421,
                 "y": -1.1000001430511475,
                 "z": 2.220446049250313e-16
             },
@@ -101,10 +101,10 @@
                 "w": 1.0
             },
             "queryAACube": {
-                "x": 0.6124998331069946,
-                "y": 0.41249996423721313,
-                "z": -0.33750003576278687,
-                "scale": 0.6750000715255737
+                "x": 0.11249986290931702,
+                "y": 0.41249997913837433,
+                "z": -0.33750002086162567,
+                "scale": 0.6750000417232513
             },
             "text": "Back",
             "lineHeight": 0.10000000149011612,
@@ -121,19 +121,17 @@
                 "green": 255,
                 "blue": 255
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         },
         {
-            "id": "{3c14adc7-16c3-4a36-a17c-9420a08fa69e}",
+            "id": "{fd0df1c2-09d6-42eb-bedb-1900345afb9c}",
             "type": "Text",
             "name": "Text.Rescripted.Board.B",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "",
-            "serverScripts": "",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
@@ -154,7 +152,7 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 3.700000047683716,
+                "x": 3.200000047683716,
                 "y": -0.14999985694885254,
                 "z": 0.009166717529296875
             },
@@ -170,7 +168,7 @@
                 "w": 1.0
             },
             "queryAACube": {
-                "x": 0.4000001549720764,
+                "x": -0.09999984502792358,
                 "y": 0.7000002861022949,
                 "z": -0.9908332526683807,
                 "scale": 1.9999999403953552
@@ -190,19 +188,17 @@
                 "green": 0,
                 "blue": 0
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         },
         {
-            "id": "{7623e12d-51e1-4a67-ba4b-77224604e17d}",
+            "id": "{98a39063-9986-4c55-9b45-402dcc1f8598}",
             "type": "Text",
             "name": "Text.Rescripted.Board.Base",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "",
-            "serverScripts": "",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
@@ -223,7 +219,7 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 3.700000047683716,
+                "x": 3.200000047683716,
                 "y": -0.14999985694885254,
                 "z": 0.004166603088378906
             },
@@ -239,7 +235,7 @@
                 "w": 1.0
             },
             "queryAACube": {
-                "x": 0.4000001549720764,
+                "x": -0.09999984502792358,
                 "y": 0.7000002861022949,
                 "z": -0.9958333671092987,
                 "scale": 1.9999999403953552
@@ -249,28 +245,26 @@
             "font": "Inconsolata",
             "unlit": true,
             "textColor": {
-                "red": 56,
-                "green": 56,
-                "blue": 56
+                "red": 117,
+                "green": 117,
+                "blue": 117
             },
             "backgroundColor": {
                 "red": 0,
                 "green": 0,
                 "blue": 0
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         },
         {
-            "id": "{fbc08d33-c82f-4957-b244-146558b36717}",
+            "id": "{29524097-2cf0-43a6-ab09-26feba66e20a}",
             "type": "Text",
             "name": "Text.Rescripted.Board.G",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "",
-            "serverScripts": "",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
@@ -291,7 +285,7 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 3.700000047683716,
+                "x": 3.200000047683716,
                 "y": -0.14999985694885254,
                 "z": 0.009166717529296875
             },
@@ -307,7 +301,7 @@
                 "w": 1.0
             },
             "queryAACube": {
-                "x": 0.4000001549720764,
+                "x": -0.09999984502792358,
                 "y": 0.7000002861022949,
                 "z": -0.9908332526683807,
                 "scale": 1.9999999403953552
@@ -327,19 +321,17 @@
                 "green": 0,
                 "blue": 0
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         },
         {
-            "id": "{6c789573-08d1-4cf2-ac78-c73fe4c773ec}",
+            "id": "{dc7435c8-4a46-45ce-8c6e-7013b503e02a}",
             "type": "Text",
             "name": "Text.Rescripted.Board.R",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "",
-            "serverScripts": "",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
@@ -360,7 +352,7 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 3.700000047683716,
+                "x": 3.200000047683716,
                 "y": -0.14999985694885254,
                 "z": 0.009166717529296875
             },
@@ -376,7 +368,7 @@
                 "w": 1.0
             },
             "queryAACube": {
-                "x": 0.4000001549720764,
+                "x": -0.09999984502792358,
                 "y": 0.7000002861022949,
                 "z": -0.9908332526683807,
                 "scale": 1.9999999403953552
@@ -396,19 +388,17 @@
                 "green": 0,
                 "blue": 0
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         },
         {
-            "id": "{73b0cc89-6948-488d-8e3d-e3d2c4806af6}",
+            "id": "{5f3d53bf-4927-47c9-9aa1-eabe5e168d29}",
             "type": "Text",
             "name": "Text.Rescripted.Board.W",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "",
-            "serverScripts": "",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
@@ -429,7 +419,7 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 3.700000047683716,
+                "x": 3.200000047683716,
                 "y": -0.14999985694885254,
                 "z": 0.009166717529296875
             },
@@ -445,7 +435,7 @@
                 "w": 1.0
             },
             "queryAACube": {
-                "x": 0.4000001549720764,
+                "x": -0.09999984502792358,
                 "y": 0.7000002861022949,
                 "z": -0.9908332526683807,
                 "scale": 1.9999999403953552
@@ -465,19 +455,17 @@
                 "green": 0,
                 "blue": 0
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         },
         {
-            "id": "{5fbff2d8-c542-4091-8ab2-1631556c5b99}",
+            "id": "{5531c028-440d-418f-a192-2105356a243d}",
             "type": "Text",
             "name": "Text.Rescripted.Board.Y",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
-            "script": "",
-            "serverScripts": "",
             "isFacingAvatar": false,
             "faceCamera": false,
             "grab": {
@@ -498,7 +486,7 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 3.700000047683716,
+                "x": 3.200000047683716,
                 "y": -0.14999985694885254,
                 "z": 0.009166717529296875
             },
@@ -514,7 +502,7 @@
                 "w": 1.0
             },
             "queryAACube": {
-                "x": 0.4000001549720764,
+                "x": -0.09999984502792358,
                 "y": 0.7000002861022949,
                 "z": -0.9908332526683807,
                 "scale": 1.9999999403953552
@@ -534,14 +522,14 @@
                 "green": 0,
                 "blue": 0
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         },
         {
-            "id": "{2bec85dc-f730-4dfa-9604-ea2327933620}",
+            "id": "{44c4590b-885d-44d4-ac28-2f5b8327148f}",
             "type": "Text",
             "name": "Text.Rescripted.Next",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -565,7 +553,7 @@
             "damping": 0.0,
             "angularDamping": 0.0,
             "position": {
-                "x": 4.162499904632568,
+                "x": 3.6624999046325684,
                 "y": -1.1000001430511475,
                 "z": 2.220446049250313e-16
             },
@@ -581,10 +569,10 @@
                 "w": 1.0
             },
             "queryAACube": {
-                "x": 1.524999976158142,
-                "y": 0.41249996423721313,
-                "z": -0.33750003576278687,
-                "scale": 0.6750000715255737
+                "x": 1.024999976158142,
+                "y": 0.4125000238418579,
+                "z": -0.3374999761581421,
+                "scale": 0.6749999523162842
             },
             "text": "Next",
             "lineHeight": 0.10000000149011612,
@@ -601,14 +589,14 @@
                 "green": 255,
                 "blue": 255
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         },
         {
-            "id": "{71cf6416-1e68-4b7f-9bd8-fb2615d3a0f3}",
+            "id": "{d539b7bc-cacb-46dc-92c6-e67affa07d73}",
             "type": "Text",
             "name": "Text.Rescripted.ResetGame",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -668,14 +656,14 @@
                 "green": 255,
                 "blue": 255
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         },
         {
-            "id": "{afcb7921-a5dc-47fe-90f1-aaa2e967768a}",
+            "id": "{7d6a27d7-ea65-4abe-8d29-dcafa526bce4}",
             "type": "Text",
             "name": "Text.Rescripted.ResetLevel",
-            "lastEdited": 1691172320202448,
-            "created": 1691172320202448,
+            "lastEdited": 1691423156446283,
+            "created": 1691423156446283,
             "clientOnly": false,
             "avatarEntity": false,
             "localEntity": false,
@@ -735,10 +723,10 @@
                 "green": 255,
                 "blue": 255
             },
-            "parentID": "{4c0588f4-b3b0-422d-85e0-cf4de885d291}"
+            "parentID": "{89c80d8a-16ea-415f-b8da-542d6b774fde}"
         }
     ],
-    "Id": "{93572610-4dfc-4bd9-ad25-b41c93a72e3a}",
+    "Id": "{9fa56665-473e-4218-af07-be587123d1c0}",
     "Version": 133,
     "Paths": {
         "/": "/0.0,1.0,-0.0/0.0,0.0,-0.0,1.0"
