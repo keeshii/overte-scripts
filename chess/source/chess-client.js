@@ -1,20 +1,21 @@
 "use strict";
 
 /* global Entities, MyAvatar, Script, Vec3, Messages, COLOR_LIGHT, COLOR_DARK,
- * PLAYERS, CLIENT_ONLY, PLAYERS */
+ * PLAYERS, CLIENT_SIDE_ONLY, PLAYERS, HMD */
 
 ((typeof module !== 'undefined' ? module : {}).exports = function () {
 
   Script.include([
     './chess-overlay.js',
-    './chess-board.js',
-    './chess.js',
+    './chess-server-class.js',
     './config.js'
   ]);
 
+  var CLICK_THROTTLE = 300;
+
   function ChessClient() {
     this.entityId = '';
-    this.server = CLIENT_ONLY ? Script.require('./chess-server.js')() : null;
+    this.server = CLIENT_SIDE_ONLY ? new ChessServer() : null;
     this.overlay = new ChessOverlay();
     this.mousePressOnEntityFn = null;
     this.lastClickTime = 0;

@@ -76,7 +76,7 @@
     board = new Array(BOARD_SIZE);
     for (i = 0; i < BOARD_SIZE; i++) {
       o = this.valueToPlayer(this.state[i]);
-      if (this.state[i] === PIECE.NONE) {
+      if (this.state[i] === PIECES.NONE) {
         board[i] = EMPTY; // No player
       } else if (o === this.activePlayer) {
         board[i] = PLAYER; // Player
@@ -99,11 +99,11 @@
       if (!forced || take) {
         if (pPawn && (pY === 0 || pY === 7)) {
           move_promo = move_base + 10 * pY + pX;
-          moves.push(move_promo + 10000 * PIECE.QUEEN);
-          moves.push(move_promo + 10000 * PIECE.ROOK);
-          moves.push(move_promo + 10000 * PIECE.KNIGHT);
-          moves.push(move_promo + 10000 * PIECE.BISHOP);
-          moves.push(move_promo + 10000 * PIECE.KING);
+          moves.push(move_promo + 10000 * PIECES.QUEEN);
+          moves.push(move_promo + 10000 * PIECES.ROOK);
+          moves.push(move_promo + 10000 * PIECES.KNIGHT);
+          moves.push(move_promo + 10000 * PIECES.BISHOP);
+          moves.push(move_promo + 10000 * PIECES.KING);
         } else {
           moves.push(move_base + pY * 10 + pX);
         }
@@ -127,7 +127,7 @@
       //- Processing of the piece
       piece = this.valueToPiece(this.state[i]);
       switch (piece) {
-        case PIECE.PAWN:
+        case PIECES.PAWN:
 
           // En passant is only relevant for the pawns
           if (ep) {
@@ -168,8 +168,8 @@
             board[this.enPassant] = epv;
           }
           break;
-        case PIECE.QUEEN:
-        case PIECE.ROOK:
+        case PIECES.QUEEN:
+        case PIECES.ROOK:
           if (x > 0) { // West
             ip = i;
             for (xp = x - 1; xp >= 0; xp--) {
@@ -206,12 +206,12 @@
               }
             }
           }
-          if (piece === PIECE.ROOK) { // Queen = Rook + Bishop
+          if (piece === PIECES.ROOK) { // Queen = Rook + Bishop
             break;
           }
           //else no break, yes !
 
-        case PIECE.BISHOP:
+        case PIECES.BISHOP:
           // North-West
           d = Math.min(x, y);
           if (d > 0) {
@@ -274,7 +274,7 @@
           }
           break;
 
-        case PIECE.KNIGHT:
+        case PIECES.KNIGHT:
           if (y >= 2) {
             if ((x >= 1) && (board[i - 17] !== PLAYER)) {
               saveMove(x - 1, y - 2, i - 17, false);
@@ -309,7 +309,7 @@
           }
           break;
 
-        case PIECE.KING:
+        case PIECES.KING:
           for (xp = -1; xp <= 1; xp++) {
             xpp = x + xp;
             if ((xpp < 0) || (xpp > 7)) {
@@ -332,13 +332,13 @@
 
   Chess.prototype.handleEnPassant = function (value, fromIndex, toIndex) {
     var index, piece = this.valueToPiece(value);
-    if (this.enPassant >= 0 && piece === PIECE.PAWN && toIndex === this.enPassant) {
+    if (this.enPassant >= 0 && piece === PIECES.PAWN && toIndex === this.enPassant) {
       index = fromIndex < toIndex ? toIndex - 8 : toIndex + 8;
       this.state[index] = 0;
     }
 
     index = -1;
-    if (piece === PIECE.PAWN && Math.abs(fromIndex - toIndex) === 16) {
+    if (piece === PIECES.PAWN && Math.abs(fromIndex - toIndex) === 16) {
       index = Math.floor((fromIndex + toIndex) / 2);
     }
 
@@ -450,7 +450,7 @@
     var player = this.valueToPlayer(value);
     var piece = this.valueToPiece(value);
 
-    if (player !== this.activePlayer || piece <= PIECE.PAWN || piece > PIECE.KING) {
+    if (player !== this.activePlayer || piece <= PIECES.PAWN || piece > PIECES.KING) {
       return 'INVALID_MOVE';
     }
 
@@ -478,8 +478,8 @@
     var black = PLAYERS.BLACK;
     var hasWhite, hasBlack;
 
-    hasWhite = this.valueExists(white + PIECE.PAWN, white + PIECE.KING);
-    hasBlack = this.valueExists(black + PIECE.PAWN, black + PIECE.KING);
+    hasWhite = this.valueExists(white + PIECES.PAWN, white + PIECES.KING);
+    hasBlack = this.valueExists(black + PIECES.PAWN, black + PIECES.KING);
 
     if (hasWhite && !hasBlack) {
       return PLAYERS.BLACK;

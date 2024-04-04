@@ -1,7 +1,7 @@
 "use strict";
 
-/* global SQUARE_SIZE, COLOR_BLACK, COLOR_WHITE, BASE_URL, Entities, BOARD_SIZE,
- * COLOR_HIGHTLIGHT, SQUARE_HEIGHT, PIECE_SCRIPT_URL, Script */
+/* global SQUARE_SIZE, COLOR_SQUARE_DARK, COLOR_SQUARE_LIGHT, BASE_URL, Entities, BOARD_SIZE,
+ * COLOR_HIGHTLIGHT, SQUARE_HEIGHT, PIECE_SCRIPT_URL, Script, PIECE_SIZES */
 
 (function (global) {
 
@@ -30,7 +30,11 @@
   ChessBoard.prototype.getColor = function (index) {
     var x = index % 8;
     var y = Math.floor(index / 8);
-    return ((x + y) % 2) ? COLOR_BLACK : COLOR_WHITE;
+    return ((x + y) % 2) ? COLOR_SQUARE_DARK : COLOR_SQUARE_LIGHT;
+  };
+
+  ChessBoard.prototype.getSize = function (value) {
+    return PIECE_SIZES[(value - 1) % 8];
   };
 
   ChessBoard.prototype.getPieceModelUrl = function (value) {
@@ -208,6 +212,7 @@
         if (index !== -1) {
           Entities.editEntity(pieces[index].entityId, {
             name: 'Model.ChessPiece[' + i + ']',
+            dimensions: this.getSize(state[i]),
             localRotation: {x: 0, y: 0, z: 0, w: 1},
             localPosition: {
               x: this.getX(i),
@@ -237,6 +242,7 @@
           name: 'Model.ChessPiece[' + i + ']',
           parentID: this.entityId,
           useOriginalPivot: true,
+          dimensions: this.getSize(state[i]),
           localPosition: {
             x: this.getX(i),
             y: SQUARE_HEIGHT,
@@ -259,6 +265,7 @@
     for (i = 0; i < this.pieces.length; i++) {
       if (this.pieces[i].index === index) {
         Entities.editEntity(this.pieces[i].entityId, {
+          dimensions: this.getSize(this.pieces[i].value),
           localRotation: {x: 0, y: 0, z: 0, w: 1},
           localPosition: {
             x: this.getX(index),
@@ -270,7 +277,6 @@
       }
     }
   };
-
 
   global.ChessBoard = ChessBoard;
 

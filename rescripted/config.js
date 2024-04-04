@@ -1,5 +1,5 @@
 
-module.exports.CLIENT_SIDE_ONLY = location.protocol.match(/^file|https?$/);
+module.exports.CLIENT_SIDE_ONLY = typeof location !== 'undefined' ? !!location.protocol.match(/^file|https?$/) : false;
 
 module.exports.CLICK_THROTTLE = 300;
 

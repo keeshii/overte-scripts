@@ -16,6 +16,6 @@
   global.DIFFICULTY_VALUES = [50, 40, 30, 0];
   global.DEFAULT_DIFFICULTY = 30;
 
-  global.CLIENT_SIDE_ONLY = location.protocol.match(/^file|https?$/);
+  global.CLIENT_SIDE_ONLY = typeof location !== 'undefined' ? !!location.protocol.match(/^file|https?$/) : false;
 
 }(typeof module !== 'undefined' ? module.exports : new Function('return this;')()));

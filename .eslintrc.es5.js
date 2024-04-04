@@ -12,6 +12,7 @@ module.exports = {
     'Entities': 'readonly',
     'MyAvatar': 'readonly',
     'Selection': 'readonly',
-    'Vec3': 'readonly'
+    'Vec3': 'readonly',
+    'location': 'readonly'
   }
 };

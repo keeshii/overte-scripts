@@ -7,6 +7,7 @@
   Script.include('./config.js');
 
   var MAX_DROP_HEIGHT = 0.04;
+  var WAIT_FOR_DROP_DELAY = 150;
 
   function ChessPiece() {
     this.entityId = '';
@@ -54,7 +55,8 @@
   };
 
   ChessPiece.prototype.releaseGrab = function () {
-    var properties, diff, x, z, index, position;
+    var properties, diff, x, z, position;
+    var self = this;
 
     properties = Entities.getEntityProperties(this.entityId, ['position']);
     diff = Vec3.subtract(this.boardPosition, properties.position);
@@ -63,16 +65,19 @@
     z = -Math.round(position.z / SQUARE_SIZE + 0.5) + 4;
 
     // Reset size, position, rotation (before grab)
-    Entities.callEntityMethod(this.parentId, 'callMethod', ['resetPiecePosition', this.index]);
+    Script.setTimeout(function () {
+      var index = x + z * 8;
 
-    // Invalid position, reset position
-    if (Math.abs(diff.y) > MAX_DROP_HEIGHT || x < 0 || x >= 8 || z < 0 || z >=8) {
-      return;
-    }
+      Entities.callEntityMethod(self.parentId, 'callMethod', ['resetPiecePosition', self.index]);
 
-    index = x + z * 8;
-    Entities.callEntityMethod(this.parentId, 'callMethod', ['submitMove', this.index, index, this.entityId]);
-    Entities.callEntityMethod(this.parentId, 'callMethod', ['setEnabled', true]);
+      // Invalid position, reset position
+      if (Math.abs(diff.y) > MAX_DROP_HEIGHT || x < 0 || x >= 8 || z < 0 || z >=8) {
+        return;
+      }
+
+      Entities.callEntityMethod(self.parentId, 'callMethod', ['submitMove', self.index, index, self.entityId]);
+      Entities.callEntityMethod(self.parentId, 'callMethod', ['setEnabled', true]);
+    }, WAIT_FOR_DROP_DELAY);
   };
 
   return new ChessPiece();
