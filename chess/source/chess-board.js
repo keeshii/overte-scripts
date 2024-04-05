@@ -1,7 +1,7 @@
 "use strict";
 
-/* global SQUARE_SIZE, COLOR_SQUARE_DARK, COLOR_SQUARE_LIGHT, BASE_URL, Entities, BOARD_SIZE,
- * COLOR_HIGHTLIGHT, SQUARE_HEIGHT, PIECE_SCRIPT_URL, Script, PIECE_SIZES */
+/* global SQUARE_SIZE, COLOR_SQUARE_DARK, COLOR_SQUARE_LIGHT, BASE_URL, CHESS_SIZE,
+ COLOR_HIGHTLIGHT, SQUARE_HEIGHT, PIECE_SCRIPT_URL, PIECE_SIZES, getPieceAssetName */
 
 (function (global) {
 
@@ -84,7 +84,7 @@
     this.destroyBoard();
 
     this.squareIds = [];
-    for (i = 0; i < BOARD_SIZE; i++) {
+    for (i = 0; i < CHESS_SIZE; i++) {
       entityId = Entities.addEntity({
         type: 'Box',
         shape: 'Cube',
@@ -103,7 +103,7 @@
     }
 
     this.state = [];
-    for (i = 0; i < BOARD_SIZE; i++) {
+    for (i = 0; i < CHESS_SIZE; i++) {
       this.state.push(0);
     }
   };
@@ -124,7 +124,7 @@
 
   ChessBoard.prototype.updateState = function (state) {
     var i;
-    for (i = 0; i < BOARD_SIZE; i++) {
+    for (i = 0; i < CHESS_SIZE; i++) {
       this.setPiece(i, state[i]);
     }
   };
@@ -194,7 +194,7 @@
     this.pieces.length = 0;
 
     // Matching pieces, no change needed
-    for (i = 0; i < BOARD_SIZE; i++) {
+    for (i = 0; i < CHESS_SIZE; i++) {
       if (state[i] !== 0) {
         index = this.findPiece(pieces, state[i], i);
         if (index !== -1) {
@@ -206,7 +206,7 @@
     }
 
     // Move pieces to new position
-    for (i = 0; i < BOARD_SIZE; i++) {
+    for (i = 0; i < CHESS_SIZE; i++) {
       if (state[i] !== 0) {
         index = this.findPiece(pieces, state[i], -1);
         if (index !== -1) {
@@ -234,7 +234,7 @@
     }
 
     // Add missing pieces
-    for (i = 0; i < BOARD_SIZE; i++) {
+    for (i = 0; i < CHESS_SIZE; i++) {
       if (state[i] !== 0) {
         entityId = Entities.addEntity({
           type: 'Model',

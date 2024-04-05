@@ -1,6 +1,6 @@
 "use strict";
 
-/* global BOARD_SIZE, PLAYERS, Script, PIECE */
+/* global CHESS_SIZE, PLAYERS, PIECES */
 
 (function (global) {
 
@@ -23,7 +23,7 @@
   Chess.prototype.clearBoard = function () {
     var i;
     this.state = [];
-    for (i = 0; i < BOARD_SIZE; i++) {
+    for (i = 0; i < CHESS_SIZE; i++) {
       this.state.push(0);
     }
     this.activePlayer = PLAYERS.WHITE;
@@ -61,20 +61,16 @@
   };
 
   Chess.prototype.getMovesList = function () {
-    var self, piece,
-            board, moves, forced, move_base, move_promo,
-            i, ip, x, xp, xpp, y, yp, ypp, o, d, t, ep, epv;
+    var piece, board, moves, forced, move_base, move_promo;
+    var i, ip, x, xp, xpp, y, yp, ypp, o, d, ep, epv;
 
     var EMPTY = 0;
     var PLAYER = 1;
     var OPPONENT = 2;
 
-    // var opponent = player === PLAYER.WHITE ? PLAYER.BLACK : PLAYER.WHITE;
-    self = this;
-
     //-- Board of the opponents
-    board = new Array(BOARD_SIZE);
-    for (i = 0; i < BOARD_SIZE; i++) {
+    board = new Array(CHESS_SIZE);
+    for (i = 0; i < CHESS_SIZE; i++) {
       o = this.valueToPlayer(this.state[i]);
       if (this.state[i] === PIECES.NONE) {
         board[i] = EMPTY; // No player
@@ -112,7 +108,7 @@
     }
 
     //-- Scans every position
-    for (i = 0; i < BOARD_SIZE; i++) {
+    for (i = 0; i < CHESS_SIZE; i++) {
 
       //- Checks if the cell is relevant
       if (board[i] !== PLAYER) {
@@ -209,7 +205,8 @@
           if (piece === PIECES.ROOK) { // Queen = Rook + Bishop
             break;
           }
-          //else no break, yes !
+          // else no break, yes !
+          // fall through
 
         case PIECES.BISHOP:
           // North-West
@@ -465,7 +462,7 @@
 
   Chess.prototype.valueExists = function (min, max) {
     var i;
-    for (i = 0; i < BOARD_SIZE; i++) {
+    for (i = 0; i < CHESS_SIZE; i++) {
       if (this.state[i] >= min && this.state[i] <= max) {
         return true;
       }

@@ -1,7 +1,7 @@
 "use strict";
 
-/* global Entities, MyAvatar, Script, Vec3, Messages, PLAYERS,
- * BASE_URL, COLOR_LIGHT, COLOR_DARK, HMD, Camera */
+/* global PLAYERS, BASE_URL, COLOR_LIGHT, COLOR_DARK, HMD, Camera,
+ getPieceAssetName */
 
 (function (global) {
 
@@ -22,7 +22,7 @@
   };
 
   ChessOverlay.prototype.showPromotion = function (player) {
-    var position, rotation, value, i, x, y;
+    var position, rotation, i, x, y;
 
     this.close();
 
@@ -48,8 +48,6 @@
         y -= BUTTON_SIZE + BUTTON_MARGIN;
       }
       position = {x: x, y: y, z: 0.01};
-
-      value = String(i + 1);
 
       Entities.addEntity({
         type: "Image",

@@ -1,13 +1,13 @@
 "use strict";
 
-/* global Entities, MyAvatar, Script, Vec3, Messages, PLAYERS, MESSAGE, CHANNEL_NAME */
+/* global Messages, PLAYERS, CHANNEL_NAME, Chess, ChessBoard */
 
 (function (global) {
 
   Script.include([
+    './config.js',
     './chess.js',
-    './chess-board.js',
-    './config.js'
+    './chess-board.js'
   ]);
 
   var MESSAGE = {
@@ -85,7 +85,7 @@
     this.isGrabEnabled = isGrabEnabled;
   };
 
-  ChessServer.prototype.onButtonClick = function (_id, params) {
+  ChessServer.prototype.onButtonClick = function () {
     if (this.gameOver) {
       this.gameOver = false;
       this.isClickEnabled = true;

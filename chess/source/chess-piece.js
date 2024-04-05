@@ -1,6 +1,6 @@
 "use strict";
 
-/* global Entities, MyAvatar, Script, Vec3, SQUARE_SIZE, Quat */
+/* global SQUARE_SIZE, Quat */
 
 ((typeof module !== 'undefined' ? module : {}).exports = function () {
 

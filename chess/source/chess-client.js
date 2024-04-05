@@ -1,14 +1,14 @@
 "use strict";
 
-/* global Entities, MyAvatar, Script, Vec3, Messages, COLOR_LIGHT, COLOR_DARK,
- * PLAYERS, CLIENT_SIDE_ONLY, PLAYERS, HMD */
+/* global COLOR_LIGHT, COLOR_DARK, PLAYERS, CLIENT_SIDE_ONLY, HMD,
+ ChessServer, ChessOverlay */
 
 ((typeof module !== 'undefined' ? module : {}).exports = function () {
 
   Script.include([
+    './config.js',
     './chess-overlay.js',
-    './chess-server-class.js',
-    './config.js'
+    './chess-server-class.js'
   ]);
 
   var CLICK_THROTTLE = 300;

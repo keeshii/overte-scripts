@@ -2,7 +2,7 @@
 
 (function (global) {
 
-  global.BOARD_SIZE = 64;
+  global.CHESS_SIZE = 64;
   global.CHANNEL_NAME = "com.github.keeshii.chess";
   global.BASE_URL = Script.resolvePath("..");
   global.PIECE_SCRIPT_URL = global.BASE_URL + '/source/chess-piece.js';

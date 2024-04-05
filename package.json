@@ -7,7 +7,7 @@
     "test:js": "jasmine \"dixit/tests/*.js\" \"sudoku/tests/*.js\"",
     "test:ts": "jasmine-ts \"codenames/tests/*.ts\"",
     "test": "npm run test:js && npm run test:ts",
-    "lint:js": "eslint -c .eslintrc.es5.js dixit/source sudoku/source",
+    "lint:js": "eslint -c .eslintrc.es5.js dixit/source sudoku/source chess/source",
     "lint:ts": "eslint -c .eslintrc.typescript.js codenames/tests codenames/source rescripted/source",
     "lint": "npm run lint:js && npm run lint:ts",
     "build:dev": "webpack --mode=development --devtool=cheap-source-map",
