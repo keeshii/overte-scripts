@@ -1,8 +1,7 @@
 "use strict";
 
 /* global SQUARE_SIZE, COLOR_SQUARE_DARK, COLOR_SQUARE_LIGHT, BASE_URL, CHESS_SIZE,
- COLOR_HIGHTLIGHT, SQUARE_HEIGHT, PIECE_SCRIPT_URL, PIECE_SIZES, GRABBABLE_ENABLED,
- getPieceAssetName */
+ COLOR_HIGHTLIGHT, SQUARE_HEIGHT, PIECE_SCRIPT_URL, PIECE_SIZES, getPieceAssetName */
 
 (function (global) {
 
@@ -98,9 +97,7 @@
           y: SQUARE_HEIGHT,
           z: this.getY(i)
         },
-        userData: GRABBABLE_ENABLED
-          ? '{"grabbableKey": {"grabbable": true, "triggerable": true}}'
-          : '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
+        userData: '{"grabbableKey": {"grabbable": false, "triggerable": true}}'
       });
       this.squareIds.push(entityId);
     }
