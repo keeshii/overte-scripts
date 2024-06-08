@@ -8,6 +8,7 @@
   global.PIECE_SCRIPT_URL = global.BASE_URL + '/source/chess-piece.js';
   global.SQUARE_SIZE = 0.04;
   global.SQUARE_HEIGHT = 0.01;
+  global.GRABBABLE_ENABLED = false;
 
   global.COLOR_HIGHTLIGHT = {red: 75, green: 173, blue: 209};
   global.COLOR_SQUARE_LIGHT = {red: 196, green: 163, blue: 134};
