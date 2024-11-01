@@ -11,6 +11,7 @@
 (function() {
 
     var DEBUG = false;
+    var CLIENT_SIDE_ONLY = typeof location !== 'undefined' ? !!location.protocol.match(/^file|https?$/) : false;
 
     var MAX_SIT_DISTANCE_M = 5;
 
@@ -50,7 +51,11 @@
             }
             if (event.isPrimaryButton && 
                 Vec3.distance(MyAvatar.position, Entities.getEntityProperties(_this.entityID, ["position"]).position) <= MAX_SIT_DISTANCE_M) {
-                Entities.callEntityServerMethod(_this.sitEntityID, "onMousePressOnEntity", [MyAvatar.sessionUUID]);
+                if (CLIENT_SIDE_ONLY) {
+                    Entities.callEntityMethod(_this.sitEntityID, "triggerMousePressOnEntity", [MyAvatar.sessionUUID]);
+                } else {
+                    Entities.callEntityServerMethod(_this.sitEntityID, "onMousePressOnEntity", [MyAvatar.sessionUUID]);
+                }
             }
         },
 

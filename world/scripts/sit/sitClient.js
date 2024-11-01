@@ -16,9 +16,14 @@
 
 /* global DriveKeys */
 
+/* global Entities Script */
+
 (function () {
     var DEBUG = false;
+    var CLIENT_SIDE_ONLY = typeof location !== 'undefined' ? !!location.protocol.match(/^file|https?$/) : false;
     // #region UTILITIES
+
+    Script.include('./sitServerClass.js');
 
     // Returns entity properties for an overlay in front of user's camera in desktop and VR
     function getEntityPropertiesForImageInFrontOfCamera(positionInFront, dimensions, url) {
@@ -61,7 +66,6 @@
     var CHAIR_OFFSET_RATIO = 0.1;
     function calculateSeatCenterPositionForPinningAvatarHips() {
         var properties = Entities.getEntityProperties(_this.entityID, ["position", "dimensions"]);
-
         var yOffset = properties.dimensions.y * CHAIR_OFFSET_RATIO;
         _this.seatCenterPosition = properties.position;
         _this.seatCenterPosition.y = properties.position.y + yOffset;
@@ -99,7 +103,7 @@
                 if (DEBUG) {
                     console.log("sitClient.js: " + _this.entityID + ": calling standUp with callback");
                 }
-                Entities.callEntityMethod(currentSeatEntityID, "standUp", [_this.entityID]);
+                _this.callServer(currentSeatEntityID, 'standUp', [_this.entityID]);
             }
         } else {
             startSitDown();
@@ -166,9 +170,9 @@
         maybeClearRequestSitDataTimeoutTimer();
         maybeClearRequestSitDataTimer();
 
-        Entities.callEntityServerMethod(
+        _this.callServer(
             _this.entityID,
-            "afterBeginSit",
+            'afterBeginSit',
             AvatarList.getAvatarIdentifiers()
         );
         deleteAllClickToSitOverlays();
@@ -299,13 +303,17 @@
     function requestSitDataTimeoutTimerCallback() {
         requestSitDataTimeoutTimer = false;
         if (currentRequestAttempts < MAX_REQUEST_ATTEMPTS) {
-            console.log("sitClient.js: Request for sit data timed out for Entity ID: " + _this.entityID +
-                ". Trying again. This will be attempt " + currentRequestAttempts + "/" + MAX_REQUEST_ATTEMPTS);
+            if (DEBUG) {
+                console.log("sitClient.js: Request for sit data timed out for Entity ID: " + _this.entityID +
+                    ". Trying again. This will be attempt " + currentRequestAttempts + "/" + MAX_REQUEST_ATTEMPTS);
+            }
             requestSitData(_this.entityID);
         } else {
             currentRequestAttempts = 0;
-            console.log("sitClient.js: Request for sit data timed out for Entity ID: " + _this.entityID +
-                ". " + MAX_REQUEST_ATTEMPTS + " requests for data failed. Not trying again.");
+            if (DEBUG) {
+                console.log("sitClient.js: Request for sit data timed out for Entity ID: " + _this.entityID +
+                    ". " + MAX_REQUEST_ATTEMPTS + " requests for data failed. Not trying again.");
+            }
         }
     }
 
@@ -319,14 +327,13 @@
 
         currentRequestAttempts++;
         requestSitDataTimeoutTimer = Script.setTimeout(requestSitDataTimeoutTimerCallback, REQUEST_SIT_DATA_ASYNC_TIMEOUT_MS);
-        Entities.callEntityServerMethod(id, "requestSitData", [MyAvatar.sessionUUID]);
+        _this.callServer(id, 'requestSitData', [MyAvatar.sessionUUID]);
     }
 
 
     function requestSitDataReply(id, args) {
         maybeClearRequestSitDataTimeoutTimer();
         maybeClearRequestSitDataTimer();
-
         var data;
         try {
             data = JSON.parse(args[0]);
@@ -388,7 +395,7 @@
             Settings.setValue(SETTING_KEY_AVATAR_SITTING, null);
             isSittingInThisChair = false;
 
-            Entities.callEntityServerMethod(_this.entityID, "onStandUp", AvatarList.getAvatarIdentifiers());
+            _this.callServer(_this.entityID, 'onStandUp', AvatarList.getAvatarIdentifiers());
             createClickToSitOverlay();
             requestSitDataTimeoutTimer = Script.setTimeout(requestSitDataTimeoutTimerCallback, REQUEST_SIT_DATA_ASYNC_TIMEOUT_MS);
 
@@ -410,7 +417,7 @@
                 console.log("sitClient.js: " + _this.entityID + ": `standUp()` callback requested. Starting sit down for: " + args[0]);
             }
 
-            Entities.callEntityMethod(args[0], "startSitDown");
+            _this.callServer(args[0], 'startSitDown', []);
         }
     }
 
@@ -604,6 +611,12 @@
     // Preload entity method
     function preload(id) {
         _this.entityID = id;
+
+        if (_this.server) {
+            _this.server.client = _this;
+            _this.server.preload(id);
+        }
+
         deleteAllClickToSitOverlays();
         prefetchPresitImages();
         updateUserData();
@@ -640,10 +653,17 @@
         if (DEBUG) {
             console.log("sitClient.js: " + _this.entityID + ": Heartbeat request received from server. Sending heartbeat response...");
         }
-        Entities.callEntityServerMethod(_this.entityID, "heartbeatResponse");
+        _this.callServer(_this.entityID, 'heartbeatResponse', []);
     }
 
-    
+    function callServer(id, methodName, params) {
+        if (_this.server) {
+            _this.server[methodName](_this.entityID, params);
+            return;
+        }
+        Entities.callEntityServerMethod(id, methodName, params);
+    };
+
     // Can sit when clicking on chair when enabled via userData
     var MAX_SIT_DISTANCE_M = 5;
     var EDIT_SETTING = "io.highfidelity.isEditing";
@@ -652,10 +672,15 @@
             updateUserData();
             if (_this.userData && _this.userData.canClickOnModelToSit &&
                 Vec3.distance(MyAvatar.position, Entities.getEntityProperties(id, ["position"]).position) <= MAX_SIT_DISTANCE_M) {
-                Entities.callEntityServerMethod(_this.entityID, "onMousePressOnEntity", [MyAvatar.sessionUUID]);
+                _this.callServer(_this.entityID, 'onMousePressOnEntity', [MyAvatar.sessionUUID]);
             }
         }
     }
+
+    function triggerMousePressOnEntity(id) {
+        _this.callServer(_this.entityID, 'onMousePressOnEntity', [MyAvatar.sessionUUID]);
+    }
+
     // #endregion ENTITY LIFETIME FUNCTIONS
 
     // Constructor
@@ -663,6 +688,7 @@
     function SitClient() {
         _this = this;
         this.sittableUIID = false;
+        this.server = CLIENT_SIDE_ONLY ? new SitServer() : null;
 
         // for presit local entity and animation
         this.presitIntervalID = false;
@@ -698,7 +724,8 @@
             "deleteAllClickToSitOverlays",
             "checkBeforeSitDown",
             "heartbeatRequest",
-            "startSitDown"
+            "startSitDown",
+            "triggerMousePressOnEntity"
         ],
         createClickToSitOverlay: createClickToSitOverlay,
         requestSitData: requestSitData,
@@ -713,7 +740,9 @@
         whileSittingUpdate: whileSittingUpdate,
         heartbeatRequest: heartbeatRequest,
         standUp: standUp,
-        startSitDown: startSitDown
+        startSitDown: startSitDown,
+        callServer: callServer,
+        triggerMousePressOnEntity: triggerMousePressOnEntity
     };
 
     return new SitClient();
